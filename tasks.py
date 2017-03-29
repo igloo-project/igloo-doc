@@ -77,6 +77,26 @@ def _recommonmark(ctx, virtualenv_path=None, skip=None, version=None):
     else:
         print('recommonmark not managed (recommonmark.skip: yes)')
 
+@task
+def _sphinx_rtd_theme(ctx, virtualenv_path=None, skip=None, version=None):
+    """
+    Install recommonmark inside a virtualenv folder.
+    """
+    skip = skip if (skip is not None) \
+        else ctx.sphinx_rtd_theme.skip
+    dependencies = ctx.dependencies
+    if not skip:
+        ctx.virtualenv_path = os.path.dirname(__file__) + '/' + ctx.virtualenv_path
+        virtualenv_path = virtualenv_path or ctx.virtualenv_path
+        package = ctx.sphinx_rtd_theme.package_name
+        version = version or ctx.sphinx_rtd_theme.version
+        _pip_package(ctx, package, version)
+        for dependency in dependencies:
+            _pip_package(ctx, dependency['name'],
+                         dependency.get('version', None))
+    else:
+        print('sphinx_rtd_theme not managed (sphinx_rtd_theme.skip: yes)')
+
 
 
 def _pip_package(ctx, package, version=None, virtualenv_path=None):
@@ -90,7 +110,7 @@ def _pip_package(ctx, package, version=None, virtualenv_path=None):
             raise Exception('{} install fails'.format(package))
 
 
-@task(pre=[_virtualenv, _sphinx, _recommonmark])
+@task(pre=[_virtualenv, _sphinx, _recommonmark, _sphinx_rtd_theme])
 def configure(ctx):
     """
     Trigger virtualenv and sphinx initialization.
@@ -236,6 +256,9 @@ ns.configure({
     },
     'recommonmark': {
         'package_name': 'recommonmark'
+    },
+    'sphinx_rtd_theme': {
+        'package_name': 'sphinx_rtd_theme'
     },
     'dependencies': []
 })
