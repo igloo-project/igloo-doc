@@ -54,7 +54,7 @@ historyLogService.logWithDifferences(HistoryEventType.UPDATE, person,
 
 Optionnally, you may pass to those methods one or several `IDifferenceHandler<T>`, which are ways for you to inspect a diff, and do something based on that information. This is typically used to update a date on the entity when some field changed.
 
-For more information about setting up a difference service, see [[DifferenceService]].
+For more information about setting up a difference service, see [DifferenceService](DifferenceService.html).
 
 ## Displaying the logs on the user interface
 

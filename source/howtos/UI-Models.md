@@ -10,7 +10,7 @@ TODO
 
 #### Collections
 
-For details about how to display collections, and some tips about how to choose the correct interface for accessing you collection data, see [[UI-Displaying Collections]].
+For details about how to display collections, and some tips about how to choose the correct interface for accessing you collection data, see [UI-Displaying Collections](UI-Displaying-Collections.html).
 
 ##### `IDataProvider`, `ISequenceProvider`
 

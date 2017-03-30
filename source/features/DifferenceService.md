@@ -8,7 +8,7 @@ The diff infrastructure is powered by [Java-object-diff](https://github.com/SQiS
 
  * basic setup of java-object-diff
  * abstract bases for your diff services, with clearly identified points of configuration
- * interfaces to integrate your diff services to other parts of your application (mainly [[HistoryLog & Audit]])
+ * interfaces to integrate your diff services to other parts of your application (mainly [HistoryLog & Audit](HistoryLog-&-Audit.html))
  * a way for you to perform a diff between an object in your Hibernate session and the version currently in your database
 
 ## Using it in your application
@@ -39,4 +39,4 @@ Difference<T> diff = generator.diffFromReference(workingObject);
 
 ### Using it in the history log machinery
 
-See [[HistoryLog & Audit]].
+See [HistoryLog & Audit](HistoryLog-&-Audit.html).

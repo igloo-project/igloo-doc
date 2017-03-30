@@ -300,7 +300,7 @@ Be aware that, while more annotations are available (`@AuthorizeAction` and `@Au
 
 ##### Advanced, fine-grained configuration
 
-Most of the time, you will use link descriptors (see [[UI-Links]]) in order to provide access to pages or resources.
+Most of the time, you will use link descriptors (see [UI-Links](UI-Links.html)) in order to provide access to pages or resources.
 
 Link descriptors allow to define arbitrary access restrictions (based on model objects, or on anything you want), and this includes in particular authorization restrictions.
 

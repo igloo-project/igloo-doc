@@ -13,7 +13,7 @@ The main differences between bookmarkable links and action links are that:
  * on the user side, the action link will render as a URL tied to the page from where the link originates, whereas bookmarkable links will renders as a URL tied to the target.
  * on the server side, bookmarkable link are a bit lighter to execute than event handlers implementing a redirection (since they require one request instead of two).
 
-For more information on action links, see [[UI User Actions]]
+For more information on action links, see [UI User Actions](UI-User-Actions.html)
 
 ## Link descriptor
 
@@ -126,7 +126,7 @@ add(
 ```
 
 #### Data table link declaration
-See [[UI-Displaying Collections]] for some context about `DataTableBuilder`.
+See [UI-Displaying Collections](UI-Displaying-Collections.html) for some context about `DataTableBuilder`.
 
 ```java
 IOneParameterLinkDescriptorMapper<IPageLinkGenerator, User> mapper = /* ... */;

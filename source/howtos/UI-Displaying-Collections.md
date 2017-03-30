@@ -10,11 +10,11 @@ There are several types of objects you may use to build an object that will make
 
 #### When getting data from an entity
 
-If you want to retrieve the data directly from an entity attribute (`myEntity.getMyCollection()`) you may use a `BindingModel`. See [[UI-Models]] for more information.
+If you want to retrieve the data directly from an entity attribute (`myEntity.getMyCollection()`) you may use a `BindingModel`. See [UI-Models](UI-Models.html) for more information.
 
 #### When getting data from a service or `IQuery`
 
-If you're not familiar with data querying in OWSI-Core, you probably should read [[Querying]] before going on.
+If you're not familiar with data querying in OWSI-Core, you probably should read [Querying](Querying.html) before going on.
 
 ##### Special case: `ISearchQuery`
 
@@ -27,8 +27,8 @@ If your query is an `ISearchQuery` (`AbstractHibernateSearchSearchQuery` or `Abs
 
 ##### Other cases (service method call or non-search `IQuery`)
 
- * If your query uses paging (with an offset and a limit), you'd better define a `IDataProvider`. A good place to start is `LoadableDetachableDataProvider`, which you should try extending. Also, see [[UI-Models]] for more information on `LoadableDetachableDataProvider` and its caveats.
- * If your query has no paging feature, you may simply define your own `IModel<WhateverCollectionType<T>>`. A good place to start is `LoadableDetachableModel`, which you should try extending.  Also, see [[UI-Models]] for more information on `LoadableDetachableModel` and its caveats.
+ * If your query uses paging (with an offset and a limit), you'd better define a `IDataProvider`. A good place to start is `LoadableDetachableDataProvider`, which you should try extending. Also, see [UI-Models](UI-Models.html) for more information on `LoadableDetachableDataProvider` and its caveats.
+ * If your query has no paging feature, you may simply define your own `IModel<WhateverCollectionType<T>>`. A good place to start is `LoadableDetachableModel`, which you should try extending.  Also, see [UI-Models](UI-Models.html) for more information on `LoadableDetachableModel` and its caveats.
 
 ## Renderers
 

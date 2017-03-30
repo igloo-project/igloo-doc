@@ -18,7 +18,7 @@ You may have trouble with your bindings. Know that:
 
  1. QueryDSL completely revamped its bindings; you'll need to delete them completely and regenerate them.
  2. QueryDSL bindings generation will now fail if your project does not compile. Worse, not having QueryDSL bindings will add an enormous amount of build errors, which will make it much harder to spot actual errors that you must fix. It might be easier to first override QueryDSL's version and the processor used for QueryDSL bindings generation in your project (while sticking with OWSI-Core 0.9), and only then attempt migrating to OWSI-Core 0.11. The new processor is `com.querydsl:querydsl-apt` version 4.0.7. See below for changes in the new version of QueryDSL (`com.querydsl:querydsl-jpa` v4.0.7)
- 3. [[This page|Code processors]] might help if you encounter errors when generating bindings.
+ 3. [This page](../howtos/Code-processors.html) might help if you encounter errors when generating bindings.
 
 A new feature was introduced in OWSI-Core 0.11 that allows the bindings to be completely wiped before generation, so that you won't need to manually delete them after a refactoring, for instance. In order to benefit from this feature, you must change your `eclipse/*.launch` files so that the invoked goals are simply `generate-sources`, but with the `eclipse-processor` profile enabled. On Linux, you may use the following command line from your project root:
 
@@ -110,7 +110,7 @@ The project has been moved to [wicketstuff](https://github.com/wicketstuff/wique
 
  * You no longer need to depend on `fr.openwide.core.components:000-owsi-core-component-wicket-override`. Plus, it will probably harm to do so. Just remove this dependency.
  * `StringResourceModel` now has a fluid API: you should use `setModel`, `setParameters` and `setDefaultValue`
- * You need to look for Ajax links whose markup is an `<a>` the click event is not blocked by Wicket anymore, which will result in a scroll to the top of the page each time the link is clicked. This is always true for Google Chrome, but only if there is a `href` attribute for Firefox. To avoid any kind of trouble, just follow the guidelines detailed [[here|UI-User-Actions#html-markup]].
+ * You need to look for Ajax links whose markup is an `<a>` the click event is not blocked by Wicket anymore, which will result in a scroll to the top of the page each time the link is clicked. This is always true for Google Chrome, but only if there is a `href` attribute for Firefox. To avoid any kind of trouble, just follow the guidelines detailed [here](../howtos/UI-User-Actions.html#html-markup).
  * There is now a high-level integration of JQPlot built in OWSI-Core. See [the docs](https://github.com/openwide-java/owsi-core-parent/wiki/UI-Charts-and-plots) or the [pull request](https://github.com/openwide-java/owsi-core-parent/pull/21) for more information.
 
 ### Spring & Spring Security
@@ -164,13 +164,13 @@ Internal changes
 
 ### External link checker
 
-The external link checker now has its own Maven module. See [[ExternalLinkChecker]] if you use it in your app.
+The external link checker now has its own Maven module. See [ExternalLinkChecker](../features/ExternalLinkChecker.html) if you use it in your app.
 
 Related to the new `PropertyService`: you also have to use `JpaExternalLinkCheckerConfig` (import) in your app.
 
 ### Properties
 
-Both immutable and mutable properties are now handled by `PropertyService`. See [[PropertyService]] to use it in your app.
+Both immutable and mutable properties are now handled by `PropertyService`. See [PropertyService](../features/PropertyService.html) to use it in your app.
 
  * `CoreConfigurer`: getter methods are deprecated and redirect to `propertyService`. Utility methods are also deprecated.
  * `AbstratParameterServiceImpl`: getter and setter methods are deprecated and redirect to `propertyService`. Utility methods are also deprecated.
@@ -190,7 +190,7 @@ Also, in `YourAppCorePropertyConfig`, make sure the `mutablePropertyDao` method 
 
 #### 2nd (better) option: migrating to PropertyService
 
-See [[PropertyService]]
+See [PropertyService](../features/PropertyService.html) 
 
 * Create a `YourAppCorePropertyIds` and a `YourAppApplicationPropertyConfig` in your `core` module.
 * Create a `YourAppWebappPropertyIds` and a `YourAppApplicationPropertyRegistryConfig` in your `webapp` module.
@@ -207,7 +207,7 @@ The audit classes have been removed.
 You should either:
 
  * Copy the old Audit base classes in your own project
- * Or (better) use the brand-new HistoryLog framework. See [[HistoryLog & Audit]]
+ * Or (better) use the brand-new HistoryLog framework. See [HistoryLog & Audit](../features/HistoryLog-&-Audit.html)
 
 ### PasswordEncoder
 

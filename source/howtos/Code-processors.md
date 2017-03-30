@@ -7,7 +7,7 @@ Projects based on OWSI-Core, and OWSI-Core itself, use automatically generated c
 At the moment, there are two metamodels in an application:
 
  * The bindgen metamodel, which allows us to manipulate objects representing bean properties, and use it to access said properties in java code.
- * The [[QueryDSL]] metamodel, which allows us to manipulate objects representing entity properties, and use it to build JPA queries.
+ * The QueryDSL metamodel, which allows us to manipulate objects representing entity properties, and use it to build JPA queries.
 
 ## Troubleshooting
 

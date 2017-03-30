@@ -154,7 +154,7 @@ public enum PersonSort implements ISort<SortField> {
 }
 ```
 
-Note that, on the UI side, an utility exists to easily manage a sort selection: `CompositeSortModel`. See [[UI-Models]] for more information.
+Note that, on the UI side, an utility exists to easily manage a sort selection: `CompositeSortModel`. See [UI-Models](UI-Models.html) for more information.
 
 ## How to implement queries
 
@@ -171,7 +171,7 @@ For convenience, most of those utility methods have no effect when given `null` 
 
 Some full implementations already exist in OWSI-Core (most notably for `fr.openwide.core.jpa.more.business.generic.query.ISimpleGenericListItemSearchQuery<T, S>`).
 
-The following assumes that Lucene field have already been defined on your entities. If not, see [[Hibernate Search & Lucene]].
+The following assumes that Lucene field have already been defined on your entities. If not, see [Hibernate Search & Lucene](Hibernate-Search-&-Lucene.html).
 
 ##### Simple match
 
