@@ -11,7 +11,7 @@ Contributing to the doc
 -----------------------
 
 Install the documentation
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To install the documentation on your computer, follow these steps :
 
@@ -31,7 +31,7 @@ When the clone is over, execute the installation script :
 When the script ends, the documentation installation is finished.
 
 Build the documentation locally
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A few commands to interact with the documentation locally :
 
@@ -55,7 +55,7 @@ allowing you to see your modifications as soon as you save them.
 The command 'docs-clean' cleans all the build directory and files.
 
 Build the documentation on ReadTheDocs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To modify the online documentation, you just have to push your modifications on
 the owsi-core-doc git repository. A webhook is set and will automatically rebuild
