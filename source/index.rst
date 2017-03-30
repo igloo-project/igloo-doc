@@ -54,3 +54,11 @@ OWSI-Core Documentation
 
   infrastructure/InfrastructureApache.md
   infrastructure/InfrastructureTomcat.md
+
+.. _development:
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Development
+
+   development/docs.rst
