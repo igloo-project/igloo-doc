@@ -62,3 +62,4 @@ OWSI-Core Documentation
    :caption: Development
 
    development/docs.rst
+   development/installation.rst

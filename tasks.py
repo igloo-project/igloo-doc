@@ -66,7 +66,6 @@ def _recommonmark(ctx, virtualenv_path=None, skip=None, version=None):
         else ctx.recommonmark.skip
     dependencies = ctx.dependencies
     if not skip:
-        ctx.virtualenv_path = os.path.dirname(__file__) + '/' + ctx.virtualenv_path
         virtualenv_path = virtualenv_path or ctx.virtualenv_path
         package = ctx.recommonmark.package_name
         version = version or ctx.recommonmark.version
@@ -86,7 +85,6 @@ def _sphinx_rtd_theme(ctx, virtualenv_path=None, skip=None, version=None):
         else ctx.sphinx_rtd_theme.skip
     dependencies = ctx.dependencies
     if not skip:
-        ctx.virtualenv_path = os.path.dirname(__file__) + '/' + ctx.virtualenv_path
         virtualenv_path = virtualenv_path or ctx.virtualenv_path
         package = ctx.sphinx_rtd_theme.package_name
         version = version or ctx.sphinx_rtd_theme.version
