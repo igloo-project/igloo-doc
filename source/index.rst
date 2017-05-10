@@ -63,3 +63,4 @@ OWSI-Core Documentation
 
    development/docs.rst
    development/installation.rst
+   development/database-scripts.rst
