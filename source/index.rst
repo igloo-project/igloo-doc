@@ -15,7 +15,7 @@ OWSI-Core Documentation
 
    release-notes/Migrating-to-0.11.md
    release-notes/Migrating-to-0.12.md
-
+   release-notes/Migrating-to-0.13.rst
 
 .. _howtos:
 
