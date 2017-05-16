@@ -64,3 +64,5 @@ OWSI-Core Documentation
    development/docs.rst
    development/installation.rst
    development/database-scripts.rst
+   development/install-oomph.rst
+   development/oomph.rst
