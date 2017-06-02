@@ -41,9 +41,15 @@ The EmbeddableTypeImpl library is now `org.hibernate.metamodel.internal.Embeddab
 The upgrade of hibernate-core forced us to explicitly specify the **default_schema** for the database.
 Every tables are created in this schema and it is no longer based on the search_path from PostgreSQL
 configuration.
+
 By default, default_schema = db_user. If you need to change it, you have to add the variable
 `hibernate.defaultSchema` in `owsi-core-component-jpa.properties` and its value will override
 the default value.
+
+Class `PostgresqlSequenceStyleGenerator` is renamed `PerTableSequenceStyleGenerator`
+as it is not postgresql-related; class content is unchanged. If you use it,
+just retarget the new class.
+
 
 ### Hibernate Search & Lucene
 
@@ -55,7 +61,24 @@ The utilization of `setBoost(float)` and `getBoost()` directly to a Query is now
 deprecated. Instead we use the type `BoostQuery` to apply boost.
 
 Configuration
-------------------
+-------------
 
  * The `ExplicitJpaConfigurationProvider` class no longer exists, all the configuration is now exclusively provided
  by the `DefaultJpaConfigurationProvider` class.
+
+
+Behavior checking
+-----------------
+
+Some structural changes are done so that old applications are not broken. Make
+sure that expected behavior is still here:
+
+ * **Hibernate:** database's sequence is now handled with the *new-style*
+   hibernate configuration. Verify that the sequence are style named
+   *table_pk_seq*. Give a special attention to your specialized configurations:
+   * ensure that *hibernate.id.new_generator_mappings=true* (if you do not
+     override this setting, it is fine)
+   * custom *@GeneratedValue.strategy()*
+   * custom *@GeneratedValue.generator()*
+   * custom *@SequenceGenerator*
+   * custom *@GenericGenerator*
