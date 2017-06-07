@@ -51,24 +51,24 @@ as it is not postgresql-related; class content is unchanged. If you use it,
 just retarget the new class.
 
 
-### Hibernate Search & Lucene
+### Hibernate Search
+
+#### Hibernate Search & Lucene
 
 We have upgraded Hibernate Search to the 5.7.0.Final which is not yet compatible
-with Lucene 6 but require at least Lucene 5.5.X so we upgraded Lucene to the
+with Lucene 6 but requires at least Lucene 5.5.X so we have upgraded Lucene to the
 5.5.4 version.
 
 The utilization of `setBoost(float)` and `getBoost()` directly to a Query is now
 deprecated. Instead we use the type `BoostQuery` to apply boost.
 
-Configuration
--------------
+##### Configuration
 
  * The `ExplicitJpaConfigurationProvider` class no longer exists, all the configuration is now exclusively provided
  by the `DefaultJpaConfigurationProvider` class.
 
 
-Behavior checking
------------------
+##### Behavior checking
 
 Some structural changes are done so that old applications are not broken. Make
 sure that expected behavior is still here:
@@ -82,3 +82,46 @@ sure that expected behavior is still here:
    * custom *@GeneratedValue.generator()*
    * custom *@SequenceGenerator*
    * custom *@GenericGenerator*
+
+
+#### Hibernate Search & ElasticSearch
+
+You can now choose between Lucene and ElasticSearch for your Hibernate Search requests.
+In order to do use ElasticSearch, you have first to install ElasticSearch 2.4.
+
+Secondly, you have to specify 3 things in the file **app-core/configuration.properties** :
+````
+##
+## Hibernate search Elasticsearch
+##
+hibernate.search.elasticsearch.enabled=true
+hibernate.search.default.elasticsearch.host=http://127.0.0.1:9310
+hibernate.search.default.elasticsearch.index_schema_management_strategy=CREATE
+````
+You have to set the first line value to `true` to enable ElasticSearch.
+The second line is the address of your installed ElasticSearch, and finally the
+third line is schema management strategy.
+
+
+#### Lucene and ElasticSearch analyzers
+
+Now that the analyzers are changing when you switch between Lucene and ElasticSearch,
+they are no longer in the annotation form in the class `Parameter.java`. You can
+find them respectively in `CoreLuceneAnalyzersDefinitionProvider.java` and `CoreElasticSearchAnalyzersDefinitionProvider.java`.
+
+Due the exportation of analyzers definitions in external separate classes, you
+can add your own analyzers definitions by extending one of these two classes and
+override the function `register`.
+After that, you have to add a property in the file `hibernate-extra.properties`
+(create this file if it doesn't exists). If you want to use your own ElasticSearch
+analyzers add this line :
+```
+hibernate.search.elasticsearch.analyzer_definition_provider=package.to.yourclass.ClassName
+```
+If you want to use your own Lucene analyzers add this line :
+```
+hibernate.search.lucene.analyzer_definition_provider=package.to.yourclass.ClassName
+```
+
+Note that when you choose to use ElasticSearch, Lucene's analyzers definitions are
+still instanciated but only used internally.
