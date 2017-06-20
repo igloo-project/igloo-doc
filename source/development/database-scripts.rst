@@ -24,10 +24,9 @@ You have to provide two arguments :
 BasicApplicationSqlUpdateScriptMain not available
 -------------------------------------------------
 
-If you project does not supply ``*SqlUpdateScriptMain``, you can copy and rename the following files in you project:
+If you project does not supply ``*SqlUpdateScriptMain``, you can copy and rename the file *BasicApplicationSqlUpdateScriptMain.java* in you project.
+Inside this file, you just have to replace **BasicApplication** by the name of your project in the line :
 
-* BasicApplicationSqlUpdateScriptMain.java
-* MetadataRegistryIntegrator.java
-* META-INF/services/org.hibernate.integrator.spi.Integrator (in src/main/resources)
+.. code-block:: java
 
-Then, you just have to fix compilation issues due to ``*Config.java`` naming inconsistencies and retarget correct class in META-INF/services/org.hibernate.integrator.spi.Integrator file.
+  context = new AnnotationConfigApplicationContext(BasicApplicationInitConfig.class);
