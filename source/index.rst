@@ -64,6 +64,7 @@ OWSI-Core Documentation
 
    development/docs.rst
    development/installation.rst
+   development/use-maven-archetype.md
    development/database-scripts.rst
    development/install-oomph.rst
    development/oomph.rst
