@@ -1,8 +1,14 @@
 Build, deploy and exploit the Maven archetype
 =============================================
 
+To initialize a new project based on the basic-application, you have to follow several steps.
+Each steps are detailed one by one in the following sections.
+
+
 Build the archetype
 -------------------
+
+Place yourself in the folder owsi-core-parent/basic-application.
 
 - to install the archetype locally:
 ```sh
@@ -16,6 +22,9 @@ Build the archetype
 
 Generate a new project
 ----------------------
+
+Place yourself in a new folder or somewhere like /tmp/. This command will
+generate a new folder where you are containing your new project.
 
 using your local repository:
 ```sh
@@ -35,15 +44,18 @@ mvn archetype:generate -DarchetypeCatalog=https://openwide:openwide@projects.ope
 Push the new project
 --------------------
 
+Go in the newly generate folder containing your project.
+
+using gitlab
 ```sh
-cd /tmp/
-<run the command above to generate the project>
-cd your-project
 /bin/bash init-gitlab.sh <unix name of the Wombat project>
-OR
+git push --set-upstream origin master
+```
+
+using svn
+```sh
 /bin/bash init-svn.sh <unix name of the Wombat project>
 ```
 
-Then get the project from Eclipse by using "checkout Maven project".
-
-/!\ Don't use the project which is in the temp directory!
+/!\ After having push your project, delete the project folder and initialize a
+new one directly from gitlab before starting your work.
