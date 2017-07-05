@@ -125,3 +125,26 @@ hibernate.search.lucene.analyzer_definition_provider=package.to.yourclass.ClassN
 
 Note that when you choose to use ElasticSearch, Lucene's analyzers definitions are
 still instanciated but only used internally.
+
+
+#### Date SortField and ElasticSearch
+
+[related commit](https://github.com/openwide-java/owsi-core-parent/commit/01cc888cb8f314554263d13bc76821c9f57a907d)
+
+In ElasticSearch, Date SortField is of type STRING, but with Lucene, it is of
+type LONG. If you perform sort with ``FullTextQuery.setSort(Sort sort)`` with a
+Date field configured for one of the backends, it'll throw an exception with the
+other backend.
+
+ * **Solution 1:** Use only one backend, and initialize correctly and statically
+   needed SortFields
+ * **Solution 2:** Use QueryBuilder to build your Sort object. QueryBuilder use
+   field metadata to determine the right type to use.
+   * ``fr.openwide.core.jpa.search.util.SortFieldUtil`` provides examples on the
+     ways to obtain a Sort object or to perform a setSort(...) that use
+     QueryBuilder and circumvent this issue.
+   * replacing FullTextQuery.setSort(Sort sort) by SortFieldUtil.setSort(...)
+     can be done quickly
+   * beware that this workaround use field metadata to determine the right
+     type; not deterministic and silent errors may become fatal errors with
+     this workaround.
