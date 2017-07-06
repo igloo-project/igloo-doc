@@ -148,3 +148,10 @@ other backend.
    * beware that this workaround use field metadata to determine the right
      type; not deterministic and silent errors may become fatal errors with
      this workaround.
+
+
+### Wicket
+
+#### ConsoleConfiguration.build()
+
+``ConsoleConfiguration.build()`` parameters are modified; you now need to provide a ``IPropertyService``. This method call is generally done in you ``<MyApplication>Application.java``. Just add IPropertyService as a ``@SpringBean`` field, and add it to the method call.
