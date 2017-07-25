@@ -11,5 +11,13 @@ To do so, you need to create a user first, and then create a database with the u
 
   createuser -U postgres -P basic_application
   createdb -U postgres -O basic_application basic_application
+  psql -U postgres hello_world
+  #Here you are connected to the database as the user postgres
+  DROP SCHEMA public;
+  \q
+  psql -U hello_world hello_world
+  #Here you are connected to the database as the user hello_world
+  CREATE SCHEMA hello_world;
 
-After that, you can populate your database with some date by running the class *BasicApplicationInitFromExcelMain.java* as a java application. This class is located in basic-application-init.
+After that, you can populate your database with some date by running the class
+*BasicApplicationInitFromExcelMain.java* as a java application. This class is located in basic-application-init.

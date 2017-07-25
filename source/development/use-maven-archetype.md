@@ -44,17 +44,11 @@ mvn archetype:generate -DarchetypeCatalog=https://openwide:openwide@projects.ope
 Push the new project
 --------------------
 
-Go in the newly generate folder containing your project.
+Go in the newly generate folder containing your project and push it on gitlab :
 
-using gitlab
 ```sh
 /bin/bash init-gitlab.sh <unix name of the Wombat project>
 git push --set-upstream origin master
-```
-
-using svn
-```sh
-/bin/bash init-svn.sh <unix name of the Wombat project>
 ```
 
 /!\ After having push your project, delete the project folder and initialize a

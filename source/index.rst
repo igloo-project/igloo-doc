@@ -68,3 +68,4 @@ OWSI-Core Documentation
    development/database-scripts.rst
    development/install-oomph.rst
    development/oomph.rst
+   development/create-initialize-project-workflow.rst
