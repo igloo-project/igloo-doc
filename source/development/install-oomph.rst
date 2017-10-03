@@ -12,7 +12,7 @@ Select File->Import->Oomph->Projects into workspace.
 Click on the "+" button :
 
 * Choose the catalog Eclipse Projects
-* Browse file : choose the file git/owsi-oomph-project/owsi/fr.openwide.core.eclipse.project.setup
+* Browse file : choose the file git/owsi-oomph-project/fr.openwide.core.eclipse.project.setup (choose the other file if your project is not in the github group openwide-java or in the openwide gitlab)
 * Check the box corresponding to the file you just add, and click next
 
 In the window with required variables :
@@ -26,6 +26,7 @@ In the window with required variables :
 * Nom de la webapp : the name of the webapp which will be generated
 * Choix du dépôt : if your application is host in github choose Dépot Github,
   otherwise if your application is host on gitlab choose Dépôt Gitlab. The default value is the gitlab repository.
+* If you use the other file you will have an other variable to fill named "Nom du groupe/compte. Enter here the name of the github group or account which host the repository."
 
 Click next, then finish. The installation may take a few minutes, and Eclipse might
 have to restart. In this case, the installation will go back to where it stopped
