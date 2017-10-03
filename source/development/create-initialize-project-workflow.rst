@@ -78,7 +78,7 @@ Create a fresh clone and a properly configured workspace with Oomph
 
 You can find a more detailed documentation of this part in the dedicated `Oomph page`_.
 
-.. _Oomph page: install_oomph.html
+.. _Oomph page: install-oomph.html
 
 Open an Eclipse Neon and select a new and clean workspace. After that, we follow the
 `Oomph page`_ documentation until we come to the window with multiple variables
