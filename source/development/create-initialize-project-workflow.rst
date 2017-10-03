@@ -12,7 +12,7 @@ First of all, clone the owsi-core-parent project :
 
 .. code-block:: bash
 
-  git clone git@github.com:openwide-java/owsi-oomph-project.git
+  git clone git@github.com:openwide-java/owsi-core-parent.git
 
 
 Generate the new project and push it on gitlab
