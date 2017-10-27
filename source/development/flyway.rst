@@ -16,12 +16,27 @@ First of all, you need to activate Flyway's Spring profile. To do so, just modif
 With this simple modification, you have enabled the creation of the Flyway bean
 in the application and you can now start to use it.
 
+.. note::
+  If you want to disable flyway from your application, just remove the word *flyway* from
+  the line *maven.spring.profiles.active* in the file **development.properties**.
+
 Create a Flyway data upgrade
 ----------------------------
 
-The first thing to do is to create the data upgrades which will be applied by Flyway.
-You can write it either in SQL or Java. If you want to be able to relaunch manually the upgrade
-in case it fails, you have to use the Java formatted upgrades.
+The first thing to do is to is to add flyway's variables in the file **development.properties** :
+
+.. code-block:: bash
+
+  maven.flyway.locations=fr.openwide.core.basicapp.core.config.migration.common,db/migration/
+  maven.flyway.table=flyway_schema_version
+
+You can write your data upgrades either in SQL or Java.
+Here we have chosen to put our upgrades .sql in the folder *src/main/resources/db/migration/* and
+our upgrades .java in the package *fr.openwide.core.basicapp.core.config.migration.common*.
+If you want to specify multiple locations, you have to separate them with a single comma.
+
+Now you can create the data upgrades which will be applied by Flyway.
+If you want to be able to relaunch manually the upgrade in case it fails, you have to use the Java formatted upgrades.
 
 .. note::
   Flyway works with a database versioning system. The versions are based
@@ -32,8 +47,8 @@ in case it fails, you have to use the Java formatted upgrades.
 Create an SQL formatted data upgrade
 ````````````````````````````````````
 
-If you want to write a data upgrade in SQL, just write your script and place your SQL file in the
-package **fr.openwide.core.yourapplication.core.config.migration**.
+If you want to write a data upgrade in SQL, just write your script and place your SQL file
+in the folder or package you have specified earlier.
 
 
 Create a Java formatted data upgrade
