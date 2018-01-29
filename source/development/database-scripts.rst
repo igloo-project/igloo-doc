@@ -14,7 +14,7 @@ To launch this script, make sure you are in the basic-application/basic-applicat
 
 .. code-block:: bash
 
-  mvn exec:java -Dexec.mainClass="fr.openwide.core.basicapp.init.BasicApplicationSqlUpdateScriptMain" -Dexec.args="arg0 arg1"
+  mvn exec:java -Dexec.mainClass="org.iglooproject.basicapp.init.BasicApplicationSqlUpdateScriptMain" -Dexec.args="arg0 arg1"
 
 You have to provide two arguments :
   - arg0 is the mode of the script, you have the choice between **create** for generating your database's creation script, and **update** for generating the update of your database.

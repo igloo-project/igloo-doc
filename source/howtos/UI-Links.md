@@ -1,6 +1,6 @@
 # UI Links
 
-This page explains various ways of creating bookmarkable links to pages or resources using Wicket and OWSI-Core.
+This page explains various ways of creating bookmarkable links to pages or resources using Wicket and Igloo.
 
 ## What is a bookmarkable link?
 
@@ -17,7 +17,7 @@ For more information on action links, see [UI User Actions](UI-User-Actions.html
 
 ## Link descriptor
 
-Link descriptors are an addition from OWSI-Core. They offer several advantages over traditional Wicket linking:
+Link descriptors are an addition from Igloo. They offer several advantages over traditional Wicket linking:
 
  * They enforce type-safety: users provide business object models only, and they do not need to perform manual conversion to strings each and every time they create a link.
  * They enforce consistency: link generation *and* parameter extraction is done by the same object, which only has to be defined once.
@@ -300,7 +300,7 @@ public class CustomerDescriptionPage extends MainTemplate {
 
 #### Other examples
 
-See OWSI-Core's tests, in particular the test methods in `fr.openwide.core.test.wicket.more.link.descriptor.AbstractAnyTargetTestLinkDescriptor` and `fr.openwide.core.test.wicket.more.link.descriptor.AbstractAnyTargetTestLinkDescriptorMapper`.
+See Igloo's tests, in particular the test methods in `org.iglooproject.test.wicket.more.link.descriptor.AbstractAnyTargetTestLinkDescriptor` and `org.iglooproject.test.wicket.more.link.descriptor.AbstractAnyTargetTestLinkDescriptorMapper`.
 
 ## Other links
 

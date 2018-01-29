@@ -1,6 +1,6 @@
 # Querying
 
-This page explains how to query data using OWSI-Core.
+This page explains how to query data using Igloo.
 
 ## How to expose queries to the web application
 
@@ -66,7 +66,7 @@ Also, know that in the case of complex queries (reporting for instance), a `ISea
 
 Whatever the solution you choose among the two above, you may have to provide clients a way to tune the sorting of retrieved data.
 
-In OWSI-Core, this is generally done by adding a parameter to your query that is a `Map<S, SortOrder>` with `S extends ISort<F>` and with `F` being implementation-dependent. `ISort` will allow the implementor to convert the business-level sort definitions into an internal list of fields on which to sort.
+In Igloo, this is generally done by adding a parameter to your query that is a `Map<S, SortOrder>` with `S extends ISort<F>` and with `F` being implementation-dependent. `ISort` will allow the implementor to convert the business-level sort definitions into an internal list of fields on which to sort.
 
 `ISort`s are simple business wrappers. Each `ISort` instance by provides a list of sort "fields" (whose type is implementation-dependent).
 
@@ -169,7 +169,7 @@ You may always use your own implementation. But in most cases, extending one of 
 `AbstractHibernateSearchSearchQuery` provides sensible protected methods that allow you to stack criteria on each call of a criterion method.
 For convenience, most of those utility methods have no effect when given `null` parameters. This allow clients to skip null-checks entirely and to call your criteria methods regardless of whether or not the users provided a value for each parameter.
 
-Some full implementations already exist in OWSI-Core (most notably for `fr.openwide.core.jpa.more.business.generic.query.ISimpleGenericListItemSearchQuery<T, S>`).
+Some full implementations already exist in Igloo (most notably for `org.iglooproject.jpa.more.business.generic.query.ISimpleGenericListItemSearchQuery<T, S>`).
 
 The following assumes that Lucene field have already been defined on your entities. If not, see [Hibernate Search & Lucene](Hibernate-Search-&-Lucene.html).
 
@@ -294,10 +294,10 @@ Otherwise:
 
 ##### Other criteria
 
-Many more utility methods are provided in `fr.openwide.core.jpa.more.business.search.query.AbstractHibernateSearchSearchQuery<T, S>`. If what you're looking for wasn't above, check out the code.
+Many more utility methods are provided in `org.iglooproject.jpa.more.business.search.query.AbstractHibernateSearchSearchQuery<T, S>`. If what you're looking for wasn't above, check out the code.
 
 ##### Overriding utility methods or extending them
-If you feel the need to extend this class with additional utility methods, or to override existing utility methods, know that you may do this simply by overriding `fr.openwide.core.jpa.more.config.spring.AbstractJpaMoreJpaConfig.hibernateSearchLuceneQueryFactory()` to return your own query factory.
+If you feel the need to extend this class with additional utility methods, or to override existing utility methods, know that you may do this simply by overriding `org.iglooproject.jpa.more.config.spring.AbstractJpaMoreJpaConfig.hibernateSearchLuceneQueryFactory()` to return your own query factory.
 
 ```java
 	@Override

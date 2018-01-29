@@ -2,7 +2,7 @@
 
 ## About
 
-OWSI-Core comes with an optional feature that allows you to import data from table structured documents. Today, it means that you can import data from documents under either CSV or Excel format.
+Igloo comes with an optional feature that allows you to import data from table structured documents. Today, it means that you can import data from documents under either CSV or Excel format.
 
 A classical case which can be treated with this feature is the following:
 
@@ -19,15 +19,15 @@ To be able to use the classes we will mention later in this documentation, you n
 
 ```XML
 <dependency>
-	<groupId>fr.openwide.core.components</groupId>
-	<artifactId>owsi-core-component-imports</artifactId>
-	<version>${owsi-core.version}</version>
+	<groupId>org.iglooproject.components</groupId>
+	<artifactId>igloo-component-imports</artifactId>
+	<version>${igloo.version}</version>
 </dependency>
 ```
 
 ## Interfaces and implementation
 
-The `fr.openwide.core.imports.table.common` module is currently divided in 3 parts:
+The `org.iglooproject.imports.table.common` module is currently divided in 3 parts:
 - `common`: all interfaces and abstract class common to all implementation ;
 - `apache.poi`: implementation to read Excel format using the [Apache POI API](https://poi.apache.org/) ;
 - `opencsv`: implementation to read CSV format using [Opencsv](http://opencsv.sourceforge.net/).

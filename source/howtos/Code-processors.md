@@ -2,7 +2,7 @@
 
 ## About
 
-Projects based on OWSI-Core, and OWSI-Core itself, use automatically generated code to manipulate data metamodels.
+Projects based on Igloo, and Igloo itself, use automatically generated code to manipulate data metamodels.
 
 At the moment, there are two metamodels in an application:
 
@@ -15,11 +15,11 @@ At the moment, there are two metamodels in an application:
 
 In some cases, bindgen will generate code that won't compile. You may ignore code generation for selected attributes by adding `skipAttribute.your.package.YourClass.yourAttribute` to `bindgen.properties`.
 
-There are known issues with bindgen code generation of some classes in OWSI-Core. You may use the following lines to work around these issues. If those are not up-to-date, check out the [basic application's bindgen.properties](https://github.com/openwide-java/owsi-core-parent/blob/master/basic-application/basic-application-core/bindgen.properties)
+There are known issues with bindgen code generation of some classes in Igloo. You may use the following lines to work around these issues. If those are not up-to-date, check out the [basic application's bindgen.properties](https://github.com/igloo-project/igloo-parent/blob/master/basic-application/basic-application-core/bindgen.properties)
 
 ```
-skipAttribute.fr.openwide.core.jpa.business.generic.model.GenericEntityReference.entityClass=true
-skipAttribute.fr.openwide.core.commons.util.fieldpath.FieldPath.root=true
+skipAttribute.org.iglooproject.jpa.business.generic.model.GenericEntityReference.entityClass=true
+skipAttribute.org.iglooproject.commons.util.fieldpath.FieldPath.root=true
 ```
 
 ### "Cannot find symbol"

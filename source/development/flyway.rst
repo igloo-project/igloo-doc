@@ -1,7 +1,7 @@
 Use data upgrades with Flyway
 =============================
 
-OWSI-Core and the basic application are programmed to be able to use Flyway for
+Igloo and the basic application are programmed to be able to use Flyway for
 handling your data upgrades, here's how you can do it.
 
 Activate Flyway's Spring profile
@@ -27,12 +27,12 @@ The first thing to do is to is to add flyway's variables in the file **developme
 
 .. code-block:: bash
 
-  maven.flyway.locations=fr.openwide.core.basicapp.core.config.migration.common,db/migration/
+  maven.flyway.locations=org.iglooproject.basicapp.core.config.migration.common,db/migration/
   maven.flyway.table=flyway_schema_version
 
 You can write your data upgrades either in SQL or Java.
 Here we have chosen to put our upgrades .sql in the folder *src/main/resources/db/migration/* and
-our upgrades .java in the package *fr.openwide.core.basicapp.core.config.migration.common*.
+our upgrades .java in the package *org.iglooproject.basicapp.core.config.migration.common*.
 If you want to specify multiple locations, you have to separate them with a single comma.
 
 Now you can create the data upgrades which will be applied by Flyway.
@@ -56,7 +56,7 @@ Create a Java formatted data upgrade
 
 If you want to write a date upgrade in Java, you have to follow a particular workflow.
 In fact, it is not the Flyway upgrade which will contain the operations on your data/database,
-you will have to create an OWSI-Core data upgrade after the Flyway one.
+you will have to create an Igloo data upgrade after the Flyway one.
 
 Your Flyway data upgrade will only declare that the data upgrade exists and that the application needs to launch it.
 To do so, copy the existing Flyway data upgrade *V1_2__ImportExcel.java*, give it the name you want
@@ -66,13 +66,13 @@ and change in the class the value of the **DATA_UPGRADE_NAME** variable :
 
   private String DATA_UPGRADE_NAME = "ImportExcel";
 
-Create an OWSI-Core data upgrade
+Create an Igloo data upgrade
 --------------------------------
 
-If you have wrote Java formatted data upgrades, you need to create an OWSI-Core
+If you have wrote Java formatted data upgrades, you need to create an Igloo
 data upgrade for each one of these which is named after the **DATA_UPGRADE_NAME**
 value you specified earlier. For example, if the value entered in the Flyway Java data upgrade is *ImportTable*,
-you have to name your OWSI-Core data upgrade *ImportTable.java*.
+you have to name your Igloo data upgrade *ImportTable.java*.
 
-An OWSI-Core data upgrade is a java class which implements *IDataUpgrade* and override its methods.
+An Igloo data upgrade is a java class which implements *IDataUpgrade* and override its methods.
 Write all your operations in the function **perform()**.

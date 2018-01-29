@@ -17,7 +17,7 @@ Logs are performed upon commit (just before the commit), in order to:
 
 ### Setting up
 
-The basic application provide a basic (but functional) template for setting up the HistoryLog. See package `fr.openwide.core.basicapp.core.business.history` for more information.
+The basic application provide a basic (but functional) template for setting up the HistoryLog. See package `org.iglooproject.basicapp.core.business.history` for more information.
 
 The minimal set of classes to define includes:
  * The concrete enum representing `HistoryEvents` (create, update, sign-in, ...)

@@ -8,7 +8,7 @@ Each steps are detailed one by one in the following sections.
 Build the archetype
 -------------------
 
-Place yourself in the folder owsi-core-parent/basic-application.
+Place yourself in the folder igloo-parent/basic-application.
 
 - to install the archetype locally:
 ```sh
@@ -33,12 +33,12 @@ mvn archetype:generate -DarchetypeVersion=X.X -DarchetypeCatalog=local -Dartifac
 
 using the snapshot repository:
 ```sh
-mvn archetype:generate -DarchetypeCatalog=https://openwide:openwide@projects.openwide.fr/services/nexus/content/repositories/owsi-core-snapshots/ -DartifactId=your-artifact-id -DgroupId=your.group.id -Dversion=0.1-SNAPSHOT -Dpackage=com.your.package -DarchetypeApplicationNamePrefix="YourApplication" -DarchetypeSpringAnnotationValuePrefix="yourApplication" -DarchetypeFullApplicationName="Customer - Your application" -DarchetypeDatabasePrefix=c_database_prefix -DarchetypeDataDirectory=your-data-directory
+mvn archetype:generate -DarchetypeCatalog=https://nexus.tools.kobalt-si.fr/repository/igloo-snapshots/ -DartifactId=your-artifact-id -DgroupId=your.group.id -Dversion=0.1-SNAPSHOT -Dpackage=com.your.package -DarchetypeApplicationNamePrefix="YourApplication" -DarchetypeSpringAnnotationValuePrefix="yourApplication" -DarchetypeFullApplicationName="Customer - Your application" -DarchetypeDatabasePrefix=c_database_prefix -DarchetypeDataDirectory=your-data-directory
 ```
 
 using the release repository:
 ```sh
-mvn archetype:generate -DarchetypeCatalog=https://openwide:openwide@projects.openwide.fr/services/nexus/content/repositories/owsi-core/ -DartifactId=your-artifact-id -DgroupId=your.group.id -Dversion=0.1-SNAPSHOT -Dpackage=com.your.package -DarchetypeApplicationNamePrefix="YourApplication" -DarchetypeSpringAnnotationValuePrefix="yourApplication" -DarchetypeFullApplicationName="Customer - Your application" -DarchetypeDatabasePrefix=c_database_prefix -DarchetypeDataDirectory=your-data-directory
+mvn archetype:generate -DarchetypeCatalog=https://nexus.tools.kobalt-si.fr/repository/igloo-releases/ -DartifactId=your-artifact-id -DgroupId=your.group.id -Dversion=0.1-SNAPSHOT -Dpackage=com.your.package -DarchetypeApplicationNamePrefix="YourApplication" -DarchetypeSpringAnnotationValuePrefix="yourApplication" -DarchetypeFullApplicationName="Customer - Your application" -DarchetypeDatabasePrefix=c_database_prefix -DarchetypeDataDirectory=your-data-directory
 ```
 
 Push the new project

@@ -4,7 +4,7 @@ Documentation
 Miscelleaneous
 --------------
 
-The documentation is located at http://owsi-core-doc.readthedocs.io/en/latest/index.html
+The documentation is located at http://igloo-doc.readthedocs.io/en/latest/index.html
 
 
 Contributing to the doc
@@ -15,17 +15,17 @@ Install the documentation
 
 To install the documentation on your computer, follow these steps :
 
-First clone the git repository owsi-core-doc
+First clone the git repository igloo-doc
 
 .. code-block:: bash
 
-  git@github.com:openwide-java/owsi-core-doc.git
+  git@github.com:igloo-project/igloo-doc.git
 
 When the clone is over, execute the installation script :
 
 .. code-block:: bash
 
-  cd ~/git/owsi-core-doc
+  cd ~/git/igloo-doc
   ./bootstrap.sh
 
 When the script ends, the documentation installation is finished.
@@ -58,5 +58,5 @@ Build the documentation on ReadTheDocs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To modify the online documentation, you just have to push your modifications on
-the owsi-core-doc git repository. A webhook is set and will automatically rebuild
+the igloo-doc git repository. A webhook is set and will automatically rebuild
 the documentation everytime you push something.

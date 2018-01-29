@@ -2,7 +2,7 @@
 
 ## JDK level validation
 
-JDK level validation using [Animal sniffer](http://www.mojohaus.org/animal-sniffer/animal-sniffer-maven-plugin/) is enabled by default from OWSI-Core 0.12 on.
+JDK level validation using [Animal sniffer](http://www.mojohaus.org/animal-sniffer/animal-sniffer-maven-plugin/) is enabled by default from Igloo 0.12 on.
 
 If the default JDK version (1.7 at the time of this writing) does not suit you, you should:
 

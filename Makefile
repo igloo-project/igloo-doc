@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = owsi-core-parent-wiki
+SPHINXPROJ    = igloo-doc
 SOURCEDIR     = source
 BUILDDIR      = build
 

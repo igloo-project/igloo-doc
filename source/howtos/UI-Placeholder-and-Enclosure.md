@@ -6,7 +6,7 @@ level) based on various input variables.
 
 ## Conditions and component's visibility
 
-OWSI-Core provides `Condition` base class which provides easy-to-use
+Igloo provides `Condition` base class which provides easy-to-use
 transformation of a Condition (that resolves to true or false result on
 an *applies* method's call) as an enclosure or placeholder behavior.
 

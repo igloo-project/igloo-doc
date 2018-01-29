@@ -2,7 +2,7 @@
 
 ## About
 
-OWSI-Core has a service called the external link checker. It's used to check that external links stays valid.
+Igloo has a service called the external link checker. It's used to check that external links stays valid.
 
 It's currently used in production to validate several 100k links.
 
@@ -24,11 +24,11 @@ The status of the link is available in the `ExternalLinkWrapper`. A link is cons
 
 ### Maven
 
-Starting with OWSI-Core 0.11, ExternalLinkChecker has its own Maven module:
+Starting with Igloo 0.11, ExternalLinkChecker has its own Maven module:
 ```xml
 <dependency>
-    <groupId>fr.openwide.core.components</groupId>
-    <artifactId>owsi-core-component-jpa-externallinkchecker</artifactId>
+    <groupId>org.iglooproject.components</groupId>
+    <artifactId>igloo-component-jpa-externallinkchecker</artifactId>
     <version>${project.version}</version>
 </dependency>
 ```

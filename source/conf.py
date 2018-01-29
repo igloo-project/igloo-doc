@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# OWSI-Core doc documentation build configuration file, created by
+# Igloo-project doc documentation build configuration file, created by
 # sphinx-quickstart on Wed Mar 29 14:17:59 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -55,7 +55,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'OWSI-Core doc'
+project = u'Igloo-project doc'
 copyright = u'2017, Laurent Almeras'
 author = u'Laurent Almeras'
 
@@ -212,7 +212,7 @@ html_static_path = ['source/_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'OWSI-coredocdoc'
+htmlhelp_basename = 'igloo-doc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -234,7 +234,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'OWSI-coredoc.tex', u'OWSI-Core doc Documentation',
+    (master_doc, 'igloo-doc.tex', u'Igloo Project Documentation',
      u'Laurent Almeras', 'manual'),
 ]
 
@@ -264,7 +264,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'owsi-coredoc', u'OWSI-Core doc Documentation',
+    (master_doc, 'igloo-doc', u'Igloo Project Documentation',
      [author], 1)
 ]
 
@@ -278,8 +278,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'OWSI-coredoc', u'OWSI-Core doc Documentation',
-     author, 'OWSI-coredoc', 'One line description of project.',
+    (master_doc, 'igloo-doc', u'Igloo Project Documentation',
+     author, 'igloo-doc', 'One line description of project.',
      'Miscellaneous'),
 ]
 

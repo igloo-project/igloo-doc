@@ -1,6 +1,6 @@
 # UI Displaying Collections
 
-This page explains how to display collections using OWSI-Core. Several methods are provided, ordered from easiest to the hardest: use the first that fits, so as to avoid unnecessary complexity.
+This page explains how to display collections using Igloo. Several methods are provided, ordered from easiest to the hardest: use the first that fits, so as to avoid unnecessary complexity.
 
 ## Data sources
 
@@ -14,7 +14,7 @@ If you want to retrieve the data directly from an entity attribute (`myEntity.ge
 
 #### When getting data from a service or `IQuery`
 
-If you're not familiar with data querying in OWSI-Core, you probably should read [Querying](Querying.html) before going on.
+If you're not familiar with data querying in Igloo, you probably should read [Querying](Querying.html) before going on.
 
 ##### Special case: `ISearchQuery`
 
@@ -170,7 +170,7 @@ Here is a list of the built-in column types:
   * An action link: a link which will trigger execution of arbitrary code (with or without a confirmation popup)
   * An **ajax** action link (with or without a confirmation popup)
 
-If none of the above suits your needs, keep in mind that you may simply use the `fr.openwide.core.wicket.more.markup.repeater.table.builder.DataTableBuilder.addColumn(ICoreColumn<T, S>)` method and pass your own column implementation as a parameter. Most of the time, you will simply have to extend `fr.openwide.core.wicket.more.markup.repeater.table.column.AbstractCoreColumn<T, S extends ISort<?>>` and implement `populateItem(Item<ICellPopulator<T>>, String, IModel<T>)` so as to add a `Fragment` defined in your own component.
+If none of the above suits your needs, keep in mind that you may simply use the `org.iglooproject.wicket.more.markup.repeater.table.builder.DataTableBuilder.addColumn(ICoreColumn<T, S>)` method and pass your own column implementation as a parameter. Most of the time, you will simply have to extend `org.iglooproject.wicket.more.markup.repeater.table.column.AbstractCoreColumn<T, S extends ISort<?>>` and implement `populateItem(Item<ICellPopulator<T>>, String, IModel<T>)` so as to add a `Fragment` defined in your own component.
 
 #### Adding components around the table
 
@@ -231,11 +231,11 @@ add(new SubclassOfRefreshingView<MyItem>("item", dataProvider) {
 It depends on you data source:
 
  * for a `IDataProvider`, use a `SequenceView` (or wicket's `DataView`, which for now should do the same job, but may not gain as much features as SequenceView in the future).
- * for a `ISequenceProvider`, use a `fr.openwide.core.wicket.more.markup.repeater.sequence.SequenceView`
- * for a `ICollectionModel<T, ?>`, use a `fr.openwide.core.wicket.more.markup.repeater.collection.CollectionView`.
- * for a `IMapModel<K, V, ?>`, use a `fr.openwide.core.wicket.more.markup.repeater.map.MapView`.
- * for a `IModel<? extends Collection<T>>`, use a `fr.openwide.core.wicket.more.markup.repeater.collection.CollectionView`. You will need to provide a factory for the collection item models. (see [below](#item-models)).
- * for a `IModel<? extends Map<K, V>>`, use a `fr.openwide.core.wicket.more.markup.repeater.map.MapView`. You will need to provide a factory for the map key models (see [below](#item-models)).
+ * for a `ISequenceProvider`, use a `org.iglooproject.wicket.more.markup.repeater.sequence.SequenceView`
+ * for a `ICollectionModel<T, ?>`, use a `org.iglooproject.wicket.more.markup.repeater.collection.CollectionView`.
+ * for a `IMapModel<K, V, ?>`, use a `org.iglooproject.wicket.more.markup.repeater.map.MapView`.
+ * for a `IModel<? extends Collection<T>>`, use a `org.iglooproject.wicket.more.markup.repeater.collection.CollectionView`. You will need to provide a factory for the collection item models. (see [below](#item-models)).
+ * for a `IModel<? extends Map<K, V>>`, use a `org.iglooproject.wicket.more.markup.repeater.map.MapView`. You will need to provide a factory for the map key models (see [below](#item-models)).
 
 Please note that all of the above provide a paging mechanism, but it will only be efficient if your data source is a properly implemented `IDataProvider` or `ISequenceProvider`. Otherwise, the whole data set will be loaded, and then reduced to the current page's data.
 
@@ -246,7 +246,7 @@ The `RefreshingView`s need to obtain a reference to the collection's item model,
 The way you will implement the "item model factory" will depend on your data source:
 
  * With Wicket's built-in `IDataProvider`, the `IDataProvider` itself will provide the item model through its `model(T)` method. This method is the "item model factory".
- * With OWSI-Core's `ISequenceProvider` the provided items are already wrapped in models: the `iterator(long, long)` method returns an `Iterator<? extends IModel<T>>`. The `ISequenceProvider` itself is the "item model factory". This also applies to `ICollectionModel` and `IMapModel`.
+ * With Igloo's `ISequenceProvider` the provided items are already wrapped in models: the `iterator(long, long)` method returns an `Iterator<? extends IModel<T>>`. The `ISequenceProvider` itself is the "item model factory". This also applies to `ICollectionModel` and `IMapModel`.
  * With an `IModel<? extends Collection<T>>` (be it a `LoadableDetachableModel`, a `BindableModel`, or anything else), nothing in the data source itself allows to build item models. That's why most views defined above require you to provide a `Function<? super T, ? extends IModel<T>>` that will serve as an "item model factory".
 
 When a `Function<? super T, ? extends IModel<T>>` is required, you may:
@@ -271,7 +271,7 @@ The main advantage of `ListView` is that you don't need to define a specific mod
 
 Wicket, by default, only allows to add or remove items using Ajax to a collection view by refreshing the whole view.
 
-If, for some reason, you don't want to refresh pre-existing, unremoved items, you may use `fr.openwide.core.wicket.more.ajax.AjaxListeners.refreshNewAndRemovedItems(IRefreshableOnDemandRepeater)`:
+If, for some reason, you don't want to refresh pre-existing, unremoved items, you may use `org.iglooproject.wicket.more.ajax.AjaxListeners.refreshNewAndRemovedItems(IRefreshableOnDemandRepeater)`:
 
 ```java
 AjaxListeners.add(
@@ -282,7 +282,7 @@ AjaxListeners.add(
 
 There are some constraints, though:
 
- * `repeater` must implement `IRefreshableOnDemandRepeater` (that's the case for most view provided in OWSI-Core)
+ * `repeater` must implement `IRefreshableOnDemandRepeater` (that's the case for most view provided in Igloo)
  * both the repeater's parent and the repeater's items must have `setOutputMarkupId` set to `true`
  * newly added items will be added at the end of the repeater's parent (the Wicket parent). If there is some HTML between the repeater and the end of the parent, you'll probably want to wrap your repeater in an `WebMarkupContainer`.
  * only some classes that implement `IRefreshableOnDemandRepeater` allow to detect removed elements, so only these will see their removed items removed from the HTML. `RepeatingView` and its subclasses, in particular, will not have their removed elements removed from the HTML.

@@ -2,11 +2,11 @@
 
 ## Hibernate
 
-Our cloned repo: [https://github.com/openwide-java/hibernate-orm](https://github.com/openwide-java/hibernate-orm)
+Our cloned repo: [https://github.com/igloo-project/hibernate-orm](https://github.com/igloo-project/hibernate-orm)
 
 ## Resources
 
- * [Full contribution procedure](https://github.com/hibernate/hibernate-orm/wiki/Contributing-Code) (also [here](https://github.com/openwide-java/hibernate-orm/blob/master/CONTRIBUTING.md), but it seems to be almost the same)
+ * [Full contribution procedure](https://github.com/hibernate/hibernate-orm/wiki/Contributing-Code) (also [here](https://github.com/igloo-project/hibernate-orm/blob/master/CONTRIBUTING.md), but it seems to be almost the same)
  * [How to develop using Eclipse (see below for more concrete explanations)](https://developer.jboss.org/wiki/ContributingToHibernateUsingEclipse)
 
 ## Developing
@@ -46,7 +46,7 @@ You'll end up launching your test this way (example for a test in hibernate-core
 
 ## Hibernate Search
 
-Our cloned repo: [https://github.com/openwide-java/hibernate-search](https://github.com/openwide-java/hibernate-search)
+Our cloned repo: [https://github.com/igloo-project/hibernate-search](https://github.com/igloo-project/hibernate-search)
 
 ### Resources
 

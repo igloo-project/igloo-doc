@@ -8,7 +8,7 @@ Please note that we're talking about redirection as part of a server-side proces
 
 ### Basics
 
-When some page is accessed, but the current user has no right to access it (either because the user is not authenticated or he hasn't got the proper authorization), OWSI-Core throws a `org.springframework.security.access.AccessDeniedException`, which is caught by Spring Security's servlet filter. Spring Security then handles this exception with whatever behavior you configured; by default in OWSI-Core, it's a redirection to "/access-denied/", on which the `AccessDeniedPage` is mapped.
+When some page is accessed, but the current user has no right to access it (either because the user is not authenticated or he hasn't got the proper authorization), Igloo throws a `org.springframework.security.access.AccessDeniedException`, which is caught by Spring Security's servlet filter. Spring Security then handles this exception with whatever behavior you configured; by default in Igloo, it's a redirection to "/access-denied/", on which the `AccessDeniedPage` is mapped.
 
 `AccessDeniedException`s are thrown:
 

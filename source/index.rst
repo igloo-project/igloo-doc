@@ -1,11 +1,7 @@
-.. OWSI-Core doc documentation master file, created by
-   sphinx-quickstart on Wed Mar 29 10:17:59 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-========================
-OWSI-Core Documentation
-========================
+===========================
+Igloo-project Documentation
+===========================
 
 .. _release-notes:
 
@@ -18,6 +14,7 @@ OWSI-Core Documentation
    release-notes/Migrating-to-0.13.rst
    release-notes/Migrating-to-0.14.md
    release-notes/Migrating-to-0.15.rst
+   release-notes/Migrating-to-1.0.rst
 
 .. _howtos:
 

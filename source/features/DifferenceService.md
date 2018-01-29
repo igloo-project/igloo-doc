@@ -2,9 +2,9 @@
 
 ## Principles
 
-OWSI-Core provides a way for applications to compute a diff between two objects, i.e. of recursively computing field-by-field differences between a "working" version and a "reference" version of an object.
+Igloo provides a way for applications to compute a diff between two objects, i.e. of recursively computing field-by-field differences between a "working" version and a "reference" version of an object.
 
-The diff infrastructure is powered by [Java-object-diff](https://github.com/SQiShER/java-object-diff). OWSI-Core itself provides:
+The diff infrastructure is powered by [Java-object-diff](https://github.com/SQiShER/java-object-diff). Igloo itself provides:
 
  * basic setup of java-object-diff
  * abstract bases for your diff services, with clearly identified points of configuration

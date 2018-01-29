@@ -4,11 +4,11 @@ This page explains how to ensure that parts of your application (pages, buttons,
 
 ## Principles
 
-Here are some basic principles. These are not really formal security science, but are just intended to provide readers with enough understanding of OWSI-Core's security to get started.
+Here are some basic principles. These are not really formal security science, but are just intended to provide readers with enough understanding of Igloo's security to get started.
 
 ### Security model
 
-Here are the concepts used in OWSI-Core's security model :
+Here are the concepts used in Igloo's security model :
 
  * A *user* is a user of your application.
  * A *user group* is a business-level category of users.
@@ -17,13 +17,13 @@ Here are the concepts used in OWSI-Core's security model :
  * A *global permission* is an approval of a mode of access to a class of objects, an authorization which is not tied to a an object in particular (such as "write to customer contact details"). One or many global permissions may be attributed to a role.
  * An *object permission* is an approval of a mode of access to an object in particular, an authorization which **is** tied to a an object in particular (such as "write to the contact details of customer Initech, Inc"). An object permission is never attributed, it is computed in a fully qualified context: given a user, an object and an object permission, the security system will compute the answer to the question "does the user have this permission on this object?".
 
-You may notice that, depending on your point of view, some concepts seem to have the same purpose: either role and global permission or role and user group. The developers are aware of this issue and it will be addressed in a future version of OWSI-Core.
+You may notice that, depending on your point of view, some concepts seem to have the same purpose: either role and global permission or role and user group. The developers are aware of this issue and it will be addressed in a future version of Igloo.
 
 ### Architecture
 
-OWSI-Core's security layer is powered by [Spring Security](http://projects.spring.io/spring-security/), and most concepts detailed here come directly from Spring Security.
+Igloo's security layer is powered by [Spring Security](http://projects.spring.io/spring-security/), and most concepts detailed here come directly from Spring Security.
 
-Here are the main components of a secured application based on OWSI-Core:
+Here are the main components of a secured application based on Igloo:
 
  * The `ISecurityService` is an API, the main entry point for security-related queries ("does this user have this permission on this object") and operations (user authentication, authentication invalidation, ...).
  * The `PermissionEvaluator` is a SPI, the way for the developer to programmatically define code that will determine whether a user has a given permission on a given object. This code is not just a mapping, as it may use business object's properties in order to answer queries: for instance "is the given user this customer's account manager?". **Think of permissions evaluators as a way to extract business information for security purposes**. The permission evaluator is generally implemented through a subclass of `AbstractCorePermissionEvaluator` which delegates its calls to various `IGenericPermissionEvaluator`, one for each type of object.
@@ -259,7 +259,7 @@ public interface ICustomerService extends IGenericEntityService<Long, Customer> 
 It's better to define your security expressions in a separate constants class, such as `MyAppSecurityExpressionConstants` in this example. This class will look something like that:
 
 ```java
-import static fr.openwide.core.commons.util.security.PermissionObject.DEFAULT_PERMISSION_OBJECT_NAME;
+import static org.iglooproject.commons.util.security.PermissionObject.DEFAULT_PERMISSION_OBJECT_NAME;
 
 public final class SISecurityExpressionConstants {
 

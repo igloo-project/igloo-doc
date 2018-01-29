@@ -5,14 +5,14 @@ In this page, we will follow the complete workflow to properly create a project,
 to finally be able to run the project on a server.
 In the following steps, we will call the project **hello-world**.
 
-Clone the owsi-core-parent repository
+Clone the igloo-parent repository
 -------------------------------------
 
-First of all, clone the owsi-core-parent project :
+First of all, clone the igloo-parent project :
 
 .. code-block:: bash
 
-  git clone git@github.com:openwide-java/owsi-core-parent.git
+  git clone git@github.com:igloo-project/igloo-parent.git
 
 
 Generate the new project and push it on gitlab
@@ -26,7 +26,7 @@ In order to generate the project, we need to build the archetype :
 
 .. code-block:: bash
 
-  cd ~/git/owsi-core-parent/basic-application
+  cd ~/git/igloo-parent/basic-application
   ./build-and-push-archetype.sh ../basic-application/ local
 
 After that, we place ourselves in /tmp and we generate the project :
@@ -41,7 +41,7 @@ The script asks what archetype we want to use, we choose the number correspondin
 to local, and validate the different values we entered previously.
 
 We go to the newly generated project folder and make an adjustment :
-we add a line with the version of the owsi-core in the
+we add a line with the version of Igloo in the
 file `hello-world/pom.xml` between the markers `properties`, just under the line
 for the tomcat-jdbc.version :
 
@@ -49,8 +49,8 @@ for the tomcat-jdbc.version :
 
   <properties>
 		<!-- il est préférable de bien surcharger la version du pool jdbc Tomcat au niveau du projet en fonction de la version de Tomcat -->
-		<tomcat-jdbc.version>${owsi-core.tomcat-jdbc.version}</tomcat-jdbc.version>
-		<owsi-core.version>0.14-SNAPSHOT</owsi-core.version>
+		<tomcat-jdbc.version>${igloo.tomcat-jdbc.version}</tomcat-jdbc.version>
+		<igloo.version>0.14-SNAPSHOT</igloo.version>
 	</properties>
 
 .. note::

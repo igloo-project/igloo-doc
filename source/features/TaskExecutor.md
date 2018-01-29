@@ -2,7 +2,7 @@
 
 ## About
 
-OWSI-Core comes with a task service allowing to persist and execute background tasks.
+Igloo comes with a task service allowing to persist and execute background tasks.
 
 ## Configuration
 
