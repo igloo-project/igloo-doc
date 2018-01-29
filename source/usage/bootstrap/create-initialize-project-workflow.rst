@@ -1,12 +1,12 @@
-Create, initialize and launch a project - Workflow
-==================================================
+Create, initialize and launch a project
+=======================================
 
 In this page, we will follow the complete workflow to properly create a project, starting from nothing
 to finally be able to run the project on a server.
 In the following steps, we will call the project **hello-world**.
 
 Clone the igloo-parent repository
--------------------------------------
+---------------------------------
 
 First of all, clone the igloo-parent project :
 

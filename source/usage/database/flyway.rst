@@ -1,11 +1,14 @@
-Use data upgrades with Flyway
-=============================
+Automatize data upgrades with Flyway
+====================================
 
-Igloo and the basic application are programmed to be able to use Flyway for
-handling your data upgrades, here's how you can do it.
+.. contents:: :local:
+
+Igloo and the basic application are able to use Flyway for handling your data upgrades.
 
 Activate Flyway's Spring profile
 --------------------------------
+
+.. note:: Flyway is already enabled on recent basic-application generated projects.
 
 First of all, you need to activate Flyway's Spring profile. To do so, just modify this line to add flyway in the file **development.properties**  :
 
@@ -19,6 +22,7 @@ in the application and you can now start to use it.
 .. note::
   If you want to disable flyway from your application, just remove the word *flyway* from
   the line *maven.spring.profiles.active* in the file **development.properties**.
+
 
 Create a Flyway data upgrade
 ----------------------------
@@ -43,6 +47,7 @@ If you want to be able to relaunch manually the upgrade in case it fails, you ha
   on the names of the data upgrades so be careful how you name them. The name must
   respect the pattern *Vversion_you_want__NameOfDataUpgrade*. For example *V1_0__ImportTable.sql*
   is a valid name. SQL and Java upgrades follow the same naming pattern.
+
 
 Create an SQL formatted data upgrade
 ````````````````````````````````````

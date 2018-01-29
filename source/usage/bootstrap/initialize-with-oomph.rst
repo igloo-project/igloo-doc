@@ -1,7 +1,7 @@
-Install an Oomph project
-=========================
+Initialize Eclipse workspace with Ooomph
+========================================
 
-In the git folder, clone the igloo-oomph-project repository
+Clone the igloo-oomph-project repository
 
 .. code-block:: bash
 
