@@ -133,7 +133,7 @@ Now we have all the tools properly configurated and ready to run our project.
 
 To do that, we just start Tomcat in Eclipse (if you don't have the server view : **Window -> Show view -> Other -> Server/Servers**).
 
-To access to our project, we can go to http://localhost:8080/ .
-To access the console, the address is http://localhost:8080/console/ .
+To access to our project, we can go to http://localhost:8080/basic-application .
+To access the console, the address is http://localhost:8080/basic-application/console/ .
 
 .. note:: Until you change it, the login/password for the project and the project's console is admin/admin.
