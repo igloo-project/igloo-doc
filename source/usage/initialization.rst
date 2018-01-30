@@ -7,7 +7,7 @@ Create a new Igloo project
    :maxdepth: 1
    :caption: Content
 
-   bootstrap/use-maven-archetype.md
    bootstrap/create-initialize-project-workflow.rst
    bootstrap/database-scripts.rst
    bootstrap/initialize-with-oomph.rst
+   bootstrap/use-maven-archetype.md
