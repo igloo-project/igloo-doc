@@ -10,7 +10,6 @@ Igloo-project Documentation
    :caption: Use Igloo
 
    usage/initialization.rst
-   usage/database.rst
    usage/development.rst
 
 

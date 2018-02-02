@@ -13,6 +13,16 @@ Features
 
    features/index
 
+Database Management
+===================
+
+.. _database:
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Content
+
+   database/flyway
 
 Best practices
 ==============

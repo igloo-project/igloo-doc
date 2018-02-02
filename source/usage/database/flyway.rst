@@ -3,14 +3,12 @@ Automatize data upgrades with Flyway
 
 .. contents:: :local:
 
-Igloo and the basic application are able to use Flyway for handling your data upgrades.
+Igloo and the basic application are using Flyway for handling your data upgrades.
 
 Activate Flyway's Spring profile
 --------------------------------
 
-.. note:: Flyway is already enabled on recent basic-application generated projects.
-
-First of all, you need to activate Flyway's Spring profile. To do so, just modify this line to add flyway in the file **development.properties**  :
+First of all, you need to activate Flyway's Spring profile. To do so, just modify this line to add flyway in the file ``development.properties``  :
 
 .. code-block:: bash
 
@@ -19,15 +17,19 @@ First of all, you need to activate Flyway's Spring profile. To do so, just modif
 With this simple modification, you have enabled the creation of the Flyway bean
 in the application and you can now start to use it.
 
+.. note:: Flyway spring profile is already enabled in basic-application generated
+  from Igloo version 0.14 and above.
+
 .. note::
-  If you want to disable flyway from your application, just remove the word *flyway* from
-  the line *maven.spring.profiles.active* in the file **development.properties**.
+  If you want to disable flyway from your application, just remove ``flyway`` from
+  the configuration variable ``maven.spring.profiles.active`` in file ``development.properties``.
 
 
 Create a Flyway data upgrade
 ----------------------------
 
-The first thing to do is to is to add flyway's variables in the file **development.properties** :
+The first thing to do is to is to configure both scripts location and updates table name
+for Flyway in ``development.properties`` :
 
 .. code-block:: bash
 
@@ -35,49 +37,72 @@ The first thing to do is to is to add flyway's variables in the file **developme
   maven.flyway.table=flyway_schema_version
 
 You can write your data upgrades either in SQL or Java.
-Here we have chosen to put our upgrades .sql in the folder *src/main/resources/db/migration/* and
-our upgrades .java in the package *org.iglooproject.basicapp.core.config.migration.common*.
-If you want to specify multiple locations, you have to separate them with a single comma.
+Here we have chosen to :
+
+  * put our upgrades .sql in the folder ``src/main/resources/db/migration/``
+  * put our upgrades .java in the package ``org.iglooproject.basicapp.core.config.migration.common``
+
+If you want to specify multiple locations, you have to separate them with commas.
 
 Now you can create the data upgrades which will be applied by Flyway.
 If you want to be able to relaunch manually the upgrade in case it fails, you have to use the Java formatted upgrades.
 
+
+.. note:: In Igloo version 0.14 and above, hibernate ``hdm2ddl`` is disabled by default
+  and database model is created with the ``V1_1__CreateSchema.sql`` SQL script during
+  the first startup.
+
 .. note::
-  Flyway works with a database versioning system. The versions are based
+  Flyway works with a database versioning system. Versions are based
   on the names of the data upgrades so be careful how you name them. The name must
-  respect the pattern *Vversion_you_want__NameOfDataUpgrade*. For example *V1_0__ImportTable.sql*
+  respect the pattern ``V<major>_<minor>__<name>``. For instance ``V1_1__CreateSchema.sql``
   is a valid name. SQL and Java upgrades follow the same naming pattern.
 
 
-Create an SQL formatted data upgrade
+Create a SQL formatted data upgrade
 ````````````````````````````````````
 
-If you want to write a data upgrade in SQL, just write your script and place your SQL file
-in the folder or package you have specified earlier.
+If you want to write a SQL data upgrade, just write your SQL script with
+the wright naming pattern and place it in the folder or package you specified earlier.
+The script will be executed next time you launch your application.
 
 
 Create a Java formatted data upgrade
 ````````````````````````````````````
 
-If you want to write a date upgrade in Java, you have to follow a particular workflow.
-In fact, it is not the Flyway upgrade which will contain the operations on your data/database,
-you will have to create an Igloo data upgrade after the Flyway one.
+If you want to write a data upgrade in Java, you have to follow a particular workflow.
+In this case, Flyway script is only feeding the ``DataUpgradeRecord`` table in the
+database. This table is looked up at startup to execute data upgrade in a Java
+context.
 
-Your Flyway data upgrade will only declare that the data upgrade exists and that the application needs to launch it.
-To do so, copy the existing Flyway data upgrade *V1_2__ImportExcel.java*, give it the name you want
-and change in the class the value of the **DATA_UPGRADE_NAME** variable :
+Your Flyway script will only declare that the data upgrade exists and that the
+application needs to launch it. To do so, copy the existing Flyway data upgrade
+``V1_2__InitDataFromExcel``, change the version and the name or the script. Then
+target the Igloo data upgrade you want to see executed.
 
 .. code-block:: java
 
-  private String DATA_UPGRADE_NAME = "ImportExcel";
+  @Override
+  protected Class<? extends IDataUpgrade> getDataUpgradeClass() {
+    return DataUpgrade_InitDataFromExcel.class;
+  }
 
 Create an Igloo data upgrade
 --------------------------------
 
 If you have wrote Java formatted data upgrades, you need to create an Igloo
-data upgrade for each one of these which is named after the **DATA_UPGRADE_NAME**
-value you specified earlier. For example, if the value entered in the Flyway Java data upgrade is *ImportTable*,
-you have to name your Igloo data upgrade *ImportTable.java*.
+data upgrade for each one of these.
 
-An Igloo data upgrade is a java class which implements *IDataUpgrade* and override its methods.
-Write all your operations in the function **perform()**.
+An Igloo data upgrade is a java class which implements ``IDataUpgrade`` and override its methods.
+Write all your operations in the function ``perform()``.
+
+Each Igloo data upgrade need to be registered in  ``DataUpgradeManagerImpl`` :
+
+.. code-block:: java
+
+  @Override
+  public List<IDataUpgrade> listDataUpgrades() {
+    return ImmutableList.<IDataUpgrade>of(
+       new DataUpgrade_InitDataFromExcel()
+    );
+  }
