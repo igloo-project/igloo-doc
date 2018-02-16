@@ -83,8 +83,10 @@ to your custom ``ConfigurationLocations.locations``.
 configuration-bootstrap*.properties
 -----------------------------------
 
-Copy ``configuration-bootstrap.properties`` and ``configuration-bootstrap-test.properties``
-from basic-application in your ``application-core/src/{main,test}/resources/``.
+Copy ``configuration-bootstrap.properties`` from basic-application in your
+``application-core/src/{main,test}/resources/``.
+
+Rename your ``configuration-test.properties`` to ``configuration-env-test.properties``.
 
 You should check in these files:
 
@@ -95,6 +97,12 @@ You should check in these files:
 * if different Spring profiles are needed in unit-test, you may use @ActiveProfiles
   to handle it test-by-test.
 * that loaded log4j configurations are corrects: ``igloo.<profile>.log4j.configurationLocations``
+
+
+You should also check:
+
+* that your base test class uses ``ExtendedTestApplicationContextInitializer``
+* that your base test class activates test profile with @PropertySource("igloo.profile=test")
 
 
 Runtime

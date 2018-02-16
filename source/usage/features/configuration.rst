@@ -8,9 +8,11 @@ TLDR
 For deployment, set ``IGLOO_PROFILE`` environment variable.
 
 In ``configuration-bootstrap.properties``, configure your
-``igloo.default.spring.profiles.active`` active profiles. Use
-``configuration-bootstrap-test.properties`` to configure tests. Use
-``@ActiveProfiles`` for profile switching in tests.
+``igloo.default.spring.profiles.active`` active profiles.
+
+Use ``@ActiveProfiles`` for profile switching in tests (if you
+want to always use the same profiles, you can just use
+``igloo.test.spring.profiles.active``).
 
 Push your personal configuration overrides in
 ``configuration-user-${user.name}.properties`` or
@@ -73,11 +75,8 @@ needed profile:
 * ``igloo.<profile>.spring.profiles.active``: Spring profiles to activate. If
   there is no difference between the profile, you may use
   ``igloo.default.spring.profiles.active``.
-
-``configuration-bootstrap-test.properties``, located in your
-``project-core/src/test/resources`` provides the same behavior for tests. If
-you need specific Spring profiles on a per-test basis, you must use
-@ActiveProfiles to handle this case.
+* tests are handled as a plain Igloo profile. Profile activation is done by
+  using @PropertySource("igloo.profile=test") in ``AbstractTestCase``.
 
 Default configuration may be sufficient for simple projects.
 
