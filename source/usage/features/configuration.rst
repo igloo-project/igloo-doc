@@ -55,8 +55,8 @@ From 1.0, Igloo use the following mechanisms to handle configuration:
 * **Spring profiles** by user or by Igloo profile during bootstrap phase
 
 .. warning:: Igloo profile and Spring profiles are not the same thing. Igloo
-  profiles are loaded first, and determined Spring profiles during bootstrap
-  phase.
+  profile is loaded first, and Spring profiles are computed from
+  ``igloo.<profile>.spring.profiles.active``.
 
 
 Usage
@@ -82,7 +82,7 @@ you need specific Spring profiles on a per-test basis, you must use
 Default configuration may be sufficient for simple projects.
 
 Default configurations for bootstrap phase can be viewed here:
-https://github.com/igloo-project/igloo-parent/blob/master/igloo/igloo-components/igloo-component-spring-bootstrap-config/src/main/resources/configuration-bootstrap-default.properties
+https://github.com/igloo-project/igloo-parent/blob/dev/igloo/igloo-components/igloo-component-spring-bootstrap-config/src/main/resources/configuration-bootstrap-default.properties
 
 It handles:
 
