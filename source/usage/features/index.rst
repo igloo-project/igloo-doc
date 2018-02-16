@@ -4,6 +4,7 @@ Backend
 .. toctree::
    :maxdepth: 1
 
+   configuration.rst
    PropertyService.md
    Email-notification.md
    HistoryLog-&-Audit.md

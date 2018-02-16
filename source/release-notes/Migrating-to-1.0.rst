@@ -5,15 +5,21 @@ Migrating to 1.0 (wip)
 This is the first official release of igloo-project, forked from OWSI-Core
 project.
 
+.. contents:: :local:
 
-No longer supported
+
+Major modifications
 -------------------
 
-JDK 7
-~~~~~
+.. toctree::
+  :maxdepth: 1
 
-JDK 7 support is removed.
+  1.0/configuration.rst
+  1.0/hibernate.rst
 
+
+Updated
+-------
 
 Infinispan
 ~~~~~~~~~~
@@ -30,55 +36,25 @@ All references to ``org.jgroups.Address`` must be replaced with
 ``Serializable``, AddressWrapper handles Serialization).
 
 
-Hibernate 5.2.13
-~~~~~~~~~~~~~~~~
+Mockito
+~~~~~~~
 
-Changes in the @TableGenerator and @SequenceGenerator name scope
-----------------------------------------------------------------
+Mockito is upgraded to 2.x version. You way need to rewrite some tests in your
+projects.
 
-cf http://in.relation.to/2018/02/07/hibernate-orm-5213-final-release/
-
-  In order to be compliant with the JPA specifications, the names of identity generators
-  need now be considered global, and no longer scoped to the entity in which they are declared.
-  This means existing applications might now have a naming conflict which needs to be addressed
-  to upgrade. Configuring two generators, even with different types but with the same name will
-  now cause a java.lang.IllegalArgumentException to be thrown at boot time.
-
-TODO lazy-loading on identifier access
+We recommend to exclude mockito 2.x dependency as a first step and check your
+test results without any rewrite, then to update mockito once all your tests are
+fixed.
 
 
-Hibernate 5.3.0 (?)
-~~~~~~~~~~~~~~~
+No longer supported
+-------------------
 
-Hibernate is mainly a maintenance release, with some important modification:
+JDK 7
+~~~~~
 
-* Complete list here: http://in.relation.to/2018/01/18/hibernate-orm-530-beta1-release/
-* HQL legacy positional parameters removed: https://hibernate.atlassian.net/browse/HHH-12101
-* JPA compliance level added: https://github.com/hibernate/hibernate-orm/blob/master/hibernate-core/src/main/java/org/hibernate/jpa/JpaCompliance.java ;
-  we choose to use strict compliance enforcement.
-* Features for Caching an inheritance: https://hibernate.atlassian.net/browse/HHH-12146
-* JPA 2.2 support
+JDK 7 support is removed as planned.
 
-
-hibernate.implicit_naming_strategy
-----------------------------------
-
-``org.iglooproject.jpa.hibernate.model.naming.ImplicitNamingStrategyLegacyJpaComponentPathImpl``
-is removed and replaced with ``ImplicitNamingStrategyJpaComponentPathImpl``.
-
-To check if this change is problematic with your database model, use ``*SqlUpdateScriptMain``
-to check and compare new database model with your previous version.
-
-
-Test tooling
-~~~~~~~~~~~~
-
-A new **igloo-dependency-test** provides basic dependencies for tests. You can
-use this dependency in place of junit, mockito, spring-test, ... dependencies.
-
-**org.iglooproject.jpa.junit.AbstractTestCase** and **org.iglooproject.jpa.EntityManagerExecutionListener**
-are moved in a new **igloo-dependency-jpa-test** module. If you want to use
-them, add this new dependency with scope test, and fix your imports.
 
 
 Maven
@@ -108,17 +84,6 @@ all new passwords with modern hashing (use encoded password prefix to switch enc
 You should also consider `this paragraph from Spring documentation <https://docs.spring.io/spring-security/site/docs/5.0.1.RELEASE/reference/htmlsingle/#pe-history>`_
 
 Property ``security.passwordSalt`` and method ``DefaultJpaSecurityConfig.getPasswordSalt()`` are removed.
-
-
-Mockito
-~~~~~~~
-
-Mockito is upgraded to 2.x version. You way need to rewrite some tests in your
-projects.
-
-We recommend to exclude mockito 2.x dependency as a first step and check your
-test results without any rewrite, then to update mockito once all your tests are
-fixed.
 
 
 YUI Compressor
@@ -155,3 +120,17 @@ Joda-Time
 
 Joda-Time is removed from dependency; you can continue to use it by re-adding
 this dependency to your project.
+
+
+New features
+------------
+
+Test tooling
+~~~~~~~~~~~~
+
+A new **igloo-dependency-test** provides basic dependencies for tests. You can
+use this dependency in place of junit, mockito, spring-test, ... dependencies.
+
+**org.iglooproject.jpa.junit.AbstractTestCase** and **org.iglooproject.jpa.EntityManagerExecutionListener**
+are moved in a new **igloo-dependency-jpa-test** module. If you want to use
+them, add this new dependency with scope test, and fix your imports.
