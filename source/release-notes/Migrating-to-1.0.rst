@@ -15,6 +15,7 @@ Major modifications
   :maxdepth: 1
 
   1.0/configuration.rst
+  1.0/property.rst
   1.0/hibernate.rst
 
 

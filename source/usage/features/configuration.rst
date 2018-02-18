@@ -1,3 +1,4 @@
+.. _config.bootstrap:
 
 Configuration management
 ========================
