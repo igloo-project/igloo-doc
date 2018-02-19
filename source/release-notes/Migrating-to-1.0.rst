@@ -124,6 +124,15 @@ Joda-Time is removed from dependency; you can continue to use it by re-adding
 this dependency to your project.
 
 
+FileUploadMediaTypeValidator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``FileUploadMediaTypeValidator#errorResourceKey`` and ``FileUploadMediaTypeValidator.setErrorResourceKey(String)``
+and related constructor are removed. If you use this property, you now need to
+use component-based resource naming (so ``FileUploadMediaTypeValidator``, or
+``<fieldName>.FileUploadMediaTypeValidator`` or ``<form>.<fieldName>.FileUploadMediaTypeValidator``).
+
+
 New features
 ------------
 
