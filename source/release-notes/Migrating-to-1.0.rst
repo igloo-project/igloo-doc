@@ -18,6 +18,7 @@ Major modifications
   1.0/configuration.rst
   1.0/property.rst
   1.0/hibernate.rst
+  1.0/bootstrap3.rst
 
 
 Updated
@@ -159,6 +160,13 @@ Here are the use-cases to check that there are no regressions on your applicatio
 * login with a wrong password; check error message
 * visit a protected and forbidden page; you should be redirected to default
   home page with an error message
+
+
+DatePickerSync
+~~~~~~~~~~~~~~
+
+DatePickerSync exclusively use ``precedents`` (previous) and ``suivants`` (next)
+attributes. There is no longer ``courant`` (current) field.
 
 
 New features

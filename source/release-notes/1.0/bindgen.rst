@@ -14,5 +14,5 @@ You need to handle the following issues:
 
 This script should handle these updates:
 
-.. literalinclude:: bindgen-replace.sh
+.. literalinclude:: scripts/bindgen-replace.sh
   :language: bash

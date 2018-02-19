@@ -11,7 +11,7 @@ Class rename
 Some classes need a package renaming. Following script should be used for
 this operation.
 
-.. literalinclude:: config-replace.sh
+.. literalinclude:: scripts/config-replace.sh
   :language: bash
 
 

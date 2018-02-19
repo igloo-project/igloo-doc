@@ -19,6 +19,5 @@ classes are named ``*PropertyRegistryConfig.java``.
 
 If not, the modification is to declare ``IPropertyRegistryConfig.register`` **public**.
 
-.. literalinclude:: property-replace.sh
+.. literalinclude:: scripts/property-replace.sh
   :language: bash
-
