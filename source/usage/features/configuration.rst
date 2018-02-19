@@ -29,7 +29,9 @@ For the definitions of ``environment.<property>``:
 
 * Set qualification, preproduction, production overrides in ``configuration-env-deployment.properties``.
 
-* Set specific overrides in ``configuration-env-<profile>.properties``.
+* Set specific overrides in ``configuration-env-<profile>.properties`` (including test profile).
+
+* Set personal overrides in ``configuration-user-<user>.properties``.
 
 * Use a secure delivery for secrets/confidential configuration and push it to
   ``/etc/${igloo.applicationName}/configuration.properties``.
