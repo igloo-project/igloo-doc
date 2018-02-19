@@ -133,6 +133,34 @@ use component-based resource naming (so ``FileUploadMediaTypeValidator``, or
 ``<fieldName>.FileUploadMediaTypeValidator`` or ``<form>.<fieldName>.FileUploadMediaTypeValidator``).
 
 
+Session - redirectUrl
+~~~~~~~~~~~~~~~~~~~~~
+
+Igloo mechanisms to handle post-login redirectUrl are completely removed.
+You should use easily spring-security based one.
+
+Removed methods are, on ``AbstractCoreSession``:
+
+* signOutWithoutCleaningUpRedirectUrl
+* registerRedirectUrl
+* getRedirectUrl
+* consumeRedirectUrl
+* registerRedirectPageLinkDescriptor
+* getRedirectPageLinkDescriptor
+
+If you use these methods, you should check how you handle your login success.
+If you use LoginSuccessPage (wicket-more), then Spring-Security redirect should
+work.
+
+Here are the use-cases to check that there are no regressions on your application:
+
+* login to default home page; logout
+* visit a protected page; you should be redirect to it after login; logout
+* login with a wrong password; check error message
+* visit a protected and forbidden page; you should be redirected to default
+  home page with an error message
+
+
 New features
 ------------
 
