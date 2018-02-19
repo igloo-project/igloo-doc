@@ -14,6 +14,7 @@ Major modifications
 .. toctree::
   :maxdepth: 1
 
+  1.0/bindgen.rst
   1.0/configuration.rst
   1.0/property.rst
   1.0/hibernate.rst
