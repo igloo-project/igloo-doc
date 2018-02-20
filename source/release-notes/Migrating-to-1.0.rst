@@ -19,6 +19,7 @@ Major modifications
   1.0/property.rst
   1.0/hibernate.rst
   1.0/bootstrap3.rst
+  1.0/misc.rst
 
 
 Updated
