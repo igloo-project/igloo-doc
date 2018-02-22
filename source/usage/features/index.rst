@@ -19,6 +19,7 @@ UI
 .. toctree::
    :maxdepth: 1
 
+   webjars.rst
    UIBootstrap.md
    UIFontAwesome.md
    UI-Plugins-(JS,-CSS).md
