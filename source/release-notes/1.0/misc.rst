@@ -1,3 +1,32 @@
+DataUpgrade
+===========
+
+DataUpgrade are no longer stored as a ``parameter``/``property``. A new
+entity ``DataUpgradeRecord`` is created.
+
+To prepare a migration :
+
+* ensure that all your upgrade are done
+
+* create new ``DataUpgradeRecord`` table :
+
+  .. code-block::
+
+    create sequence DataUpgradeRecord_id_seq start 1 increment 1;
+    create table DataUpgradeRecord (id int8 not null, autoPerform boolean not null, done boolean not null, executionDate timestamp, name text not null, primary key (id));
+    alter table DataUpgradeRecord add constraint UK_6q54k3x0axoc3n8ns55emwiev unique (name);
+
+With this migration plan; you'll keep your old upgrade information in
+``parameter`` table. New DatabaseUpgradeRecord will be stored in the dedicated
+new table.
+
+.. warning::
+  Beware that old DataUpgrade are going to be listed as runnable ones in
+  administration console, as ``DatabaseUpgradeRecord`` is empty and entries in
+  ``parameter`` ignored. Either drop your old upgrades in
+  ``DataUpgradeManagerImpl.listDataUpgrades()`` or migrate ``parameter``
+  entries to ``DataUpgradeRecord``.
+
 Lucene - French analyzer
 ========================
 
@@ -19,7 +48,6 @@ to ``org.iglooproject.slf4j.jul.bridge.SLF4JLoggingListener``.
 
 .. literalinclude:: scripts/slf4j-replace.sh
   :language: bash
-
 
 Commons split
 =============
