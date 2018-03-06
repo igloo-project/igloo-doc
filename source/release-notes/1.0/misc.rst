@@ -1,3 +1,12 @@
+Lucene - French analyzer
+========================
+
+Due to code refactor to eliminate duplicate code, some classes are renamed.
+
+.. literalinclude:: scripts/lucene-replace.sh
+  :language: bash
+
+
 SLF4JLoggingListener
 ====================
 
