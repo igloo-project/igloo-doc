@@ -6,6 +6,10 @@ Due to code refactor to eliminate duplicate code, some classes are renamed.
 .. literalinclude:: scripts/lucene-replace.sh
   :language: bash
 
+.. warning::
+  ``org.iglooproject.spring.util.lucene.search.LuceneUtils.toFilterRangeQuery(...)``
+  is modified to throw an exception when min and max are null (previously, it
+  silently returned ``null``).
 
 SLF4JLoggingListener
 ====================
