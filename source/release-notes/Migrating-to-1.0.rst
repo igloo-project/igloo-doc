@@ -169,6 +169,17 @@ DatePickerSync
 DatePickerSync exclusively use ``precedents`` (previous) and ``suivants`` (next)
 attributes. There is no longer ``courant`` (current) field.
 
+Javascript
+~~~~~~~~~~
+
+The following dependencies are split from igloo-component-wicket-more and
+marked as optional dependencies (you need to add them manually in your projects
+to use them):
+
+* jquery.json
+* jquery.carouFredSel
+* jquery.fancybox
+
 
 New features
 ------------
