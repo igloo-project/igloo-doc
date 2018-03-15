@@ -3,7 +3,8 @@
 while read line; do
 find -name "*.java" -exec perl -p -i -e "${line}" {} \;
 done <<EOF
-s/\\\Qorg.iglooproject.wicket.more.markup.html.template.js.bootstrap.modal.statement/org.iglooproject.wicket.bootstrap3.markup.html.template.js.bootstrap.modal.statement/g
+s/\\\Qorg.iglooproject.wicket.more.markup.html.template.js.bootstrap.modal.statement.BootstrapModalManager/org.iglooproject.wicket.bootstrap3.markup.html.template.js.bootstrap.modal.statement.BootstrapModalManager/g
+s/\\\Qorg.iglooproject.wicket.more.markup.html.template.js.bootstrap.modal.statement.BootstrapModalManagerStatement/org.iglooproject.wicket.bootstrap3.markup.html.template.js.bootstrap.modal.statement.BootstrapModalManagerStatement/g
 s/\\\Qorg.iglooproject.wicket.more.WicketBootstrapPackage/org.iglooproject.wicket.bootstrap3.WicketBootstrapPackage/g
 s/\\\Qorg.iglooproject.wicket.more.application.WicketBootstrapModule/org.iglooproject.wicket.bootstrap3.application.WicketBootstrapModule/g
 s/\\\Qorg.iglooproject.wicket.more.config.spring.WicketBootstrapServiceConfig/org.iglooproject.wicket.bootstrap3.config.spring.WicketBootstrapServiceConfig/g
