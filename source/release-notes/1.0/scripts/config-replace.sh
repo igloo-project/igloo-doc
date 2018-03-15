@@ -1,7 +1,7 @@
 #! /bin/bash
 
 while read line; do
-find \( -name "*.java" -o "web.xml" \) -exec sed -i "$line" {} \;
+find \( -name "*.java" -o -name "web.xml" \) -exec sed -i "$line" {} \;
 done <<EOF
 s/org.iglooproject.spring.config.AbstractExtendedApplicationContextInitializer/org.iglooproject.config.bootstrap.spring.AbstractExtendedApplicationContextInitializer/g
 s/org.iglooproject.spring.config.annotation.ApplicationConfigurerBeanFactoryPostProcessor/org.iglooproject.config.bootstrap.spring.ApplicationConfigurerBeanFactoryPostProcessor/g
