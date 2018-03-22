@@ -10,7 +10,7 @@ To prepare a migration :
 
 * create new ``DataUpgradeRecord`` table :
 
-  .. code-block::
+  .. code-block:: sql
 
     create sequence DataUpgradeRecord_id_seq start 1 increment 1;
     create table DataUpgradeRecord (id int8 not null, autoPerform boolean not null, done boolean not null, executionDate timestamp, name text not null, primary key (id));
