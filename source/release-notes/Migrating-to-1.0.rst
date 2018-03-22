@@ -12,13 +12,19 @@ Major modifications
 -------------------
 
 .. toctree::
-  :maxdepth: 1
+  :maxdepth: 2
 
   1.0/bindgen.rst
   1.0/configuration.rst
   1.0/property.rst
   1.0/hibernate.rst
-  1.0/bootstrap3.rst
+  1.0/bootstrap.rst
+  1.0/fontawesome.rst
+  1.0/wicket.rst
+  1.0/linkdescriptor.rst
+  1.0/referencedata.rst
+  1.0/select2.rst
+  1.0/cleaning.rst
   1.0/misc.rst
 
 
@@ -125,16 +131,6 @@ Joda-Time
 Joda-Time is removed from dependency; you can continue to use it by re-adding
 this dependency to your project.
 
-
-FileUploadMediaTypeValidator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-``FileUploadMediaTypeValidator#errorResourceKey`` and ``FileUploadMediaTypeValidator.setErrorResourceKey(String)``
-and related constructor are removed. If you use this property, you now need to
-use component-based resource naming (so ``FileUploadMediaTypeValidator``, or
-``<fieldName>.FileUploadMediaTypeValidator`` or ``<form>.<fieldName>.FileUploadMediaTypeValidator``).
-
-
 Session - redirectUrl
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -161,13 +157,6 @@ Here are the use-cases to check that there are no regressions on your applicatio
 * login with a wrong password; check error message
 * visit a protected and forbidden page; you should be redirected to default
   home page with an error message
-
-
-DatePickerSync
-~~~~~~~~~~~~~~
-
-DatePickerSync exclusively use ``precedents`` (previous) and ``suivants`` (next)
-attributes. There is no longer ``courant`` (current) field.
 
 Javascript
 ~~~~~~~~~~
