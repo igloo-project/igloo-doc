@@ -1,0 +1,12 @@
+---
+sphinx:
+  documentation_path: .
+  virtualenv:
+    path: .tools/sphinx
+    requirements:
+      - Sphinx == 1.6.3
+      - sphinx-autobuild == 0.7.1
+      - sphinx-rtd-theme == 0.2.4
+      - sphinx_fontawesome
+      - cloud_sptheme
+      - recommonmark == 0.4.0
