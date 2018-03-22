@@ -14,9 +14,9 @@ bootstrap_target = ".tools/bootstrap"
 bootstrap_requirements = "git+https://github.com/lalmeras/clickable.git@dev invoke"
 
 # use local version of bootstrap & clickable
-bootstrap_sh = "file:/home/lalmeras/git/bootstrap-virtualenv/bootstrap.sh"
-bootstrap_requirements = "git+file:/home/lalmeras/git/clickable/@dev invoke"
-bootstrap_requirements = "-efile:/home/lalmeras/git/clickable/ invoke"
+#bootstrap_sh = "file:/home/lalmeras/git/bootstrap-virtualenv/bootstrap.sh"
+#bootstrap_requirements = "git+file:/home/lalmeras/git/clickable/@dev invoke"
+#bootstrap_requirements = "-efile:/home/lalmeras/git/clickable/ invoke"
 
 def bootstrap_done(bootstrapenv):
     print("""
