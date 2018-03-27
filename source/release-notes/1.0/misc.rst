@@ -10,11 +10,11 @@ To prepare a migration :
 
 * create new ``DataUpgradeRecord`` table :
 
-  .. code-block:: sql
+.. code-block:: sql
 
-    create sequence DataUpgradeRecord_id_seq start 1 increment 1;
-    create table DataUpgradeRecord (id int8 not null, autoPerform boolean not null, done boolean not null, executionDate timestamp, name text not null, primary key (id));
-    alter table DataUpgradeRecord add constraint UK_6q54k3x0axoc3n8ns55emwiev unique (name);
+  CREATE SEQUENCE DataUpgradeRecord_id_seq start 1 increment 1;
+  CREATE TABLE DataUpgradeRecord (id int8 NOT NULL, autoPerform boolean NOT NULL, done boolean NOT NULL, executionDate timestamp, name text NOT NULL, primary key (id));
+  CREATE TABLE DataUpgradeRecord ADD constraint UK_6q54k3x0axoc3n8ns55emwiev UNIQUE (name);
 
 With this migration plan; you'll keep your old upgrade information in
 ``parameter`` table. New DatabaseUpgradeRecord will be stored in the dedicated
@@ -26,6 +26,17 @@ new table.
   ``parameter`` ignored. Either drop your old upgrades in
   ``DataUpgradeManagerImpl.listDataUpgrades()`` or migrate ``parameter``
   entries to ``DataUpgradeRecord``.
+
+The following script should handle data upgrade migration to ``DataUpgradeRecord`` :
+
+.. code-block:: sql
+
+  INSERT INTO DataUpgradeRecord (id, autoperform, done, executiondate, name)
+      SELECT nextval('dataupgraderecord_id_seq'), false, stringvalue::boolean, now(), regexp_replace(name, 'dataUpgrade.', '')
+      FROM parameter WHERE name ~ '^dataUpgrade\..*(?<!\.autoperform)$';
+
+Once you have checked that DataUpgradeRecord contains every previously executed data upgrade,
+you can remove old values from the ``parameter`` table.
 
 Lucene - French analyzer
 ========================
@@ -68,3 +79,28 @@ ICloneable<T>
 =============
 
 ``Object.clone`` use is discouraged. This interface, barely used, is removed.
+
+Tests infrastructure
+====================
+
+Test classes has been moved to separate modules. To keep using this classes, your
+core ``pom.xml`` should have the following dependencies :
+
+.. code-block:: xml
+
+  <dependency>
+  	<groupId>org.iglooproject.dependencies</groupId>
+  	<artifactId>igloo-dependency-test</artifactId>
+  	<scope>test</scope>
+  	<type>pom</type>
+  </dependency>
+
+  <dependency>
+  	<groupId>org.iglooproject.components</groupId>
+  	<artifactId>igloo-component-jpa-test</artifactId>
+  	<version>${igloo.version}</version>
+  	<scope>test</scope>
+  </dependency>
+
+Previous test dependencies (``junit``, ``spring-test``) are now provided by the
+new modules and can be removed ``pom.xml`` if needed.
