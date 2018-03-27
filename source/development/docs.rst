@@ -26,7 +26,8 @@ When the clone is over, execute the installation script :
 .. code-block:: bash
 
   cd ~/git/igloo-doc
-  ./bootstrap.sh
+  ./tasks.py --clean
+  source .tools/bootstrap/bin/activate
 
 When the script ends, the documentation installation is finished.
 
@@ -37,20 +38,20 @@ A few commands to interact with the documentation locally :
 
 .. code-block:: bash
 
-  invoke docs
+  click-igloodoc sphinx build html
 
 The command 'docs' builds the documentation and generates the html files.
 
 .. code-block:: bash
 
-  invoke docs-live
+  click-igloodoc sphinx live
 
 The command 'docs-live' builds the documentation and opens it in a new tab of your browser,
 allowing you to see your modifications as soon as you save them.
 
 .. code-block:: bash
 
-  invoke docs-clean
+  click-igloodoc sphinx clean
 
 The command 'docs-clean' cleans all the build directory and files.
 

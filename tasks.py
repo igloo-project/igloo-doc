@@ -5,18 +5,17 @@ name = 'igloo-doc'
 default_command = 'click-igloodoc'
 entry_points = {
     'console_scripts': [
-        'invoke-infra=invoke.main:program.run',
         '{}=clickable.click:main'.format(default_command)
     ]
 }
 bootstrap_sh = "https://raw.githubusercontent.com/lalmeras/bootstrap-virtualenv/master/bootstrap.sh"
 bootstrap_target = ".tools/bootstrap"
-bootstrap_requirements = "git+https://github.com/lalmeras/clickable.git@dev invoke"
+bootstrap_requirements = "git+https://github.com/lalmeras/clickable.git@dev"
 
 # use local version of bootstrap & clickable
 #bootstrap_sh = "file:/home/lalmeras/git/bootstrap-virtualenv/bootstrap.sh"
-#bootstrap_requirements = "git+file:/home/lalmeras/git/clickable/@dev invoke"
-#bootstrap_requirements = "-efile:/home/lalmeras/git/clickable/ invoke"
+#bootstrap_requirements = "git+file:/home/lalmeras/git/clickable/@dev"
+#bootstrap_requirements = "-efile:/home/lalmeras/git/clickable/"
 
 def bootstrap_done(bootstrapenv):
     print("""
@@ -94,7 +93,6 @@ try:  # py3
 except ImportError:  # py2
     from pipes import quote
 
-import invoke
 import click
 from ruamel.yaml import YAML
 
