@@ -52,6 +52,7 @@ Hibernate JPA
 
 |
 
+* Rename ``GenericUser.USER_NAME_SORT_FIELD_NAME`` to ``GenericUser.USERNAME_SORT``.
 * Rename ``GenericSimpleUser.FIRST_NAME_SORT_FIELD_NAME`` to ``GenericSimpleUser.FIRST_NAME_SORT``.
 * Rename ``GenericSimpleUser.LAST_NAME_SORT_FIELD_NAME`` to ``GenericSimpleUser.LAST_NAME_SORT``.
 * Rename ``QueuedTaskHolder.NAME_SORT_FIELD_NAME`` to ``QueuedTaskHolder.NAME_SORT``.
@@ -117,6 +118,13 @@ Hibernate JPA
   Use ``table.putAll(query.transform(GroupBy2.transformer(GroupBy2.table(row, column, value))))`` instead.
 * Remove ``Expressions2#mapToTable(Table, JPQLQuery, Expression, Expression, Expression)``.
   Use ``table.putAll(query.transform(GroupBy2.transformer(GroupBy2.table(row, column, value))))`` instead.
+
+|
+
+* ``GenericUser.java`` attribute ``userName`` has been renamed to ``username``. The following script should handle this update :
+
+.. literalinclude:: scripts/username-replace.sh
+  :language: bash
 
 Import & Export
 ---------------
