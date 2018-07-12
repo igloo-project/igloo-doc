@@ -66,6 +66,11 @@ JDK 7
 
 JDK 7 support is removed as planned.
 
+JFreeChart
+~~~~~~~~~~
+
+Dependency management entry removed from parent pom. If your project use
+JFreeChart, declare dependency inside your project's pom.
 
 
 Maven
