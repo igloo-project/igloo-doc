@@ -10,12 +10,20 @@ We dropped the dependency ``ivaynberg/wicket-select2`` and now use
 * Remove deprecated ``org.iglooproject.wicket.more.markup.html.select2.Select2CollectionMultipleChoice``
 * Remove deprecated ``org.iglooproject.wicket.more.markup.html.select2.Select2ListMultipleChoice``
 * Remove deprecated ``org.iglooproject.wicket.more.markup.html.select2.Select2SortedSetMultipleChoice``
+
+.. paragraph separator
+
 |
+
 * Remove ``org.iglooproject.wicket.more.markup.html.select2.AjaxSearchResourceReference``. Not the same API anymore, rebuild it from scratch if necessary.
 * Remove ``org.iglooproject.wicket.more.markup.html.select2.AbstractGenericEntitySelect2AjaxResourceReference``. Not the same API anymore, rebuild it from scratch if necessary.
+
 |
+
 * Remove ``select2.less``
+
 |
+
 * Remove ``Select2Utils.CSS_DROP_MINI``;
 * Remove ``Select2Utils.String CSS_DROP_SMALL``;
 * Remove ``Select2Utils.String CSS_DROP_MEDIUM``;
