@@ -23,6 +23,7 @@ Database Management
    :caption: Content
 
    database/flyway
+   database/jndi
 
 Best practices
 ==============
