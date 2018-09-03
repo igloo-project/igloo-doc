@@ -21,7 +21,7 @@ Igloo-project Documentation
    release-notes/Migrating-to-0.12.md
    release-notes/Migrating-to-0.13.rst
    release-notes/Migrating-to-0.14.md
-   release-notes/Migrating-to-1.0.rst
+   release-notes/Migrating-to-1.2.rst
 
 
 .. toctree::

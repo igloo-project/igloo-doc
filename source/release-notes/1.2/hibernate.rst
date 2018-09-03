@@ -26,10 +26,10 @@ cf http://in.relation.to/2018/02/07/hibernate-orm-5213-final-release/
 TODO lazy-loading on identifier access
 
 
-Hibernate 5.3.0 (upstream) (?)
+Hibernate 5.3.0 (upstream)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Hibernate is mainly a maintenance release, with some important modification:
+Hibernate 5.3 is mainly a maintenance release, with some important modification:
 
 * Complete list here: http://in.relation.to/2018/01/18/hibernate-orm-530-beta1-release/
 * HQL legacy positional parameters removed: https://hibernate.atlassian.net/browse/HHH-12101

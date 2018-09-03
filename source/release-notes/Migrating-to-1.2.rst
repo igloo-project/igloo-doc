@@ -1,6 +1,8 @@
 ======================
-Migrating to 1.0 (wip)
+Migrating to 1.2 (wip)
 ======================
+
+.. warning: 1.1 versions are 1.2 pre-release and cannot be considered as stable.
 
 This is the first official release of igloo-project, forked from OWSI-Core
 project.
@@ -14,20 +16,26 @@ Major modifications
 .. toctree::
   :maxdepth: 2
 
-  1.0/bindgen.rst
-  1.0/functional.rst
-  1.0/configuration.rst
-  1.0/property.rst
-  1.0/hibernate.rst
-  1.0/bootstrap.rst
-  1.0/fontawesome.rst
-  1.0/wicket.rst
-  1.0/linkdescriptor.rst
-  1.0/referencedata.rst
-  1.0/select2.rst
-  1.0/cleaning.rst
-  1.0/misc.rst
+  1.2/bindgen.rst
+  1.2/functional.rst
+  1.2/configuration.rst
+  1.2/property.rst
+  1.2/hibernate.rst
+  1.2/bootstrap.rst
+  1.2/fontawesome.rst
+  1.2/wicket.rst
+  1.2/linkdescriptor.rst
+  1.2/referencedata.rst
+  1.2/select2.rst
+  1.2/cleaning.rst
+  1.2/misc.rst
 
+
+Renamed configuration
+---------------------
+
+``hibernate.defaultSchema`` is renamed ``db.schema`` as it is used by flyway.
+You need to rename it in your ``configuration.properties``.
 
 Updated
 -------
@@ -188,3 +196,16 @@ use this dependency in place of junit, mockito, spring-test, ... dependencies.
 **org.iglooproject.jpa.junit.AbstractTestCase** and **org.iglooproject.jpa.EntityManagerExecutionListener**
 are moved in a new **igloo-dependency-jpa-test** module. If you want to use
 them, add this new dependency with scope test, and fix your imports.
+
+Bootstrap 4
+~~~~~~~~~~~
+
+Bootstrap 4 is available and used by basic-application archetype.
+
+Codebase for bootstrap 3 is still available and unchanged.
+
+JNDI Datasource
+~~~~~~~~~~~~~~~
+
+Configuration of JNDI can be done with a configuration switch. Please see
+:ref:`jndi`
