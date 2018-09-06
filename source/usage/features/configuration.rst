@@ -6,7 +6,15 @@ Configuration management
 TLDR
 ----
 
-For deployment, set ``IGLOO_PROFILE`` environment variable.
+For deployment, set ``igloo.profile`` system property (development,
+qualification, preproduction, production, test).
+
+For local configuration overrides, set ``igloo.config`` system property to a
+java resource url (default value:
+``file:/etc/${igloo.applicationName}/configuration.properties``).
+
+For log4j configuration overrides, set ``igloo.log4j`` system property to a
+java resource url (default value: ``classpath:/log4j-extra.properties``).
 
 In ``configuration-bootstrap.properties``, configure your
 ``igloo.default.spring.profiles.active`` active profiles.
@@ -47,7 +55,7 @@ Override log4j configuration the same way (files ``log4j-{env,user}-*.properties
 Overview
 --------
 
-From 1.0, Igloo use the following mechanisms to handle configuration:
+From 1.2, Igloo use the following mechanisms to handle configuration:
 
 * Two-phase loading: **bootstrap** (early and minimal) and
   **spring configuration** (late and exhaustive)
