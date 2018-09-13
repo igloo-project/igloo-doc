@@ -1,0 +1,75 @@
+################
+1.x pre-releases
+################
+
+1.x versions are 1.2 prereleases.
+
+
+1.1.3 (12-09-2018)
+##################
+
+Bugfixes
+********
+
+* Fix off-request wicket generation (scheduler, async tasks). The issue broke
+  all wicket-based API used outside of an HTTP request.
+
+
+1.1.2 (06-09-2018)
+##################
+
+Enhancements
+************
+
+This changes are backward-compatible.
+
+* added JNDI's database support (:ref:`jndi`)
+* added ``igloo.config`` and ``igloo.log4j`` configuration overrides
+  (:ref:`config.bootstrap`)
+* drop some useless WARN messages
+* AuthenticationManager now uses Spring to search AuthenticationProvider
+  (instead of a static configuration).
+
+Bugfixes
+********
+
+* fix logger's configuration overriding (higher precedence for last files).
+
+Misc
+****
+
+* update developers' information (pom.xml)
+
+
+1.1.1 (03-09-2018)
+##################
+
+Enhancements
+************
+
+* [4747e20056678ae7300272a6bf9dd39d38ba7b9a] added !default on some styles
+* [713cc732fce44c5b26e3cf9e46abf5aebcacb9c3] update some data for Excel-based
+  initialization
+* [c28ed4fccd9a25481123da2db48d34d54c031a98] basic-application: use raw
+  bootstrap grid styling instead of custom styles
+* [df3bcdb1f215e7005efba0fefcde751064bddb0b] prepare bootstrap-override
+  resources to ease fix and workaround integration in Igloo on external styling
+  resources (bootstrap, ...).
+
+Bugfixes
+********
+
+* [e3007084ca90495cc4e8b9d875938f6d52c8a25c] workaround for bootstrap col-auto max width
+* [ad0896a0ab4b28705e9bef122050bf330f557f9b] fix scroll to top (styles)
+
+
+1.1.0 (20-08-2018)
+##################
+
+Major rewrite of Igloo ; see Migrating to 1.2 guide.
+
+
+1.0
+###
+
+There is not 1.0 releases.
