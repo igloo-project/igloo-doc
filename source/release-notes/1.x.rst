@@ -4,6 +4,25 @@
 
 1.x versions are 1.2 prereleases.
 
+1.1.4 (16-09-2018)
+##################
+
+Bugfixes
+********
+
+* :issue:`18` - fix grouping/splitting behavior when sending a notification to
+  multiple recipients.
+* :issue:`17` - use an explicit setting ``notification.mail.sender.behavior``
+  to control what is done when sender is not explictly set when a mail is sent.
+  Get rid of an extraneous INFO message on PropertyServiceImpl when
+  ``notification.mail.sender`` is empty.
+
+Breaking change
+***************
+
+If you use a not-empty value for ``notification.mail.sender``, you need to
+add to your configuration
+``notification.mail.sender.behavior=FALLBACK_TO_CONFIGURATION``.
 
 1.1.3 (12-09-2018)
 ##################
