@@ -32,6 +32,8 @@ Bugfixes
 
 * Fix off-request wicket generation (scheduler, async tasks). The issue broke
   all wicket-based API used outside of an HTTP request.
+* Fix a problematic dependency declaration on igloo-dependency-hibernate-search
+  that triggers (wrongly) SNAPSHOT detection by jgitflow plugin.
 
 
 1.1.2 (06-09-2018)
