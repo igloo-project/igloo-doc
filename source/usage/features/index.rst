@@ -6,7 +6,7 @@ Backend
 
    configuration.rst
    PropertyService.md
-   Email-notification.md
+   Email-notification.rst
    HistoryLog-&-Audit.md
    DifferenceService.md
    TaskExecutor.md
