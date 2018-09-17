@@ -4,6 +4,8 @@
 
 1.x versions are 1.2 prereleases.
 
+.. _v1.1.4:
+
 1.1.4 (16-09-2018)
 ##################
 
@@ -24,6 +26,8 @@ If you use a not-empty value for ``notification.mail.sender``, you need to
 add to your configuration
 ``notification.mail.sender.behavior=FALLBACK_TO_CONFIGURATION``.
 
+.. _v1.1.3:
+
 1.1.3 (12-09-2018)
 ##################
 
@@ -35,6 +39,7 @@ Bugfixes
 * Fix a problematic dependency declaration on igloo-dependency-hibernate-search
   that triggers (wrongly) SNAPSHOT detection by jgitflow plugin.
 
+.. _v1.1.2:
 
 1.1.2 (06-09-2018)
 ##################
@@ -61,6 +66,7 @@ Misc
 
 * update developers' information (pom.xml)
 
+.. _v1.1.1:
 
 1.1.1 (03-09-2018)
 ##################
@@ -83,12 +89,14 @@ Bugfixes
 * [e3007084ca90495cc4e8b9d875938f6d52c8a25c] workaround for bootstrap col-auto max width
 * [ad0896a0ab4b28705e9bef122050bf330f557f9b] fix scroll to top (styles)
 
+.. _v1.1.0:
 
 1.1.0 (20-08-2018)
 ##################
 
 Major rewrite of Igloo ; see Migrating to 1.2 guide.
 
+.. _v1.0:
 
 1.0
 ###
