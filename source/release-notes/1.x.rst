@@ -4,6 +4,27 @@
 
 1.x versions are 1.2 prereleases.
 
+.. _1.1.x (TODO)
+
+1.1.5 (TODO)
+##################
+
+Bugfixes
+********
+
+* Select2: prevent dropdown toggle (open) on clear (single + multiple)
+* Select2: dispose tooltip on element clear (multiple)
+
+Updates
+*******
+
+* Font Awesome 5.3.1
+
+Enhancements
+************
+
+* Add build informations (date, commit sha, etc.)
+
 .. _v1.1.4:
 
 1.1.4 (16-09-2018)
