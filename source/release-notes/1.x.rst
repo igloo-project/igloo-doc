@@ -4,7 +4,7 @@
 
 1.x versions are 1.2 prereleases.
 
-.. _1.1.x (TODO)
+.. _v1.1.5:
 
 1.1.5 (TODO)
 ##################
@@ -12,18 +12,22 @@
 Bugfixes
 ********
 
-* Select2: prevent dropdown toggle (open) on clear (single + multiple)
-* Select2: dispose tooltip on element clear (multiple)
+* Select2: prevent dropdown toggle (open) on clear (single + multiple).
+* Select2: dispose tooltip on element clear (multiple).
 
 Updates
 *******
 
-* Font Awesome 5.3.1
+* Font Awesome 5.3.1.
 
 Enhancements
 ************
 
-* Add build informations (date, commit sha, etc.)
+* Add build informations (date, commit sha, etc.).
+* BasicApp: Fix custom BS checkbox position.
+* BasicApp: Improve alignment on page title and back to btn.
+* Consistency in use of Wicket ``Session.get()``.
+* Remove useless icon on cancel buttons.
 
 .. _v1.1.4:
 
