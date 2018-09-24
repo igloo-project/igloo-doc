@@ -4,6 +4,16 @@
 
 1.x versions are 1.2 prereleases.
 
+.. _v1.1.6:
+
+1.1.6 (TODO)
+##################
+
+Bugfixes
+********
+
+* Select2: attach component to the Bootstrap modal.
+
 .. _v1.1.5:
 
 1.1.5 (24-09-2018)
