@@ -6,7 +6,7 @@
 
 .. _v1.1.5:
 
-1.1.5 (TODO)
+1.1.5 (24-09-2018)
 ##################
 
 Bugfixes
@@ -24,10 +24,12 @@ Enhancements
 ************
 
 * Add build informations (date, commit sha, etc.).
-* BasicApp: Fix custom BS checkbox position.
-* BasicApp: Improve alignment on page title and back to btn.
 * Consistency in use of Wicket ``Session.get()``.
 * Remove useless icon on cancel buttons.
+* BasicApp: Fix custom BS checkbox position.
+* BasicApp: Improve alignment on page title and back to btn.
+* BasicApp: Minor change on style (nav and pagination background colors).
+* BasicApp: Remove useless link to user detail page.
 
 .. _v1.1.4:
 
