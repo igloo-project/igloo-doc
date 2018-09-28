@@ -14,6 +14,11 @@ Bugfixes
 
 * Select2: attach component to the Bootstrap modal.
 
+Breaking change
+***************
+
+* Fix Bootstrap variables override.
+
 .. _v1.1.5:
 
 1.1.5 (24-09-2018)
