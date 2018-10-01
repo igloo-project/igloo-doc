@@ -209,3 +209,17 @@ JNDI Datasource
 
 Configuration of JNDI can be done with a configuration switch. Please see
 :ref:`jndi`
+
+
+Migration script
+----------------
+
+The following script intends to help initiating migration by dealing with dump
+replacements.
+
+.. warning ::
+  As is, the script move **from version 0.14 to 1.0-SNAPSHOT**. Please replace
+  version numbers in the first block to adjust to your version.
+
+.. literalinclude:: 1.2/scripts/migration-igloo.sh
+  :language: bash
