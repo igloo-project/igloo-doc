@@ -4,6 +4,14 @@
 
 1.x versions are 1.2 prereleases.
 
+dev (to be released)
+####################
+
+Enhancement
+***********
+
+* added tests on rollback behavior in ``igloo-component-jpa-test``
+
 .. _v1.1.6:
 
 1.1.6 (01-10-2018)
