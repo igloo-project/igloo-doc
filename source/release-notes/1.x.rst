@@ -7,6 +7,17 @@
 dev (to be released)
 ####################
 
+Bugfixes
+********
+
+* Fix inline enclosure component handler in BS modal.
+
+Breaking change
+***************
+
+* Custom Wicket tag ``wicket:enclosure-container`` is now deprecated and will be
+  removed soon. Use Igloo component ``EnclosureContainer`` instead.
+
 Enhancement
 ***********
 
