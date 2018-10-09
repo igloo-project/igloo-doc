@@ -11,6 +11,7 @@ Bugfixes
 ********
 
 * Fix inline enclosure component handler in BS modal.
+* Fix limit 0 case in QueryDSL and HS search query (return empty list).
 
 Breaking change
 ***************
