@@ -4,6 +4,17 @@
 
 1.x versions are 1.2 prereleases.
 
+.. _v1.1.9:
+
+1.1.9 (TODO)
+####################
+
+Enhancement
+***********
+
+* Move Wicket JavaScript and Select2 custom settings to
+  ``CoreWicketApplication``.
+
 .. _v1.1.8:
 
 1.1.8 (111-10-2018)
