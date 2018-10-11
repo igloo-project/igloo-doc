@@ -4,6 +4,21 @@
 
 1.x versions are 1.2 prereleases.
 
+.. _v1.1.8:
+
+1.1.8 (111-10-2018)
+####################
+
+Bugfixes
+********
+
+* Fix conflict between Bootstrap 4 tooltip and JQuery UI widget tooltip.
+
+Breaking change
+***************
+
+* Override JQuery UI js ressource from WiQuery to remove widget tooltip.
+
 .. _v1.1.7:
 
 1.1.7 (10-10-2018)
