@@ -9,11 +9,25 @@
 1.1.9 (TODO)
 ####################
 
+Bugfixes
+********
+
+* Fix JQuery UI datepicker absolute top position.
+* Fix condition on edit button for ``ReferenceData`` list pages.
+
 Enhancement
 ***********
 
 * Move Wicket JavaScript and Select2 custom settings to
   ``CoreWicketApplication``.
+
+Breaking change
+***************
+
+* ``DataTableBuilder``: rename method
+  ``when(SerializablePredicate2<? super T> predicate)`` to
+  ``whenPredicate(SerializablePredicate2<? super T> predicate)``.
+
 
 .. _v1.1.8:
 
