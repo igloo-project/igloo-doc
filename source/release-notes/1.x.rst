@@ -20,6 +20,8 @@ Enhancement
 
 * Move Wicket JavaScript and Select2 custom settings to
   ``CoreWicketApplication``.
+* Add announcement feature into BasicApp.
+* Update error pages (403, 404, 500, 503).
 
 Breaking change
 ***************
