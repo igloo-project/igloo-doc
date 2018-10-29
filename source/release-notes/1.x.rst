@@ -4,6 +4,20 @@
 
 1.x versions are 1.2 prereleases.
 
+.. _v1.1.10:
+
+1.1.10 (29-10-2018)
+####################
+
+Dependency
+**********
+
+* https://github.com/igloo-project/igloo-parent/commit/5fbfce45d2ea92c340dff6107c24a2de0e28e19b
+* https://github.com/igloo-project/igloo-parent/commit/80563f1a097d46fae2c3dfc310966265ecbf46db
+* https://github.com/igloo-project/igloo-parent/commit/d4c3a13fc28ff46c0802f3443b17940c01cb235a
+* https://github.com/igloo-project/igloo-parent/commit/e4107081d829c3f36106674fa778ba771a69d94f
+* https://github.com/igloo-project/igloo-parent/commit/d082937880f43dd076fd7615f15a902aaa00140b
+
 .. _v1.1.9:
 
 1.1.9 (29-10-2018)
