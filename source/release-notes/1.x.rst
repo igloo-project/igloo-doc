@@ -4,6 +4,16 @@
 
 1.x versions are 1.2 prereleases.
 
+.. _v1.1.11:
+
+1.1.11 (06-11-2018)
+####################
+
+Bugfixes
+********
+
+* Fix Select2 focus and dropdown results position in Bootstrap Modal.
+
 .. _v1.1.10:
 
 1.1.10 (29-10-2018)
