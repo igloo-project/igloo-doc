@@ -7,17 +7,42 @@ Igloo 1.1.x
 .. _v1.1.12:
 
 1.1.12 (TODO)
-####################
+#############
+
+.. warning::
+  wicket 8.1.0 websocket implementation is broken wicket Tomcat 8.5+
+  (https://github.com/apache/wicket/commit/5fc86bdd8628686ffcd124849750f327dccc0c77#diff-94114697955d73acae40bf0a21c6b961)
+  Please do not update if you use websocket.
 
 Bugfixes
 ********
 
 * Add missing Bootstrap Util js dependency for Bootstrap Modal js.
 
+Updates
+*******
+
+* javax.mail:mail 1.4.7 updated to com.sun.mail:javax.mail 1.6.2
+
+  * javax.mail:mail added as a forbidden dependency
+  * igloo-component-spring dependency modified to com.sun.mail:javax.mail
+  * if you declare your own javax.mail:mail dependency in you project, please
+    update groupId/artifactId with com.sun.mail/javax.mail
+
+* poi 3.17.0 updated to poi 4.0.0; there's some breaking change that are not
+  involved in API used by Igloo
+
+  * http://poi.apache.org/changes.html#4.0.0
+
 .. _v1.1.11:
 
 1.1.11 (06-11-2018)
 ####################
+
+.. warning::
+  wicket 8.1.0 websocket implementation is broken wicket Tomcat 8.5+
+  (https://github.com/apache/wicket/commit/5fc86bdd8628686ffcd124849750f327dccc0c77#diff-94114697955d73acae40bf0a21c6b961)
+  Please do not update if you use websocket.
 
 Bugfixes
 ********
@@ -29,14 +54,27 @@ Bugfixes
 1.1.10 (29-10-2018)
 ####################
 
-Dependency
-**********
+Dependencies
+************
 
-* https://github.com/igloo-project/igloo-parent/commit/5fbfce45d2ea92c340dff6107c24a2de0e28e19b
-* https://github.com/igloo-project/igloo-parent/commit/80563f1a097d46fae2c3dfc310966265ecbf46db
-* https://github.com/igloo-project/igloo-parent/commit/d4c3a13fc28ff46c0802f3443b17940c01cb235a
-* https://github.com/igloo-project/igloo-parent/commit/e4107081d829c3f36106674fa778ba771a69d94f
-* https://github.com/igloo-project/igloo-parent/commit/d082937880f43dd076fd7615f15a902aaa00140b
+* Major updates:
+
+  * hibernate 5.3.5 -> 5.3.17, hibernate-search 5.10.3 -> 5.10.4
+  * spring 5.0.7 -> 5.0.10, spring-security 5.0.6 -> 5.0.9
+  * wicket 8.0.0 -> 8.1.0
+
+.. warning::
+  wicket 8.1.0 websocket implementation is broken wicket Tomcat 8.5+
+  (https://github.com/apache/wicket/commit/5fc86bdd8628686ffcd124849750f327dccc0c77#diff-94114697955d73acae40bf0a21c6b961)
+  Please do not update if you use websocket.
+
+* Details:
+
+  * https://github.com/igloo-project/igloo-parent/commit/5fbfce45d2ea92c340dff6107c24a2de0e28e19b
+  * https://github.com/igloo-project/igloo-parent/commit/80563f1a097d46fae2c3dfc310966265ecbf46db
+  * https://github.com/igloo-project/igloo-parent/commit/d4c3a13fc28ff46c0802f3443b17940c01cb235a
+  * https://github.com/igloo-project/igloo-parent/commit/e4107081d829c3f36106674fa778ba771a69d94f
+  * https://github.com/igloo-project/igloo-parent/commit/d082937880f43dd076fd7615f15a902aaa00140b
 
 .. _v1.1.9:
 
