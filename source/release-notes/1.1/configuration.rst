@@ -2,7 +2,7 @@
 Configuration management
 ########################
 
-With version 1.0, configuration management is heavily rewritten. Here are the
+With version 1.1.x, configuration management is heavily rewritten. Here are the
 steps and precaution to migrate your application.
 
 Class rename

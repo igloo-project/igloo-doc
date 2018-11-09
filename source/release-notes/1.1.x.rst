@@ -1,8 +1,8 @@
-################
-1.x pre-releases
-################
+###########
+Igloo 1.1.x
+###########
 
-1.x versions are 1.2 prereleases.
+1.1.x is a stable release family.
 
 .. _v1.1.12:
 
@@ -234,7 +234,7 @@ Bugfixes
 1.1.0 (20-08-2018)
 ##################
 
-Major rewrite of Igloo ; see Migrating to 1.2 guide.
+Major rewrite of Igloo ; see Migrating to 1.1 guide.
 
 .. _v1.0:
 

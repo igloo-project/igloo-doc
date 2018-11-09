@@ -7,8 +7,8 @@ done <<EOF
 s@Nexus OWSI Core@Nexus Igloo@g
 s@fr\.openwide\.core@org.iglooproject@g
 s@owsi-core@igloo@g
-s@<version>0\.14@<version>1.0-SNAPSHOT@g
-s@<igloo.version>0\.14@<igloo.version>1.0-SNAPSHOT@g
+s@<version>0\.14@<version>1.1.0@g
+s@<igloo.version>0\.14@<igloo.version>1.1.0@g
 s@projects\.openwide\.fr/services/nexus/content/repositories/igloo-snapshots@nexus.tools.kobalt.fr/repository/igloo-snapshots/@g
 s@projects\.openwide\.fr/services/nexus/content/repositories/igloo@nexus.tools.kobalt.fr/repository/igloo/@g
 EOF

@@ -1,8 +1,26 @@
-======================
-Migrating to 1.2 (wip)
-======================
+==================
+Migrating to 1.1.0
+==================
 
-.. warning: 1.1 versions are 1.2 pre-release and cannot be considered as stable.
+.. warning: 1.1.x versions are considered stable releases.
+
+1.1.0 is a big update of owsi-core 0.x versions. It includes a major package
+rename, a lot of updates :
+
+* move to Java 8, Tomcat 8.5 stack
+* introduce Java 8 lambdas, streams; reworked predicates, ...
+* bindgen optimizations (at compilation time) with lambda
+* hibernate update (5.2 -> 5.3)
+* bootstrap 4 (wicket & bootstrap 3 code kept for compatibility)
+* fontawesome 5 (fontawesome 4 kept for compatibility)
+* wicket 8.x
+* removed deprecated early target definition in linkdescriptor API
+* deprecated GenericListItem removed and replaced by ReferenceData
+* migration to select2 from wicketstuff
+* maven-release-plugin is replaced by jgitflow plugin
+* and others...
+
+Detailed explanations and migration plan can be found from this page.
 
 This is the first official release of igloo-project, forked from OWSI-Core
 project.
@@ -10,26 +28,29 @@ project.
 .. contents:: :local:
 
 
-Major modifications
--------------------
+Detailed modifications
+######################
 
 .. toctree::
   :maxdepth: 2
 
-  1.2/bindgen.rst
-  1.2/functional.rst
-  1.2/configuration.rst
-  1.2/property.rst
-  1.2/hibernate.rst
-  1.2/bootstrap.rst
-  1.2/fontawesome.rst
-  1.2/wicket.rst
-  1.2/linkdescriptor.rst
-  1.2/referencedata.rst
-  1.2/select2.rst
-  1.2/cleaning.rst
-  1.2/misc.rst
+  1.1/bindgen.rst
+  1.1/functional.rst
+  1.1/configuration.rst
+  1.1/property.rst
+  1.1/hibernate.rst
+  1.1/bootstrap.rst
+  1.1/fontawesome.rst
+  1.1/wicket.rst
+  1.1/linkdescriptor.rst
+  1.1/referencedata.rst
+  1.1/select2.rst
+  1.1/cleaning.rst
+  1.1/misc.rst
 
+
+Others
+######
 
 Renamed configuration
 ---------------------
@@ -73,6 +94,14 @@ JDK 7
 ~~~~~
 
 JDK 7 support is removed as planned.
+
+
+Tomcat 7
+~~~~~~~~
+
+Tomcat 7 is no longer supported. Servlet 3.1 is targetted, and so Tomcat 8.5
+is needed.
+
 
 JFreeChart
 ~~~~~~~~~~
@@ -145,6 +174,7 @@ Joda-Time
 Joda-Time is removed from dependency; you can continue to use it by re-adding
 this dependency to your project.
 
+
 Session - redirectUrl
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -171,6 +201,7 @@ Here are the use-cases to check that there are no regressions on your applicatio
 * login with a wrong password; check error message
 * visit a protected and forbidden page; you should be redirected to default
   home page with an error message
+
 
 Javascript
 ~~~~~~~~~~
@@ -218,8 +249,8 @@ The following script intends to help initiating migration by dealing with dump
 replacements.
 
 .. warning ::
-  As is, the script move **from version 0.14 to 1.0-SNAPSHOT**. Please replace
+  As is, the script move **from version 0.14 to 1.1**. Please replace
   version numbers in the first block to adjust to your version.
 
-.. literalinclude:: 1.2/scripts/migration-igloo.sh
+.. literalinclude:: 1.1/scripts/migration-igloo.sh
   :language: bash

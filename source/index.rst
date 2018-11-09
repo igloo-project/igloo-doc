@@ -17,12 +17,12 @@ Igloo-project Documentation
    :maxdepth: 1
    :caption: Release notes
 
-   release-notes/Migrating-to-0.11.md
-   release-notes/Migrating-to-0.12.md
-   release-notes/Migrating-to-0.13.rst
+   release-notes/1.1.x.rst
+   release-notes/Migrating-to-1.1.0.rst
    release-notes/Migrating-to-0.14.md
-   release-notes/1.x.rst
-   release-notes/Migrating-to-1.2.rst
+   release-notes/Migrating-to-0.13.rst
+   release-notes/Migrating-to-0.12.md
+   release-notes/Migrating-to-0.11.md
 
 
 .. toctree::

@@ -3,7 +3,7 @@ Initialize an Igloo environment
 
 .. contents:: :local:
 
-.. warning:: This documentation is valid for version **1.0(-SNAPSHOT) / dev branch**.
+.. warning:: This documentation is valid for version **>= 1.1.0**.
 
 Prerequisites
 -------------

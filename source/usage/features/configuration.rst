@@ -55,7 +55,7 @@ Override log4j configuration the same way (files ``log4j-{env,user}-*.properties
 Overview
 --------
 
-From 1.2, Igloo use the following mechanisms to handle configuration:
+From 1.1, Igloo use the following mechanisms to handle configuration:
 
 * Two-phase loading: **bootstrap** (early and minimal) and
   **spring configuration** (late and exhaustive)
