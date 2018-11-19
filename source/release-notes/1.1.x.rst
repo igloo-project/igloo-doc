@@ -49,6 +49,17 @@ Enhancement
 * BasicApp: fix reference data permission check on add action.
 * BasicApp: add build date and commit sha in footer.
 
+WicketTester
+************
+
+* The use of WicketTester has been added to the BasicApplication. For now it's
+  more a showcase and does not present an entire test coverage.
+* This development required to create a new Igloo module,
+  igloo-component-wicket-more-test, that was originally included in
+  igloo-component-wicket-more.
+* Note that the version of igloo-component-jpa-test has been declared globally,
+  so it should not be present in project pom anymore.
+
 .. _v1.1.11:
 
 1.1.11 (06-11-2018)
