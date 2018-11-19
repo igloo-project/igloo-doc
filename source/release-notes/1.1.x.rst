@@ -9,11 +9,6 @@ Igloo 1.1.x
 1.1.12 (TODO)
 #############
 
-.. warning::
-  wicket 8.1.0 websocket implementation is broken wicket Tomcat 8.5+
-  (https://github.com/apache/wicket/commit/5fc86bdd8628686ffcd124849750f327dccc0c77#diff-94114697955d73acae40bf0a21c6b961)
-  Please do not update if you use websocket.
-
 Bugfixes
 ********
 
@@ -21,6 +16,10 @@ Bugfixes
 
 Updates
 *******
+
+* Wicket 8.1.0 -> 8.2.0
+
+  * https://wicket.apache.org/news/2018/11/17/wicket-8.2.0-released.html
 
 * javax.mail:mail 1.4.7 updated to com.sun.mail:javax.mail 1.6.2
 
@@ -34,12 +33,20 @@ Updates
 
   * http://poi.apache.org/changes.html#4.0.0
 
-* Font Awesome 5.3.1 updated to Font Awesome 5.5.0
+* Font Awesome 5.3.1 -> 5.5.0
 
   * https://github.com/FortAwesome/Font-Awesome/releases/tag/5.4.0
   * https://github.com/FortAwesome/Font-Awesome/releases/tag/5.4.1
   * https://github.com/FortAwesome/Font-Awesome/releases/tag/5.4.2
   * https://github.com/FortAwesome/Font-Awesome/releases/tag/5.5.0
+
+* Bindgen 4.0.0 -> 4.0.1
+
+Enhancement
+***********
+
+* BasicApp: fix reference data permission check on add action.
+* BasicApp: add build date and commit sha in footer.
 
 .. _v1.1.11:
 
