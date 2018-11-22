@@ -5,10 +5,26 @@ Igloo 1.1.x
 1.1.x is a stable release family.
 
 
+.. _v1.1.13:
+
+1.1.13 (23-11-2018)
+###################
+
+Bugfixes
+********
+
+* Fix Apache POI dependency: add missing commons-math3.
+* Remove from html useless confirm modal on hidden event.
+* BasicApp: add missing visible condition on navbar submenu items.
+
 .. _v1.1.12:
 
 1.1.12 (19-11-2018)
 ###################
+
+.. warning::
+  Apache POI 4.0.0: dependency ``commons-math3`` is missing.
+  Use Igloo 1.1.13 instead or add the dependency locally.
 
 Bugfixes
 ********
@@ -66,7 +82,7 @@ WicketTester
 ###################
 
 .. warning::
-  wicket 8.1.0 websocket implementation is broken wicket Tomcat 8.5+
+  Wicket 8.1.0 websocket implementation is broken wicket Tomcat 8.5+
   (https://github.com/apache/wicket/commit/5fc86bdd8628686ffcd124849750f327dccc0c77#diff-94114697955d73acae40bf0a21c6b961)
   Please do not update if you use websocket.
 
@@ -90,7 +106,7 @@ Dependencies
   * wicket 8.0.0 -> 8.1.0
 
 .. warning::
-  wicket 8.1.0 websocket implementation is broken wicket Tomcat 8.5+
+  Wicket 8.1.0 websocket implementation is broken wicket Tomcat 8.5+
   (https://github.com/apache/wicket/commit/5fc86bdd8628686ffcd124849750f327dccc0c77#diff-94114697955d73acae40bf0a21c6b961)
   Please do not update if you use websocket.
 
