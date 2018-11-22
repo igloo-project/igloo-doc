@@ -43,19 +43,16 @@ The script asks what archetype we want to use. Choose the number corresponding
 to local, and check the different values we entered previously.
 
 Go to the newly generated project folder and make this modification: add a line specifying Igloo's version in the
-file `hello-world/pom.xml` between the markers `properties`, just under the line
-for the tomcat-jdbc.version :
+file `hello-world/pom.xml` between the markers `properties` :
 
 .. code-block:: xml
   :emphasize-lines: 4
 
   <properties>
-		<!-- il est préférable de bien surcharger la version du pool jdbc Tomcat au niveau du projet en fonction de la version de Tomcat -->
-		<tomcat-jdbc.version>${igloo.tomcat-jdbc.version}</tomcat-jdbc.version>
-		<igloo.version>0.14-SNAPSHOT</igloo.version>
-	</properties>
+    <igloo.version>1.2-SNAPSHOT</igloo.version>
+  </properties>
 
-.. note:: **0.14-SNAPSHOT** must be replaced by the targetted version
+.. note:: **1.2-SNAPSHOT** must be replaced by the targetted version.
 
 After that, push the project on git by executing the script located in the project folder :
 
