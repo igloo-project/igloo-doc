@@ -5,6 +5,24 @@ Igloo 1.1.x
 1.1.x is a stable release family.
 
 
+.. _v1.1.14:
+
+1.1.14 (TODO)
+###################
+
+Enhancement
+***********
+
+* Bootstrap Modal changes:
+
+  * Use custom js file ``modal-more.js`` to override modal behavior.
+  * Move ``_enforceFocus`` method override in ``modal-more.js``.
+  * Override ``show`` and ``hide`` methods to move modal to body on show
+    and put it back to its parent on hide.
+  * Override ``show`` and ``hide`` methods to force modal to close on
+    transition.
+  * Remove custom ``modal.js`` override, no longer needed.
+
 .. _v1.1.13:
 
 1.1.13 (23-11-2018)
