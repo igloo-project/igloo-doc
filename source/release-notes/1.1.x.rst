@@ -5,6 +5,16 @@ Igloo 1.1.x
 1.1.x is a stable release family.
 
 
+.. _v1.1.15:
+
+1.1.15 (TODO)
+###################
+
+Enhancement
+***********
+
+* BasicApp: consistent use of default locale french.
+
 .. _v1.1.14:
 
 1.1.14 (03-12-2018)
