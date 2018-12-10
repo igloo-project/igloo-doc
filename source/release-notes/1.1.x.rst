@@ -10,6 +10,14 @@ Igloo 1.1.x
 1.1.15 (TODO)
 ###################
 
+Updates
+*******
+
+* Wicket Stuff Select2 8.1.0 -> 8.2.0
+* Apache POI 4.0.0 -> 4.0.1
+* Popper.js 1.14.4 -> 1.14.6
+* Clipboard.js 2.0.1 -> 2.0.4
+
 Enhancement
 ***********
 
