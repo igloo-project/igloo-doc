@@ -10,6 +10,11 @@ Igloo 1.1.x
 1.1.15 (TODO)
 ###################
 
+Bugfix
+******
+
+* Fix :issue:`16` Webjars - too many open files
+
 Updates
 *******
 
