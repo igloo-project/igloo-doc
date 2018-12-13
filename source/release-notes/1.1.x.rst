@@ -30,6 +30,12 @@ Enhancement
 * BasicApp: refactor users admin pages.
 * BasicApp: add tabs in user detail pages.
 
+WicketTester
+************
+
+WicketTester mecanism has been improved by providing new utilitary methods and
+somes modules were refactored in that way.
+
 .. _v1.1.14:
 
 1.1.14 (03-12-2018)
