@@ -27,6 +27,8 @@ Enhancement
 ***********
 
 * BasicApp: consistent use of default locale french.
+* BasicApp: refactor users admin pages.
+* BasicApp: add tabs in user detail pages.
 
 .. _v1.1.14:
 
