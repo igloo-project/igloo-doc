@@ -43,3 +43,11 @@ UI
   UI-Forms.md
   UI-Placeholder-and-Enclosure.md
   UI-Charts-and-plots.md
+
+Tests
+-----
+
+.. toctree::
+  :maxdepth: 1
+
+  WicketTester.rst
