@@ -26,11 +26,11 @@ Breaking changes
 
 .. _v1.1.15:
 
-1.1.15 (14-12-2018)
+1.1.15 (2018-12-14)
 ###################
 
-Bugfix
-******
+Bugfixes
+********
 
 * Fix :issue:`16` Webjars - too many open files
 
@@ -43,8 +43,8 @@ Updates
 * Popper.js 1.14.4 -> 1.14.6
 * Clipboard.js 2.0.1 -> 2.0.4
 
-Enhancement
-***********
+Enhancements
+************
 
 * BasicApp: consistent use of default locale french.
 * BasicApp: refactor users admin pages.
@@ -58,11 +58,11 @@ somes modules were refactored in that way.
 
 .. _v1.1.14:
 
-1.1.14 (03-12-2018)
+1.1.14 (2018-12-03)
 ###################
 
-Enhancement
-***********
+Enhancements
+************
 
 * Bootstrap Modal changes:
 
@@ -78,7 +78,7 @@ Enhancement
 
 .. _v1.1.13:
 
-1.1.13 (23-11-2018)
+1.1.13 (2018-11-23)
 ###################
 
 Bugfixes
@@ -90,7 +90,7 @@ Bugfixes
 
 .. _v1.1.12:
 
-1.1.12 (19-11-2018)
+1.1.12 (2018-11-19)
 ###################
 
 .. warning::
@@ -130,8 +130,8 @@ Updates
 
 * Bindgen 4.0.0 -> 4.0.1
 
-Enhancement
-***********
+Enhancements
+************
 
 * BasicApp: fix reference data permission check on add action.
 * BasicApp: add build date and commit sha in footer.
@@ -149,7 +149,7 @@ WicketTester
 
 .. _v1.1.11:
 
-1.1.11 (06-11-2018)
+1.1.11 (2018-11-06)
 ###################
 
 .. warning::
@@ -164,7 +164,7 @@ Bugfixes
 
 .. _v1.1.10:
 
-1.1.10 (29-10-2018)
+1.1.10 (2018-10-29)
 ###################
 
 Dependencies
@@ -191,7 +191,7 @@ Dependencies
 
 .. _v1.1.9:
 
-1.1.9 (29-10-2018)
+1.1.9 (2018-10-29)
 ##################
 
 Bugfixes
@@ -200,16 +200,16 @@ Bugfixes
 * Fix JQuery UI datepicker absolute top position.
 * Fix condition on edit button for ``ReferenceData`` list pages.
 
-Enhancement
-***********
+Enhancements
+************
 
 * Move Wicket JavaScript and Select2 custom settings to
   ``CoreWicketApplication``.
 * Add announcement feature into BasicApp.
 * Update error pages (403, 404, 500, 503).
 
-Breaking change
-***************
+Breaking changes
+****************
 
 * ``DataTableBuilder``: rename method
   ``when(SerializablePredicate2<? super T> predicate)`` to
@@ -218,7 +218,7 @@ Breaking change
 
 .. _v1.1.8:
 
-1.1.8 (11-10-2018)
+1.1.8 (2018-10-11)
 ##################
 
 Bugfixes
@@ -226,14 +226,14 @@ Bugfixes
 
 * Fix conflict between Bootstrap 4 tooltip and JQuery UI widget tooltip.
 
-Breaking change
-***************
+Breaking changes
+****************
 
 * Override JQuery UI js ressource from WiQuery to remove widget tooltip.
 
 .. _v1.1.7:
 
-1.1.7 (10-10-2018)
+1.1.7 (2018-10-10)
 ##################
 
 Bugfixes
@@ -242,20 +242,20 @@ Bugfixes
 * Fix inline enclosure component handler in BS modal.
 * Fix limit 0 case in QueryDSL and HS search query (return empty list).
 
-Breaking change
-***************
+Breaking changes
+****************
 
 * Custom Wicket tag ``wicket:enclosure-container`` is now deprecated and will be
   removed soon. Use Igloo component ``EnclosureContainer`` instead.
 
-Enhancement
-***********
+Enhancements
+************
 
 * added tests on rollback behavior in ``igloo-component-jpa-test``
 
 .. _v1.1.6:
 
-1.1.6 (01-10-2018)
+1.1.6 (2018-10-01)
 ##################
 
 Bugfixes
@@ -263,14 +263,14 @@ Bugfixes
 
 * Select2: attach component to the Bootstrap modal.
 
-Breaking change
-***************
+Breaking changes
+****************
 
 * Fix Bootstrap variables override.
 
 .. _v1.1.5:
 
-1.1.5 (24-09-2018)
+1.1.5 (2018-09-24)
 ##################
 
 Bugfixes
@@ -297,7 +297,7 @@ Enhancements
 
 .. _v1.1.4:
 
-1.1.4 (16-09-2018)
+1.1.4 (2018-09-16)
 ##################
 
 Bugfixes
@@ -310,8 +310,8 @@ Bugfixes
   Get rid of an extraneous INFO message on PropertyServiceImpl when
   ``notification.mail.sender`` is empty.
 
-Breaking change
-***************
+Breaking changes
+****************
 
 If you use a not-empty value for ``notification.mail.sender``, you need to
 add to your configuration
@@ -319,7 +319,7 @@ add to your configuration
 
 .. _v1.1.3:
 
-1.1.3 (12-09-2018)
+1.1.3 (2018-09-12)
 ##################
 
 Bugfixes
@@ -332,7 +332,7 @@ Bugfixes
 
 .. _v1.1.2:
 
-1.1.2 (06-09-2018)
+1.1.2 (2018-09-06)
 ##################
 
 Enhancements
@@ -359,7 +359,7 @@ Misc
 
 .. _v1.1.1:
 
-1.1.1 (03-09-2018)
+1.1.1 (2018-09-03)
 ##################
 
 Enhancements
@@ -382,7 +382,7 @@ Bugfixes
 
 .. _v1.1.0:
 
-1.1.0 (20-08-2018)
+1.1.0 (2018-08-20)
 ##################
 
 Major rewrite of Igloo ; see Migrating to 1.1 guide.
@@ -392,4 +392,4 @@ Major rewrite of Igloo ; see Migrating to 1.1 guide.
 1.0
 ###
 
-There is not 1.0 releases.
+There is no 1.0 release.
