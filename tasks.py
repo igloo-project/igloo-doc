@@ -10,7 +10,7 @@ entry_points = {
 }
 bootstrap_sh = "https://raw.githubusercontent.com/lalmeras/bootstrap-virtualenv/master/bootstrap.sh"
 bootstrap_target = ".tools/bootstrap"
-bootstrap_requirements = "git+https://github.com/lalmeras/clickable.git@dev"
+bootstrap_requirements = "git+https://github.com/lalmeras/clickable.git@v0.2.0"
 
 # use local version of bootstrap & clickable
 #bootstrap_sh = "file:/home/lalmeras/git/bootstrap-virtualenv/bootstrap.sh"
