@@ -6,7 +6,7 @@ Igloo 1.1.x
 
 .. _v1.1.16:
 
-1.1.16 (TODO)
+1.1.16 (2016-12-28)
 ###################
 
 Bugfixes
@@ -21,8 +21,9 @@ Breaking changes
 * Update scss custom grid:
 
    * Remove ``.row-default`` and ``.row-compact``, use ``.row-md`` and ``.row-xs`` instead.
-   * Change ``$grid-gutter-widths`` keys from ``(0, 1, 2, 3, 4, 5, 6)`` to ``(0, xxs, xs, sm, md, lg, xl, xxl)``.
+   * Change ``$grid-gutter-widths`` to ``$grid-gutters`` and update keys from ``(0, 1, 2, 3, 4, 5, 6)`` to ``(0, xxs, xs, sm, md, lg, xl, xxl)``.
    * Add ``$layout-container-padding-x`` for consistency across containers in page sections.
+   * Revamp css for description parts (label-value display).
 
 Updates
 *******
