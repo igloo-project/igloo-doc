@@ -4,10 +4,10 @@ Igloo 1.1.x
 
 1.1.x is a stable release family.
 
-.. _v1.1.17:
+.. _v1.1.18:
 
 1.1.18 (next release, not published)
-###################
+####################################
 
 Updates
 *******
@@ -23,6 +23,13 @@ Hibernate & JAXB dependencies
 From 5.4.0, Hibernate includes JAXB dependencies in pom.xml, so this new release
 transitively includes javax.xml.bind:jaxb-api and org.glassfish.jaxb:jaxb-runtime
 (and transitive dependencies). Please check your dependencies.
+
+Enhancements
+************
+
+* Improve inclusion of tables into cards with new custom scss classes (``table-bordered-inner``, ``table-card-body``, ``card-body-table``).
+  From now on every content in a ``card`` should be placed under a ``card-body`` element.
+* New method ``replaceAll`` from ``CollectionUtils`` utilitary in which we provide the transformation to operate in the reverse collection.
 
 .. _v1.1.17:
 
