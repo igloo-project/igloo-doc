@@ -16,6 +16,7 @@ Updates
 * Hibernate 5.10.4 -> 5.11.0
 * Spring 5.0.10 -> 5.1.4
 * Spring security 5.0.9 -> 5.1.3
+* Font Awesome 5.6.3 -> 5.7.0
 
 Hibernate & JAXB dependencies
 -----------------------------
@@ -27,9 +28,9 @@ transitively includes javax.xml.bind:jaxb-api and org.glassfish.jaxb:jaxb-runtim
 Enhancements
 ************
 
-* Improve inclusion of tables into cards with new custom scss classes (``table-bordered-inner``, ``table-card-body``, ``card-body-table``).
+* Improve inclusion of tables into cards with new custom css classes (``.table-bordered-inner``, ``.table-card-body``, ``.card-body-table``).
   From now on every content in a ``card`` should be placed under a ``card-body`` element.
-* New method ``replaceAll`` from ``CollectionUtils`` utilitary in which we provide the transformation to operate in the reverse collection.
+* Add new method ``replaceAll`` in ``CollectionUtils`` utilitary to provide the transformation to operate on the reverse collection.
 
 .. _v1.1.17:
 
