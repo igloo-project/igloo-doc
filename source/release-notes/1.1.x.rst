@@ -31,6 +31,8 @@ Enhancements
 * Improve inclusion of tables into cards with new custom css classes (``.table-bordered-inner``, ``.table-card-body``, ``.card-body-table``).
   From now on every content in a ``card`` should be placed under a ``card-body`` element.
 * Add new method ``replaceAll`` in ``CollectionUtils`` utilitary to provide the transformation to operate on the reverse collection.
+* Creation of a new Igloo module, ``igloo-component-jpa-more-test``, that was originally included in ``igloo-component-jpa-more``. It includes utilitaries for tests
+  and all tests present in ``igloo-component-jpa-more`` ``src/test`` package.
 
 .. _v1.1.17:
 
@@ -184,12 +186,12 @@ Enhancements
 WicketTester
 ************
 
-* The use of WicketTester has been added to the BasicApplication. For now it's
+* The use of ``WicketTester`` has been added to the BasicApplication. For now it's
   more a showcase and does not present an entire test coverage.
 * This development required to create a new Igloo module,
-  igloo-component-wicket-more-test, that was originally included in
-  igloo-component-wicket-more.
-* Note that the version of igloo-component-jpa-test has been declared globally,
+  ``igloo-component-wicket-more-test``, that was originally included in
+  ``igloo-component-wicket-more``.
+* Note that the version of ``igloo-component-jpa-test`` has been declared globally,
   so it should not be present in project pom anymore.
 
 .. _v1.1.11:
