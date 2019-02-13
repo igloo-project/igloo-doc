@@ -6,7 +6,7 @@ Igloo 1.1.x
 
 .. _v1.1.18:
 
-1.1.18 (next release, not published)
+1.1.18 (2019-02-13)
 ####################################
 
 Updates
@@ -33,6 +33,8 @@ Enhancements
 * Add new method ``replaceAll`` in ``CollectionUtils`` utilitary to provide the transformation to operate on the reverse collection.
 * Creation of a new Igloo module, ``igloo-component-jpa-more-test``, that was originally included in ``igloo-component-jpa-more``. It includes utilitaries for tests
   and all tests present in ``igloo-component-jpa-more`` ``src/test`` package.
+* Select2: Override ``ChoiceProvider`` to add ``offset`` and ``limit`` parameters to ``query`` method.
+  Also, compute ``hasMore`` attribut for ajax response.
 
 .. _v1.1.17:
 
