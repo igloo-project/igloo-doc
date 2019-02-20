@@ -125,6 +125,10 @@ Password encoding
 To know if your application is compatible with new password encoding, please check stored passwords.
 If your encoded passwords all start with ``$2a$`` (bcrypt marker), your application may be compatible.
 
+If this is the case, **you need to update your hashed password** by prefixing it ``{bcrypt}`` with prefix
+as the new ``PasswordEncoder`` is a delegating one, that choose the correct PasswordEncoder based on
+this prefix. This PasswordEncoder uses ``bcrypt`` to hash new passwords.
+
 If not you need to write your own password encoder based on code from previous versions. Please take care
 of case insensitive check if **CoreLowerCaseShaPasswordEncoder** was used.
 
