@@ -4,6 +4,21 @@ Igloo 1.1.x
 
 1.1.x is a stable release family.
 
+.. _v1.1.19:
+
+1.1.19 (2019-02-25)
+####################################
+
+Updates
+*******
+
+* Bindgen 4.0.1 -> 4.0.2
+
+Enhancements
+************
+
+* Update and fix footer layout on BasicApp and console template.
+
 .. _v1.1.18:
 
 1.1.18 (2019-02-13)
