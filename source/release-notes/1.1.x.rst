@@ -4,6 +4,17 @@ Igloo 1.1.x
 
 1.1.x is a stable release family.
 
+.. _v1.1.21:
+
+1.1.21 (next release, not published)
+####################################
+
+Bugfixes
+********
+
+* Fix ``UserPasswordValidator`` : the ``UsernameRule`` was never checked. It now
+  has to be added to a ``ModelValidatingForm`` instead of a ``Form``.
+
 .. _v1.1.20:
 
 1.1.20 (2019-03-22)
