@@ -4,6 +4,16 @@ Igloo 1.1.x
 
 1.1.x is a stable release family.
 
+.. _v1.1.22:
+
+1.1.22 (next release, not published yet)
+########################################
+
+Enhancements
+************
+
+* Excel init data: use xlsx format instead of xls.
+
 .. _v1.1.21:
 
 1.1.21 (2019-03-29)
