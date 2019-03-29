@@ -6,14 +6,27 @@ Igloo 1.1.x
 
 .. _v1.1.21:
 
-1.1.21 (next release, not published)
+1.1.21 (2019-03-29)
 ####################################
+
+Updates
+*******
+
+* Bootstrap 4.2.1 -> 4.3.1
+* Font Awesome 5.7.0 -> 5.8.1
+* popper.js 1.14.6 -> 1.14.7
 
 Bugfixes
 ********
 
-* Fix ``UserPasswordValidator`` : the ``UsernameRule`` was never checked. It now
+* BasicApp: Fix ``UserPasswordValidator`` to check the username rule. It now
   has to be added to a ``ModelValidatingForm`` instead of a ``Form``.
+* BasicApp: Fix email check on password reset page.
+
+Enhancements
+************
+
+* Select2: override BS theme to make multiple selection choices more responsive.
 
 .. _v1.1.20:
 
