@@ -286,10 +286,3 @@ There are some constraints, though:
  * both the repeater's parent and the repeater's items must have `setOutputMarkupId` set to `true`
  * newly added items will be added at the end of the repeater's parent (the Wicket parent). If there is some HTML between the repeater and the end of the parent, you'll probably want to wrap your repeater in an `WebMarkupContainer`.
  * only some classes that implement `IRefreshableOnDemandRepeater` allow to detect removed elements, so only these will see their removed items removed from the HTML. `RepeatingView` and its subclasses, in particular, will not have their removed elements removed from the HTML.
-
-
-## ~~`AbstractGenericItemListPanel`~~ and ~~`GenericPortfolioPanel`~~ (don't use this)
-
-These classes should not be used anymore. Anything you can do with a `GenericPortfolioPanel`, you can also do it with a `DataTableBuilder` or (worst case) with `RefreshingView`s.
-
-These classes are kept as-is in order to avoid major refactorings in older projects.
