@@ -82,6 +82,14 @@ Added `Owasp Dependency-Check and Versions maven plugin`_ for maven dependencies
 
 .. _v1.1.22:
 
+1.1.23 (2019-03-04)
+###################
+
+Enhancements
+************
+
+* Excel init data: fallback on old xls format to avoid breaking change.
+
 1.1.22 (2019-03-04)
 ###################
 
@@ -101,7 +109,12 @@ Breaking changes
 Enhancements
 ************
 
-* BasicApp: Excel init data: use xlsx format instead of xls.
+.. warning::
+
+  This is a unwanted breaking change. Use 1.1.23 instead to keep using the old
+  xls format.
+
+* Excel init data: use xlsx format instead of xls.
 
 .. _v1.1.21:
 
