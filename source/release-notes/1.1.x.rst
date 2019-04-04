@@ -4,6 +4,82 @@ Igloo 1.1.x
 
 1.1.x is a stable release family.
 
+.. _v1.1.23:
+
+1.1.23 (not published yet)
+##########################
+
+Updates
+*******
+
+* **wicket 8.2.0 -> 8.3.0**
+* **spring-core 5.1.4.RELEASE -> 5.1.6.RELEASE**
+* **hibernate-core 5.4.1 -> 5.4.2**
+* hibernate-validator 5.4.2 -> 5.4.3
+* wicketstuff-select2 8.2.0 -> 8.3.0
+* wicket-webjars 2.0.8 -> 2.0.11
+* webjars-locator-core 0.35 -> 0.37
+* spring-security 5.1.3.RELEASE -> 5.1.4.RELEASE
+* flying-saucer-pdf 9.1.16 -> 9.1.18
+* guava 27.0-jre -> 27.1-jre
+* commons-codec 1.11 -> 1.12
+* jsass 5.7.3 -> 5.7.4
+* aspectjrt 1.9.1 -> 1.9.2
+* aspectjweaver 1.9.1 -> 1.9.2
+* jsch 0.1.54 -> 0.1.55
+* slf4j 1.7.25 -> 1.7.26
+* cglib-nodep 3.2.8 -> 3.2.10
+* ph-css 4.1.3 -> 6.1.2
+* HikariCP 3.2.0 -> 3.3.1
+* commons-collections4 4.2 -> 4.3
+* commons-fileupload 1.3.3 -> 1.4
+* commons-configuration2 2.3 -> 2.4
+* httpcore 4.5.6 -> 4.5.7
+* httpclient 4.4.10 -> 4.4.11
+* assertj 3.11.1 -> 3.12.2
+* assertj-guava 3.2.0 -> 3.2.1
+* elasticsearch 5.6.9 -> 5.6.10
+* elasticsearch-cluster-runner 5.6.9.0 -> 5.6.10.0
+* flywaydb 5.0.7 -> 5.2.4
+* javassist 3.24.0-GA -> 3.24.1-GA
+* passay 1.3.1 -> 1.4.0
+* allure-junit4 2.8.1 -> 2.10.0
+* ehcache 2.10.6 -> 2.10.6.5.1
+* allure-maven 2.9 -> 2.10.0
+* mockito-core 2.23.0 -> 2.25.1
+* jackson 2.9.7 -> 2.9.8
+* h2database 1.4.197 -> 1.4.199
+* maven-javadoc-plugin 3.0.1 -> 3.1.0
+* jacoco-maven-plugin 0.8.0 -> 0.8.3
+* maven-assembly-plugin 3.1.0 -> 3.1.1
+* maven-clean-plugin 3.0.0 -> 3.1.0
+* maven-compiler-plugin 3.7.0 -> 3.8.0
+* maven-dependency-plugin 3.0.2 -> 3.1.1
+* maven-deploy-plugin 2.8.2 -> 3.0.0-M1
+* maven-enforcer-plugin 3.0.0-M1 -> 3.0.0-M2
+* maven-install-plugin 2.5.5 -> 3.0.0-M1
+* maven-failsafe-plugin 2.21.0 -> 3.0.0-M3
+* maven-jar-plugin 3.0.2 -> 3.1.1
+* maven-resources-plugin 3.0.2 -> 3.1.1
+* maven-surefire-plugin 2.21.0 -> 3.0.0-M3
+* maven-war-plugin 3.2.1 -> 3.2.2
+* animal-sniffer-maven-plugin 1.16 -> 1.17
+* wagon-maven-plugin 1.0 -> 2.0.0
+* wagon-ssh-external 3.2.0 -> 3.3.1
+
+Dependencies deleted
+********************
+
+* pgjdbc-ng
+* solr-core
+
+Enhancements
+************
+
+Added `Owasp Dependency-Check and Versions maven plugin`_ for maven dependencies.
+
+.. _Owasp Dependency-Check and Versions maven plugin: ../usage/howtos/owasp-maven-versions-plugin.html
+
 .. _v1.1.22:
 
 1.1.22 (next release, not published yet)

@@ -7,6 +7,7 @@ Tools
   Maven-archetype.md
   Code-processors.md
   Maven.md
+  owasp-maven-versions-plugin.rst
 
 Security
 --------
