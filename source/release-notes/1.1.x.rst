@@ -82,13 +82,26 @@ Added `Owasp Dependency-Check and Versions maven plugin`_ for maven dependencies
 
 .. _v1.1.22:
 
-1.1.22 (next release, not published yet)
-########################################
+1.1.22 (2019-03-04)
+###################
+
+Breaking changes
+****************
+
+* Refactor ``ReferenceData``:
+
+  * Remove ``*Simple*ReferenceData*`` classes and references.
+  * Rename ``*Localized*GenericReferenceData*`` classes and references to
+    ``*GenericReferenceData*``
+  * BasicApp: Rename ``*LocalizedReferenceData*`` classes and references to
+    ``*ReferenceData*``.
+  * BasicApp: Rename ``*Simple*ReferenceData*`` classes and references to
+    ``*Basic*ReferenceData*``.
 
 Enhancements
 ************
 
-* Excel init data: use xlsx format instead of xls.
+* BasicApp: Excel init data: use xlsx format instead of xls.
 
 .. _v1.1.21:
 
