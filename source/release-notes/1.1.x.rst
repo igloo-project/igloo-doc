@@ -4,9 +4,9 @@ Igloo 1.1.x
 
 1.1.x is a stable release family.
 
-.. _v1.1.23:
+.. _v1.1.24:
 
-1.1.23 (not published yet)
+1.1.24 (not published yet)
 ##########################
 
 Updates
