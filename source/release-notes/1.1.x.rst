@@ -80,7 +80,11 @@ Added `Owasp Dependency-Check and Versions maven plugin`_ for maven dependencies
 
 .. _Owasp Dependency-Check and Versions maven plugin: ../usage/howtos/owasp-maven-versions-plugin.html
 
-.. _v1.1.22:
+Refactor basic-application java configuration, now uses a `custom Spring-boot annotation`_.
+
+.. _custom Spring-boot annotation: ../usage/howtos/spring-boot.html
+
+.. _v1.1.23:
 
 1.1.23 (2019-03-04)
 ###################
@@ -89,6 +93,8 @@ Enhancements
 ************
 
 * Excel init data: fallback on old xls format to avoid breaking change.
+
+.. _v1.1.22:
 
 1.1.22 (2019-03-04)
 ###################

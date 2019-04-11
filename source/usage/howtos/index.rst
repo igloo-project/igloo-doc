@@ -8,6 +8,7 @@ Tools
   Code-processors.md
   Maven.md
   owasp-maven-versions-plugin.rst
+  spring-boot.rst
 
 Security
 --------

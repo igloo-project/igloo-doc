@@ -1,7 +1,7 @@
 Owasp Dependency-Check - Versions maven plugin
-==============================
+==============================================
 
-Since version 1.22 you have some reporting tools for maven dependencies and plugins.
+Since version 1.24 you have some reporting tools for maven dependencies and plugins.
 
 Owasp Dependency-Check
 ----------------------
