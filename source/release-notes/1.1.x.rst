@@ -6,17 +6,22 @@ Igloo 1.1.x
 
 .. _v1.1.24:
 
-1.1.24 (not published yet)
-##########################
+1.1.24 (2019-05-03)
+###################
 
 Updates
 *******
 
-* **wicket 8.2.0 -> 8.3.0**
+.. warning::
+  - **wicket-webjars**: bug in latest versions from 2.0.11 to 2.0.14,
+    don't use them.
+
+  - **wicket** and **wicketstuff-select2**: bug in latest version 8.3.0 in
+    wicketstuff-select2 dependency.
+
 * **spring-core 5.1.4.RELEASE -> 5.1.6.RELEASE**
 * **hibernate-core 5.4.1 -> 5.4.2**
 * hibernate-validator 5.4.2 -> 5.4.3
-* wicketstuff-select2 8.2.0 -> 8.3.0
 * wicket-webjars 2.0.8 -> 2.0.10
 * webjars-locator-core 0.35 -> 0.37
 * spring-security 5.1.3.RELEASE -> 5.1.4.RELEASE
