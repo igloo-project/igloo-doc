@@ -164,6 +164,18 @@ Notification
 * Remove ``INotificationBuilderSendState#htmlBody(String, Locale)``.
   Use ``INotificationBuilderBuildState#content(INotificationContentDescriptor)`` instead.
 
+A wicket default HTML notification variant can now be registered :
+
+.. code-block:: java
+
+  // Before
+  IHtmlNotificationCssService service = super.htmlNotificationCssService();
+  service.registerStyles(DEFAULT_NOTIFICATION_VARIATION, NotificationLessCssResourceReference.get());
+
+  // Now
+  IHtmlNotificationCssService service = super.htmlNotificationCssService();
+  service.registerDefaultStyles(NotificationScssResourceReference.get());
+
 Security
 --------
 
