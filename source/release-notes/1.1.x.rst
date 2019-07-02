@@ -6,13 +6,21 @@ Igloo 1.1.x
 
 .. _v1.1.26:
 
-1.1.26 (not published yet)
-##########################
+1.1.26 (2019-07-03)
+###################
+
+Bugfixes
+********
+
+* Transaction synchronization: ``unbindContext()`` must be called in a finally
+  block. Otherwise, in rare case where previous call ``doOnRollback()`` throw
+  an error, context will be bind for the current thread forever. If really
+  needed, the new context will not be bind in future (for the same thread).
 
 Enhancements
 ************
 
-* Announcement: adjustments and bugfixes.
+* Announcement: various enhancements and bugfixes.
 
 Updates
 *******
