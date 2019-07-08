@@ -4,6 +4,20 @@ Igloo 1.1.x
 
 1.1.x is a stable release family.
 
+.. _v1.1.27:
+
+1.1.27 (yyyy-mm-dd)
+###################
+
+Bugfixes
+********
+
+* ``FilterByModelItemModelAwareCollectionModel``: Use copy of ``unfiltered``
+  (iterator) to avoid concurrent modification exceptions.
+* ``AbstractJpaSearchQuery``: Method ``containsIfGiven`` use
+  ``CollectionPathBase`` instead of ``CollectionPath`` to allow ``SetPath``
+  and ``ListPath``.
+
 .. _v1.1.26:
 
 1.1.26 (2019-07-03)
