@@ -17,6 +17,8 @@ Bugfixes
 * ``AbstractJpaSearchQuery``: Method ``containsIfGiven`` use
   ``CollectionPathBase`` instead of ``CollectionPath`` to allow ``SetPath``
   and ``ListPath``.
+* Fix wicket-more-jqplot ``pom.xml`` to embed Js files. May fix "resource
+  not found" messages when using JQPlot charts.
 
 .. _v1.1.26:
 
