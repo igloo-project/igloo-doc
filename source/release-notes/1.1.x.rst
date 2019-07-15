@@ -19,6 +19,8 @@ Bugfixes
   and ``ListPath``.
 * Fix wicket-more-jqplot ``pom.xml`` to embed Js files. May fix "resource
   not found" messages when using JQPlot charts.
+* Feedback panel: fix unwanted overlay preventing users to interact with
+  the bottom (or top) of the page.
 
 .. _v1.1.26:
 
