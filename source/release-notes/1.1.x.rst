@@ -9,6 +9,13 @@ Igloo 1.1.x
 1.1.27 (yyyy-mm-dd)
 ###################
 
+Highlights
+**********
+
+* BasicApp: Revamp sidebar and both basic + advanced layouts.
+* Add build tool **Autoprefixer**: css prefixes like ``-webkit-``, ``-moz-``,
+  ``-ms-``, ``-o-``, etc. are automatically added if needed.
+
 Bugfixes
 ********
 
