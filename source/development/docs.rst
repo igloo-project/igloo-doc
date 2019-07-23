@@ -26,10 +26,16 @@ When the clone is over, execute the installation script :
 .. code-block:: bash
 
   cd ~/git/igloo-doc
-  ./tasks.py --clean
-  source .tools/bootstrap/bin/activate
+  rm -rf .tools
+  ./bootstrap.py --reset-env
+  source ~/.profile.d/bootstrap.conf
+  boostrap-activate igloo-doc
 
 When the script ends, the documentation installation is finished.
+
+You may add ``source ~/.profile.d/bootstrap.conf`` in your shell environment
+initialization (.bashrc, .bash_profile, ...) to automatically import
+bootstrap-activate command.
 
 Build the documentation locally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -38,20 +44,20 @@ A few commands to interact with the documentation locally :
 
 .. code-block:: bash
 
-  click-igloodoc sphinx build html
+  igloo-doc sphinx build html
 
 The command 'docs' builds the documentation and generates the html files.
 
 .. code-block:: bash
 
-  click-igloodoc sphinx live
+  igloo-doc sphinx live
 
 The command 'docs-live' builds the documentation and opens it in a new tab of your browser,
 allowing you to see your modifications as soon as you save them.
 
 .. code-block:: bash
 
-  click-igloodoc sphinx clean
+  igloo-doc sphinx clean
 
 The command 'docs-clean' cleans all the build directory and files.
 
