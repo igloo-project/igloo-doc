@@ -2,11 +2,12 @@
 sphinx:
   documentation_path: .
   virtualenv:
+    python: /usr/bin/python3
     path: .tools/sphinx
     requirements:
-      - Sphinx == 1.6.3
+      - Sphinx == 2.1.2
       - sphinx-autobuild == 0.7.1
-      - sphinx-rtd-theme == 0.2.4
+      - sphinx-rtd-theme
       - sphinx_fontawesome
       - cloud_sptheme
       - recommonmark == 0.4.0

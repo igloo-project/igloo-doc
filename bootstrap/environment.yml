@@ -1,0 +1,14 @@
+---
+
+name: unused_name
+channels:
+  - defaults
+# for now, pip <19.0 is mandatory because of
+# - https://github.com/sdispater/poetry/issues/826
+# - https://github.com/pypa/pip/issues/6314
+dependencies:
+  - python=3
+  - pip<19.0
+  - pip:
+     - poetry ~=0.12.0
+
