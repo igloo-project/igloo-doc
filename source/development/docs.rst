@@ -27,7 +27,7 @@ When the clone is over, execute the installation script :
 
   cd ~/git/igloo-doc
   rm -rf .tools
-  ./bootstrap.py --reset-env
+  ./bootstrap/boostrap.sh --reset-env
   source ~/.profile.d/bootstrap.conf
   boostrap-activate igloo-doc
 
