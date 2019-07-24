@@ -273,8 +273,9 @@ Configuration migration guide
 
   * Add a property ``igloo.applicationName=xxx``; Replace xxx with the name
     of @ApplicationDescription.
-  * Check that all ``igloo.*.configurationLocations=`` are commented. If not,
-    add ``classpath:configuration.properties`` as the first item.
+  * Add classpath:/configuration.properties as first item of all
+    ``igloo.<profile>.configurationLocations=``, either this property is
+    commented out or not, to prevent any future error.
 
 * Remove @ApplicationDescription annotation
 * Remove empty @ConfigurationLocations
