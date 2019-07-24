@@ -31,7 +31,8 @@ Bugfixes
 Highlights
 **********
 
-* BasicApp: Revamp sidebar and both basic + advanced layouts.
+* BasicApp: Update ``basic`` and ``advanced`` layouts. Revamp sidebar
+  (style and positioning) in ``advanced`` layout.
 * Add build tool **Autoprefixer**: css prefixes like ``-webkit-``, ``-moz-``,
   ``-ms-``, ``-o-``, etc. are automatically added if needed.
 * Added PropertySourceLogger, for debugging/maintenance purpose.
