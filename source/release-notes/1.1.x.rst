@@ -12,15 +12,21 @@ Igloo 1.1.x
 Highlights
 **********
 
-* 1.1.28 introduces a breaking change. Configuration system is modified to
+* Breaking change: Configuration system is modified to
   replace custom @ConfigurationLocations system by spring vanilla
   @PropertySource. See :ref:`property-source-migration` to find how to modify
   your application and check that configuration is correctly managed.
 
+.. _v1.1.28:
+
+1.1.28 (yyyy-mm-dd)
+###################
+
 Bugfixes
 ********
 
-* None.
+* BS4 modal: remove fade animation on close.
+* BS4 tooltip: set ``window`` as default ``boundary`` instead of ``viewport``.
 
 .. _v1.1.27:
 
