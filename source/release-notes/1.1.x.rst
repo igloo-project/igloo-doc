@@ -27,6 +27,7 @@ Bugfixes
 
 * BS4 modal: remove fade animation on close.
 * BS4 tooltip: set ``window`` as default ``boundary`` instead of ``viewport``.
+* Hibernate Search: use Lucene ``missingValue`` parameter on HS field context.
 
 .. _v1.1.27:
 
