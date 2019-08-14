@@ -29,6 +29,11 @@ Breaking changes
   ``START_DATE_SORT`` and ``END_DATE_SORT``. Use fields without ``_SORT``
   suffix. **``QueuedTaskHolder`` needs to be ``reindexed``.**
 
+Updates
+*******
+
+* Bootstrap 3.3.6 -> 3.4.1
+
 Bugfixes
 ********
 
