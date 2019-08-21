@@ -33,6 +33,7 @@ Updates
 *******
 
 * Bootstrap 3.3.6 -> 3.4.1
+* Font Awesome 5.9.0 -> 5.10.1
 * BS3: Select2 4.0.3 -> 4.0.8
 
 Bugfixes
