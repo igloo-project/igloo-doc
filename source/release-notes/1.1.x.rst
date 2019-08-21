@@ -34,6 +34,7 @@ Updates
 
 * Bootstrap 3.3.6 -> 3.4.1
 * Font Awesome 5.9.0 -> 5.10.1
+* Popper.js 1.14.7 -> 1.15.0
 * BS3: Select2 4.0.3 -> 4.0.8
 
 Bugfixes
