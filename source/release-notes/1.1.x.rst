@@ -33,12 +33,15 @@ Updates
 *******
 
 * Bootstrap 3.3.6 -> 3.4.1
+* BS3: Select2 4.0.3 -> 4.0.8
 
 Bugfixes
 ********
 
 * BS4 modal: remove fade animation on close.
 * BS4 tooltip: set ``window`` as default ``boundary`` instead of ``viewport``.
+* BS4 select2: remove options tooltip.
+* BS3 select2: update tab key behavior.
 * Hibernate Search: use Lucene ``missingValue`` parameter on HS field context.
 
 .. _v1.1.27:
