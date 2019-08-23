@@ -16,6 +16,7 @@ Highlights
   replace custom @ConfigurationLocations system by spring vanilla
   @PropertySource. See :ref:`property-source-migration` to find how to modify
   your application and check that configuration is correctly managed.
+  (TODO: rewrite 1.1.xx in documentation to appropriate version)
 
 .. _v1.1.28:
 
