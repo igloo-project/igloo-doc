@@ -28,7 +28,7 @@ Breaking changes
 
 * ``QueuedTaskHolder``: remove ``CREATION_DATE_SORT``, ``TRIGGERING_DATE_SORT``,
   ``START_DATE_SORT`` and ``END_DATE_SORT``. Use fields without ``_SORT``
-  suffix. **``QueuedTaskHolder`` needs to be ``reindexed``.**
+  suffix. **Warning**: ``QueuedTaskHolder`` needs to be reindexed.
 
 Updates
 *******
