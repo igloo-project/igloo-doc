@@ -20,7 +20,7 @@ Highlights
 
 .. _v1.1.28:
 
-1.1.28 (yyyy-mm-dd)
+1.1.28 (2019-08-30)
 ###################
 
 Breaking changes
