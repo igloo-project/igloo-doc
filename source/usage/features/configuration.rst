@@ -140,7 +140,7 @@ Implementation's overview
 Configuration loading
 *********************
 
-From 1.1.xx (TODO), Igloo uses a early loading for properties:
+From 1.y.z (TODO), Igloo uses a early loading for properties:
 
 * Igloo initializer (AbstractExtendedApplicationContextInitializer children
   classes):
@@ -229,7 +229,7 @@ Migrating from @ConfigurationLocations to @PropertySource
 Reason of the breaking change
 *****************************
 
-With 1.1.xx (TODO), configuration subsystem is deeply modified to allow further
+With 1.y.z (TODO), configuration subsystem is deeply modified to allow further
 improvements and to use vanilla spring boot mechanisms (autoconfiguration,
 conditionals, ...).
 
@@ -268,7 +268,7 @@ Configuration migration guide
   application to Igloo 1.1.27 and starts it with
   ``-Digloo.propertySource.outputFileName=/tmp/debug.properties.orig``.
 
-* Switch to Igloo 1.1.xx (TODO).
+* Switch to Igloo 1.y.z (TODO).
 * Modify your ``configuration-boostrap.properties``
 
   * Add a property ``igloo.applicationName=xxx``; Replace xxx with the name

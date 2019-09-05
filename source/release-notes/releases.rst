@@ -1,6 +1,6 @@
-##############
-Igloo Releases
-##############
+########
+Releases
+########
 
 .. _v1.y.z:
 
@@ -14,7 +14,7 @@ Highlights
   replace custom @ConfigurationLocations system by spring vanilla
   @PropertySource. See :ref:`property-source-migration` to find how to modify
   your application and check that configuration is correctly managed.
-  (TODO: rewrite 1.1.xx in documentation to appropriate version)
+  (TODO: rewrite 1.y.z in documentation to appropriate version)
 
 .. _v1.2.0:
 
@@ -754,10 +754,3 @@ Bugfixes
 ##################
 
 Major rewrite of Igloo ; see Migrating to 1.1 guide.
-
-.. _v1.0:
-
-1.0
-###
-
-There is no 1.0 release.
