@@ -1,12 +1,10 @@
-###########
-Igloo 1.1.x
-###########
+##############
+Igloo Releases
+##############
 
-1.1.x is a stable release family.
+.. _v1.y.z:
 
-.. _v1.1.z:
-
-1.1.z (yyyy-mm-dd)
+1.y.z (yyyy-mm-dd)
 ###################
 
 Highlights
@@ -17,6 +15,24 @@ Highlights
   @PropertySource. See :ref:`property-source-migration` to find how to modify
   your application and check that configuration is correctly managed.
   (TODO: rewrite 1.1.xx in documentation to appropriate version)
+
+.. _v1.2.0:
+
+1.2.0 (2019-09-05)
+##################
+
+Updates
+*******
+
+* Font Awesome 5.10.1 -> 5.10.2
+
+Enhancements
+************
+
+* Add ``BootstrapCollapseBehavior`` to easily enable BS collapse plugin on
+  components.
+* BasicApp: sidebar is automatically displayed if there is enough space.
+* BasicApp: add ``-webkit-overflow-scrolling: touch`` on sidebar.
 
 .. _v1.1.28:
 
