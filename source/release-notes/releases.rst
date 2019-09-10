@@ -16,6 +16,16 @@ Highlights
   your application and check that configuration is correctly managed.
   (TODO: rewrite 1.y.z in documentation to appropriate version)
 
+.. _v1.3.0:
+
+1.3.0 (yyyy-mm-dd)
+##################
+
+Enhancements
+************
+
+* Add ``table-layout`` css classes. Usage : ``table-layout-{sm,md,lg,xl}-(auto,fixed)``
+
 .. _v1.2.0:
 
 1.2.0 (2019-09-05)
@@ -55,6 +65,11 @@ Updates
 * BS4: Select2 4.0.5 -> 4.0.9
 * BS3: Select2 4.0.3 -> 4.0.9
 * BS3: select2-bootstrap-theme 0.1.0-beta.8 -> 0.1.0-beta.10
+
+Enhancements
+************
+
+* Add ``list-group-sub`` css class.
 
 Bugfixes
 ********
