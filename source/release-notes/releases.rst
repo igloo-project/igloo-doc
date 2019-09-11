@@ -25,7 +25,7 @@ Breaking changes
 ****************
 
 * ``DataTableBuilder``: ``.addRowCssClass(...)`` has been removed. Use
-  ``.rows().withClass(...)`` instead.
+  ``.rows().withClass(...).end()`` instead with proper indentation.
 
 Bugfixes
 ********
@@ -55,6 +55,7 @@ Enhancements
     + IDataTableRowsState#withClass(IDetachableFactory<? super IModel<? extends T>, ? extends IModel<? extends String>>);
     + IDataTableRowsState#withClass(IModel<? extends String>);
     + IDataTableRowsState#withClass(String, String...);
+    + IDataTableRowsState#end();
 
     + IActionColumnAddedElementState#withClass(Collection<? extends IDetachableFactory<? super IModel<? extends T>, ? extends IModel<? extends String>>>);
     + IActionColumnAddedElementState#withClass(IDetachableFactory<? super IModel<? extends T>, ? extends IModel<? extends String>>);
