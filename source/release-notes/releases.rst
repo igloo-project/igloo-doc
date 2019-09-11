@@ -27,6 +27,11 @@ Breaking changes
 * ``DataTableBuilder``: ``.addRowCssClass(...)`` has been removed. Use
   ``.rows().withClass(...)`` instead.
 
+Bugfixes
+********
+
+* BasicApp: preload scss file for both themes.
+
 Enhancements
 ************
 
