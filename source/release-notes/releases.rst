@@ -21,10 +21,48 @@ Highlights
 1.3.0 (yyyy-mm-dd)
 ##################
 
+Breaking changes
+****************
+
+* ``DataTableBuilder``: ``.addRowCssClass(...)`` has been removed. Use
+  ``.rows().withClass(...)`` instead.
+
 Enhancements
 ************
 
-* Add ``table-layout`` css classes. Usage : ``table-layout-{sm,md,lg,xl}-(auto,fixed)``
+* Add ``table-layout`` css classes.
+  Usage : ``table-layout{-sm|-md|-lg|-xl}-(auto|fixed)``
+* ``DataTableBuilder``: row item model dependant behaviors and css classes
+  on rows and actions columns elements + single element.
+
+  .. code-block:: text
+
+    - IBuildState#addRowCssClass(IDetachableFactory<? super IModel<? extends T>, ? extends String>);
+    - IActionColumnAddedElementState#withClass(String);
+    - IActionColumnCommonBuildState#withClassOnElements(String);
+
+  .. code-block:: text
+
+    + IDataTableRowsState#add(Collection<? extends IDetachableFactory<? super IModel<? extends T>, ? extends Behavior>>);
+    + IDataTableRowsState#add(IDetachableFactory<? super IModel<? extends T>, ? extends Behavior> rowsBehaviorFactory);
+    + IDataTableRowsState#add(Behavior, Behavior...);
+    + IDataTableRowsState#withClass(Collection<? extends IDetachableFactory<? super IModel<? extends T>, ? extends IModel<? extends String>>>);
+    + IDataTableRowsState#withClass(IDetachableFactory<? super IModel<? extends T>, ? extends IModel<? extends String>>);
+    + IDataTableRowsState#withClass(IModel<? extends String>);
+    + IDataTableRowsState#withClass(String, String...);
+
+    + IActionColumnAddedElementState#withClass(Collection<? extends IDetachableFactory<? super IModel<? extends T>, ? extends IModel<? extends String>>>);
+    + IActionColumnAddedElementState#withClass(IDetachableFactory<? super IModel<? extends T>, ? extends IModel<? extends String>>);
+    + IActionColumnAddedElementState#withClass(IModel<? extends String>);
+    + IActionColumnAddedElementState#withClass(String, String...);
+    + IActionColumnAddedElementState#add(Collection<? extends IDetachableFactory<? super IModel<? extends T>, ? extends Behavior>>);
+    + IActionColumnAddedElementState#add(IDetachableFactory<? super IModel<? extends T>, ? extends Behavior>);
+    + IActionColumnAddedElementState#add(Behavior, Behavior...);
+
+    + IActionColumnCommonBuildState#withClassOnElements(Collection<? extends IDetachableFactory<? super IModel<? extends T>, ? extends IModel<? extends String>>>);
+    + IActionColumnCommonBuildState#withClassOnElements(IDetachableFactory<? super IModel<? extends T>, ? extends IModel<? extends String>>);
+    + IActionColumnCommonBuildState#withClassOnElements(IModel<? extends String>);
+    + IActionColumnCommonBuildState#withClassOnElements(String, String...);
 
 .. _v1.2.0:
 
