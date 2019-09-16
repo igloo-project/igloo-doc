@@ -27,6 +27,11 @@ Breaking changes
 * ``DataTableBuilder``: ``.addRowCssClass(...)`` has been removed. Use
   ``.rows().withClass(...).end()`` instead with proper indentation.
 
+Updates
+*******
+
+* Select2 4.0.9 -> 4.0.10
+
 Bugfixes
 ********
 
