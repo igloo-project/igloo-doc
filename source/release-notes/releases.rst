@@ -75,6 +75,8 @@ Enhancements
     + IActionColumnCommonBuildState#withClassOnElements(IModel<? extends String>);
     + IActionColumnCommonBuildState#withClassOnElements(String, String...);
 
+* ``.gitlab-ci.yml`` integrates an owasp / dependency check
+
 .. _v1.2.0:
 
 1.2.0 (2019-09-05)
