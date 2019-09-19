@@ -26,11 +26,15 @@ Breaking changes
 
 * ``DataTableBuilder``: ``.addRowCssClass(...)`` has been removed. Use
   ``.rows().withClass(...).end()`` instead with proper indentation.
+* Due to Flyway update, migration parent has changed.
+  ``AbstractDataUpgradeMigration.java`` must now implement
+  ``IglooMigration.java``.
 
 Updates
 *******
 
 * Select2 4.0.9 -> 4.0.10
+* Flyway 5.0.7 -> 5.2.4
 
 Bugfixes
 ********
