@@ -29,6 +29,17 @@ Breaking changes
 * Due to Flyway update, migration parent has changed.
   ``AbstractDataUpgradeMigration.java`` must now implement
   ``IglooMigration.java``.
+* Property ``notification.test.emails`` has been
+  renamed ``notification.mail.filter.emails``
+* Property ``notification.mail.recipientsFiltered`` has been
+  replaced by ``notification.mail.send.mode``. It is no longer
+  a boolean value. It is now an enumeration, with the following values :
+
+  * ``SEND``, emails are sent to their designated recipients
+  * ``FILTER_RECIPIENTS``, email recipients are filtered to a specific list given
+    by the property ``notification.mail.filter.emails``
+  * ``NO_EMAIL``, no email is sent by the application
+
 
 Updates
 *******
