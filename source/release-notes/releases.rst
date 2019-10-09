@@ -114,6 +114,56 @@ Updates
 * Font Awesome 5.10.2 -> 5.11.2
 * Popper.js 1.15.0 -> 1.16.0
 
+Updates
+*******
+
+* **wicket 8.2.0 -> 8.6.0**
+* **hibernate 5.4.2.Final -> 5.4.5.Final**
+* **spring-framework 5.1.6.RELEASE -> 5.2.0.RELEASE**
+* **spring-security 5.1.4.RELEASE -> 5.2.0.RELEASE**
+* cglib 3.2.10 -> 3.3
+* jackson 2.9.8 -> 2.9.10
+* gson 2.8.5 -> 2.8.6
+* guava 27.1-jre -> 28.1-jre
+* ph-css 6.1.2 -> 6.2.0
+* HikariCP 3.3.1 -> 3.4.1
+* beanutils 1.9.3 -> 1.9.4
+* commons-codec 1.12 -> 1.13
+* wicket webjars 2.0.10 -> 2.0.16
+* jsass 5.8.0 -> 5.9.0
+* allure-junit4 2.10.0 -> 2.13.0
+* ehcache-core 2.10.6.5.1 -> 2.10.7.0.62
+* commons-collections4 4.3 -> 4.4
+* commons-compress 1.18 -> 1.19
+* commons-configuration 2.4 -> 2.6
+* commons-lang3 3.8.1 -> 3.9
+* commons-text 1.6 -> 1.8
+* httpclient 4.5.8 -> 4.5.10
+* httpcore 4.4.11 -> 4.4.12
+* wicketstuff-select2 8.2.0 -> 8.6.0
+* aspectj 1.9.2 -> 1.9.4
+* assertj 3.12.2 -> 3.13.2
+* bouncycastle 1.61 -> 1.63
+* jdk-serializable-functional 1.8.5 -> 1.8.6
+* freemarker 2.3.28 -> 2.3.29
+* javassist 3.24.1-GA -> 3.25.0-GA
+* jboss-logging 3.3.2.Final -> 3.4.1.Final
+* jsoup 1.11.3 -> 1.12.1
+* mockito 2.25.1 -> 3.1.0
+* passay 1.4.0 -> 1.5.0
+* postgresql 42.2.5 -> 42.2.8
+* slf4j 1.7.26 -> 1.7.28
+* webjars-locator-core 0.37 -> 0.41
+* maven-compiler-plugin 3.8.0 -> 3.8.1
+* maven-jar-plugin 3.1.1 -> 3.1.2
+* maven-javadoc-plugin 3.1.0 -> 3.1.1
+* maven-source-plugin 3.0.1 -> 3.1.0
+* maven-toolchains-plugin 1.1 -> 3.0.0
+* maven-war-plugin 3.2.2 -> 3.2.3
+* jacoco-maven-plugin 0.8.3 -> 0.8.4
+* dependency-check-maven 5.2.1 -> 5.2.2
+* animal-sniffer-maven-plugin 1.17 -> 1.18
+
 .. _v1.3.0:
 
 1.3.0 (2019-10-17)
