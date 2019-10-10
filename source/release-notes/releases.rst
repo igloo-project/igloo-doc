@@ -55,6 +55,7 @@ Bugfixes
 Enhancements
 ************
 
+* BasicApp: sidebar user quicksearch only visible for admins.
 * Add ``table-layout`` css classes.
   Usage : ``table-layout{-sm|-md|-lg|-xl}-(auto|fixed)``
 * ``DataTableBuilder``: row item model dependant behaviors and css classes
