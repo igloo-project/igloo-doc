@@ -18,7 +18,7 @@ Highlights
 
 .. _v1.3.0:
 
-1.3.0 (yyyy-mm-dd)
+1.3.0 (2019-10-17)
 ##################
 
 Breaking changes
@@ -55,6 +55,8 @@ Bugfixes
 Enhancements
 ************
 
+* Add configuration property ``autoprefixer.enabled`` to enable or disable
+  Autoprefixer.
 * BasicApp: sidebar user quicksearch only visible for admins.
 * Add ``table-layout`` css classes.
   Usage : ``table-layout{-sm|-md|-lg|-xl}-(auto|fixed)``
