@@ -16,6 +16,24 @@ Highlights
   your application and check that configuration is correctly managed.
   (TODO: rewrite 1.y.z in documentation to appropriate version)
 
+.. _v1.3.1:
+
+1.3.1 (yyyy-mm-dd)
+##################
+
+Bugfixes
+********
+
+* Transaction synchronization: unbind context before ``doOnRollback`` as
+  synchronization is already removed by caller and remaining resources prevent
+  correct transaction synchronization creation during ``doOnRollback``.
+
+Updates
+*******
+
+* Font Awesome 5.10.2 -> 5.11.2
+* Popper.js 1.15.0 -> 1.16.0
+
 .. _v1.3.0:
 
 1.3.0 (2019-10-17)
