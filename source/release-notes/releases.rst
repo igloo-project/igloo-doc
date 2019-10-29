@@ -16,6 +16,48 @@ Highlights
   your application and check that configuration is correctly managed.
   (TODO: rewrite 1.y.z in documentation to appropriate version)
 
+.. _v1.4.0:
+
+1.4.0 (yyyy-mm-dd)
+##################
+
+Breaking changes
+****************
+
+* Remove Google Analytics jQuery plugin.
+* Remove CarouFredSel jQuery plugin.
+* Remove Hotkeys jQuery plugin.
+* Remove Autocomplete jQuery plugin.
+* Remove ItemIt jQuery plugin.
+* Remove ListFilter jQuery plugin.
+* Remove Modal Fancybox jQuery plugin.
+* Remove Easing jQuery plugin.
+* Remove Placeholder Polyfill jQuery plugin.
+* Remove ScrollInViewport jQuery plugin.
+* Remove SortableListUpdate jQuery plugin.
+* Remove Waypoints jQuery plugin.
+* Remove obfuscated email jQuery plugin.
+* Remove CarouFredSel webjar.
+* Remove Modal Fancybox webjar.
+
+Bugfixes
+********
+
+* Fix up jQuery UI MonthPicker.
+* Fix up JavaScript inherited dependencies.
+
+Enhancements
+************
+
+* Remove jQuery UI js override and use webjar for theme.
+* Move BS3 Font Awesome package.
+* Fix confirm modal dependency.
+
+Updates
+*******
+
+* jQuery Mask 1.11.2 -> 1.14.16
+
 .. _v1.3.1:
 
 1.3.1 (2019-10-23)
