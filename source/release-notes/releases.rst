@@ -37,8 +37,11 @@ Breaking changes
 * Remove SortableListUpdate jQuery plugin.
 * Remove Waypoints jQuery plugin.
 * Remove obfuscated email jQuery plugin.
+* Remove FileUpload jQuery plugin.
+* Remove JSON jQuery plugin.
 * Remove CarouFredSel webjar.
 * Remove Modal Fancybox webjar.
+* Remove JSON jQuery webjar.
 
 Bugfixes
 ********
