@@ -61,6 +61,19 @@ Updates
 
 * jQuery Mask 1.11.2 -> 1.14.16
 
+.. _v1.3.2:
+
+1.3.2 (2019-11-18)
+##################
+
+Bugfixes
+********
+
+* Fix stackoverflow on Announcement with ``getNameForToString()`` and
+  ``getDisplayName()`` methods.
+* Use ``Predicates2`` instead of ``Predicates`` (guava).
+* Add missing Bootstrap utility ``.stretched-link``.
+
 .. _v1.3.1:
 
 1.3.1 (2019-10-23)
