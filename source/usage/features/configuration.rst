@@ -269,17 +269,17 @@ Configuration migration guide
   ``-Digloo.propertySource.outputFileName=/tmp/debug.properties.orig``.
 
 * Switch to Igloo 1.y.z (TODO).
-* Modify your ``configuration-boostrap.properties``
+* Modify your ``configuration-bootstrap.properties``
 
   * Add a property ``igloo.applicationName=xxx``; Replace xxx with the name
-    of @ApplicationDescription.
-  * Add classpath:/configuration.properties as first item of all
+    of ``@ApplicationDescription``.
+  * Add ``classpath:/configuration.properties`` as first item of all
     ``igloo.<profile>.configurationLocations=``, either this property is
     commented out or not, to prevent any future error.
 
-* Remove @ApplicationDescription annotation
-* Remove empty @ConfigurationLocations
-* Replace other @ConfigurationLocations by a named @PropertySource
+* Remove ``@ApplicationDescription`` annotation
+* Remove empty ``@ConfigurationLocations``
+* Replace other ``@ConfigurationLocations`` by a named ``@PropertySource``
 
   .. code-block:: java
 
