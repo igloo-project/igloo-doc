@@ -42,19 +42,21 @@ Breaking changes
 * Remove CarouFredSel webjar.
 * Remove Modal Fancybox webjar.
 * Remove JSON jQuery webjar.
+* BS4: Keep only jQuery UI datepicker resources (js and css).
 
 Bugfixes
 ********
 
 * Fix up jQuery UI MonthPicker.
 * Fix up JavaScript inherited dependencies.
+* Fix confirm modal dependency.
 
 Enhancements
 ************
 
-* Remove jQuery UI js override and use webjar for theme.
-* Move BS3 Font Awesome package.
-* Fix confirm modal dependency.
+* Add a custom ``BasicApplicationUserDetailsService`` to deal with permissions
+  by role.
+* BS3: Move Font Awesome package.
 
 Updates
 *******
