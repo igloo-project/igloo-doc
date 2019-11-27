@@ -73,6 +73,7 @@ Bugfixes
   ``getDisplayName()`` methods.
 * Use ``Predicates2`` instead of ``Predicates`` (guava).
 * Add missing Bootstrap utility ``.stretched-link``.
+* Remove ``position: relative`` from Bootstrap cols.
 
 .. _v1.3.1:
 
