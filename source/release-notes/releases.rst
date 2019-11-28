@@ -71,7 +71,7 @@ Updates
 Bugfixes
 ********
 
-* Fix stackoverflow on Announcement with ``getNameForToString()`` and
+* Fix stackoverflow on ``Announcement`` with ``getNameForToString()`` and
   ``getDisplayName()`` methods.
 * Use ``Predicates2`` instead of ``Predicates`` (guava).
 * Add missing Bootstrap utility ``.stretched-link``.
