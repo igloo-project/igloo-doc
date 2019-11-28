@@ -18,7 +18,7 @@ Highlights
 
 .. _v1.4.0:
 
-1.4.0 (yyyy-mm-dd)
+1.4.0 (2019-11-28)
 ##################
 
 Breaking changes
@@ -54,8 +54,8 @@ Bugfixes
 Enhancements
 ************
 
-* Add a custom ``BasicApplicationUserDetailsService`` to deal with permissions
-  by role.
+* BasicApp: add a custom ``BasicApplicationUserDetailsService`` to deal with
+  permissions by role.
 * BS3: Move Font Awesome package.
 
 Updates
@@ -236,7 +236,7 @@ Bugfixes
 Highlights
 **********
 
-* BasicApp: Update basic and advanced layouts + consistency.
+* BasicApp: update basic and advanced layouts + consistency.
   Revamp sidebar (style and positioning) in advanced layout.
 * Add build tool **Autoprefixer**: css prefixes like ``-webkit-``, ``-moz-``,
   ``-ms-``, ``-o-``, etc. are automatically added if needed.
@@ -407,9 +407,9 @@ Breaking changes
   * Remove ``*Simple*ReferenceData*`` classes and references.
   * Rename ``*Localized*GenericReferenceData*`` classes and references to
     ``*GenericReferenceData*``
-  * BasicApp: Rename ``*LocalizedReferenceData*`` classes and references to
+  * BasicApp: rename ``*LocalizedReferenceData*`` classes and references to
     ``*ReferenceData*``.
-  * BasicApp: Rename ``*Simple*ReferenceData*`` classes and references to
+  * BasicApp: rename ``*Simple*ReferenceData*`` classes and references to
     ``*Basic*ReferenceData*``.
 
 Enhancements
@@ -437,9 +437,9 @@ Updates
 Bugfixes
 ********
 
-* BasicApp: Fix ``UserPasswordValidator`` to check the username rule. It now
+* BasicApp: fix ``UserPasswordValidator`` to check the username rule. It now
   has to be added to a ``ModelValidatingForm`` instead of a ``Form``.
-* BasicApp: Fix email check on password reset page.
+* BasicApp: fix email check on password reset page.
 
 Enhancements
 ************
@@ -821,10 +821,10 @@ Enhancements
 * Add build informations (date, commit sha, etc.).
 * Consistency in use of Wicket ``Session.get()``.
 * Remove useless icon on cancel buttons.
-* BasicApp: Fix custom BS checkbox position.
-* BasicApp: Improve alignment on page title and back to btn.
-* BasicApp: Minor change on style (nav and pagination background colors).
-* BasicApp: Remove useless link to user detail page.
+* BasicApp: fix custom BS checkbox position.
+* BasicApp: improve alignment on page title and back to btn.
+* BasicApp: minor change on style (nav and pagination background colors).
+* BasicApp: remove useless link to user detail page.
 
 .. _v1.1.4:
 
