@@ -11,14 +11,13 @@ Breaking changes and enhancements are introduced to allow usage of
 autoconfiguration and to prepare a future reorganization and splitting of
 Igloo modules, to ease future development and maintenance tasks.
 
-
 Breaking changes
 ****************
 
-Configuration system is modified to replace custom @ConfigurationLocations
-system by spring vanilla @PropertySource. See :ref:`property-source-migration`
-to find how to modify your application and check that configuration is
-correctly managed.
+* Configuration system is modified to replace custom ``@ConfigurationLocations``
+system by spring vanilla ``@PropertySource``. See
+:ref:`property-source-migration` to find how to modify your application and
+check that configuration is correctly managed.
 
 Updates
 *******
@@ -29,11 +28,11 @@ Enhancements
 ************
 
 * basic-application now uses autoconfiguration
-* GenericEntity can be used without hibernate dependency (this allow to
+* ``GenericEntity`` can be used without hibernate dependency (this allow to
   use existing entity objects in third-party micro-services if needed)
-* WicketRendererServiceImpl.java: added ``renderPage(...)`` method
+* ``WicketRendererServiceImpl``: add ``renderPage(...)`` method
   (similar to ``renderComponent(...)`` method)
-* bindgen-functional now includes java.time.* bindings (jdk8+ date/time
+* bindgen-functional now includes ``java.time.*`` bindings (jdk8+ date/time
   APIs)
 
 .. _v1.4.0:
