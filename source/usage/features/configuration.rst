@@ -221,8 +221,6 @@ It handles:
 behavior.
 
 
-.. _property-source-migration:
-
 Migrating from @ConfigurationLocations to @PropertySource
 ---------------------------------------------------------
 
@@ -260,6 +258,9 @@ This behavior is problematic:
 
 So we choose to remove the old configuration behavior and to write a guide
 on how to update an Igloo application:
+
+
+.. _property-source-migration:
 
 Configuration migration guide
 *****************************
