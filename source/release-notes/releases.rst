@@ -15,12 +15,12 @@ Breaking changes
 ****************
 
 * Configuration system is modified to replace custom ``@ConfigurationLocations``
-system by spring vanilla ``@PropertySource``. See
-:ref:`property-source-migration` to find how to modify your application and
-check that configuration is correctly managed.
+  system by spring vanilla ``@PropertySource``. See
+  :ref:`property-source-migration` to find how to modify your application and
+  check that configuration is correctly managed.
 * Spring Security related change : references to http://www.springframework.org/schema/security/spring-security-4.2.xsd
-url must be rewritten to http://www.springframework.org/schema/security/spring-security.xsd
-(same file, but does not trigger a failed check on version done by Spring Security at startup time).
+  url must be rewritten to http://www.springframework.org/schema/security/spring-security.xsd
+  (same file, but does not trigger a failed check on version done by Spring Security at startup time).
 
 Updates
 *******
