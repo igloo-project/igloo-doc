@@ -2,10 +2,10 @@
 Releases
 ########
 
-.. _v1.y.z:
+.. _v1.5.0:
 
-1.5.0 (yyyy-mm-dd)
-###################
+1.5.0 (2020-01-06)
+##################
 
 Breaking changes and enhancements are introduced to allow usage of
 autoconfiguration and to prepare a future reorganization and splitting of
