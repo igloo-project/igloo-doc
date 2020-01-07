@@ -266,7 +266,7 @@ Configuration migration guide
 *****************************
 
 * Generates a file containing your original configuration. Update your
-  application to Igloo 1.1.27 and starts it with
+  application to Igloo 1.4.x and starts it with
   ``-Digloo.propertySource.outputFileName=/tmp/debug.properties.orig``.
 
 * Switch to Igloo 1.5.0.
@@ -280,6 +280,13 @@ Configuration migration guide
 
 * Remove ``@ApplicationDescription`` annotation
 * Remove empty ``@ConfigurationLocations``
+* For tests config files, remove all ``@ConfigurationLocations`` and add
+  ``@TestPropertySource`` directly on your tests classes
+
+  .. code-block:: java
+
+     @TestPropertySource(properties = "igloo.profile=test")
+
 * Replace other ``@ConfigurationLocations`` by a named ``@PropertySource``
 
   .. code-block:: java
@@ -289,16 +296,16 @@ Configuration migration guide
         value = "classpath:configuration-init.properties"
      )
 
- * Start your application with
-   ``-Digloo.propertySource.outputFileName=/tmp/debug.properties.new``.
+* Start your application with
+  ``-Digloo.propertySource.outputFileName=/tmp/debug.properties.new``.
 
- * Checks the diff of the 2 files:
+* Checks the diff of the 2 files:
 
-   * Differences on ``igloo.build.*`` are OK.
-   * Differences from Manifest information are OK (date, created-by, ...).
-   * Added ``classpath:/configuration.properties`` in
-     ``igloo.configuurationLocations`` is normal.
-   * Modified ``igloo.version`` is OK.
+  * Differences on ``igloo.build.*`` are OK.
+  * Differences from Manifest information are OK (date, created-by, ...).
+  * Added ``classpath:/configuration.properties`` in
+    ``igloo.configuurationLocations`` is normal.
+  * Modified ``igloo.version`` is OK.
 
 Here is an example of a normal diff.
 
