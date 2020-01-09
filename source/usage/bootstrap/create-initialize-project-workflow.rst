@@ -30,13 +30,13 @@ In order to generate the project, we need to build the archetype :
   cd ~/git/igloo-parent/basic-application
   ./build-and-push-archetype.sh ../basic-application/ local
 
-After that, in ``/tmp`` folder, we generate the project using maven archetype plugin:
+After that, in ``/tmp/<generated-hash>`` folder, we generate the project using maven archetype plugin:
 
 
 .. code-block:: bash
 
-  cd /tmp
-  mvn archetype:generate -DarchetypeVersion=X.X -DarchetypeCatalog=local -DartifactId=hello-world -DgroupId=fr.hello.world -Dversion=0.1-SNAPSHOT -Dpackage=fr.hello.world -DarchetypeApplicationNamePrefix="HelloWorld" -DarchetypeSpringAnnotationValuePrefix="helloWorld" -DarchetypeFullApplicationName="Customer - Hello World" -DarchetypeDatabasePrefix=hello_world -DarchetypeDataDirectory=hello-world
+  cd /tmp/<generated-hash>
+  mvn archetype:generate -DarchetypeVersion=1.0 -DarchetypeCatalog=local -DartifactId=hello-world -DgroupId=fr.hello.world -Dversion=0.1-SNAPSHOT -Dpackage=fr.hello.world -DarchetypeApplicationNamePrefix="HelloWorld" -DarchetypeSpringAnnotationValuePrefix="helloWorld" -DarchetypeFullApplicationName="Customer - Hello World" -DarchetypeDatabasePrefix=hello_world -DarchetypeDataDirectory=hello-world
 
 
 The script asks what archetype we want to use. Choose the number corresponding
@@ -49,16 +49,16 @@ file `hello-world/pom.xml` between the markers `properties` :
   :emphasize-lines: 4
 
   <properties>
-    <igloo.version>1.2-SNAPSHOT</igloo.version>
+    <igloo.version>X.X-SNAPSHOT</igloo.version>
   </properties>
 
-.. note:: **1.2-SNAPSHOT** must be replaced by the targetted version.
+.. note:: **X.X-SNAPSHOT** must be replaced by the targetted version.
 
 After that, push the project on git by executing the script located in the project folder :
 
 .. code-block:: bash
 
-  /bin/bash init-git.sh hello-world
+  /bin/bash init-git.sh hello-world git@gitlab.tools.kobalt.fr:<group>/<project>.git
   git push -u origin master
 
 After pushing the project on git, we have to delete the created folder and
@@ -66,8 +66,7 @@ start working with a fresh one.
 
 .. code-block:: bash
 
-  cd ..
-  rm -rf /tmp/hello-world/*
+  rm -rf /tmp/<generated-hash>/
 
 We will make a new clone of the project using Oomph in the next step.
 
