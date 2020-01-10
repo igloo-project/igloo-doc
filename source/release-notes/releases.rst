@@ -2,6 +2,17 @@
 Releases
 ########
 
+
+.. _v1.5.1:
+
+1.5.1 (2020-01-10)
+##################
+
+Bugfixes
+********
+
+* Fix manifest resource finding error.
+
 .. _v1.5.0:
 
 1.5.0 (2020-01-06)
