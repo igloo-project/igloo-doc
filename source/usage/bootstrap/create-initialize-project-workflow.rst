@@ -96,10 +96,6 @@ From here, follow the ending steps from :ref:`Oomph documentation <oomph-project
 Create and initialize the database
 ----------------------------------
 
-You can find a more detailed documentation of this part in the `prerequisite` part of the `Project installation page`_.
-
-.. _Project installation page: installation.html
-
 In this part, we will create the database with the proper user and schema, and we will fill it with a script.
 Before performing the following commands, make sure you have PostgreSQL installed.
 

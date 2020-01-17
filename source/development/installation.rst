@@ -1,3 +1,5 @@
+.. _igloo-initialize:
+
 Initialize an Igloo environment
 ===============================
 
@@ -9,9 +11,8 @@ Prerequisites
 -------------
 
 * **PostgreSQL** (default configuration); other databases may be used
-* **Eclipse** >= 4.7 (default configuration); other Maven-enabled IDE may be used
-* **JRE 1.8** (Open JDK or Oracle JVM)
-* **Elasticsearch** 5.6 (optional)
+* **Eclipse** >= 2019-09 (default configuration); other Maven-enabled IDE may be used
+* **JRE 11** (Open JDK or Oracle JVM - maven build / runtime compatible with Java 8)
 
 
 Database initialization
