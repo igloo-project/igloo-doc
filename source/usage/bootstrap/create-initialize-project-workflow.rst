@@ -76,7 +76,7 @@ Create a fresh clone and a properly configured workspace with Oomph
 
 .. _Oomph page: install-oomph.html
 
-Open an Eclipse 4.7 (Oxygen) and select a new and clean workspace.
+Open an Eclipse (> 4.7 Oxygen, last release preferred) and select a new and clean workspace.
 
 After that, follow the :ref:`Oomph documentation <oomph-project-init>` until the window with multiple variables to fill in.
 
