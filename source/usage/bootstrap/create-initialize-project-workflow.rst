@@ -118,6 +118,15 @@ To create the database, we execute some commands directly in a terminal:
 After that we have to enable an option which will allow the project to create new entities in the database.
 
 
+Create and initialize filesystem
+--------------------------------
+
+.. code-block:: bash
+
+   sudo mkdir /data/services/basic-application
+   sudo chown "${USER}." /data/services/basic-application
+
+
 Launch the webapp
 -----------------
 
