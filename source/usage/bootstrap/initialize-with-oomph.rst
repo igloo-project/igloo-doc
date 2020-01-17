@@ -42,7 +42,11 @@ Check and complete the window with required variables:
 
 
 Click next, then finish. The installation may take a few minutes, and Eclipse might
-have to restart.
+have to restart (keep an eye on the status bar at the bottom right; an blinking icon
+may require a restart).
 
 In this case, the installation will go back to where it stopped
 automatically. It will clone the application, install and setup a Tomcat server.
+
+Once the project initialized, a last restart is needed to fully initialize the Tomcat
+run configuration.
