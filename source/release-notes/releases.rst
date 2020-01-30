@@ -5,7 +5,7 @@ Releases
 
 .. _v1.5.2:
 
-1.5.1 (2020-??-??)
+1.5.2 (2020-??-??)
 ##################
 
 Bugfixes
@@ -15,7 +15,7 @@ Bugfixes
   is not possible because spring-security namespace cannot be mapped with jar's
   provided .xsd.
 
-  In your application, you need to replace in XML files http://www.springframework.org/schema/security/spring-security*.xsd
+  In your application, you need to replace in XML files http://www.springframework.org/schema/security/spring-security\*.xsd
   URL by https://www.springframework.org/schema/security/spring-security.xsd (version-less)
   or https://www.springframework.org/schema/security/spring-security-5.2.xsd.
 
