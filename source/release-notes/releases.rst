@@ -15,9 +15,9 @@ Bugfixes
   is not possible because spring-security namespace cannot be mapped with jar's
   provided .xsd.
 
-  In your application, you need to replace in XML files http://www.springframework.org/schema/security/spring-security\*.xsd
-  URL by https://www.springframework.org/schema/security/spring-security.xsd (version-less)
-  or https://www.springframework.org/schema/security/spring-security-5.2.xsd.
+  In your application, you need to replace in XML files http(s)://www.springframework.org/schema/security/spring-security\*.xsd
+  URL by https://www.springframework.org/schema/security/spring-security-5.2.xsd
+  or https://www.springframework.org/schema/security/spring-security.xsd (version-less).
 
   This URLs are mapped by Spring to jar's provided files.
 
