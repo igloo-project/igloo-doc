@@ -2,25 +2,23 @@
 Releases
 ########
 
-
 .. _v1.5.2:
 
-1.5.2 (2020-??-??)
+1.5.2 (2020-03-12)
 ##################
 
 Bugfixes
 ********
 
-* Fix spring-security namespace; without this fix, network-less application start
-  is not possible because spring-security namespace cannot be mapped with jar's
-  provided .xsd.
+* Fix spring-security namespace; without this fix, network-less application
+  start is not possible because spring-security namespace cannot be mapped with
+  jar's provided .xsd.
 
-  In your application, you need to replace in XML files http(s)://www.springframework.org/schema/security/spring-security\*.xsd
-  URL by https://www.springframework.org/schema/security/spring-security-5.2.xsd
-  or https://www.springframework.org/schema/security/spring-security.xsd (version-less).
+  In your application, you need to replace in XML files
+  http(s)://www.springframework.org/schema/security/spring-security\*.xsd URL
+  by https://www.springframework.org/schema/security/spring-security-5.2.xsd.
 
   This URLs are mapped by Spring to jar's provided files.
-
 
 .. _v1.5.1:
 
