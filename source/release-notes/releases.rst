@@ -2,6 +2,17 @@
 Releases
 ########
 
+.. _v1.6.0:
+
+1.6.0 (2020-03-13)
+##################
+
+Enhancements
+************
+
+* BasicApp: major markup and scss changes.
+* Fix jQuery UI datepicker positioning and input height value.
+
 .. _v1.5.2:
 
 1.5.2 (2020-03-12)
@@ -110,8 +121,6 @@ Updates
 * maven-surefire-plugin 3.0.0-M3 -> 3.0.0-M4
 * wagon-ssh-external 3.3.3 -> 3.3.4
 * maven-enforcer-plugin 3.0.0-M2 -> 3.0.0-M3
-
-
 
 Enhancements
 ************
