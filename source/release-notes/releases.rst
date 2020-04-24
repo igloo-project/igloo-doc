@@ -2,6 +2,20 @@
 Releases
 ########
 
+.. _v1.6.1:
+
+1.6.1 (2020-04-24)
+##################
+
+Enhancements
+************
+
+* BasicApp: user - fix user group add form layout.
+* BasicApp: user group - fix authorities list layout.
+* BasicApp: users - remove useless ``withNoRecordsResourceKey``.
+* BasicApp: move bs breakpoint div to the bottom.
+* Boostrap Override: remove ``.card-${color}-full``.
+
 .. _v1.6.0:
 
 1.6.0 (2020-03-13)
