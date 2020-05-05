@@ -2,6 +2,16 @@
 Releases
 ########
 
+.. _v1.7-SNAPSHOT:
+
+1.7-SNAPSHOT
+############
+
+Enhancements
+************
+
+* Improve FormComponents' feedbacks for AbstractUnicityFormValidator on error
+
 .. _v1.6.1:
 
 1.6.1 (2020-04-24)
