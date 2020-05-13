@@ -2,15 +2,17 @@
 Releases
 ########
 
-.. _v1.7-SNAPSHOT:
+.. _v1.7.0:
 
-1.7-SNAPSHOT
-############
+1.7.0 (YYYY-MM-DD)
+##################
 
 Enhancements
 ************
 
-* Improve FormComponents' feedbacks for AbstractUnicityFormValidator on error
+* Select2: force size 1 row.
+* Make class ``AbstractImmutableMaterializedPrimitiveValueUserType`` public.
+* ``AbstractUnicityFormValidator``: all ``FormComponent`` are flagged on error.
 
 .. _v1.6.1:
 
