@@ -14,6 +14,52 @@ Enhancements
 * Make class ``AbstractImmutableMaterializedPrimitiveValueUserType`` public.
 * ``AbstractUnicityFormValidator``: all ``FormComponent`` are flagged on error.
 
+Updates
+*******
+
+* **spring-framework 5.2.2.RELEASE -> 5.2.6.RELEASE**
+* **spring-security 5.2.1.RELEASE -> 5.3.2.RELEASE**
+* **spring-boot 2.1.3.RELEASE -> 2.2.7.RELEASE**
+* **hibernate 5.4.10.Final -> 5.4.16.Final**
+* *byte-buddy 1.10.2 -> 1.10.10*
+* **wicket 8.6.1 -> 8.8.0**
+* *wicketstuff-select2 8.6.0 -> 8.8.0*
+* jackson 2.9.10 -> 2.10.4
+* jackson-databind 2.9.10.1 -> 2.10.4
+* guava 28.1-jre -> 29.0-jre
+* ph-css 6.2.0 -> 6.2.3
+* querydsl 4.2.2 -> 4.3.1
+* HikariCP 3.4.1 -> 3.4.5
+* commons-codec 1.13 -> 1.14
+* commons-compress 1.19 -> 1.20
+* commons-configuration2 2.6 -> 2.7
+* commons-lang3 3.9 -> 3.10
+* httpclient 4.5.10 -> 4.5.12
+* httpcore 4.4.12 -> 4.4.13
+* apache-poi 4.1.1 -> 4.1.2
+* bouncycastle bcprov-jdk15on 1.64 -> 1.65
+* freemarker 2.3.29 -> 2.3.30
+* javassist 3.26.0-GA -> 3.27.0-GA
+* jsoup 1.12.1 -> 1.13.1
+* prettytime 4.0.2.Final -> 4.0.5.Final
+* passay 1.5.0 -> 1.6.0
+* postgresql 42.2.9 -> 42.2.12
+* slf4j 1.7.29 -> 1.7.30
+* webjars-locator-core 0.43 -> 0.45
+* flying-saucer 9.1.19 -> 9.1.20
+* jdk-serializable-functional 1.8.5 -> 1.8.6
+* maven-antrun 1.5.0 -> 3.0.0
+* maven-assembly-plugin 3.2.0 -> 3.3.0
+* maven-dependency-plugin 3.1.1 -> 3.1.2
+* maven-jar-plugin 3.1.1 -> 3.2.0
+* maven-javadoc-plugin 3.1.1 -> 3.2.0
+* maven-source-plugin 3.2.0 -> 3.2.1
+* mockito 3.2.0 -> 3.3.3
+* allure-junit4 2.13.0 -> 2.13.3
+* junit 4.12 -> 4.13
+* assertj 3.14.0 -> 3.16.1
+* assertj-guava 3.3.0 -> 3.4.0
+
 .. _v1.6.1:
 
 1.6.1 (2020-04-24)
