@@ -11,6 +11,7 @@ Enhancements
 ************
 
 * Select2: force size 1 row.
+* Select2 - BS4: override selected element background color.
 * Make class ``AbstractImmutableMaterializedPrimitiveValueUserType`` public.
 * ``AbstractUnicityFormValidator``: all ``FormComponent`` are flagged on error.
 
