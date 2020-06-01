@@ -7,6 +7,11 @@ Releases
 1.7.0 (YYYY-MM-DD)
 ##################
 
+Bugfixes
+********
+
+* Fix ``ReferenceData`` comparator.
+
 Enhancements
 ************
 
