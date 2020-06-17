@@ -2,6 +2,17 @@
 Releases
 ########
 
+.. _v1.7.1:
+
+1.7.1 (2020-06-17)
+##################
+
+Enhancements
+************
+
+* Add ConditionalOnMissingBean annotation on default AuthenticationProvider to allow
+use of exclusively custom AuthenticationProvider.
+
 .. _v1.7.0:
 
 1.7.0 (2020-06-16)
