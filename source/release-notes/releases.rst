@@ -19,6 +19,11 @@ Enhancements
 * Select2 - BS4: override selected element background color.
 * Make class ``AbstractImmutableMaterializedPrimitiveValueUserType`` public.
 * ``AbstractUnicityFormValidator``: all ``FormComponent`` are flagged on error.
+* Hibernate identifier generator strategy can now be customized through
+  property ``hibernate.identifier_generator_strategy_provider``, with
+  a fallback on the previous default ``PerTableSequenceStrategyProvider``.
+* ``PredefinedIdSequenceGenerator`` is a new sequence generator allowing
+  to set entity ids manually base on a transient field ``predefinedId``.
 
 Updates
 *******
