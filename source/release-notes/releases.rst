@@ -2,6 +2,16 @@
 Releases
 ########
 
+.. _v1.8.0:
+
+1.8.0 (YYYY-MM-DD)
+##################
+
+Bugfixes
+********
+
+* BasicApp: fix ``<span>`` close tag on static error pages.
+
 .. _v1.7.1:
 
 1.7.1 (2020-06-17)
@@ -10,8 +20,9 @@ Releases
 Enhancements
 ************
 
-* Add ConditionalOnMissingBean annotation on default AuthenticationProvider to allow
-use of exclusively custom AuthenticationProvider.
+* Add ``ConditionalOnMissingBean`` annotation on default
+  ``AuthenticationProvider`` to allow use of exclusively custom
+  ``AuthenticationProvider``.
 
 .. _v1.7.0:
 
