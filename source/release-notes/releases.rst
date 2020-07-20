@@ -2,15 +2,49 @@
 Releases
 ########
 
-.. _v1.8.0:
+.. _v2.0.0:
 
-1.8.0 (YYYY-MM-DD)
+2.0.0 (YYYY-MM-DD)
 ##################
+
+Breaking changes
+****************
+
+* **Bootstrap 4.5.0.**
+* **Disable Autoprefixer in development mode.**
+* Drop Bootstrap 3 module.
+* Remove JQuery Autosize plugin.
+* Fix null values display in Excel exports. For instance, a number cell will be
+  blank instead of displaying zero.
+
+Updates
+*******
+
+* **Bootstrap 4.3.1 -> 4.5.0**
+* Font Awesome 5.11.2 -> 5.14.0
+* Popper.js 1.16.0 -> 1.16.1-lts
+* Clipboard.js 2.0.4 -> 2.0.6
 
 Bugfixes
 ********
 
 * BasicApp: fix ``<span>`` close tag on static error pages.
+* BasicApp: fix reference data sort type label.
+
+Enhancements
+************
+
+* BasicApp: remove BS override shadow focus.
+* BasicApp: fix markup custom check.
+* BasicApp: forms - use ``col-md-*`` instead of ``col-sm-*``.
+* BasicApp: environment section in sidebar for advanced layout.
+* BasicApp: hover on table disabled row + upstream scss to Igloo.
+* BasicApp: fix sidebar sub menu collapse animation.
+* BasicApp: advanced layout as default.
+* Fix some Sonar issues.
+* Clean up some deprecated.
+* ``LinkDescriptor``: ``bypassPermissions`` method no longer deprecated.
+
 
 .. _v1.7.1:
 
