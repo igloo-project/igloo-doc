@@ -60,8 +60,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Igloo-project doc'
-copyright = u'2017, Laurent Almeras'
-author = u'Laurent Almeras'
+copyright = u'2020, Kobalt'
+author = u'Kobalt'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -239,7 +239,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'igloo-doc.tex', u'Igloo Project Documentation',
-     u'Laurent Almeras', 'manual'),
+     u'Kobalt', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
