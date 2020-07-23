@@ -14,6 +14,9 @@ Breaking changes
 * **Disable Autoprefixer in development mode.**
 * Drop Bootstrap 3 module.
 * Remove JQuery Autosize plugin.
+* ``IComponentFactory`` and parameterized ones are now functional interfaces.
+  Drop ``AbstractComponentFactory``, ``AbstractParameterizedComponentFactory``
+  and ``AbstractDecoratingComponentFactory``.
 * Fix null values display in Excel exports. For instance, a number cell will be
   blank instead of displaying zero.
 
@@ -40,6 +43,8 @@ Enhancements
 * BasicApp: environment section in sidebar for advanced layout.
 * BasicApp: hover on table disabled row + upstream scss to Igloo.
 * BasicApp: fix sidebar sub menu collapse animation.
+* BasicApp: clean up + update css on email notifications.
+* BasicApp: add ``.divider-light`` css class.
 * BasicApp: advanced layout as default.
 * Fix some Sonar issues.
 * Clean up some deprecated.
