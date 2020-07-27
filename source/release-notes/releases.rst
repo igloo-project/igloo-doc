@@ -50,6 +50,7 @@ Enhancements
 * Fix some Sonar issues.
 * Clean up some deprecated.
 * ``LinkDescriptor``: ``bypassPermissions`` method no longer deprecated.
+* Add a debug stopwatch on Autoprefixer process.
 
 
 .. _v1.7.1:
