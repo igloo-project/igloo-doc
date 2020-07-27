@@ -19,6 +19,7 @@ Breaking changes
   and ``AbstractDecoratingComponentFactory``.
 * Fix null values display in Excel exports. For instance, a number cell will be
   blank instead of displaying zero.
+* Remove ``$sizes`` scss variable override.
 
 Updates
 *******
