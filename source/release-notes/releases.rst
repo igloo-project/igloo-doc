@@ -4,7 +4,7 @@ Releases
 
 .. _v2.0.0:
 
-2.0.0 (YYYY-MM-DD)
+2.0.0 (2020-07-29)
 ##################
 
 Breaking changes
@@ -12,6 +12,8 @@ Breaking changes
 
 * **Bootstrap 4.5.0.**
 * **Disable Autoprefixer in development mode.**
+* Rework ``toString()`` on ``GenericEntity``. Drop ``getNameForToString()`` and
+  ``getDisplayName``.
 * Drop Bootstrap 3 module.
 * Remove JQuery Autosize plugin.
 * ``IComponentFactory`` and parameterized ones are now functional interfaces.
