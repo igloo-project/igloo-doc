@@ -7,12 +7,6 @@ Releases
 2.1.0 (TBD)
 ###########
 
-Updates
-*******
-
-* **JDK 9 -> 11**
-* **Jersey 2.25.1 -> 2.31**
-
 Enhancements
 ************
 
