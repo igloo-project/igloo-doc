@@ -12,6 +12,7 @@ Enhancements
 
 * Animal-sniffer maven plugin is not disabled for JDK >1.8, as it is
   now managed since JDK 9.
+* Add new MediaType ``APPLICATION_MS_EXCEL_MACRO`` to handle macros
 
 2.0.0 (2020-07-29)
 ##################
