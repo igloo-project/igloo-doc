@@ -10,6 +10,7 @@ Releases
 Enhancements
 ************
 
+* BasicApp: fix style notification password recovery.
 * Animal-sniffer maven plugin is not disabled for JDK >1.8, as it is
   now managed since JDK 9.
 * Add new MediaType ``APPLICATION_MS_EXCEL_MACRO`` to handle macros
