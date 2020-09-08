@@ -8,21 +8,21 @@ Igloo and the basic application are using Flyway for handling your data upgrades
 Activate Flyway's Spring profile
 --------------------------------
 
-First of all, you need to activate Flyway's Spring profile. To do so, just modify this line to add flyway in the file ``development.properties``  :
+By default, Flyway's Spring profile is activated with this line in the file ``configuration-bootstrap.properties`` :
 
 .. code-block:: bash
 
-  maven.spring.profiles.active=flyway
+  igloo.default.spring.profiles.active=flyway
 
-With this simple modification, you have enabled the creation of the Flyway bean
+With this simple configuration, the creation of the Flyway bean is enabled
 in the application and you can now start to use it.
 
-.. note:: Flyway spring profile is already enabled in basic-application generated
+.. note:: Flyway spring profile is enabled in basic-application generated
   from Igloo version 0.14 and above.
 
 .. note::
   If you want to disable flyway from your application, just remove ``flyway`` from
-  the configuration variable ``maven.spring.profiles.active`` in file ``development.properties``.
+  the configuration variable ``igloo.default.spring.profiles.active`` in file ``configuration-bootstrap.properties``.
 
 
 Create a Flyway data upgrade
