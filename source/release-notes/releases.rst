@@ -4,7 +4,7 @@ Releases
 
 .. _v2.0.0:
 
-2.X.X (Not released yet)
+2.X.X (YYYY-MM-DD)
 ##################
 
 Updates
@@ -39,6 +39,14 @@ Updates
 * exec-maven-plugin 1.6.0 -> 3.0.0
 * animal-sniffer-maven-plugin 1.18 -> 1.19
 * maven-javadoc-plugin 3.1.1 -> 3.2.0
+
+2.1.1 (2020-09-15)
+##################
+
+Bugfixes
+********
+
+* Fix export Excel cell formula type.
 
 2.1.0 (2020-09-09)
 ##################
