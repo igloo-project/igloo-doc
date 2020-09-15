@@ -4,8 +4,44 @@ Releases
 
 .. _v2.0.0:
 
+2.X.X (Not released yet)
+##################
+
+Updates
+*******
+
+* **spring-framework 5.2.6.RELEASE -> 5.2.8.RELEASE**
+* **spring-security 5.3.2.RELEASE -> 5.3.4.RELEASE**
+* **spring-boot 2.2.7.RELEASE -> 2.3.3.RELEASE**
+* **hibernate 5.4.16.Final -> 5.4.21.Final**
+* **hibernate-search 5.11.4.Final -> 5.11.5.Final**
+* **wicket 8.8.0 -> 8.9.0**
+* *wicketstuff-select2 8.8.0 -> 8.9.0*
+* jackson 2.10.4 -> 2.11.2
+* jackson-databind 2.10.4 -> 2.11.2
+* commons-codec 1.14 -> 1.15
+* commons-validator 1.6 -> 1.7
+* commons-lang3 3.10 -> 3.11
+* commons-text 1.8 -> 1.9
+* aspectj 1.9.5 -> 1.9.6
+* bouncycastle-jdk15on 1.65 -> 1.66
+* postgresql 42.2.12 -> 42.2.14
+* webjars-locator-core 0.45 -> 0.46
+* flying-saucer 9.1.19 -> 9.1.20
+* allure-junit4 2.13.3 -> 2.13.5
+* assertj 3.16.1 -> 3.17.2
+* mockito 3.3.3 -> 3.5.10
+* maven-failsafe-plugin 3.0.0-M4 -> 3.0.0-M5
+* maven-project-info-reports-plugin 3.0.0 -> 3.1.1
+* maven-resources-plugin  3.1.0 -> 3.2.0
+* maven-surefire-plugin 3.0.0-M4 -> 3.0.0-M5
+* maven-war-plugin 3.2.3 -> 3.3.1
+* exec-maven-plugin 1.6.0 -> 3.0.0
+* animal-sniffer-maven-plugin 1.18 -> 1.19
+* maven-javadoc-plugin 3.1.1 -> 3.2.0
+
 2.1.0 (2020-09-09)
-###########
+##################
 
 Enhancements
 ************
