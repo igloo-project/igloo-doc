@@ -40,6 +40,23 @@ Updates
 * animal-sniffer-maven-plugin 1.18 -> 1.19
 * maven-javadoc-plugin 3.1.1 -> 3.2.0
 
+Bugfixes
+********
+
+* Fix add-in elements css placements in ``DataTableBuilder``.
+
+.. _v1.7.2:
+
+1.7.2 (2020-09-16)
+##################
+
+Bugfixes
+********
+
+* Fix export Excel cell formula type.
+
+.. _v2.1.1:
+
 2.1.1 (2020-09-15)
 ##################
 
@@ -47,6 +64,8 @@ Bugfixes
 ********
 
 * Fix export Excel cell formula type.
+
+.. _v2.1.0:
 
 2.1.0 (2020-09-09)
 ##################
@@ -58,6 +77,8 @@ Enhancements
 * Animal-sniffer maven plugin is not disabled for JDK >1.8, as it is
   now managed since JDK 9.
 * Add new MediaType ``APPLICATION_MS_EXCEL_MACRO`` to handle macros
+
+.. _v2.0.0:
 
 2.0.0 (2020-07-29)
 ##################
@@ -108,7 +129,6 @@ Enhancements
 * Clean up some deprecated.
 * ``LinkDescriptor``: ``bypassPermissions`` method no longer deprecated.
 * Add a debug stopwatch on Autoprefixer process.
-
 
 .. _v1.7.1:
 
