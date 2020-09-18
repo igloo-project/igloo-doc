@@ -2,7 +2,7 @@
 Releases
 ########
 
-.. _v2.0.0:
+.. _v2.X.X:
 
 2.X.X (YYYY-MM-DD)
 ##################
@@ -39,6 +39,16 @@ Updates
 * exec-maven-plugin 1.6.0 -> 3.0.0
 * animal-sniffer-maven-plugin 1.18 -> 1.19
 * maven-javadoc-plugin 3.1.1 -> 3.2.0
+
+.. _v2.2.0:
+
+2.2.0 (YYYY-MM-DD)
+##################
+
+Enhancements
+************
+
+* BS4 tabs: update url anchor and show tab from anchor on load.
 
 Bugfixes
 ********
