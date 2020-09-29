@@ -45,15 +45,16 @@ Updates
 2.2.0 (YYYY-MM-DD)
 ##################
 
+Bugfixes
+********
+
+* BS4 Popover: fix close button.
+* Fix add-in elements css placements in ``DataTableBuilder``.
+
 Enhancements
 ************
 
 * BS4 tabs: update url anchor and show tab from anchor on load.
-
-Bugfixes
-********
-
-* Fix add-in elements css placements in ``DataTableBuilder``.
 
 .. _v1.7.2:
 
