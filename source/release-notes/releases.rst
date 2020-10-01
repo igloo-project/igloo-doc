@@ -59,6 +59,11 @@ Bugfixes
 Enhancements
 ************
 
+* BasicApp: drop ``init`` module.
+* BasicApp: move ``BasicApplicationSqlUpdateScriptMain`` to ``cli`` package in
+  ``core`` module.
+* BasicApp: rename ``INotificationUserProfileUrlBuilderService`` to
+  ``IBasicApplicationNotificationUrlBuilderService``.
 * BS4 tabs: update url anchor and show tab from anchor on load.
 
 .. _v1.7.2:
