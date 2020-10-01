@@ -7,6 +7,11 @@ Releases
 2.X.X (YYYY-MM-DD)
 ##################
 
+Bugfixes
+********
+
+* Fix missing scope:test on igloo-component-web-jpa-test in igloo-component-rest-jersey2
+
 Updates
 *******
 
