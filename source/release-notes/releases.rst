@@ -64,6 +64,7 @@ Enhancements
   ``core`` module.
 * BasicApp: rename ``INotificationUserProfileUrlBuilderService`` to
   ``IBasicApplicationNotificationUrlBuilderService``.
+* BasicApp: fix decorated table add-in elements margin.
 * BS4 tabs: update url anchor and show tab from anchor on load.
 
 .. _v1.7.2:
