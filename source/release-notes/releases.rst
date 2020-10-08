@@ -10,6 +10,7 @@ Releases
 Bugfixes
 ********
 
+* Wicket: allow *.webmanifest in SecurePackageResourceGuard
 * Fix missing scope:test on igloo-component-web-jpa-test in igloo-component-rest-jersey2
 
 Updates
