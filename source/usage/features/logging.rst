@@ -115,6 +115,8 @@ To keep log4j 1.2, you need to add this new dependency to your ``application-cor
       <type>pom</type>
    </dependency>
 
+Check that your core, init and webapp dependencies only include log4j 1.2.
+
 .. _migrate-log4j1:
 
 How to migrate a log4j 1.2 configuration
@@ -131,6 +133,8 @@ To migrate to log4j2, you need to add this new dependency to your ``application-
       <version>${igloo.version}</version>
       <type>pom</type>
    </dependency>
+
+Check that your core, init and webapp dependencies only include log4j2.
 
 If you use a custom ``configuration-bootstrap.properties``, you need to create
 the multiple ``log4j2.configurationLocations`` entries. You can use
