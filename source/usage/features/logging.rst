@@ -105,7 +105,7 @@ How to keep log4j 1.2
 
 To keep log4j 1.2, you need to add this new dependency to your ``application-core/pom.xml``:
 
-.. code-block::
+.. code-block:: xml
 
    <!-- Logging backend -->
    <dependency>
@@ -124,7 +124,7 @@ How to migrate a log4j 1.2 configuration
 
 To migrate to log4j2, you need to add this new dependency to your ``application-core/pom.xml``:
 
-.. code-block::
+.. code-block:: xml
 
    <!-- Logging backend -->
    <dependency>
