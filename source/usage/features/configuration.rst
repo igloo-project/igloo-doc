@@ -123,6 +123,8 @@ skipped (a comment is included in the generated file for each skipped item).
 
 **This file may contain sensitive data (password, ...).**
 
+.. _bootstrap-locations:
+
 Custom bootstrap files
 **********************
 

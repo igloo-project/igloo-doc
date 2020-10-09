@@ -5,6 +5,7 @@ Backend
    :maxdepth: 1
 
    configuration.rst
+   logging.rst
    PropertyService.md
    Email-notification.rst
    autoprefixer.rst

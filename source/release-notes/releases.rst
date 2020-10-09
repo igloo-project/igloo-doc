@@ -10,11 +10,16 @@ Releases
 Bugfixes
 ********
 
-* Wicket: allow *.webmanifest in SecurePackageResourceGuard
+* Wicket: allow \*.webmanifest in SecurePackageResourceGuard
 * Fix missing scope:test on igloo-component-web-jpa-test in igloo-component-rest-jersey2
 
 Updates
 *******
+
+* New default logging backend : log4j2
+
+  * :ref:`Keep log4j 1.2 <keep-log4j1>`
+  * :ref:`Migrate to log4j2 <migrate-log4j1>`
 
 * **spring-framework 5.2.6.RELEASE -> 5.2.8.RELEASE**
 * **spring-security 5.3.2.RELEASE -> 5.3.4.RELEASE**
