@@ -148,7 +148,7 @@ configuration rewritten to use log4j2 syntax.
 
 Here are examples:
 
-.. code-block::
+.. code-block:: ini
    :caption: Main configuration
 
    #
@@ -175,7 +175,8 @@ Here are examples:
    rootLogger.level = warn
    rootLogger.appenderRef.stdout.ref = STDOUT
 
-.. code-block::
+
+.. code-block:: ini
    :caption: Logger configuration
 
    #
@@ -190,7 +191,7 @@ Here are examples:
    logger.NAME.name=package.Class
    logger.NAME.level=DEBUG
 
-.. code-block::
+.. code-block:: ini
    :caption: Advanced logger configuration
 
    #
@@ -218,7 +219,8 @@ Here are examples:
    #logger.NAME.SYNCHRO.ref = synchro
    #logger.NAME.STDOUT.ref = STDOUT
 
-.. code-block::
+
+.. code-block:: ini
    :caption: Alternate appender configuration
 
    #
