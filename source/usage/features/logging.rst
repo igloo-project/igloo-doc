@@ -148,7 +148,7 @@ configuration rewritten to use log4j2 syntax.
 
 Here are examples:
 
-.. code-block:: ini
+.. code-block::
    :caption: Main configuration
 
    #
@@ -158,7 +158,7 @@ Here are examples:
    log4j.appender.Stdout.layout=org.apache.log4j.PatternLayout
    log4j.appender.Stdout.layout.ConversionPattern=[%d{ISO8601}][%X{PID}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
 
-   log4j.rootLogger=DEBUG, Stdout
+   log4j.rootLogger=WARN, Stdout
 
    #
    # log4j2
@@ -172,7 +172,7 @@ Here are examples:
    appender.console.layout.type = PatternLayout
    appender.console.layout.pattern = [%d{ISO8601}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
 
-   rootLogger.level = debug
+   rootLogger.level = warn
    rootLogger.appenderRef.stdout.ref = STDOUT
 
 .. code-block::
