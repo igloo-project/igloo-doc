@@ -3,7 +3,7 @@ name = "igloo_doc"
 # this is a fake/unused version
 version = "0.1.0"
 description = ""
-authors = ""
+authors = ["Kobalt <infra@kobalt.fr>"]
 
 [tool.poetry.dependencies]
 python = ">=3.5"
@@ -17,5 +17,3 @@ igloo-doc = "clickable.click:main"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
-
-

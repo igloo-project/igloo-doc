@@ -21,15 +21,49 @@ Updates
   * :ref:`Keep log4j 1.2 <keep-log4j1>`
   * :ref:`Migrate to log4j2 <migrate-log4j1>`
 
-* **spring-framework 5.2.6.RELEASE -> 5.2.8.RELEASE**
-* **spring-security 5.3.2.RELEASE -> 5.3.4.RELEASE**
-* **spring-boot 2.2.7.RELEASE -> 2.3.3.RELEASE**
-* **hibernate 5.4.16.Final -> 5.4.21.Final**
+
+.. _v2.2.0:
+
+2.2.0 (YYYY-MM-DD)
+##################
+
+Breaking changes
+****************
+
+* Spring boot update related change : if you have ``new  ApplicationContextRunner()``
+  declared in your application or tests and you want to override existing beans,
+  you now need to add ``.withAllowBeanDefinitionOverriding(true)``
+* Flyway update related change :
+
+    - you must override ``getEquivalentChecksum`` either in ``AbstractDataUpgradeMigration.java``
+      or in each of your migrations. This function
+      is used if you want to state that two of your migrations are doing the same thing and if one pass
+      the other must not be executed. The default implementation is to call ``getChecksum()``.
+    - You can now have the possibility to override in each of your migrations the following functions :
+
+      - ``isUndo`` if you want to flag your migration as undoing another (default is false)
+      - ``canExecuteInTransaction`` if you want your migration not to be executed in a transaction (default is false)
+
+    - You also need to modify the flyway locations in your properties file as dot-separated
+      path are no longer supported by flyway, you need to refactor them in slash-separated path.
+
+* Spring Security update related change : references to http://www.springframework.org/schema/security/spring-security-5.3.xsd
+  url must be rewritten to https://www.springframework.org/schema/security/spring-security-5.4.xsd.
+
+Updates
+*******
+
+* **spring-framework 5.2.6.RELEASE -> 5.2.9.RELEASE**
+* **spring-security 5.3.2.RELEASE -> 5.4.1**
+* **spring-boot 2.2.7.RELEASE -> 2.3.4.RELEASE**
+* **spring-ldap 2.3.2.RELEASE -> 2.3.3.RELEASE**
+* **hibernate 5.4.16.Final -> 5.4.22.Final**
 * **hibernate-search 5.11.4.Final -> 5.11.5.Final**
-* **wicket 8.8.0 -> 8.9.0**
-* *wicketstuff-select2 8.8.0 -> 8.9.0*
-* jackson 2.10.4 -> 2.11.2
-* jackson-databind 2.10.4 -> 2.11.2
+* **wicket 8.8.0 -> 8.10.0**
+* *wicketstuff-select2 8.8.0 -> 8.10.0*
+* flyway 5.2.7 -> 7.0.2
+* jackson 2.10.4 -> 2.11.3
+* jackson-databind 2.10.4 -> 2.11.3
 * commons-codec 1.14 -> 1.15
 * commons-validator 1.6 -> 1.7
 * commons-lang3 3.10 -> 3.11
@@ -39,22 +73,21 @@ Updates
 * postgresql 42.2.12 -> 42.2.14
 * webjars-locator-core 0.45 -> 0.46
 * flying-saucer 9.1.19 -> 9.1.20
-* allure-junit4 2.13.3 -> 2.13.5
+* querydsl 4.3.1 -> 4.4.0
+* httpclient 4.5.12 -> 4.5.13
+* prettytime 4.0.5 -> 4.0.6
+* allure-junit4 2.13.3 -> 2.13.6
 * assertj 3.16.1 -> 3.17.2
-* mockito 3.3.3 -> 3.5.10
+* mockito 3.3.3 -> 3.5.13
 * maven-failsafe-plugin 3.0.0-M4 -> 3.0.0-M5
 * maven-project-info-reports-plugin 3.0.0 -> 3.1.1
 * maven-resources-plugin  3.1.0 -> 3.2.0
 * maven-surefire-plugin 3.0.0-M4 -> 3.0.0-M5
 * maven-war-plugin 3.2.3 -> 3.3.1
 * exec-maven-plugin 1.6.0 -> 3.0.0
-* animal-sniffer-maven-plugin 1.18 -> 1.19
+* wagon-ssh-external 3.3.4 -> 3.4.1
+* jacoco-maven-plugin 0.8.5 -> 0.8.6
 * maven-javadoc-plugin 3.1.1 -> 3.2.0
-
-.. _v2.2.0:
-
-2.2.0 (YYYY-MM-DD)
-##################
 
 Bugfixes
 ********
