@@ -60,7 +60,7 @@ Updates
 * **hibernate 5.4.16.Final -> 5.4.22.Final**
 * **hibernate-search 5.11.4.Final -> 5.11.5.Final**
 * **wicket 8.8.0 -> 8.10.0**
-* *wicketstuff-select2 8.8.0 -> 8.10.0*
+* **wicketstuff-select2 8.8.0 -> 8.10.0**
 * flyway 5.2.7 -> 7.0.2
 * jackson 2.10.4 -> 2.11.3
 * jackson-databind 2.10.4 -> 2.11.3
@@ -107,6 +107,9 @@ Enhancements
 * BasicApp: update user groups list page.
 * BasicApp: fix permissions on users and usergroups.
 * BS4 tabs: update url anchor and show tab from anchor on load.
+* jQuery multivalued expand: fix toggle button html.
+  * Explicit close ``</span>`` for icons.
+  * Use ``<span>`` instead of ``<a>`` to wrap icons.
 
 .. _v1.7.2:
 
