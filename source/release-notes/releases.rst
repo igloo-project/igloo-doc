@@ -103,6 +103,9 @@ Enhancements
   ``core`` module.
 * BasicApp: rename ``INotificationUserProfileUrlBuilderService`` to
   ``IBasicApplicationNotificationUrlBuilderService``.
+* BasicApp: update favicons and conf.
+* BasicApp: rework logo header sections in application access pages, error
+  pages, and the home page.
 * BasicApp: fix decorated table add-in elements margin.
 * BasicApp: update user groups list page.
 * BasicApp: fix permissions on users and usergroups.
