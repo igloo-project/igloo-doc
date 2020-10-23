@@ -241,3 +241,30 @@ Here are examples:
    appender.synchro.fileName=${sys:catalina.base}/logs/synchro.log
    appender.synchro.layout.type = PatternLayout
    appender.synchro.layout.pattern=[%d{ISO8601}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
+
+.. code-block:: ini
+  :caption: Multiple rootLogger appender configuration
+
+   #
+   # log4j 1.2
+   #
+   log4j.rootLogger=WARN, Stdout, FILE
+
+   log4j.appender.FILE=org.apache.log4j.FileAppender
+   log4j.appender.FILE.File=${catalina.base}/logs/synchro.log
+   log4j.appender.FILE.layout=org.apache.log4j.PatternLayout
+   log4j.appender.FILE.layout.ConversionPattern=[%d{ISO8601}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
+
+   #
+   # log4j2
+   #
+   # NAME is an arbitrary string used to link name
+   # EITHER is an arbitrary string used to link append configurations together
+   rootLogger.appenderRef.EITHER.ref=File
+   rootLogger.appenderRef.stdout.ref=STDOUT
+
+   appender.NAME.type=File
+   appender.NAME.name=FILE
+   appender.NAME.fileName=${sys:catalina.base}/logs/synchro.log
+   appender.NAME.layout.type = PatternLayout
+   appender.NAME.layout.pattern=[%d{ISO8601}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
