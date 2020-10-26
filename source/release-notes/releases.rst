@@ -21,6 +21,13 @@ Updates
   * :ref:`Keep log4j 1.2 <keep-log4j1>`
   * :ref:`Migrate to log4j2 <migrate-log4j1>`
 
+Java 11
+*******
+
+Igloo now uses Java 11. See here what you need to do to perform Java 11 migration.
+:ref:`Migrating to Java 11 <migrating-to-java11>`
+
+
 
 .. _v2.2.0:
 
