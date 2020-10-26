@@ -109,6 +109,8 @@ Enhancements
 * BasicApp: fix decorated table add-in elements margin.
 * BasicApp: update user groups list page.
 * BasicApp: fix permissions on users and usergroups.
+* BasicApp: add ``ReferenceDataAjaxDropDownSingleChoice`` and
+  ``ReferenceDataAjaxDropDownMultipleChoice``.
 * BS4 tabs: update url anchor and show tab from anchor on load.
 * jQuery multivalued expand: fix toggle button html.
   * Explicit close ``</span>`` for icons.
