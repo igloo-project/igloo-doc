@@ -10,16 +10,8 @@ Releases
 Bugfixes
 ********
 
-* Wicket: allow \*.webmanifest in SecurePackageResourceGuard
-* Fix missing scope:test on igloo-component-web-jpa-test in igloo-component-rest-jersey2
-
 Updates
 *******
-
-* New default logging backend : log4j2
-
-  * :ref:`Keep log4j 1.2 <keep-log4j1>`
-  * :ref:`Migrate to log4j2 <migrate-log4j1>`
 
 Java 11
 *******
@@ -36,6 +28,11 @@ Igloo now uses Java 11. See here what you need to do to perform Java 11 migratio
 
 Breaking changes
 ****************
+
+* New default logging backend : log4j2
+
+  * :ref:`Keep log4j 1.2 <keep-log4j1>`
+  * :ref:`Migrate to log4j2 <migrate-log4j1>`
 
 * Spring boot update related change : if you have ``new  ApplicationContextRunner()``
   declared in your application or tests and you want to override existing beans,
@@ -99,6 +96,8 @@ Updates
 Bugfixes
 ********
 
+* Wicket: allow \*.webmanifest in SecurePackageResourceGuard
+* Fix missing scope:test on igloo-component-web-jpa-test in igloo-component-rest-jersey2
 * BS4 Popover: fix close button.
 * Fix add-in elements css placements in ``DataTableBuilder``.
 
