@@ -37,6 +37,7 @@ Breaking changes
 * Spring boot update related change : if you have ``new  ApplicationContextRunner()``
   declared in your application or tests and you want to override existing beans,
   you now need to add ``.withAllowBeanDefinitionOverriding(true)``
+
 * Flyway update related change :
 
     - you must override ``getEquivalentChecksum`` either in ``AbstractDataUpgradeMigration.java``
@@ -61,7 +62,11 @@ Updates
 * **spring-security 5.3.2.RELEASE -> 5.4.1**
 * **spring-boot 2.2.7.RELEASE -> 2.3.4.RELEASE**
 * **spring-ldap 2.3.2.RELEASE -> 2.3.3.RELEASE**
-* **hibernate 5.4.16.Final -> 5.4.22.Final**
+* **hibernate 5.4.16.Final -> 5.4.21.Final**
+
+  * Hibernate 5.4.22 skipped, waiting for
+    https://hibernate.atlassian.net/browse/HHH-14279 fix
+
 * **hibernate-search 5.11.4.Final -> 5.11.5.Final**
 * **wicket 8.8.0 -> 8.10.0**
 * **wicketstuff-select2 8.8.0 -> 8.10.0**
@@ -92,6 +97,7 @@ Updates
 * wagon-ssh-external 3.3.4 -> 3.4.1
 * jacoco-maven-plugin 0.8.5 -> 0.8.6
 * maven-javadoc-plugin 3.1.1 -> 3.2.0
+* log4j2 support 2.13.3
 
 Bugfixes
 ********
