@@ -120,6 +120,7 @@ Enhancements
   ``ReferenceDataAjaxDropDownMultipleChoice``.
 * BS4 tabs: update url anchor and show tab from anchor on load.
 * jQuery multivalued expand: fix toggle button html.
+
   * Explicit close ``</span>`` for icons.
   * Use ``<span>`` instead of ``<a>`` to wrap icons.
 
