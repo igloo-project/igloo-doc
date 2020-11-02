@@ -97,6 +97,7 @@ Updates
 * wagon-ssh-external 3.3.4 -> 3.4.1
 * jacoco-maven-plugin 0.8.5 -> 0.8.6
 * maven-javadoc-plugin 3.1.1 -> 3.2.0
+* junit 4.13 -> 4.13.1
 * log4j2 support 2.13.3
 
 Bugfixes
