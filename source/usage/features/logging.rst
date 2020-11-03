@@ -167,13 +167,13 @@ Here are examples:
    dest = err
    name = PropertiesConfig
 
-   appender.console.type = Console
-   appender.console.name = STDOUT
-   appender.console.layout.type = PatternLayout
-   appender.console.layout.pattern = [%d{ISO8601}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
+   appender.console.type=Console
+   appender.console.name=STDOUT
+   appender.console.layout.type=PatternLayout
+   appender.console.layout.pattern=[%d{ISO8601}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
 
    rootLogger.level = warn
-   rootLogger.appenderRef.stdout.ref = STDOUT
+   rootLogger.appenderRef.stdout.ref=STDOUT
 
 
 .. code-block:: ini
@@ -212,12 +212,12 @@ Here are examples:
    logger.NAME.name=package.Class
    logger.NAME.level=DEBUG
    logger.NAME.additivity=false
-   logger.NAME.appenderRefs = SYNCHRO
-   logger.NAME.SYNCHRO.ref = synchro
+   logger.NAME.appenderRefs=SYNCHRO
+   logger.NAME.SYNCHRO.ref=synchro
    # if multiple append must be specified
-   #logger.NAME.appenderRefs = SYNCHRO, STDOUT
-   #logger.NAME.SYNCHRO.ref = synchro
-   #logger.NAME.STDOUT.ref = STDOUT
+   #logger.NAME.appenderRefs=SYNCHRO, STDOUT
+   #logger.NAME.SYNCHRO.ref=synchro
+   #logger.NAME.STDOUT.ref=STDOUT
 
 
 .. code-block:: ini
@@ -239,7 +239,7 @@ Here are examples:
    appender.synchro.type=File
    appender.synchro.name=SYNCHRO
    appender.synchro.fileName=${sys:catalina.base}/logs/synchro.log
-   appender.synchro.layout.type = PatternLayout
+   appender.synchro.layout.type=PatternLayout
    appender.synchro.layout.pattern=[%d{ISO8601}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
 
 .. code-block:: ini
@@ -266,5 +266,5 @@ Here are examples:
    appender.NAME.type=File
    appender.NAME.name=FILE
    appender.NAME.fileName=${sys:catalina.base}/logs/synchro.log
-   appender.NAME.layout.type = PatternLayout
+   appender.NAME.layout.type=PatternLayout
    appender.NAME.layout.pattern=[%d{ISO8601}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
