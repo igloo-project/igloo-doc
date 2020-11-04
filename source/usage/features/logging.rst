@@ -163,16 +163,16 @@ Here are examples:
    #
    # log4j2
    #
-   status = error
-   dest = err
-   name = PropertiesConfig
+   status=error
+   dest=err
+   name=PropertiesConfig
 
    appender.console.type=Console
    appender.console.name=STDOUT
    appender.console.layout.type=PatternLayout
    appender.console.layout.pattern=[%d{ISO8601}] %-5p - %-26.26c{1} - %X{ow-url} - %m\n
 
-   rootLogger.level = warn
+   rootLogger.level=warn
    rootLogger.appenderRef.stdout.ref=STDOUT
 
 
@@ -207,7 +207,7 @@ Here are examples:
    # NAME is an arbitrary string used to link name and level together
    # EITHER is an arbitrary string used to link append configurations together
    # [...]
-   appender.EITHER.name = synchro
+   appender.EITHER.name=synchro
    # [...]
    logger.NAME.name=package.Class
    logger.NAME.level=DEBUG
