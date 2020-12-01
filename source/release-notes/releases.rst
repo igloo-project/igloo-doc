@@ -24,7 +24,17 @@ Igloo now uses Java 11. See here what you need to do to perform Java 11 migratio
 2.3.0 (YYYY-MM-DD)
 ##################
 
-TODO
+
+
+.. _v2.2.1:
+
+2.2.1 (2020-12-01)
+##################
+
+Breaking changes
+****************
+
+* BasicApp: rework batch report console page
 
 .. _v2.2.0:
 
