@@ -24,7 +24,23 @@ Igloo now uses Java 11. See here what you need to do to perform Java 11 migratio
 2.3.0 (YYYY-MM-DD)
 ##################
 
+Breaking changes
+****************
 
+* **Bootstrap 4.5.0 -> 4.5.3**
+
+Updates
+*******
+
+* **Bootstrap 4.5.0 -> 4.5.3**
+* Font Awesome 5.14.0 -> 5.15.1
+
+Enhancements
+************
+
+* BasicApp: fix sign out on password security pages.
+* BasicApp: add properties console page. 
+* Permission Evaluator: object no longer needs to be a ``GenericEntity``.
 
 .. _v2.2.1:
 
