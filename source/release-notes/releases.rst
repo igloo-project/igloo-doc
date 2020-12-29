@@ -38,8 +38,9 @@ Updates
 Enhancements
 ************
 
+* Add ``hasPasswordHash()`` in ``GenericUser``.
 * BasicApp: fix sign out on password security pages.
-* BasicApp: add properties console page. 
+* BasicApp: add properties console page.
 * Permission Evaluator: object no longer needs to be a ``GenericEntity``.
 
 .. _v2.2.1:
