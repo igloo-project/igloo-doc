@@ -45,6 +45,7 @@ Enhancements
 * BasicApp: use bypassPermissions for links in notification panels.
 * BasicApp: add fallback url in mail notifications.
 * BasicApp: add properties console page.
+* BasicApp: rename resources properties packages and classes for consistency.
 * Permission Evaluator: object no longer needs to be a ``GenericEntity``.
 
 .. _v2.2.1:
