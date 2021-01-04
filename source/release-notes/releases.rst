@@ -40,6 +40,10 @@ Enhancements
 
 * Add ``hasPasswordHash()`` in ``GenericUser``.
 * BasicApp: fix sign out on password security pages.
+* BasicApp: add first sign in workflow.
+* BasicApp: clean up user password recovery notification panel.
+* BasicApp: use bypassPermissions for links in notification panels.
+* BasicApp: add fallback url in mail notifications.
 * BasicApp: add properties console page.
 * Permission Evaluator: object no longer needs to be a ``GenericEntity``.
 
