@@ -28,12 +28,18 @@ Breaking changes
 ****************
 
 * **Bootstrap 4.5.0 -> 4.5.3**
+* Refactor password security options.
 
 Updates
 *******
 
 * **Bootstrap 4.5.0 -> 4.5.3**
 * Font Awesome 5.14.0 -> 5.15.1
+
+Bugfixes
+********
+
+* BasicApp: fix ``User`` permission evaluator.
 
 Enhancements
 ************
@@ -46,6 +52,8 @@ Enhancements
 * BasicApp: add fallback url in mail notifications.
 * BasicApp: add properties console page.
 * BasicApp: rename resources properties packages and classes for consistency.
+* BasicApp: wording for ``HistoryLog`` mandatory differences search query.
+* BasicApp: Update resource key update password.
 * Permission Evaluator: object no longer needs to be a ``GenericEntity``.
 
 .. _v2.2.1:
