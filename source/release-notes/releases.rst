@@ -54,6 +54,8 @@ Enhancements
 * BasicApp: rename resources properties packages and classes for consistency.
 * BasicApp: wording for ``HistoryLog`` mandatory differences search query.
 * BasicApp: Update resource key update password.
+* BasicApp: properties for password length min max.
+* BasicApp: refactor condition on enable/disable actions.
 * Permission Evaluator: object no longer needs to be a ``GenericEntity``.
 
 .. _v2.2.1:
