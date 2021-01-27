@@ -40,6 +40,7 @@ Bugfixes
 ********
 
 * BasicApp: fix ``User`` permission evaluator.
+* BasicApp: fix ehcache xsd url.
 
 Enhancements
 ************
