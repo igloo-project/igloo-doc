@@ -33,6 +33,7 @@ Updates
 *******
 
 * **Bootstrap 4.5.3 -> 4.6.0**
+* Font Awesome 5.15.1 -> 5.15.2
 
 Enhancements
 ************
