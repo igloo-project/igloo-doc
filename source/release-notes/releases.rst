@@ -42,9 +42,9 @@ Enhancements
 * BasicApp: use kobalt email address for admin user.
 * BasicApp: use shared email address in filter mode.
 
-.. _v2.3.0:
+.. _v2.3.1:
 
-2.3.0 (2021-01-28)
+2.3.1 (2021-02-05)
 ##################
 
 Breaking changes
