@@ -82,6 +82,13 @@ Enhancements
 * BasicApp: refactor condition on enable/disable actions.
 * Permission Evaluator: object no longer needs to be a ``GenericEntity``.
 
+.. _v2.3.0:
+
+2.3.0
+#####
+
+Not released.
+
 .. _v2.2.1:
 
 2.2.1 (2020-12-01)
