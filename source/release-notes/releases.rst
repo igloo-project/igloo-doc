@@ -39,6 +39,7 @@ Updates
 Bugfixes
 ********
 
+* Fix Select2 css box shadow focus error state.
 * BasicApp: fix scss import BS utilities.
 * BasicApp: fix margin bottom application access.
 
