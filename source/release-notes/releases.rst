@@ -51,6 +51,7 @@ Enhancements
 * BasicApp: small changes on sidebar scss.
 * BasicApp: use kobalt email address for admin user.
 * BasicApp: use shared email address in filter mode.
+* BasicApp: refactor sign in content page.
 
 .. _v2.3.1:
 
