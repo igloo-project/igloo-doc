@@ -33,8 +33,6 @@ Updates
 *******
 
 * **Bootstrap 4.5.3 -> 4.6.0**
-* Wicket 8.10.0 -> 8.11.0
-* WicketStuff Select2 8.10.0 -> 8.11.0
 * Font Awesome 5.15.1 -> 5.15.2
 * Clipboard.js 2.0.6 -> 2.0.8
 
@@ -45,7 +43,6 @@ Bugfixes
 * Fix Select2 css box shadow focus error state.
 * BasicApp: fix scss import BS utilities.
 * BasicApp: fix margin bottom application access.
-* BasicApp: webapp tests temporarily disabled due to a potential bug in Wicket Tester.
 
 Enhancements
 ************
