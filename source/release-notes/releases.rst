@@ -45,6 +45,7 @@ Bugfixes
 * Fix Select2 css box shadow focus error state.
 * BasicApp: fix scss import BS utilities.
 * BasicApp: fix margin bottom application access.
+* BasicApp: webapp tests temporarily disabled due to a potential bug in Wicket Tester.
 
 Enhancements
 ************
