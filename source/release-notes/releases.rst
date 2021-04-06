@@ -44,6 +44,12 @@ Breaking changes
 * BasicApp: clean useless spring component name value.
 * User - update service and dao name value for consistency.
 
+Enhancements
+************
+
+* SqlUpdateScript: (used in <Project>SqlUpdateScriptMain) target file is now
+  overwritten (previously, SQL script was append to the target file).
+
 .. _v2.4.0:
 
 2.4.0 (2021-04-02)
