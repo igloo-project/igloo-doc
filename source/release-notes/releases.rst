@@ -19,10 +19,30 @@ Java 11
 Igloo now uses Java 11. See here what you need to do to perform Java 11 migration.
 :ref:`Migrating to Java 11 <migrating-to-java11>`
 
+.. _v2.6.0:
+
+2.6.0 (YYYY-MM-DD)
+##################
+
 .. _v2.5.0:
 
-2.5.0 (YYYY-MM-DD)
+2.5.0 (2021-04-06)
 ##################
+
+Breaking changes
+****************
+
+* User - rename field active to enabled for consistency.
+* BasicApp: Announcement - rename field active to enabled for consistency.
+* BasicApp: ReferenceData - update enabled properties for consistency.
+* User - remove useless attributs (phone numbers)
+* User - rename 2 comparators for consistency.
+* User - rename groups join table.
+* User - rename package person to user for consistency.
+* User - fix create entity service method.
+* User - clean flush in save
+* BasicApp: clean useless spring component name value.
+* User - update service and dao name value for consistency.
 
 .. _v2.4.0:
 
