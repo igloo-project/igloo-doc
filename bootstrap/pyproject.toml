@@ -7,7 +7,7 @@ authors = ["Kobalt <infra@kobalt.fr>"]
 
 [tool.poetry.dependencies]
 python = ">=3.5"
-clickable = { git = "https://github.com/lalmeras/clickable.git", branch = "dev" }
+clickable = { git = "https://github.com/lalmeras/clickable.git", branch = "master" }
 
 [tool.poetry.dev-dependencies]
 
