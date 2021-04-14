@@ -24,6 +24,12 @@ Igloo now uses Java 11. See here what you need to do to perform Java 11 migratio
 2.6.0 (YYYY-MM-DD)
 ##################
 
+Updates
+*******
+
+* wicket 8.10.0 -> 8.12.0
+* wicketstuff-select2 8.10.0 -> 8.12.0
+
 .. _v2.5.0:
 
 2.5.0 (2021-04-12)
