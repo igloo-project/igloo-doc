@@ -24,11 +24,21 @@ Igloo now uses Java 11. See here what you need to do to perform Java 11 migratio
 2.6.0 (YYYY-MM-DD)
 ##################
 
+Bugfixes
+********
+
+* Fix User Excel export : bug due to rename field enabled
+
 Updates
 *******
 
 * wicket 8.10.0 -> 8.12.0
 * wicketstuff-select2 8.10.0 -> 8.12.0
+
+Enhancements
+************
+
+* BasicApp: Improve consistency for use of field enabled in User and Announcement
 
 .. _v2.5.0:
 
