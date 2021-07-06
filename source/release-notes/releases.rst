@@ -27,7 +27,8 @@ Igloo now uses Java 11. See here what you need to do to perform Java 11 migratio
 Bugfixes
 ********
 
-* Fix User Excel export : bug due to rename field enabled
+* BasicApp: fix ``enabled`` / ``active`` fields for ``User`` and ``Announcement``.
+* ``AbstractMapCollectionModel``: fix ``.size()`` method.
 
 Updates
 *******
@@ -38,7 +39,8 @@ Updates
 Enhancements
 ************
 
-* BasicApp: Improve consistency for use of field enabled in User and Announcement
+* ``EnumDropDownMultipleChoice`` : ``Collection`` instead of ``List`` for choices model.
+* Fix HTML ``<title>`` to be on one line.
 
 .. _v2.5.0:
 
@@ -63,6 +65,7 @@ Breaking changes
 Enhancements
 ************
 
+* BasicApp: consistency for ``enabled`` fields in ``User`` and ``Announcement``.
 * SqlUpdateScript: (used in <Project>SqlUpdateScriptMain) target file is now
   overwritten (previously, SQL script was append to the target file).
 
