@@ -39,6 +39,7 @@ Updates
 Enhancements
 ************
 
+* BasicApp: use ``color-yiq`` for color consistency (component active + navbar main).
 * ``EnumDropDownMultipleChoice`` : ``Collection`` instead of ``List`` for choices model.
 * Fix HTML ``<title>`` to be on one line.
 
