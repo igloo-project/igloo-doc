@@ -206,16 +206,18 @@ Here are examples:
    #
    # NAME is an arbitrary string used to link name and level together
    # EITHER is an arbitrary string used to link append configurations together
+   # REFNAME is an arbitrary string used to link logger and appender together 
    # [...]
    appender.EITHER.name=synchro
    # [...]
    logger.NAME.name=package.Class
    logger.NAME.level=DEBUG
    logger.NAME.additivity=false
-   logger.NAME.appenderRefs=SYNCHRO
+   logger.NAME.appenderRef.REFNAME.ref=SYNCHRO
    logger.NAME.SYNCHRO.ref=synchro
    # if multiple append must be specified
-   #logger.NAME.appenderRefs=SYNCHRO, STDOUT
+   #logger.NAME.appenderRef.REFNAME.ref=SYNCHRO
+   #logger.NAME.appenderRef.REFNAMEStdout.ref=STDOUT
    #logger.NAME.SYNCHRO.ref=synchro
    #logger.NAME.STDOUT.ref=STDOUT
 
