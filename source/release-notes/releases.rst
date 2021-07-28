@@ -28,7 +28,7 @@ Bugfixes
 ********
 
 * BasicApp: fix ``enabled`` / ``active`` fields for ``User`` and ``Announcement``.
-* BasicApp: fix administration breadcrumb.BasicApp: fix administration breadcrumb
+* BasicApp: fix administration breadcrumb.
 * ``AbstractMapCollectionModel``: fix ``.size()`` method.
 
 Updates
