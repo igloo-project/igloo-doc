@@ -28,6 +28,7 @@ Bugfixes
 ********
 
 * BasicApp: fix ``enabled`` / ``active`` fields for ``User`` and ``Announcement``.
+* BasicApp: fix administration breadcrumb.BasicApp: fix administration breadcrumb
 * ``AbstractMapCollectionModel``: fix ``.size()`` method.
 
 Updates
@@ -40,6 +41,8 @@ Enhancements
 ************
 
 * BasicApp: use ``color-yiq`` for color consistency (component active + navbar main).
+* BasicApp: add rel noopener on target blank links.
+* BasicApp: add meta description.
 * ``EnumDropDownMultipleChoice`` : ``Collection`` instead of ``List`` for choices model.
 * Fix HTML ``<title>`` to be on one line.
 
