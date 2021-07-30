@@ -40,6 +40,7 @@ Updates
 Enhancements
 ************
 
+* Fix container max width mixin deprecated message.
 * BasicApp: use ``color-yiq`` for color consistency (component active + navbar main).
 * BasicApp: add rel noopener on target blank links.
 * BasicApp: add meta description.
