@@ -21,7 +21,7 @@ Igloo now uses Java 11. See here what you need to do to perform Java 11 migratio
 
 .. _v2.6.0:
 
-2.6.0 (YYYY-MM-DD)
+2.6.0 (2021-07-30)
 ##################
 
 Bugfixes
@@ -41,6 +41,7 @@ Enhancements
 ************
 
 * Fix container max width mixin deprecated message.
+* BasiApp: erros pages use same layout than application access pages.
 * BasicApp: use ``color-yiq`` for color consistency (component active + navbar main).
 * BasicApp: add rel noopener on target blank links.
 * BasicApp: add meta description.
