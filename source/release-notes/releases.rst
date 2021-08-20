@@ -19,6 +19,16 @@ Java 11
 Igloo now uses Java 11. See here what you need to do to perform Java 11 migration.
 :ref:`Migrating to Java 11 <migrating-to-java11>`
 
+.. _v2.7.0:
+
+2.7.0 (YYYY-MM-DD)
+##################
+
+Enhancements
+************
+
+* BasicApp: Use ``ExternalLink`` in notification emails.
+
 .. _v2.6.0:
 
 2.6.0 (2021-07-30)
