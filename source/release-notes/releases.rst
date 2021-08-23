@@ -32,7 +32,8 @@ Updates
 Enhancements
 ************
 
-* BasicApp: Use ``ExternalLink`` in notification emails.
+* BasicApp: use ``ExternalLink`` in notification emails.
+* BasicApp: add reference data read-only list feature.
 
 .. _v2.6.0:
 
