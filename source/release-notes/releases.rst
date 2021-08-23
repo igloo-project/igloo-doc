@@ -34,6 +34,8 @@ Enhancements
 
 * BasicApp: use ``ExternalLink`` in notification emails.
 * BasicApp: add reference data read-only list feature.
+* BasicApp: refactor condition on enable/disable actions.
+* WicketTester : new test case for first sign in workflow
 
 .. _v2.6.0:
 
