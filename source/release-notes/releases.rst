@@ -38,7 +38,7 @@ Enhancements
 * BasicApp: add reference data read-only list feature.
 * BasicApp: refactor condition on enable/disable actions.
 * WicketTester : new test case for first sign in workflow
-* Revert ``@Basic`` for user and user group generic classes, keep with `@Colmun` for override. 
+* Revert ``@Basic`` for user and user group generic classes, keep with ``@Colmun`` for override. 
 
 .. _v2.6.0:
 
