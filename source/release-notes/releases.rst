@@ -21,13 +21,15 @@ Igloo now uses Java 11. See here what you need to do to perform Java 11 migratio
 
 .. _v2.7.0:
 
-2.7.0 (YYYY-MM-DD)
+2.7.0 (2021-09-07)
 ##################
 
 Updates
 *******
 
 * Font Awesome 5.15.1 -> 5.15.2
+* commons-compress 1.20 -> 1.21
+* jsoup 1.13.1 -> 1.14.2
 
 Enhancements
 ************
@@ -36,6 +38,7 @@ Enhancements
 * BasicApp: add reference data read-only list feature.
 * BasicApp: refactor condition on enable/disable actions.
 * WicketTester : new test case for first sign in workflow
+* Revert ``@Basic`` for user and user group generic classes, keep with `@Colmun` for override. 
 
 .. _v2.6.0:
 
