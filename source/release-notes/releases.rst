@@ -13,6 +13,12 @@ Bugfixes
 Updates
 *******
 
+Breaking changes
+****************
+
+* removed externallinkchecker: if you want to use it, fork the module and
+  put it into you project.
+
 Java 11
 *******
 
