@@ -18,6 +18,8 @@ Breaking changes
 
 * removed externallinkchecker: if you want to use it, fork the module and
   put it into you project.
+* removed org.iglooproject.jpa.more.business.execution: if you use it, fork
+  the module and put it into your project.
 
 Java 11
 *******
