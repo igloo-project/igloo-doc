@@ -27,6 +27,16 @@ Java 11
 Igloo now uses Java 11. See here what you need to do to perform Java 11 migration.
 :ref:`Migrating to Java 11 <migrating-to-java11>`
 
+.. _v2.7.1:
+
+2.7.1 (2021-10-07)
+##################
+
+Bugfixes
+********
+
+* Select2: temporary fix focus search input.
+
 .. _v2.7.0:
 
 2.7.0 (2021-09-07)
