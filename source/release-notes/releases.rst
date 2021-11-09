@@ -13,13 +13,27 @@ Bugfixes
 Updates
 *******
 
+These updates don't need modification on project side.
+
+* jackson queuedtaskholder serializer configuration is modified to remove
+  deprecated APIs; task output in console modified to use jackson nodetree
+  (it allows to get rid of a real deserialization)
+* removed POI deprecated API calls
+* fix javax.annotations-api dependency issue
+
 Breaking changes
 ****************
 
+* removed Java < 11 support
 * removed externallinkchecker: if you want to use it, fork the module and
   put it into you project.
 * removed org.iglooproject.jpa.more.business.execution: if you use it, fork
   the module and put it into your project.
+* removed org.javatuples:javatuples from igloo-component-commons; if you use
+  it, add this dependency to your project.
+* TrueZip replaced by TrueVFS; please check DataUpgrade_InitDataFromExcel in
+  basic-application for modification. This update only need package renaming.
+* Jersey update: Jersey version implies Java EE 8 API, so it implies tomcat >= 9.x
 
 Java 11
 *******
