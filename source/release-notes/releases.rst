@@ -2,38 +2,32 @@
 Releases
 ########
 
-.. _v2.X.X:
+.. _v3.0.0:
 
-2.X.X (YYYY-MM-DD)
+3.0.0 (2021-11-25)
 ##################
-
-Bugfixes
-********
 
 Updates
 *******
 
-These updates don't need modification on project side.
-
-* jackson queuedtaskholder serializer configuration is modified to remove
-  deprecated APIs; task output in console modified to use jackson nodetree
-  (it allows to get rid of a real deserialization)
-* removed POI deprecated API calls
-* fix javax.annotations-api dependency issue
+* Jackson ``QueuedTaskHolder`` serializer configuration is modified to remove
+  deprecated APIs; task output in console modified to use Jackson nodetree
+  (it allows to get rid of a real deserialization).
+* Removed POI deprecated API calls.
+* Fix ``javax.annotations-api`` dependency issue.
 
 Breaking changes
 ****************
 
-* removed Java < 11 support
-* removed servlet < 4.0 support
-* removed externallinkchecker: if you want to use it, fork the module and
+* Removed Java < 11 support.
+* Removed servlet < 4.0 support.
+* Removed ``externallinkchecker``: if you want to use it, fork the module and
   put it into you project.
-* removed org.iglooproject.jpa.more.business.execution: if you use it, fork
+* Removed ``org.iglooproject.jpa.more.business.execution``: if you use it, fork
   the module and put it into your project.
-* removed org.javatuples:javatuples from igloo-component-commons; if you use
-  it, add this dependency to your project.
-* TrueZip replaced by TrueVFS; please check DataUpgrade_InitDataFromExcel in
-  basic-application for modification. This update only need package renaming.
+* Removed ``org.javatuples:javatuples`` from ``igloo-component-commons``; if you
+  use it, add this dependency to your project.
+* TrueZip replaced by TrueVFS.
 * Jersey update: Jersey version implies Java EE 8 API, so it implies tomcat >= 9.x
 
 Java 11
@@ -81,7 +75,7 @@ Enhancements
 * BasicApp: add reference data read-only list feature.
 * BasicApp: refactor condition on enable/disable actions.
 * WicketTester : new test case for first sign in workflow
-* Revert ``@Basic`` for user and user group generic classes, keep with ``@Colmun`` for override. 
+* Revert ``@Basic`` for user and user group generic classes, keep with ``@Colmun`` for override.
 
 .. _v2.6.0:
 
