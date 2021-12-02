@@ -1,3 +1,4 @@
+(querying)=
 # Querying
 
 This page explains how to query data using Igloo.
@@ -154,7 +155,7 @@ public enum PersonSort implements ISort<SortField> {
 }
 ```
 
-Note that, on the UI side, an utility exists to easily manage a sort selection: `CompositeSortModel`. See [UI-Models](UI-Models.html) for more information.
+Note that, on the UI side, an utility exists to easily manage a sort selection: `CompositeSortModel`. See {ref}`UI-Models <ui-models>` for more information.
 
 ## How to implement queries
 
@@ -171,7 +172,7 @@ For convenience, most of those utility methods have no effect when given `null` 
 
 Some full implementations already exist in Igloo (most notably for `org.iglooproject.jpa.more.business.generic.query.ISimpleGenericListItemSearchQuery<T, S>`).
 
-The following assumes that Lucene field have already been defined on your entities. If not, see [Hibernate Search & Lucene](Hibernate-Search-&-Lucene.html).
+The following assumes that Lucene field have already been defined on your entities. If not, see {ref}`Hibernate Search & Lucene <hibernate-search>`.
 
 ##### Simple match
 
@@ -339,6 +340,7 @@ TODO QueryDSL-SQL, Hibernate native SQL
 
 #### QueryDSL tips
 
+(querying-maps-tables)=
 ##### Generating maps and tables
 
 In order to generate a map, use this syntax:

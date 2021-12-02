@@ -1,3 +1,5 @@
+.. _migrating-0.13:
+
 Migrating to 0.13
 =================
 

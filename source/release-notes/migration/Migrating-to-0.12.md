@@ -2,7 +2,7 @@
 
 This guide aims at helping OWSI-Core users migrate an application based on OWSI-Core 0.11 to OWSI-Core 0.12.
 
-**In order to migrate from an older version of OWSI-Core, please refer to [Migrating to 0.11](Migrating-to-0.11.html) first.**
+**In order to migrate from an older version of OWSI-Core, please refer to {ref}`Migrating to 0.11 <migrating-0.11>` first.**
 
 Tools
 --------------
@@ -56,7 +56,7 @@ The unauthorized access mechanisms have been revamped, for more consistency:
 
  * `AccessDeniedPage` is now accessed whenever a Wicket authorization error occurs.
  * It is now clearer that `AccessDeniedPage` is **not** used when an anonymous user tries to access a protected resource.
- * OWSI-Core's own redirection mechanism has been deprecated in favor of more standard ones (Wicket's and Spring Security's). On this particular subject, see [UI Redirecting](../howtos/UI-Redirecting.html).
+ * OWSI-Core's own redirection mechanism has been deprecated in favor of more standard ones (Wicket's and Spring Security's). On this particular subject, see {ref}`UI Redirecting <ui-redirecting>`.
 
 In order for your application to continue to work properly:
 
@@ -182,4 +182,4 @@ In order for your application to continue to work properly:
 deprecated and replaced by behavior generation's methods on `Condition`
 object. This pattern allows to use more easily and consistently any `Condition`
 to control component's visibility or enabled property. More documentation on
-this pattern and the way to rewrite your code [UI Placeholder and Enclosure](../howtos/UI-Placeholder-and-Enclosure.html)
+this pattern and the way to rewrite your code {ref}`UI Placeholder and Enclosure <ui-placeholder-enclosure>`

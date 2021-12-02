@@ -14,7 +14,7 @@ except ImportError:  # py2
     from pipes import quote
 
 import click
-from ruamel.yaml import YAML
+import yaml
 
 import clickable.utils
 import clickable.sphinx
@@ -37,8 +37,7 @@ def main(ctx):
     conf_path = os.path.join(ctx.obj['project_root'], 'clickables.yml')
     if os.path.isfile(conf_path):
         with open(conf_path) as f:
-            yaml = YAML(typ='safe')
-            configuration = yaml.load(f)
+            configuration = yaml.safe_load(f)
             ctx.obj.update(configuration)
     logger.info('loaded configuration: \n{}'.format(pprint.pformat(ctx.obj)))
     pass

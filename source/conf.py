@@ -14,10 +14,6 @@
 
 import sys
 import os
-import sphinx_rtd_theme
-
-
-from recommonmark.parser import CommonMarkParser
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -33,19 +29,14 @@ from recommonmark.parser import CommonMarkParser
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.extlinks'
+    'sphinx.ext.extlinks',
+    'myst_parser'
 ]
 extlinks = {'issue': ('https://github.com/igloo-project/igloo-parent/issues/%s',
                       'issue ')}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['buildtemplates']
-
-
-source_parsers = {
-    '.md': CommonMarkParser,
-}
-
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -60,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Igloo-project doc'
-copyright = u'2020, Kobalt'
+copyright = u'2021, Kobalt'
 author = u'Kobalt'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -121,7 +112,7 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_book_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -129,7 +120,7 @@ html_theme = 'sphinx_rtd_theme'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+#html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 
 
@@ -152,7 +143,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['source/_static']
+html_static_path = ['_static']
 
 
 # Add any extra paths that contain custom files (such as robots.txt or

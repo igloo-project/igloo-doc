@@ -1,3 +1,4 @@
+(external-link-checker)=
 # External Link Checker
 
 ## About

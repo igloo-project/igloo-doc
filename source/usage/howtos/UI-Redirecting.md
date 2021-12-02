@@ -1,8 +1,10 @@
+
+(ui-redirecting)=
 # UI Redirecting
 
 This page explains various methods for redirecting from one page to another in you web application.
 
-Please note that we're talking about redirection as part of a server-side process, such as a form that redirects to a different page based on the user input. If you just want a link in your HTML page, please see [UI-Links](UI-Links.html).
+Please note that we're talking about redirection as part of a server-side process, such as a form that redirects to a different page based on the user input. If you just want a link in your HTML page, please see {ref}`UI-Links <ui-links>`.
 
 ## Redirecting as part of the authentication/authorization process
 
@@ -95,7 +97,7 @@ throw new RestartResponseException(getPage().getClass(), getPage().getPageParame
 
 Redirection is mainly done through exceptions. These come in various flavors, depending on your redirection target.
 
-Please note that `IPageLinkGenerator`s (see [UI-Links](UI-Links.html)) offer methods for easily generating the exception of your choice. This is the recommended way of redirecting.
+Please note that `IPageLinkGenerator`s (see {ref}`UI-Links <ui-links>`) offer methods for easily generating the exception of your choice. This is the recommended way of redirecting.
 
 Here are the main exception types:
 

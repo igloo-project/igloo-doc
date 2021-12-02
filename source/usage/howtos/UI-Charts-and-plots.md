@@ -38,7 +38,7 @@ First, setup your data source. Generally it will be a service that returns:
  * A `java.util.Map<K,V>` if there's only one data series.
  * A `com.google.common.collect.Table<S,K,V>` if there are multiple data series.
 
-See [Querying#generating-maps-and-tables](Querying.html#generating-maps-and-tables) for more information about how to easily generate a `Map` or `Table` from a QueryDSL query in your DAO.
+See {ref}`querying-maps-tables` for more information about how to easily generate a `Map` or `Table` from a QueryDSL query in your DAO.
 
 Then, pick your data provider:
 

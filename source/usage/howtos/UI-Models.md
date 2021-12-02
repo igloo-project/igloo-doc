@@ -1,3 +1,4 @@
+(ui-models)=
 # UI Models (TODO)
 
 This page explains the Wicket concept of models and details various types of models that you might use in your applications.
@@ -10,7 +11,7 @@ TODO
 
 #### Collections
 
-For details about how to display collections, and some tips about how to choose the correct interface for accessing you collection data, see [UI-Displaying Collections](UI-Displaying-Collections.html).
+For details about how to display collections, and some tips about how to choose the correct interface for accessing you collection data, see {ref}`UI-Displaying Collections <ui-displaying-collections>`.
 
 ##### `IDataProvider`, `ISequenceProvider`
 

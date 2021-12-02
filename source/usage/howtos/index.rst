@@ -5,7 +5,7 @@ Tools
   :maxdepth: 1
 
   Maven-archetype.md
-  Code-processors.md
+  Code-processors
   Maven.md
   owasp-maven-versions-plugin.rst
   spring-boot.rst

@@ -2,7 +2,7 @@
 
 This guide aims at helping OWSI-Core users migrate an application based on OWSI-Core 0.13 to OWSI-Core 0.14.
 
-**In order to migrate from an older version of OWSI-Core, please refer to [Migrating to 0.13](Migrating-to-0.13.html) first.**
+**In order to migrate from an older version of OWSI-Core, please refer to {ref}`Migrating to 0.13 <migrating-0.13>` first.**
 
 Java
 ----

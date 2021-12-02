@@ -1,3 +1,4 @@
+(ui-displaying-collections)=
 # UI Displaying Collections
 
 This page explains how to display collections using Igloo. Several methods are provided, ordered from easiest to the hardest: use the first that fits, so as to avoid unnecessary complexity.
@@ -10,11 +11,11 @@ There are several types of objects you may use to build an object that will make
 
 #### When getting data from an entity
 
-If you want to retrieve the data directly from an entity attribute (`myEntity.getMyCollection()`) you may use a `BindingModel`. See [UI-Models](UI-Models.html) for more information.
+If you want to retrieve the data directly from an entity attribute (`myEntity.getMyCollection()`) you may use a `BindingModel`. See {ref}`UI-Models <ui-models>` for more information.
 
 #### When getting data from a service or `IQuery`
 
-If you're not familiar with data querying in Igloo, you probably should read [Querying](Querying.html) before going on.
+If you're not familiar with data querying in Igloo, you probably should read {ref}`Querying <querying>` before going on.
 
 ##### Special case: `ISearchQuery`
 
@@ -27,8 +28,8 @@ If your query is an `ISearchQuery` (`AbstractHibernateSearchSearchQuery` or `Abs
 
 ##### Other cases (service method call or non-search `IQuery`)
 
- * If your query uses paging (with an offset and a limit), you'd better define a `IDataProvider`. A good place to start is `LoadableDetachableDataProvider`, which you should try extending. Also, see [UI-Models](UI-Models.html) for more information on `LoadableDetachableDataProvider` and its caveats.
- * If your query has no paging feature, you may simply define your own `IModel<WhateverCollectionType<T>>`. A good place to start is `LoadableDetachableModel`, which you should try extending.  Also, see [UI-Models](UI-Models.html) for more information on `LoadableDetachableModel` and its caveats.
+ * If your query uses paging (with an offset and a limit), you'd better define a `IDataProvider`. A good place to start is `LoadableDetachableDataProvider`, which you should try extending. Also, see {ref}`UI-Models <ui-models>` for more information on `LoadableDetachableDataProvider` and its caveats.
+ * If your query has no paging feature, you may simply define your own `IModel<WhateverCollectionType<T>>`. A good place to start is `LoadableDetachableModel`, which you should try extending.  Also, see {ref}`UI-Models <ui-models>` for more information on `LoadableDetachableModel` and its caveats.
 
 ## Renderers
 
@@ -162,7 +163,7 @@ You may provide either a `ISequenceProvider` or a `IDataProvider` to the `start`
 
 Here is a list of the built-in column types:
 
- * Label columns (`addLabelColumn`), which display a simple textual label derived from the underlying value (through the use of a [Renderer](Renderer.md)). Optionally, the label may be wrapped in a link, or have a side link (a link on a side button) appended.
+ * Label columns (`addLabelColumn`), which display a simple textual label derived from the underlying value (through the use of a {ref}`Renderer <renderer>`). Optionally, the label may be wrapped in a link, or have a side link (a link on a side button) appended.
  * Bootstrap label columns (`addBootstrapLabelColumn`), which display a textual label with a background color and prepended icon that all depend on the underlying value. Optionally, the label may be wrapped in a link, or have a side link (a link on a side button) appended.
  * Bootstrap badge columns (`addBootstrapBadgeColumn`), which display a badge with a background color and an icon that depend on the underlying value. Optionally, the label may be wrapped in a link, or have a side link (a link on a side button) appended.
  * Action columns (`addActionColumn`), which display one or more buttons, each button being either:

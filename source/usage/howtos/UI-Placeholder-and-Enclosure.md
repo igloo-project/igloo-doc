@@ -1,3 +1,4 @@
+(ui-placeholder-enclosure)=
 # UI Placeholder and Enclosure
 
 This pages explains how to write Enclosure and Placeholder. Enclosure and

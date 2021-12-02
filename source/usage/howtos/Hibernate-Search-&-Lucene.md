@@ -1,3 +1,5 @@
+
+(hibernate-search)=
 # Hibernate Search & Lucene (TODO)
 
 TODO:

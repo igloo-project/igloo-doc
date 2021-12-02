@@ -46,7 +46,7 @@ Go to the newly generated project folder and make this modification: add a line 
 file `hello-world/pom.xml` between the markers `properties` :
 
 .. code-block:: xml
-  :emphasize-lines: 4
+  :emphasize-lines: 2
 
   <properties>
     <igloo.version>X.X-SNAPSHOT</igloo.version>
