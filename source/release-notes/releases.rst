@@ -2,6 +2,16 @@
 Releases
 ########
 
+.. _v3.1.0:
+
+3.1.0 (XXXX-XX-XX)
+##################
+
+Bugfixes
+********
+
+* City : update xlsx init file - postalcode with 5 characters
+
 .. _v3.0.0:
 
 3.0.0 (2021-11-25)
