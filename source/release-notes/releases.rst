@@ -7,6 +7,52 @@ Releases
 3.1.0 (XXXX-XX-XX)
 ##################
 
+Dependencies
+************
+
+* We no longer override cglib-nodep dependency. It is managed exclusively
+  by wicket-ioc.
+* Compilation-time code quality annotations dependencies are moved to
+  provided scope, so that it does not clutter war artifact.
+* Hibernate Search initialization now authorizes hibernate-search,
+  lucene or elasticsearch dependencies to be removed if not used.
+
+  Add lucene integration to your project: 
+
+  .. code-block:: xml
+
+		<dependency>
+			<groupId>org.iglooproject.components</groupId>
+			<artifactId>igloo-component-hibernate-configurator-lucene</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+* ``com.sun.mail:javax.mail`` is replaced by ``com.sun.mail:jakarta.mail``. Check
+  in that your dependencies are updated and does not contain old dependency.
+* ``wicket-webjars`` 2.0.20 update. Resource paths not beginning by ``webjars/``
+  are broken. If you use custom webjars resource reference (check ``WebjarsJQueryPluginResourceReference``,
+  ``WebjarsJavaScriptResourceReference``, ``WebjarsCoreJQueryPluginResourceReference``),
+  ensure that your resource path begins by ``webjars``.
+
+  Example:
+
+  .. code-block:: diff
+
+     private BootstrapAlertJavaScriptResourceReference() {
+    -  super("bootstrap/current/js/dist/alert.js");
+    +  super("webjars/bootstrap/current/js/dist/alert.js");
+     }
+
+
+Removed
+*******
+
+* LessCss / Less4j is removed
+* maven-enforcer-plugin ``DependencyConvergence`` rule is replaced by ``requireUpperBoundDeps``:
+  transitive dependencies versions no longer need to be consistent, but they needs to match
+  the last version of candidate dependencies
+
+
 Bugfixes
 ********
 
