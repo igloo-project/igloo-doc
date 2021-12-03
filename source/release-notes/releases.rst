@@ -51,6 +51,8 @@ Removed
 * maven-enforcer-plugin ``DependencyConvergence`` rule is replaced by ``requireUpperBoundDeps``:
   transitive dependencies versions no longer need to be consistent, but they needs to match
   the last version of candidate dependencies
+* ``glyphicons-halflings-white.png`` and ``glyphicons-halflings`` are removed (used by bootstrap 3,
+  also removed previously)
 
 
 Bugfixes
