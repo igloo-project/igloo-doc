@@ -10,8 +10,39 @@ From version 2.X.X, Igloo is now build with Java 11. Here are some vigilance poi
 Java Version
 ============
 
-First of all, you have to change java versions wherever it is used : IDE,
-command prompt, CI...
+Java 11+ is mandatory for building and running Igloo projects. Update :
+
+* Your IDE setting
+* Your maven setting (``JAVA_HOME=... mvn``)
+* Your runtime environment (ensure ``JAVA_HOME`` environment setting for your tomcat runtime)
+
+
+Update your project
+===================
+
+* Update parent pom version
+* Update ``igloo.version`` property
+* fix broken imports
+
+  * fix wrong imports of ``jersey.repackaged`` replaced with ``com.google...``
+  * ``de.schlichtherle``/``TFile`` replaced with ``net.java.truevfs...``
+
+* optional - Apache POI: remove ``setCellType`` calls (setCellValue automatically override type)
+* optional - Java: replace ``Class.newInstance()`` by ``Class.getConstructor().newInstance()`` and
+  add ``InvocationTargetException | NoSuchMethodException | IllegalArgumentException`` to the
+  existing catch block
+
+* replace ``lifecycle-mapping`` maven plugin configuration (used to control how eclipse maps
+  maven plugin lifecycle to eclipse build) by ``<?m2e ...>`` XML processing instruction
+  (see https://www.eclipse.org/m2e/documentation/release-notes-17.html#new-syntax-for-specifying-lifecycle-mapping-metadata)
+  This instruction may be added at ``<plugin>`` or ``<execution>`` level
+
+
+Maven plugins
+=============
+
+Compiler and processor plugin uses ``--release`` option to force java 11 usage. Check you do not
+override these setttings.
 
 
 Dependencies
