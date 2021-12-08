@@ -17,7 +17,7 @@ Dependencies
 * Hibernate Search initialization now authorizes hibernate-search,
   lucene or elasticsearch dependencies to be removed if not used.
 
-  Add lucene integration to your project: 
+  Add lucene integration to your project:
 
   .. code-block:: xml
 
@@ -59,6 +59,7 @@ Bugfixes
 ********
 
 * City : update xlsx init file - postalcode with 5 characters
+* Feedbacks : update style (fatal + debug)
 
 .. _v3.0.0:
 
