@@ -61,19 +61,31 @@ Bugfixes
 * City : update xlsx init file - postalcode with 5 characters
 * Feedbacks : update style (fatal + debug)
 
+.. _v2.7.4:
+
+2.7.4 (2021-12-14)
+##################
+
+Fix for CVE-2021-44228 Log4Shell. The only modification from 2.7.2 is the log4j dependency update (2.15.0).
+
+Fix broken jgtiflow configuration introduced in 2.7.3.
+
+
 .. _v3.0.1:
 
-3.0.1 (2021-12-14)
+3.0.1 (2021-12-13)
 ##################
 
 Fix for CVE-2021-44228 Log4Shell. The only modification from 3.0.0 is the log4j dependency update (2.15.0).
 
 .. _v2.7.3:
 
-2.7.3 (2021-12-14)
+2.7.3 (2021-12-13)
 ##################
 
 Fix for CVE-2021-44228 Log4Shell. The only modification from 2.7.2 is the log4j dependency update (2.15.0).
+
+This release breaks jgtiflow configuration. Please use 2.7.4.
 
 
 .. _v3.0.0:
