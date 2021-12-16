@@ -61,6 +61,21 @@ Bugfixes
 * City : update xlsx init file - postalcode with 5 characters
 * Feedbacks : update style (fatal + debug)
 
+
+.. _v3.0.2:
+
+3.0.2 (2021-12-16)
+##################
+
+Fix for CVE-2021-45046 Log4Shell. The only modification from 3.0.1 is the log4j dependency update (2.16.0).
+
+.. _v2.7.5:
+
+2.7.5 (2021-12-16)
+##################
+
+Fix for CVE-2021-45046 Log4Shell. The only modification from 2.7.4 is the log4j dependency update (2.16.0).
+
 .. _v2.7.4:
 
 2.7.4 (2021-12-14)
