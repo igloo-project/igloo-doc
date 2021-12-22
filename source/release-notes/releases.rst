@@ -62,6 +62,20 @@ Bugfixes
 * Feedbacks : update style (fatal + debug)
 
 
+.. _v3.0.3:
+
+3.0.3 (2021-12-22)
+##################
+
+Fix for CVE-2021-45105 Log4Shell. The only modification from 3.0.2 is the log4j dependency update (2.17.0).
+
+.. _v2.7.6:
+
+2.7.6 (2021-12-22)
+##################
+
+Fix for CVE-2021-45105 Log4Shell. The only modification from 2.7.5 is the log4j dependency update (2.17.0).
+
 .. _v3.0.2:
 
 3.0.2 (2021-12-16)
