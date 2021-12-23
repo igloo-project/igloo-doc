@@ -4,7 +4,7 @@ Releases
 
 .. _v3.1.0:
 
-3.1.0 (XXXX-XX-XX)
+3.1.0 (2021-12-23)
 ##################
 
 Dependencies
@@ -24,14 +24,14 @@ Dependencies
 		<dependency>
 			<groupId>org.iglooproject.components</groupId>
 			<artifactId>igloo-component-hibernate-configurator-lucene</artifactId>
-			<version>${project.version}</version>
+			<version>${igloo.version}</version>
 		</dependency>
 
 * ``com.sun.mail:javax.mail`` is replaced by ``com.sun.mail:jakarta.mail``. Check
   in that your dependencies are updated and does not contain old dependency.
 * ``wicket-webjars`` 2.0.20 update. Resource paths not beginning by ``webjars/``
   are broken. If you use custom webjars resource reference (check ``WebjarsJQueryPluginResourceReference``,
-  ``WebjarsJavaScriptResourceReference``, ``WebjarsCoreJQueryPluginResourceReference``),
+  ``WebjarsJavaScriptResourceReference``, ``WebjarsCoreJQueryPluginResourceReference`` derived classes),
   ensure that your resource path begins by ``webjars``.
 
   Example:
