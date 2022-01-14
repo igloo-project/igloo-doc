@@ -43,7 +43,7 @@ Dependencies
 
 * Spring 5.2.9 -> 5.3.15
 * Spring security 5.4.1 -> 5.4.10
-* Spring boot 2.3.4 -> 2.6.2 TODO
+* Spring boot 2.3.4 -> 2.6.2
 * Hibernate 5.4.21 -> 5.4.29
 * Hibernate Search 5.11.5 -> 5.11.8
 * Wicket 8.12.0 -> 8.13.0
