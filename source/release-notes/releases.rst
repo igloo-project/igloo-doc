@@ -2,6 +2,86 @@
 Releases
 ########
 
+.. _v3.2.0:
+
+3.2.0 (2021-01-17) (waiting release)
+####################################
+
+Breaking changes
+****************
+
+* Flyway is updated (7.x -> 8.x) and Flyway 8.x is not compatible with
+  PostgreSQL 9.6. If you use PostgreSQL 9.6, a compatibility layer is
+  provided to continue use Flyway 7.x:
+
+  * In your core module, add a dependency exclusion on
+    ``org.iglooproject.components:igloo-component-flyway-8`` and manually
+    add ``org.iglooproject.components:igloo-component-flyway-7``
+  * Check in your dependencies that flyway-core artifact has version ``7.15.0``
+  * If this is not the case, add the needed exclusion to ensure that flywaydb
+    version is handled by ``igloo-component-flyway-7`` artifact
+
+* Deprecated log4j 1.2.x dependency is replaced by ``reload4j`` (https://reload4j.qos.ch/).
+  It is a drop-in replacement (no action needed to use this new dependency, except if you
+  manually import log4j 1.2). You may migrate to log4j 2 as log4j 1.2 is deprecated and
+  reload4j is just an emergency solution.
+
+* JSASS triggers a warning. You may check that styles are correct. You can downgrade jsass
+  by setting property ``<igloo.jsass.version>5.10.3</igloo.jsass.version>``
+  (see https://gitlab.com/jsass/jsass/-/issues/95).
+
+  .. code::
+
+    [ERROR] DEPRECATION WARNING on line 1 of classpath:/org/iglooproject/basicapp/web/application/common/template/resources/styles/application/advanced/styles.scss/JSASS_CUSTOM.scss:
+    [ERROR] !global assignments won't be able to declare new variables in future versions.
+    [ERROR] Consider adding `$jsass-void: null` at the top level.
+
+* A lot of dependency updates. Please check the Dependencies entry below.
+
+Dependencies
+************
+
+* Spring 5.2.9 -> 5.3.15
+* Spring security 5.4.1 -> 5.4.10
+* Spring boot 2.3.4 -> 2.6.2 TODO
+* Hibernate 5.4.21 -> 5.4.29
+* Hibernate Search 5.11.5 -> 5.11.8
+* Wicket 8.12.0 -> 8.13.0
+* Wicket Wiquery (include JQuery UI 1.12.1 -> 1.13.0) 8.1.1 -> 8.2.0
+* FlywayDB 7.15.0 -> 8.4.1 (Flyway 7.x can still be used, see breaking changes)
+
+* HikariCP 3.4.5 -> 5.0.1
+* Spring LDAP 2.3.3 -> 2.3.5
+* Guava 29.0-jre -> 31.0.1-jre
+* PostgreSQL JDBC Driver 42.2.14 -> 42.3.1
+* POI 4.1.2 -> 5.1.0
+* Jackson 2 2.11.3 -> 2.13.1
+* Javax/Jakarta mail 1.6.6 -> 1.6.7
+* SLF4J 1.7.30 -> 1.7.33
+* Log4j2 2.17.0 -> 2.17.1
+* Apache HTTPComponents Core 4.4.13 -> 4.4.15
+
+* AspectJ 1.9.6 -> 1.9.7
+* Byte-buddy 1.10.10 -> 1.12.6
+* JBoss Logging 3.4.1 -> 3.4.3
+* JBoss Logging Annotations -> 2.2.0
+* JDK Serializable functions 1.8.6 -> 1.9.0
+* Freemarker 2.3.30 -> 2.3.31
+* BouncyCastle jdk15on 1.68 -> 1.70
+* Flying Saucer 9.1.20 -> 9.1.22
+* JSoup 1.14.2 -> 1.14.3
+* Pretty-time 4.0.6 -> 5.0.2
+* PH-CCS 6.2.3 -> 6.4.2
+* Validation API 1.1.0 -> 2.0.1
+* Webjars locator 0.46 -> 0.48
+* JSASS 5.10.3 -> 5.10.4
+* Passay 1.6.0 -> 1.6.1
+
+* Junit 5 5.7.0 -> 5.8.0
+* H2 1.4.200 -> 2.0.206
+* Mockito 3.5.15 -> 4.1.0
+* AssertJ 3.17.2 -> 3.22.0
+
 .. _v3.1.0:
 
 3.1.0 (2021-12-23)
