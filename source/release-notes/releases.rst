@@ -20,6 +20,7 @@ Breaking changes
   * Check in your dependencies that flyway-core artifact has version ``7.15.0``
   * If this is not the case, add the needed exclusion to ensure that flywaydb
     version is handled by ``igloo-component-flyway-7`` artifact
+  * Change import `org.iglooproject.jpa.migration.IglooMigration` to `org.iglooproject.flyway.IglooMigration`
 
 * Deprecated log4j 1.2.x dependency is replaced by ``reload4j`` (https://reload4j.qos.ch/).
   It is a drop-in replacement (no action needed to use this new dependency, except if you
