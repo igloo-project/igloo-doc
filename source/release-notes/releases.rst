@@ -2,9 +2,28 @@
 Releases
 ########
 
+.. _v3.3.0:
+
+3.3.0 (2022-01) (to be released)
+################################
+
+Update
+******
+
+* Spring-security 5.4.10 -> 5.6.1
+
+XML context security files are removed from Igloo and replaced by javaconfig.
+As XML xsd references spring-security version, it eases spring-security version
+switch as it no longer complains about xsd version mismatch.
+
+Igloo XML context security file is replaced by an equivalent javaconfig configuration.
+
+If your project contains any ``*security-context.xml`` file, you need to update
+spring-security version from ``5.4`` to ``5.6`` in XSD declarations.
+
 .. _v3.2.0:
 
-3.2.0 (2021-01-17)
+3.2.0 (2022-01-17)
 ##################
 
 Breaking changes
@@ -27,7 +46,7 @@ Breaking changes
   manually import log4j 1.2). You may migrate to log4j 2 as log4j 1.2 is deprecated and
   reload4j is just an emergency solution.
 
-* JSASS triggers a warning. You may check that styles are correct. You can downgrade jsass
+* JSASS triggers a warning. You may check that styles are correct. If you encounter any issues you can downgrade jsass
   by setting property ``<igloo.jsass.version>5.10.3</igloo.jsass.version>``
   (see https://gitlab.com/jsass/jsass/-/issues/95).
 
