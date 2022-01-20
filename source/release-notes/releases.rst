@@ -107,13 +107,9 @@ Dependencies
 3.1.0 (2021-12-23)
 ##################
 
-Dependencies
-************
+Breaking changes
+****************
 
-* We no longer override cglib-nodep dependency. It is managed exclusively
-  by wicket-ioc.
-* Compilation-time code quality annotations dependencies are moved to
-  provided scope, so that it does not clutter war artifact.
 * Hibernate Search initialization now authorizes hibernate-search,
   lucene or elasticsearch dependencies to be removed if not used.
 
@@ -127,8 +123,6 @@ Dependencies
 			<version>${igloo.version}</version>
 		</dependency>
 
-* ``com.sun.mail:javax.mail`` is replaced by ``com.sun.mail:jakarta.mail``. Check
-  in that your dependencies are updated and does not contain old dependency.
 * ``wicket-webjars`` 2.0.20 update. Resource paths not beginning by ``webjars/``
   are broken. If you use custom webjars resource reference (check ``WebjarsJQueryPluginResourceReference``,
   ``WebjarsJavaScriptResourceReference``, ``WebjarsCoreJQueryPluginResourceReference`` derived classes),
@@ -143,6 +137,16 @@ Dependencies
     +  super("webjars/bootstrap/current/js/dist/alert.js");
      }
 
+
+Dependencies
+************
+
+* We no longer override cglib-nodep dependency. It is managed exclusively
+  by wicket-ioc.
+* Compilation-time code quality annotations dependencies are moved to
+  provided scope, so that it does not clutter war artifact.
+* ``com.sun.mail:javax.mail`` is replaced by ``com.sun.mail:jakarta.mail``. Check
+  in that your dependencies are updated and does not contain old dependency.
 
 Removed
 *******
@@ -230,6 +234,7 @@ Updates
   (it allows to get rid of a real deserialization).
 * Removed POI deprecated API calls.
 * Fix ``javax.annotations-api`` dependency issue.
+* QueryDSL 4.4.0 -> 5.0.0 (check your JPA / SQL query generation)
 
 Breaking changes
 ****************

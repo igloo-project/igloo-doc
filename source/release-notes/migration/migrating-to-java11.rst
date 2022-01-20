@@ -4,7 +4,7 @@
 Migrating to java 11
 ====================
 
-From version 2.X.X, Igloo is now build with Java 11. Here are some vigilance points to be aware of.
+From version 3.0.0, Igloo is now build with Java 11. Here are some vigilance points to be aware of.
 
 
 Java Version
@@ -13,8 +13,10 @@ Java Version
 Java 11+ is mandatory for building and running Igloo projects. Update :
 
 * Your IDE setting
-* Your maven setting (``JAVA_HOME=... mvn``)
+* Your Tomcat configuration (Tomcat 9 required) to run with Java 11
+* Your maven setting (``JAVA_HOME=/usr/lib/jvm/java-11/ mvn``)
 * Your runtime environment (ensure ``JAVA_HOME`` environment setting for your tomcat runtime)
+* Your CI settings (JAVA_HOME, docker image, ...)
 
 
 Update your project
