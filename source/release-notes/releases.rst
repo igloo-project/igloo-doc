@@ -7,6 +7,23 @@ Releases
 3.3.0 (2022-01) (to be released)
 ################################
 
+Bugfix / Workaround
+*******************
+
+This release addresses an issue with wicket and ``@SpringBean`` annotation.
+When we want to inject a collection of beans looked up by type, if there
+is **one only spring bean** that implements the collection type, it is
+used, whereas the expected behavior is to build a collection of all the
+beans matching the expected generic type.
+
+If there is no collection bean, or more than one collection bean, bean
+lookup is correctly done.
+
+The workaround is to create two beans implementing ``Collection<Object>``
+so that ``@SpringBean`` trigger the correct behavior. This workaround
+is triggered by ``IglooApplicationConfigAutoConfiguration``.
+
+
 Update
 ******
 
