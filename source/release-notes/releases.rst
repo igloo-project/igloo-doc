@@ -38,6 +38,13 @@ Igloo XML context security file is replaced by an equivalent javaconfig configur
 If your project contains any ``*security-context.xml`` file, you need to update
 spring-security version from ``5.4`` to ``5.6`` in XSD declarations.
 
+* TaskManagement uses a spring-like Configurer pattern for queueids discovery. It
+  is done to get rid of Collection beans. BasicApplication is modified to use this
+  new pattern, but existing Collection<IQueueId> bean continue to get honored
+  (with a warning at startup), so no change is needed to projects.
+
+  See BasicApplicationCoreTaskManagementConfig for basic-application example.
+
 .. _v3.2.0:
 
 3.2.0 (2022-01-17)
