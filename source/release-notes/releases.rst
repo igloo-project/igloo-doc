@@ -45,6 +45,8 @@ spring-security version from ``5.4`` to ``5.6`` in XSD declarations.
 
   See BasicApplicationCoreTaskManagementConfig for basic-application example.
 
+* h2 CVE-2022-23221: 2.0.206 -> 2.1.210 (h2 is only used for testing purposes)
+
 .. _v3.2.0:
 
 3.2.0 (2022-01-17)
