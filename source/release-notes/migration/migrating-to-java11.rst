@@ -1,10 +1,31 @@
 .. _migrating-to-java11:
 
-====================
-Migrating to java 11
-====================
+==================================
+Migrating to Java 11 / Servlet 4.0
+==================================
 
-From version 3.0.0, Igloo is now build with Java 11. Here are some vigilance points to be aware of.
+From version 3.0.0, Igloo is now build with Java 11. Igloo also uses API Servlet version 4.0 and it will lead to encoding character issues.
+Here are some vigilance points to be aware of.
+
+
+Servlet Version
+===============
+
+Before version 4.0, the character encoding was set by default. Now, it can be customised ; but it needs to be specified manually.
+If a character encoding is not specified, the Servlet specification requires that an encoding of ``ISO-8859-1`` is used.
+
+To use ``UTF-8`` in your project :
+
+* Update the **xsi:schemaLocation** and the **version** in ``web.xml`` :
+
+  .. code::
+
+	<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+          version="4.0" metadata-complete="true">
+
+* Add **<request-character-encoding>UTF-8</request-character-encoding>** in ``web.xml``
 
 
 Java Version

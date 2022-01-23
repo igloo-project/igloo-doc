@@ -275,12 +275,13 @@ Breaking changes
   use it, add this dependency to your project.
 * TrueZip replaced by TrueVFS.
 * Jersey update: Jersey version implies Java EE 8 API, so it implies tomcat >= 9.x
+*
 
-Java 11
-*******
+Java 11 and Servlet 4.0
+***********************
 
-Igloo now uses Java 11. See here what you need to do to perform Java 11 migration.
-:ref:`Migrating to Java 11 <migrating-to-java11>`
+Igloo now uses Java 11 and Servlet 4.0. See here what you need to do to perform Java 11 and Servlet 4.0 migration.
+:ref:`Migrating to Java 11 and Servlet 4.0 <migrating-to-java11>`
 
 .. _v2.7.2:
 
