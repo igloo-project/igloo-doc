@@ -47,6 +47,13 @@ spring-security version from ``5.4`` to ``5.6`` in XSD declarations.
 
 * h2 CVE-2022-23221: 2.0.206 -> 2.1.210 (h2 is only used for testing purposes)
 
+.. _v3.2.1:
+
+3.2.1 (2020-01-26)
+##################
+
+Fix a bug with Flyway compatibility layer introduced in 3.2.0; without this fix, Flyway 7.x cannot be used.
+
 .. _v3.2.0:
 
 3.2.0 (2022-01-17)
@@ -127,6 +134,8 @@ Dependencies
 * H2 1.4.200 -> 2.0.206
 * Mockito 3.5.15 -> 4.1.0
 * AssertJ 3.17.2 -> 3.22.0
+
+This release breaks Flyway compatibility layer : Flyway 7.x cannot be used. Please use 3.2.1.
 
 .. _v3.1.0:
 
