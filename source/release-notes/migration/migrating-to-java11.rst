@@ -18,14 +18,19 @@ To use ``UTF-8`` in your project :
 
 * Update the **xsi:schemaLocation** and the **version** in ``web.xml`` :
 
-  .. code::
+  .. code-block:: xml
 
 	<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
           version="4.0" metadata-complete="true">
 
-* Add **<request-character-encoding>UTF-8</request-character-encoding>** in ``web.xml``
+* Add character encoding in ``web.xml`` :
+
+  .. code-block:: xml
+
+    <request-character-encoding>UTF-8</request-character-encoding>
+    <response-character-encoding>UTF-8</response-character-encoding>
 
 
 Java Version
