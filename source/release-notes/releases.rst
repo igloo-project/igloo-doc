@@ -4,11 +4,14 @@ Releases
 
 .. _v3.3.0:
 
-3.3.0 (2022-01) (to be released)
-################################
+3.3.0 (2022-01-31)
+##################
 
 Bugfix / Workaround
 *******************
+
+@SpringBean workaround
+----------------------
 
 This release addresses an issue with wicket and ``@SpringBean`` annotation.
 When we want to inject a collection of beans looked up by type, if there
@@ -23,6 +26,18 @@ The workaround is to create two beans implementing ``Collection<Object>``
 so that ``@SpringBean`` trigger the correct behavior. This workaround
 is triggered by ``IglooApplicationConfigAutoConfiguration``.
 
+No action is needed to migrate a project.
+
+
+@PropertySource, CompositePropertySourceFactory and encoding
+------------------------------------------------------------
+
+CompositePropertySourceFactory does not honor `PropertySource#encoding`.
+This release fix this issue, and all Igloo managed `@PropertySource` are
+configured to use `UTF-8` encoding.
+
+No action is needed to migrate a project.
+
 
 Update
 ******
@@ -35,17 +50,20 @@ switch as it no longer complains about xsd version mismatch.
 
 Igloo XML context security file is replaced by an equivalent javaconfig configuration.
 
-If your project contains any ``*security-context.xml`` file, you need to update
-spring-security version from ``5.4`` to ``5.6`` in XSD declarations.
+If your project contains any ``*security-context.xml`` file, **you need to update
+spring-security version from ``5.4`` to ``5.6`` in XSD declarations**.
 
 * TaskManagement uses a spring-like Configurer pattern for queueids discovery. It
   is done to get rid of Collection beans. BasicApplication is modified to use this
   new pattern, but existing Collection<IQueueId> bean continue to get honored
   (with a warning at startup), so no change is needed to projects.
 
-  See BasicApplicationCoreTaskManagementConfig for basic-application example.
+  See BasicApplicationCoreTaskManagementConfig for basic-application example
+  **to migrate your queueid definition accordingly.**
 
-* h2 CVE-2022-23221: 2.0.206 -> 2.1.210 (h2 is only used for testing purposes)
+* h2 CVE-2022-23221: 2.0.206 -> 2.1.210 (h2 is only used for testing purposes).
+
+  No action is needed to migrate a project.
 
 .. _v3.2.1:
 
