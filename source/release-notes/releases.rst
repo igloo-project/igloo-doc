@@ -2,6 +2,26 @@
 Releases
 ########
 
+.. _v3.4.0:
+
+3.4.0 (2022-02-??)
+##################
+
+Updates
+*******
+
+* Hibernate 5.4.29 -> 5.4.33
+
+Default Hibernate configuration is modified to set `hibernate.xml_mapping_enabled=false`
+and dom4j and jaxb are excluded from hibernate dependencies. If you use XML entity mappings,
+you must override property and restore dependencies.
+
+Breaking changes
+****************
+
+* Hibernate type discovery : TODO
+
+
 .. _v3.3.0:
 
 3.3.0 (2022-01-31)
@@ -39,8 +59,8 @@ configured to use `UTF-8` encoding.
 No action is needed to migrate a project.
 
 
-Update
-******
+Updates
+*******
 
 * Spring-security 5.4.10 -> 5.6.1
 
