@@ -21,6 +21,15 @@ Breaking changes
 
 * Hibernate type discovery : TODO
 
+.. _v3.1.1:
+
+3.1.1 (2022-02-??)
+##################
+
+Bugfixes
+********
+
+* Fix ``TFileRegistry`` static create methods.
 
 .. _v3.3.0:
 
@@ -90,7 +99,10 @@ spring-security version from ``5.4`` to ``5.6`` in XSD declarations**.
 3.2.1 (2020-01-26)
 ##################
 
-Fix a bug with Flyway compatibility layer introduced in 3.2.0; without this fix, Flyway 7.x cannot be used.
+Bugfixes
+********
+
+* Fix a bug with Flyway compatibility layer introduced in 3.2.0; without this fix, Flyway 7.x cannot be used.
 
 .. _v3.2.0:
 
