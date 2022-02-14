@@ -19,7 +19,19 @@ you must override property and restore dependencies.
 Breaking changes
 ****************
 
-* Hibernate type discovery : TODO
+* Hibernate type discovery :
+Since hibernate 5.4.30, it's not possible to use a ``@MappedSuperclass`` as an intermediate
+entity (if no entity inherits from it, then it's ignored).
+To simplify the use of business types, all the definitions were gathered in an
+intermediate entity but this is no longer possible.
+
+To realize the migration on your project, it's necessary to take all the types
+used with ``@TypeDef`` annotation. They are located in the
+``TypeDefinitions.java`` class and you need to transfer them to
+``<Project>CoreCommonJpaConfig.java``
+(`See the commit <https://github.com/igloo-project/igloo-parent/commit/1bbb6fb8f79688489ddce4c04c607a0349cbd642#diff-5c5d84501a57bb0440fedb0e199774392a43e7dc6c03814267a13f1bd4cb803eL37>`_).
+
+No need to keep ``TypeDefinitions.java``, it can be deleted.
 
 .. _v3.1.1:
 
