@@ -29,7 +29,8 @@ definitions.
 
 To migrate your project, it's necessary to take all the types used with ``@TypeDef``
 annotation (usually located in ``TypeDefinitions.java``) and you need to transfer them to
-``<Project>CoreCommonJpaConfig.java``. `Check commit <https://github.com/igloo-project/igloo-parent/commit/1bbb6fb8f79688489ddce4c04c607a0349cbd642#diff-5c5d84501a57bb0440fedb0e199774392a43e7dc6c03814267a13f1bd4cb803eL37>`_ 
+``<Project>CoreCommonJpaConfig.java``. Check `commit <https://github.com/igloo-project/igloo-parent/commit/1bbb6fb8f79688489ddce4c04c607a0349cbd642#diff-5c5d84501a57bb0440fedb0e199774392a43e7dc6c03814267a13f1bd4cb803eL37>`_
+and `commit <https://github.com/igloo-project/igloo-parent/commit/9ebc21de6cb3831b9d5a44e87771dc97ad5fd7b>`_
 for new-style type declaration: declare a ``TypeContributor`` bean with your custom types
 so that Igloo can detect them and configure Hibernate accordingly.
 
