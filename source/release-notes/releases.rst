@@ -54,8 +54,8 @@ Bugfix / Workaround
 web.xml configuration
 ---------------------
 
-`basic-application` is modified to add `request-character-encoding` and
-`response-character-encoding` configurations, initiated to UTF-8.
+``basic-application`` is modified to add ``request-character-encoding`` and
+``response-character-encoding`` configurations, initiated to UTF-8.
 
 You may need to update your own project accordingly.
 
@@ -82,19 +82,19 @@ No action is needed to migrate a project.
 @PropertySource, CompositePropertySourceFactory and encoding
 ------------------------------------------------------------
 
-CompositePropertySourceFactory does not honor `PropertySource#encoding`.
-This release fixes this issue, and all Igloo managed `@PropertySource` are
-configured to use `UTF-8` encoding.
+CompositePropertySourceFactory does not honor ``PropertySource#encoding``.
+This release fixes this issue, and all Igloo managed ``@PropertySource`` are
+configured to use ``UTF-8`` encoding.
 
-No action is needed to migrate a project. If you use your own `@PropertySource`
+No action is needed to migrate a project. If you use your own ``@PropertySource``
 annotations, you may update encoding attribute.
 
 
 maven-processor-plugin
 ----------------------
 
-`skipSourcesUnchanged` removed from configuraiton. If true, it is needed to
-fully remove `target/generated-sources/apt` to trigger a binding generation.
+``skipSourcesUnchanged`` removed from configuraiton. If true, it is needed to
+fully remove ``target/generated-sources/apt`` to trigger a binding generation.
 As Eclipse does not remove whole target folder on clean, it implied manual
 actions to refresh generated bindings.
 
@@ -111,7 +111,7 @@ switch as it no longer complains about xsd version mismatch.
 Igloo XML context security file is replaced by an equivalent javaconfig configuration.
 
 If your project contains any ``*security-context.xml`` file, **you need to update
-spring-security version from ``5.4`` to ``5.6`` in XSD declarations**.
+spring-security version from 5.4 to 5.6 in XSD declarations**.
 
 * TaskManagement uses a spring-like Configurer pattern for queueids discovery. It
   is done to get rid of Collection beans. BasicApplication is modified to use this
