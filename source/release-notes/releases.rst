@@ -12,26 +12,28 @@ Updates
 
 * Hibernate 5.4.29 -> 5.4.33
 
-Default Hibernate configuration is modified to set `hibernate.xml_mapping_enabled=false`
+Default Hibernate configuration is modified to set ``hibernate.xml_mapping_enabled=false``
 and dom4j and jaxb are excluded from hibernate dependencies. If you use XML entity mappings,
 you must override property and restore dependencies.
+
+* PostgreSQL 42.3.1 -> 42.3.3
 
 Breaking changes
 ****************
 
 * Hibernate type discovery :
-Since hibernate 5.4.30, it's not possible to use a ``@MappedSuperclass`` as an intermediate
-entity (if no entity inherits from it, then it's ignored).
-To simplify the use of business types, all the definitions were gathered in an
-intermediate entity but this is no longer possible.
+Since hibernate 5.4.30, it's not possible to use a ``@MappedSuperclass`` unused
+entity (if no ``@Entity`` inherits from it, then it's ignored). It triggers failure
+on ``TypeDefinitions.java`` that is used to declare ``@TypeDef`` custom types
+definitions.
 
-To realize the migration on your project, it's necessary to take all the types
-used with ``@TypeDef`` annotation. They are located in the
-``TypeDefinitions.java`` class and you need to transfer them to
-``<Project>CoreCommonJpaConfig.java``
-(`See the commit <https://github.com/igloo-project/igloo-parent/commit/1bbb6fb8f79688489ddce4c04c607a0349cbd642#diff-5c5d84501a57bb0440fedb0e199774392a43e7dc6c03814267a13f1bd4cb803eL37>`_).
+To migrate your project, it's necessary to take all the types used with ``@TypeDef``
+annotation (usually located in ``TypeDefinitions.java``) and you need to transfer them to
+``<Project>CoreCommonJpaConfig.java``. `Check commit <https://github.com/igloo-project/igloo-parent/commit/1bbb6fb8f79688489ddce4c04c607a0349cbd642#diff-5c5d84501a57bb0440fedb0e199774392a43e7dc6c03814267a13f1bd4cb803eL37>`_ 
+for new-style type declaration: declare a ``TypeContributor`` bean with your custom types
+so that Igloo can detect them and configure Hibernate accordingly.
 
-No need to keep ``TypeDefinitions.java``, it can be deleted.
+``TypeDefinitions.java`` file can be deleted.
 
 .. _v3.1.1:
 
