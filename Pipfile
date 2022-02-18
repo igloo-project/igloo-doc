@@ -10,6 +10,3 @@ clickable = {ref = "v1.3", git = "https://github.com/lalmeras/clickable"}
 infrastructure-doc = "clickable"
 
 [dev-packages]
-
-[requires]
-python_version = "3.9"
