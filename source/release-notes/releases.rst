@@ -2,26 +2,28 @@
 Releases
 ########
 
-.. _v3.4.0:
 
-3.4.0 (2022-02-??)
+.. _v3.1.1:
+
+3.1.1 (2022-02-??)
 ##################
 
-Updates
-*******
+Bugfixes
+********
 
-* Hibernate 5.4.29 -> 5.4.33
+* Fix ``TFileRegistry`` static create methods.
 
-Default Hibernate configuration is modified to set ``hibernate.xml_mapping_enabled=false``
-and dom4j and jaxb are excluded from hibernate dependencies. If you use XML entity mappings,
-you must override property and restore dependencies.
+.. _v3.4.0:
 
-* PostgreSQL 42.3.1 -> 42.3.3
+3.4.0 (2022-02-24)
+##################
 
 Breaking changes
 ****************
 
-* Hibernate type discovery :
+Hibernate type discovery
+------------------------
+
 Since hibernate 5.4.30, it's not possible to use a ``@MappedSuperclass`` unused
 entity (if no ``@Entity`` inherits from it, then it's ignored). It triggers failure
 on ``TypeDefinitions.java`` that is used to declare ``@TypeDef`` custom types
@@ -36,15 +38,46 @@ so that Igloo can detect them and configure Hibernate accordingly.
 
 ``TypeDefinitions.java`` file can be deleted.
 
-.. _v3.1.1:
+Hibernate XML mapping (configuration and dependencies)
+------------------------------------------------------
 
-3.1.1 (2022-02-??)
-##################
+Default Hibernate configuration is modified to set ``hibernate.xml_mapping_enabled=false``
+and dom4j and jaxb are excluded from hibernate dependencies. If you use XML entity mappings,
+you must override property and restore dependencies.
 
-Bugfixes
-********
+Updates
+*******
 
-* Fix ``TFileRegistry`` static create methods.
+* hibernate 5.4.29 -> 5.4.33
+* postgresql driver: 42.3.1 -> 42.3.3
+* spring: 5.3.15 -> 5.3.16
+* spring-boot: 2.6.2 -> 2.6.4
+* spring-security: 5.6.1 -> 5.6.2
+* hibernate-search: 5.11.8 -> 5.11.10
+* commons-lang3: 3.11 -> 3.12
+* slf4j: 1.7.33 -> 1.7.36
+* reload4j: 1.2.18.0 -> 1.2.19
+* poi: 5.1.0 -> 5.2.0
+* ph-css: 6.4.3 -> 6.5.0
+* wicket: 8.13.0 -> 8.14.0
+* webjars-locator: 0.49 -> 0.50
+* flywaydb 8: 8.4.1 -> 8.5.1
+* junit 5: 5.8.0 -> 5.8.2
+* mockito: 4.1.0 -> 4.3.1
+* errorprone: 2.10.0 -> 2.11.0
+* rhino: 1.7.11 -> 1.7.14
+
+Maven plugins:
+
+* maven-jar-plugin: 3.2.0 -> 3.2.2
+* maven-javadoc-plugin: 3.3.1 -> 3.3.2
+* buildnumber-maven-plugin: 1.4 -> 3.0.0
+
+
+Fixes
+*****
+
+* Restore TFileRegistry static methods (removed with 3.0.0) for TrueVFS registry management.
 
 .. _v3.3.0:
 
