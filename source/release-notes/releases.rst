@@ -100,9 +100,11 @@ web.xml configuration
 ---------------------
 
 ``basic-application`` is modified to add ``request-character-encoding`` and
-``response-character-encoding`` configurations, initiated to UTF-8.
+``response-character-encoding`` configurations in your `web.xml`,
+initiated to UTF-8.
 
-You may need to update your own project accordingly.
+You may need to update your own project accordingly. See basic-application example:
+https://github.com/igloo-project/igloo-parent/commit/118281bf9f2b844c7224c07037b489ddd53986a0
 
 
 @SpringBean workaround
