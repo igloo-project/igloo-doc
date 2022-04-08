@@ -2,6 +2,17 @@
 Releases
 ########
 
+.. _v3.6.0:
+
+3.6.0 (XXXX-XX-XX)
+##################
+
+Breaking changes
+****************
+
+* Spring security : Java config replace ``security-web-context.xml``.  To migrate
+  your project check `reference commit for BasicApp <https://gitlab.tools.kobalt.fr/igloo-project/igloo-parent/-/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_.
+
 .. _v3.5.0:
 
 3.5.0 (2022-03-09)
