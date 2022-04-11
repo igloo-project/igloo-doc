@@ -13,6 +13,26 @@ Breaking changes
 * Spring security : Java config replace ``security-web-context.xml``.  To migrate
   your project check `reference commit for BasicApp <https://gitlab.tools.kobalt.fr/igloo-project/igloo-parent/-/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_.
 
+.. _v3.5.1:
+
+3.5.1 (2022-04-11)
+##################
+
+Bugfixes
+********
+
+* `hibernate.xml_mapping_enabled` wrongly set (https://github.com/igloo-project/igloo-parent/issues/60)
+
+.. _v3.4.1:
+
+3.4.1 (2022-04-11)
+##################
+
+Bugfixes
+********
+
+* `hibernate.xml_mapping_enabled` wrongly set (https://github.com/igloo-project/igloo-parent/issues/60)
+
 .. _v3.5.0:
 
 3.5.0 (2022-03-09)
