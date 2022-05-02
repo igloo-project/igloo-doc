@@ -13,6 +13,16 @@ Breaking changes
 * Spring security : Java config replace ``security-web-context.xml``.  To migrate
   your project check `reference commit for BasicApp <https://github.com/igloo-project/igloo-parent/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_.
 
+.. _v3.5.2:
+
+3.5.2 (2022-05-02)
+##################
+
+Bugfixes
+********
+
+* Fix model generation in ``CacheDataProvider``.
+
 .. _v3.5.1:
 
 3.5.1 (2022-04-11)
