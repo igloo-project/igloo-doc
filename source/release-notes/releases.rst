@@ -11,7 +11,21 @@ Breaking changes
 ****************
 
 * Spring security : Java config replace ``security-web-context.xml``.  To migrate
-  your project check `reference commit for BasicApp <https://github.com/igloo-project/igloo-parent/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_.
+  your project check reference commits for BasicApp `commit #1 <https://github.com/igloo-project/igloo-parent/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_ + `commit #2 <https://github.com/igloo-project/igloo-parent/commit/d6a564fd7eb59005ec8b3349bf627704dab88bc6>`_.
+
+Updates
+*******
+
+* Font Awesome 5.15.4 -> 6.0.0
+
+Enhancements
+************
+
+* BasicApp: remove home link in 503 error page.
+* BasicApp: use external link and LDM for app links in emails.
+* BasicApp: move breadcrumb html into page templates.
+* BasicApp: announcement content multilines.
+* BasicApp: enhancements on sign in checks and feedback messages.
 
 .. _v3.5.2:
 
