@@ -12,6 +12,11 @@ Updates
 
 * Font Awesome 5.15.4 -> 6.0.0
 
+Bugfixes
+********
+
+* Fix locale for localize with positional parameters in `RendererServiceImpl`.
+
 Enhancements
 ************
 
