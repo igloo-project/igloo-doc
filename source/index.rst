@@ -17,7 +17,7 @@ Igloo-project Documentation
    :maxdepth: 1
    :caption: Release notes
 
-   release-notes/releases.rst
+   release-notes/releases-4.x
    release-notes/migration/migration.rst
 
 

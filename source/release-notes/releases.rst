@@ -2,30 +2,6 @@
 Releases
 ########
 
-.. _v3.7.0:
-
-3.7.0 (XXXX-XX-XX)
-##################
-
-Updates
-*******
-
-* Font Awesome 5.15.4 -> 6.0.0
-
-Bugfixes
-********
-
-* Fix locale for localize with positional parameters in `RendererServiceImpl`.
-
-Enhancements
-************
-
-* BasicApp: remove home link in 503 error page.
-* BasicApp: use external link and LDM for app links in emails.
-* BasicApp: move breadcrumb html into page templates.
-* BasicApp: announcement content multilines.
-* BasicApp: enhancements on sign in checks and feedback messages.
-
 .. _v3.6.0:
 
 3.6.0 (XXXX-XX-XX)
