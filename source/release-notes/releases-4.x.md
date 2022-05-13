@@ -41,6 +41,14 @@ Big picture changes are the following :
   * *storage-{model,api,impl,micrometer,integration}*: Filesystem-backed storage system
   * *maven-processor-plugin* configuration is modified
 
+## Features
+
+Storage engine is added to replace Filestore utilities. Storage is a more integrated solution, that provides a built-in relational and transactional model, wicket integration and jobs management (cleaning, consistency checks).
+
+Filestore implementation is still available.
+
+A migration guide to move Filestore to Storage engine will be provided.
+
 ## Breaking changes
 
 * `maven-processor-plugin` configuration: see {ref}`igloo4-maven-processor-plugin`
