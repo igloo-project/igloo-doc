@@ -327,9 +327,43 @@ If the version is available, then update add this dependency in your pom.xml:
 </dependencyManagement>
 ```
 
+### Check dependency scopes
+
+In your `pom.xml` (all modules), check that:
+
+* All `-test` artifacts are with `<scope>test</scope>` (except `igloo-component-config-test`)
+* Following artifacts are `<scope>provided</scope>`: `javax.annotation-api`, `javax.servlet-api`
+
 ### Check maven build
 
 Launch a command-line build `mvn clean install` and pay attention to any warning on duplicate or broken dependency configuration. Remove or fix issues.
+
+## Compare old and new dependencies
+
+Once you project can be built, checkout your old code in a separate folder and compare your dependency list:
+
+```
+# adapt basic-application-webapp with your webapp module name
+cd old-folder
+mvn clean install -DskipTests
+mvn dependency:list --batch-mode -pl :basic-application-webapp "-DoutputFile=$PWD/deps.txt" -Dsort=true -DincludeScope=runtime -DincludeTypes=jar
+cut -d: -f 1-3 $PWD/deps.txt > $PWD/deps2.txt
+
+cd new-folder
+mvn clean install -DskipTests
+mvn dependency:list --batch-mode -pl :basic-application-webapp "-DoutputFile=$PWD/deps.txt" -Dsort=true -DincludeScope=runtime -DincludeTypes=jar
+cut -d: -f 1-3 $PWD/deps.txt > $PWD/deps2.txt
+
+vimdiff old-folder/deps2.txt new-folder/deps2.txt
+```
+
+Normal difference are:
+
+* test dependencies are correctly removed from dependencies (this test only check runtime dependencies) (junit, mockito, hamcrest, ...)
+* `org.iglooproject.components:igloo-\*` are added (new module from commons split)
+* dropped `org.iglooproject.components:igloo-component-commons` is removed
+* useless `net.java.truecommons:truecommons-key-swing` is removed
+* useless `org.springframework:spring-jcl` is removed
 
 ### Other issues
 
