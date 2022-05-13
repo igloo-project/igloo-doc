@@ -32,8 +32,12 @@ extensions = [
     'sphinx.ext.extlinks',
     'myst_parser'
 ]
-extlinks = {'issue': ('https://github.com/igloo-project/igloo-parent/issues/%s',
-                      'issue ')}
+extlinks = {
+    'issue': ('https://github.com/igloo-project/igloo-parent/issues/%s', 'issue '),
+    'igloo-commons': ('https://github.com/igloo-project/igloo-commons/tree/dev/%s', 'igloo-commons '),
+    'igloo-maven': ('https://github.com/igloo-project/igloo-maven/tree/dev/%s', 'igloo-maven '),
+    'igloo-parent': ('https://github.com/igloo-project/igloo-parent/tree/dev/%s', 'igloo-parent ')
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['buildtemplates']

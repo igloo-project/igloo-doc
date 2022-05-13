@@ -22,7 +22,7 @@
 
 (v4.0.0)=
 
-## 4.0.0 (YYYY-MM-DD)
+## 4.0.0 (WIP - YYYY-MM-DD)
 
 4.0.0 brings module and repository refactoring. The purpose is to split Igloo codebase in smaller module and to reduce interdependencies.
 
@@ -45,13 +45,17 @@ Big picture changes are the following :
 
 * Spring security : Java config replace `security-web-context.xml`.  To migrate your project check `reference commit for BasicApp <https://gitlab.tools.kobalt.fr/igloo-project/igloo-parent/-/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_. `security-web-context.xml` is still valid, but it is strongly adviced to plan this change to ease future updates.
 
-* `maven-processor-plugin` configuration: set `igloo.processors` property
+* picocli script TODO
 
-* *igloo-dependencies-\** and *igloo-packages-\**: these groupIds no longer exist, this dependencies must be removed and replaced by explicit dependencies TODO
+* `maven-processor-plugin` configuration: see {ref}`igloo4-maven-processor-plugin`
 
-* Selectively add `dependencies-*` in `dependencyManagement` seection so that `mvn compile` does not complain about missing dependencies versions.
+* *igloo-dependencies-\** and *igloo-packages-\** removal and other dependency management changes: dependencies now use `dependencyManagement` mechanism and rely on more explicit configuration. See and follow {ref}`igloo4-dependencies-migration-guide`.
 
 * Drop `maven-wagon-plugin` (or reconfigure it locally if you want to keep this plugin for delivery)
+
+* Replace `LocaleUtils.initCollator(locale)` occurences by `new SerializableCollator(locale).nullsFirst()`
+
+The above instructions may be sufficient to migrate a project. If you encounter missing classes or definition, here is a summay of other breaking changes to help to identify new modules or codes to import:
 
 * Use `${igloo-commons.version}` property to define version for the following *artifactId*:
 
@@ -74,6 +78,8 @@ Big picture changes are the following :
   * extension `EntityManagerFactoryExtension` 
   * `PostgreSQLIntervalFunction`, `PostgreSQLRegexpOperatorFunction`, `MetadataRegistryIntegrator` are moved (package/module) from igloo-component-jpa to `igloo-hibernate`
   * `org.iglooproject.jpa.hibernate.model.naming` package is kept but moved to `igloo-hibernate`
+
+* *igloo-component-commons* is removed and split to igloo-batch-api, igloo-bean-api, igloo-collections, igloo-context, igloo-lang, igloo-security-api and igloo-validator (igloo-commons repository)
 
 ## Older releases
 
