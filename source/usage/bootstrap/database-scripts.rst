@@ -1,6 +1,8 @@
 Database Scripts (from 0.14)
 ============================
 
+(sql-update-script)=
+
 Model - Database comparisons
 ----------------------------
 
@@ -14,6 +16,19 @@ To launch this script, make sure you are in the ``basic-application/basic-applic
 
 .. code-block:: bash
 
+  mvn exec:java -Dexec.mainClass="org.iglooproject.basicapp.init.<Project>ApplicationSqlUpdateScriptMain" -Dexec.args="update stdout"
+
+Available args are:
+
+* `[update|create]`: compute create (from scratch) or update (from current situation) SQL script.
+* `[stdout|filename]`: output script in console or in provided filename.
+* By default, this command outputs update script on stdout
+
+Igloo < 4.0.0
+--------------
+
+.. code-block:: bash
+
   mvn exec:java -Dexec.mainClass="org.iglooproject.basicapp.init.<Project>ApplicationSqlUpdateScriptMain" -Dexec.args="arg0 arg1"
 
 You need to provide two arguments :
@@ -24,9 +39,4 @@ You need to provide two arguments :
 SqlUpdateScriptMain not available
 ---------------------------------
 
-If you project does not supply ``*SqlUpdateScriptMain``, you can copy and rename the file ``BasicApplicationSqlUpdateScriptMain.java`` in you project.
-Inside this file, you just have to replace ``BasicApplication`` by the name of your project in the line :
-
-.. code-block:: java
-
-  context = new AnnotationConfigApplicationContext(BasicApplicationInitConfig.class);
+If you project does not supply ``*SqlUpdateScriptMain``, you can copy and rename the file from package ``org.iglooproject.basicapp.core.cli`` in you project and adapt them.

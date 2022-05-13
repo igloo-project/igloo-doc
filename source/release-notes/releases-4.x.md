@@ -43,10 +43,6 @@ Big picture changes are the following :
 
 ## Breaking changes
 
-* Spring security : Java config replace `security-web-context.xml`.  To migrate your project check `reference commit for BasicApp <https://gitlab.tools.kobalt.fr/igloo-project/igloo-parent/-/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_. `security-web-context.xml` is still valid, but it is strongly adviced to plan this change to ease future updates.
-
-* picocli script TODO
-
 * `maven-processor-plugin` configuration: see {ref}`igloo4-maven-processor-plugin`
 
 * *igloo-dependencies-\** and *igloo-packages-\** removal and other dependency management changes: dependencies now use `dependencyManagement` mechanism and rely on more explicit configuration. See and follow {ref}`igloo4-dependencies-migration-guide`.
@@ -54,6 +50,15 @@ Big picture changes are the following :
 * Drop `maven-wagon-plugin` (or reconfigure it locally if you want to keep this plugin for delivery)
 
 * Replace `LocaleUtils.initCollator(locale)` occurences by `new SerializableCollator(locale).nullsFirst()`
+
+* Spring security : Java config replace `security-web-context.xml`.  To migrate your project check `reference commit for BasicApp <https://gitlab.tools.kobalt.fr/igloo-project/igloo-parent/-/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_. `security-web-context.xml` is still valid, but it is strongly adviced to plan this change to ease future updates.
+
+* SqlUpdateScript updates:
+
+  * add `info.picocli:picocli` dependency with `<optional>true</optional>`.
+  * copy and rename {igloo-parent}`basic-application/basic-application-core/src/main/java/org/iglooproject/basicapp/core/cli/BasicApplicationSqlUpdateScriptMain.java` and {igloo-parent}`basic-application/basic-application-core/src/main/java/org/iglooproject/basicapp/core/cli/AbstractBasicApplicationMain.java` into your project. Replace `BasicApplicationCoreHeadlessConfig` by your own spring configuration (check existing file).
+  * check that « Run as » can be launched.
+  * check {ref}`sql-update-script` for usage.
 
 The above instructions may be sufficient to migrate a project. If you encounter missing classes or definition, here is a summay of other breaking changes to help to identify new modules or codes to import:
 
