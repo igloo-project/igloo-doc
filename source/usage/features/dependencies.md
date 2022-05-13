@@ -239,6 +239,18 @@ You can drop h2 database driver for project that uses only PostgreSQL.
 </dependencyManagement>
 ```
 
+### igloo-package-web-wicket-app
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.iglooproject.components</groupId>
+        <artifactId>igloo-component-web-security</artifactId>
+        <version>${igloo.version}</version>
+    </dependency>
+</dependencies>
+```
+
 ### Missing Igloo classes
 
 With *igloo-commons* split, some classes can be missing, so it will be needed to add when adequate:
