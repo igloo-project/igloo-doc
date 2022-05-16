@@ -40,6 +40,15 @@ Once `igloo-maven` is released, dependants projects must be updated:
 
 ## Releasing igloo-commons
 
+Once `igloo-commons` is released, dependants projects must be updated:
+
 * `igloo-parent`
 
-  * update `igloo/igloo-parents/igloo-parent-maven-configuration-core/pom.xml`: `igloo-maven.version` property
+  * update `igloo/igloo-parents/igloo-parent-maven-configuration-core/pom.xml`: `igloo-commons.version` property
+
+## Updating an igloo-based project
+
+Once `igloo-parent` is released:
+
+* `pom.xml`: parent version (igloo-parent-core-project)
+* `pom.xml`: `igloo.version` property
