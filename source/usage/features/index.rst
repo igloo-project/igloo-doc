@@ -6,6 +6,7 @@ Building
 
    processor
    dependencies
+   releasing
 
 Backend
 -------
