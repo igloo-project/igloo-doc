@@ -22,7 +22,7 @@
 
 (v4.0.0)=
 
-## 4.0.0 (WIP - YYYY-MM-DD)
+## 4.0.0 (2022-05-16)
 
 4.0.0 brings module and repository refactoring. The purpose is to split Igloo codebase in smaller module and to reduce interdependencies.
 
