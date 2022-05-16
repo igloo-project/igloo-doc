@@ -51,6 +51,8 @@ A migration guide to move Filestore to Storage engine will be provided.
 
 ## Breaking changes
 
+* Add `<masterBranchName>master</masterBranchName>` in your root `pom.xml` if your release branch is called `master` (new default is `main`).
+
 * `maven-processor-plugin` configuration: see {ref}`igloo4-maven-processor-plugin`
 
 * *igloo-dependencies-\** and *igloo-packages-\** removal and other dependency management changes: dependencies now use `dependencyManagement` mechanism and rely on more explicit configuration. See and follow {ref}`igloo4-dependencies-migration-guide`.
