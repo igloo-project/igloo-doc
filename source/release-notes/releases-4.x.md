@@ -20,6 +20,24 @@
 * BasicApp: announcement content multilines.
 * BasicApp: enhancements on sign in checks and feedback messages.
 
+## Breaking changes
+
+* Tests migrated to junit 5:
+
+  * If you want to keep your project's tests Junit 4 - based:
+
+    * Replace occurences of `org.iglooproject.test.jpa.junit.AbstractTestCase` by `org.iglooproject.test.jpa.junit.AbstractJunit4TestCase`.
+    * If you use `AbstractWicketTestCase`, copy it from {igloo-parent}`v4.0.0/igloo/igloo-components/igloo-component-wicket-test/src/main/java/org/iglooproject/test/wicket/core/AbstractWicketTestCase.java` to create it in your project and changes its parent to `AbstractJunit4TestCase`.
+    * You may exclude `org.junit.jupiter:junit-jupiter-api` from your dependencies to keep your test classpath clean.
+  
+  * If you want to migrate to Junit 5
+  
+    * Check that `junit:junit` artifact is excluded from your project and fix errors.
+    * Common changes are annotation rewrites : `@Before/@BeforeEach`, `@After/@AfterEach`, `@Rule` must be reworked to use `@ExtendWith`.
+    * `basic-application` git history can be checked to find migration examples
+  
+  * In both situations, ensure to check test number is not changed before and after run (check by-module final test result).
+
 (v4.0.0)=
 
 ## 4.0.0 (2022-05-16)
