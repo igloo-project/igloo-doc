@@ -11,6 +11,7 @@
 ## Bugfixes
 
 * Fix locale for localize with positional parameters in `RendererServiceImpl`.
+* `processor.test.skip` is restored; when set to true on processing-enabled module, it allows to skip test source processing.
 
 ## Enhancements
 
