@@ -30,18 +30,18 @@
     * Replace occurences of `org.iglooproject.test.jpa.junit.AbstractTestCase` by `org.iglooproject.test.jpa.junit.AbstractJunit4TestCase`.
     * If you use `AbstractWicketTestCase`, copy it from {igloo-parent}`v4.0.0/igloo/igloo-components/igloo-component-wicket-test/src/main/java/org/iglooproject/test/wicket/core/AbstractWicketTestCase.java` to create it in your project and changes its parent to `AbstractJunit4TestCase`.
     * You may exclude `org.junit.jupiter:junit-jupiter-api` from your dependencies to keep your test classpath clean.
-  
+
   * If you want to migrate to Junit 5
-  
+
     * Check that `junit:junit` artifact is excluded from your project and fix errors.
     * Common changes are annotation rewrites : `@Before/@BeforeEach`, `@After/@AfterEach`, `@Rule` must be reworked to use `@ExtendWith`.
     * `basic-application` git history can be checked to find migration examples
-  
+
   * In both situations, ensure to check test number is not changed before and after run (check by-module final test result).
 
 (v4.0.0)=
 
-## 4.0.0 (2022-05-16)
+# 4.0.0 (2022-05-16)
 
 4.0.0 brings module and repository refactoring. The purpose is to split Igloo codebase in smaller module and to reduce interdependencies.
 
@@ -76,7 +76,7 @@ A migration guide to move Filestore to Storage engine will be provided.
 
 * *igloo-dependencies-\** and *igloo-packages-\** removal and other dependency management changes: dependencies now use `dependencyManagement` mechanism and rely on more explicit configuration. See and follow {ref}`igloo4-dependencies-migration-guide`.
 
-* Drop `maven-wagon-plugin` (or reconfigure it locally if you want to keep this plugin for delivery)
+* Drop `wagon-maven-plugin` (or reconfigure it locally if you want to keep this plugin for delivery)
 
 * Replace `LocaleUtils.initCollator(locale)` occurences by `new SerializableCollator(locale).nullsFirst()`
 
@@ -109,7 +109,7 @@ The above instructions may be sufficient to migrate a project. If you encounter 
 
   * `PredefinedIdSequenceGenerator` (igloo-component-jpa): package change, check and replace old package name `org.iglooproject.jpa.hibernate.dialect.PredefinedIdSequenceGenerator` by new `org.iglooproject.jpa.hibernate.dialect.PredefinedIdSequenceGenerator`
   * test resources `EntityManagerFactoryHelper` and `PersistenceUnitDescriptorAdapter` are now exposed by `igloo-hibernate` module
-  * extension `EntityManagerFactoryExtension` 
+  * extension `EntityManagerFactoryExtension`
   * `PostgreSQLIntervalFunction`, `PostgreSQLRegexpOperatorFunction`, `MetadataRegistryIntegrator` are moved (package/module) from igloo-component-jpa to `igloo-hibernate`
   * `org.iglooproject.jpa.hibernate.model.naming` package is kept but moved to `igloo-hibernate`
 

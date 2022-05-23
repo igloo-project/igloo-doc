@@ -16,13 +16,13 @@ Use dependency hierarchy to ensure that `javax.annotation:javax.annotation-api` 
         <groupId>javax.annotation</groupId>
         <artifactId>javax.annotation-api</artifactId>
         <scope>provided</scope>
-    <dependency>
+    </dependency>
 </dependencies>
 <dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.iglooproject</groupId>
-            <artifactId>dependencies-spring</artifactId>
+            <artifactId>dependencies-commons</artifactId>
             <version>${igloo-commons.version}</version>
             <type>pom</type>
             <scope>import</scope>
@@ -50,6 +50,20 @@ Examples: `igloo-component-wicket-more-test`, `igloo-component-jpa-more-test`, .
     <version>${igloo.version}</version>
     <type>pom</type>
 </dependency>
+```
+
+### igloo-component-wicket-bootstrap4
+
+**Add** this dependency into your webapp project.
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.iglooproject.components</groupId>
+        <artifactId>igloo-component-wicket-bootstrap4</artifactId>
+        <version>${igloo.version}</version>
+    </dependency>
+</dependencies>
 ```
 
 ### igloo-component-config-test
@@ -211,6 +225,33 @@ Add `igloo-component-config-test` to your core project. Despite its name, it pro
 
 You can drop h2 database driver for project that uses only PostgreSQL.
 
+### igloo-dependency-core-logging-log4j2
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <scope>runtime</scope>
+    </dependency>
+</dependencies>
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.iglooproject</groupId>
+            <artifactId>dependencies-logging</artifactId>
+            <version>${igloo-commons.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+```
+
 ### igloo-package-web-wicket-app
 
 ```xml
@@ -218,12 +259,12 @@ You can drop h2 database driver for project that uses only PostgreSQL.
     <dependency>
         <groupId>org.iglooproject.components</groupId>
         <artifactId>igloo-component-wicket-more</artifactId>
-        <version>${project.version}</version>
+        <version>${igloo.version}</version>
     </dependency>
     <dependency>
         <groupId>org.iglooproject.components</groupId>
         <artifactId>igloo-component-jul-to-slf4j</artifactId>
-        <version>${project.version}</version>
+        <version>${igloo.version}</version>
     </dependency>
 </dependencies>
 <dependencyManagement>
@@ -239,7 +280,7 @@ You can drop h2 database driver for project that uses only PostgreSQL.
 </dependencyManagement>
 ```
 
-### igloo-package-web-wicket-app
+### igloo-package-web-spring-security
 
 ```xml
 <dependencies>
@@ -334,7 +375,7 @@ If the version is available, then update add this dependency in your pom.xml:
             <version>${igloo-maven.version}</version>
             <type>pom</type>
             <scope>import</scope>
-        <dependency>
+        </dependency>
     </dependencies>
 </dependencyManagement>
 ```
