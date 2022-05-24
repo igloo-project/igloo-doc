@@ -6,6 +6,7 @@
 
 ## Updates
 
+* Wicket 9.7.0 -> 9.10.0
 * Font Awesome 5.15.4 -> 6.0.0
 
 ## Bugfixes
