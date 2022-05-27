@@ -35,6 +35,7 @@ Once `igloo-maven` is released, dependants projects must be updated:
 
 * `igloo-parent`
 
+  * update `pom.xml`: parent version (plugins-all)
   * update `igloo/igloo-parents/igloo-parent-maven-configuration-common/pom.xml`: parent version (plugins-all)
   * update `igloo/igloo-parents/igloo-parent-maven-configuration-core/pom.xml`: `igloo-maven.version` property
 
