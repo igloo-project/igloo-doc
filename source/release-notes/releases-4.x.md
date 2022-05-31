@@ -2,7 +2,7 @@
 
 (v4.1.0)=
 
-# 4.1.0 (XXXX-XX-XX)
+# 4.1.0 (2022-05-27)
 
 ## Updates
 
@@ -81,7 +81,7 @@ A migration guide to move Filestore to Storage engine will be provided.
 
 * Replace `LocaleUtils.initCollator(locale)` occurences by `new SerializableCollator(locale).nullsFirst()`
 
-* Spring security : Java config replace `security-web-context.xml`.  To migrate your project check `reference commit for BasicApp <https://gitlab.tools.kobalt.fr/igloo-project/igloo-parent/-/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_. `security-web-context.xml` is still valid, but it is strongly adviced to plan this change to ease future updates.
+* Spring security : Java config replace `security-web-context.xml`. To migrate your project check `reference commit for BasicApp <https://gitlab.tools.kobalt.fr/igloo-project/igloo-parent/-/commit/b6ace4c0e6506e37d500d98aa027bf456fea18ce>`_ and `commit <https://github.com/igloo-project/igloo-parent/commit/d6a564fd7eb59005ec8b3349bf627704dab88bc6>`_. `security-web-context.xml` is still valid, but it is strongly adviced to plan this change to ease future updates.
 
 * SqlUpdateScript updates:
 

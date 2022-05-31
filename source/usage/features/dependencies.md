@@ -23,7 +23,7 @@ Use dependency hierarchy to ensure that `javax.annotation:javax.annotation-api` 
         <dependency>
             <groupId>org.iglooproject</groupId>
             <artifactId>dependencies-commons</artifactId>
-            <version>${igloo-commons.version}</version>
+            <version>${igloo-maven.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -85,11 +85,6 @@ Add `igloo-component-config-test` to your core project. Despite its name, it pro
 
 ```xml
 <dependencies>
-    <dependency>
-        <groupId>org.iglooproject.components</groupId>
-        <artifactId>igloo-component-commons</artifactId>
-        <version>${igloo.version}</version>
-    </dependency>
     <dependency>
         <groupId>org.iglooproject.components</groupId>
         <artifactId>igloo-component-spring</artifactId>
@@ -160,14 +155,14 @@ Add `igloo-component-config-test` to your core project. Despite its name, it pro
         <dependency>
             <groupId>org.iglooproject</groupId>
             <artifactId>dependencies-spring</artifactId>
-            <version>${igloo-commons.version}</version>
+            <version>${igloo-maven.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
         <dependency>
             <groupId>org.iglooproject</groupId>
             <artifactId>dependencies-hibernate</artifactId>
-            <version>${igloo-commons.version}</version>
+            <version>${igloo-maven.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -215,7 +210,7 @@ Add `igloo-component-config-test` to your core project. Despite its name, it pro
         <dependency>
             <groupId>org.iglooproject</groupId>
             <artifactId>dependencies-testing</artifactId>
-            <version>${igloo-commons.version}</version>
+            <version>${igloo-maven.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -244,7 +239,7 @@ You can drop h2 database driver for project that uses only PostgreSQL.
         <dependency>
             <groupId>org.iglooproject</groupId>
             <artifactId>dependencies-logging</artifactId>
-            <version>${igloo-commons.version}</version>
+            <version>${igloo-maven.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -272,7 +267,7 @@ You can drop h2 database driver for project that uses only PostgreSQL.
         <dependency>
             <groupId>org.iglooproject</groupId>
             <artifactId>dependencies-wicket</artifactId>
-            <version>${igloo-commons.version}</version>
+            <version>${igloo-maven.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
