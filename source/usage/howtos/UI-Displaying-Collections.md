@@ -43,7 +43,7 @@ You should use renderers when:
  * Your expected output does not require HTML (be warned that this excludes any kind of line break, since this would require a `<br>` or `<p>`)
  * Requirements are very unlikely to change in the future to require HTML inside the output
 
-If you need more complex output, go for the [DataTableBuilder](#datatablebuilder) or [RefreshingViews](#refreshingviews).
+If you need more complex output, go for the {ref}`datatablebuilder` or {ref}`refreshingviews`.
 
 ### Examples
 
@@ -96,6 +96,8 @@ And define your properties as follows:
 my.resource.key=List value: ${}
 ```
 
+(datatablebuilder)=
+
 ## DataTableBuilder
 
 The DataTableBuilder offers the simplest way to build a HTML table, quick & clean.
@@ -109,7 +111,7 @@ In order to use DataTableBuilers, the component you want to build must meet the 
  * There must be one row in the table's body for each element in the data model (paging aside)
  * There must be a pre-defined, static maximum number of columns. Some columns may get hidden dynamically. For instance, you can't have one column for each element of an `IModel<? extends Collection<?>>` if this model's content may change between ajax refreshes.
 
-If all of the above seems fine to you, then go ahead with the `DataTableBuilder`. Otherwise, you may still use [RefreshingViews](#refreshingviews).
+If all of the above seems fine to you, then go ahead with the `DataTableBuilder`. Otherwise, you may still use {ref}`refreshingviews`.
 
 ### Overview
 
@@ -188,6 +190,8 @@ You may create a "decorated" table, with a top title and pagers, by calling `dec
 
 You may create a "decorated" table as above, but with Bootstrap styling, wrapped in a Bootstrap panel. Just call `bootstrapPanel` instead of `decorate`, and proceed the same as with `decorate`.
 
+(refreshingviews)=
+
 ## RefreshingViews
 
 Compared to the `DataTableBuilder`, the `RefreshingView`s are a lower-level way of displaying collections.
@@ -235,10 +239,12 @@ It depends on you data source:
  * for a `ISequenceProvider`, use a `org.iglooproject.wicket.more.markup.repeater.sequence.SequenceView`
  * for a `ICollectionModel<T, ?>`, use a `org.iglooproject.wicket.more.markup.repeater.collection.CollectionView`.
  * for a `IMapModel<K, V, ?>`, use a `org.iglooproject.wicket.more.markup.repeater.map.MapView`.
- * for a `IModel<? extends Collection<T>>`, use a `org.iglooproject.wicket.more.markup.repeater.collection.CollectionView`. You will need to provide a factory for the collection item models. (see [below](#item-models)).
- * for a `IModel<? extends Map<K, V>>`, use a `org.iglooproject.wicket.more.markup.repeater.map.MapView`. You will need to provide a factory for the map key models (see [below](#item-models)).
+ * for a `IModel<? extends Collection<T>>`, use a `org.iglooproject.wicket.more.markup.repeater.collection.CollectionView`. You will need to provide a factory for the collection item models. (see {ref}`below <item-models>`).
+ * for a `IModel<? extends Map<K, V>>`, use a `org.iglooproject.wicket.more.markup.repeater.map.MapView`. You will need to provide a factory for the map key models (see {ref}`below <item-models>`).
 
 Please note that all of the above provide a paging mechanism, but it will only be efficient if your data source is a properly implemented `IDataProvider` or `ISequenceProvider`. Otherwise, the whole data set will be loaded, and then reduced to the current page's data.
+
+(item-models)=
 
 ### Item models
 
