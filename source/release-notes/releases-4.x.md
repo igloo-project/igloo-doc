@@ -118,7 +118,7 @@ The above instructions may be sufficient to migrate a project. If you encounter 
 
 * Dependencies' versions for `hibernate-validator`, `aspectj` and `byte-buddy` are removed as we do not use it directly and there is no transitive dependency conflicts for this dependencies. If this dependencies are listed in you project, you can remove them; they are either useless or already added by transitivity.
 
-## Older releases
+# Older releases
 
 ```{toctree}
 releases
