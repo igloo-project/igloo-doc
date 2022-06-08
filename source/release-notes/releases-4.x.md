@@ -1,5 +1,13 @@
 # Releases
 
+(v4.x.x)=
+
+# 4.x.x (xxxx-xx-xx)
+
+## Bugfixes
+
+* Exclude Junit 4 from `igloo-component-wicket-bootstrap4` : Make sure that your tests still run
+
 (v4.1.0)=
 
 # 4.1.0 (2022-05-27)
