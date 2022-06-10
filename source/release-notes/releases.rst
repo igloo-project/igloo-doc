@@ -2,60 +2,6 @@
 Releases
 ########
 
-.. _v3.x.x:
-
-3.X.X (2022-06-XX)
-##################
-
-Breaking changes
-****************
-
-Hibernate : Changes to the DDL type for CLOB
---------------------------------------------
-
-WIP
-https://github.com/hibernate/hibernate-orm/blob/5.6/migration-guide.adoc#changes-to-the-ddl-type-for-clob-in-postgresql81dialect-and-its-subclasses
-
-Dependencies
-************
-
-* reload4j 1.2.19 -> 1.2.20
-* jackson 2.13.1 -> 2.13.2
-* guava 31.0.1-jre -> 31.1-jre
-* h2 2.1.210 -> 2.1.212
-* log4j2 2.17.1 -> 2.17.2
-* poi 5.2.0 -> 5.2.2
-* wicket 9.7.0 -> 9.10.0
-* flyway 8.5.1 -> 8.5.10
-* hibernate 5.4.33.Final -> 5.6.9.Final
-* jboss logging 3.4.1.Final -> 3.5.0.Final
-* jsoup 1.14.3 -> 1.15.1
-* mockito 4.3.1 -> 4.5.1
-* postgresql 42.3.3 -> 42.3.5
-* spring 5.3.16 -> 5.3.20
-* spring security 2.6.4 -> 2.6.7
-* wicketstuff select2 9.7.0 -> 9.10.0
-* immutables value 2.8.2 -> 2.9.0
-* webjars npm clipboard 2.0.8 -> 2.0.11
-* micrometer 1.8.4 -> 1.9.0
-* ehcache 3.9.6 -> 3.10.0
-* errorprone 2.11.0 -> 2.14.0
-
-Maven plugins:
-
-* maven-antrun-plugin 3.0.0 -> 3.1.0  
-* maven-clean-plugin 3.1.0 -> 3.2.0  
-* maven-compiler-plugin 3.10.0 -> 3.10.1 
-* maven-failsafe-plugin 3.0.0-M5 -> 3.0.0-M6
-* maven-surefire-plugin 3.0.0-M5 -> 3.0.0-M6  
-* maven-javadoc-plugin 3.3.2 -> 3.4.0  
-* maven-project-info-reports-plugin  3.2.1 -> 3.3.0     
-* maven-site-plugin 3.9.1 -> 4.0.0-M1    
-* maven-processor-plugin 5.0-rc3 -> 5.0-rc3
-* jacoco-maven-plugin 0.8.7 -> 0.8.8  
-* dependency-check-maven 5.3.2 -> 7.1.0   
-* versions-maven-plugin 2.9.0 -> 2.11.0 
-
 .. _v3.5.2:
 
 3.5.2 (2022-05-02)
