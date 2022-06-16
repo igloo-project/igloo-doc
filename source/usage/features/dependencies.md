@@ -33,9 +33,9 @@ Use dependency hierarchy to ensure that `javax.annotation:javax.annotation-api` 
 
 Without this dependency, `@Resource` annotations are not handled correctly and Spring managed fields may be unexpectedly null.
 
-### igloo-components-\*
+### igloo-component-\*
 
-With Igloo 4.0.0, Maven complains that version is missing for *igloo.components-\** artifacts. It is now mandatory to declare *igloo-components-\** version. Just add `<version>${igloo.version}</version>` to dependency declaration.
+With Igloo 4.0.0, Maven complains that version is missing for *igloo-component-\** artifacts. It is now mandatory to declare *igloo-component-\** version. Just add `<version>${igloo.version}</version>` to dependency declaration.
 
 Examples: `igloo-component-wicket-more-test`, `igloo-component-jpa-more-test`, ...
 
@@ -82,6 +82,8 @@ Add `igloo-component-config-test` to your core project. Despite its name, it pro
 ```
 
 ### igloo-package-core-spring-jpa-app
+
+Replace `igloo-package-core-spring-jpa-app` by the following configuration.
 
 ```xml
 <dependencies>
@@ -172,6 +174,8 @@ Add `igloo-component-config-test` to your core project. Despite its name, it pro
 
 ### igloo-dependency-test
 
+Replace `igloo-dependency-test` by the following configuration.
+
 ```xml
 <dependencies>
     <dependency>
@@ -222,6 +226,8 @@ You can drop h2 database driver for project that uses only PostgreSQL.
 
 ### igloo-dependency-core-logging-log4j2
 
+Replace `igloo-dependency-core-logging-log4j2` by the following configuration.
+
 ```xml
 <dependencies>
     <dependency>
@@ -248,6 +254,8 @@ You can drop h2 database driver for project that uses only PostgreSQL.
 ```
 
 ### igloo-package-web-wicket-app
+
+Replace `igloo-package-web-wicket-app` by the following configuration.
 
 ```xml
 <dependencies>
@@ -276,6 +284,8 @@ You can drop h2 database driver for project that uses only PostgreSQL.
 ```
 
 ### igloo-package-web-spring-security
+
+Replace `igloo-package-web-spring-security` by the following configuration.
 
 ```xml
 <dependencies>
