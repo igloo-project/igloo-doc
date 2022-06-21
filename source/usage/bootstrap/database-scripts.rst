@@ -1,7 +1,7 @@
 Database Scripts (from 0.14)
 ============================
 
-(sql-update-script)=
+.. _sql-update-script:
 
 Model - Database comparisons
 ----------------------------
