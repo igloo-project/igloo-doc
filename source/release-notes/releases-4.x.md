@@ -15,7 +15,15 @@
 
 ### Hibernate : Changes to the DDL type for CLOB
 
-Check that you have no entity field annotated `@Lob` or typed `java.sql.Clob`
+Check that you have no entity field annotated `@Lob` or typed `java.sql.Clob`.
+
+`StringClobType` is dropped as it uses Clob:
+
+* Search and replace all StringClobType occurences: for `@Type(type = "org.iglooproject.jpa.hibernate.usertype.StringClobType")`,
+  replace by `@Type(type = "text")`.
+* With SQL Update script in create-mode, generate a SQL creation file before and after migration and check there is no unexpected change.
+* Check that SQL Update script in update-mode, check that proposed updates are expected.
+* Igloo entities (QueuedTaskHolder, ...) are fixed in Igloo.
 
 https://github.com/hibernate/hibernate-orm/blob/5.6/migration-guide.adoc#changes-to-the-ddl-type-for-clob-in-postgresql81dialect-and-its-subclasses
 
