@@ -2,14 +2,14 @@
 
 (v4.2.0)=
 
-# 4.2.0 (2022-06-22)
+# 4.2.0 (2022-06-27)
 
 ## Bugfixes
 
 * Exclude Junit 4 from `igloo-component-wicket-bootstrap4` : Make sure that your tests still run
-* {issue}`64`: TODO
-* {issue}`65`: TODO
-* {issue}`66`: TODO
+* {issue}`64`: fix SpringBackedMonitoringResource resource name (no impact, code cleaning)
+* {issue}`65`: reload4j - Log4j1 Compatibility (when reload4j, log4j 1.x fork, is used)
+* {issue}`66`: StorageConsistencyCheck#checkType not set (storage check performance improvement)
 
 ## Breaking changes
 
