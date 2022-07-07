@@ -1,6 +1,6 @@
-#########
-Migration
-#########
+################
+Migration guides
+################
 
 .. toctree::
    :maxdepth: 1

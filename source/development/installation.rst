@@ -1,18 +1,14 @@
 .. _igloo-initialize:
 
-Initialize an Igloo environment
-===============================
-
-.. contents:: :local:
-
-.. warning:: This documentation is valid for version **>= 1.1.0**.
+Development environment
+=======================
 
 Prerequisites
 -------------
 
 * **PostgreSQL** (default configuration); other databases may be used
-* **Eclipse** >= 2019-09 (default configuration); other Maven-enabled IDE may be used
-* **JRE 11** (Open JDK or Oracle JVM - maven build / runtime compatible with Java 8)
+* **Eclipse**/**Intellij**
+* **JRE 11** (Open JDK - maven build / runtime compatible with Java 11)
 
 
 Database initialization
@@ -46,7 +42,7 @@ The following documentation needs a running Eclipse instance with `m2e Maven int
 
 This documentation is known to work with Eclipse 4.7 release.
 
-* Checkout https://github.com/igloo-project/igloo-oomph-project in ``~/git/igloo-oomph-project``
+* Clone https://github.com/igloo-project/igloo-oomph-project
 
 * Start eclipse
 
@@ -54,7 +50,7 @@ This documentation is known to work with Eclipse 4.7 release.
 
 * ``Oomph`` > ``Projects into workspace`` > ``Next``
 
-* ``Add user projects`` (green ``+`` icon) > ``Browse File System`` > ``~/git/igloo-oomph-project/org.iglooproject.eclipse.igloo.setup`` > Validate
+* ``Add user projects`` (green ``+`` icon) > ``Browse File System`` > ``igloo-oomph-project/org.iglooproject.eclipse.igloo.setup`` > Validate
 
 * Select ``Igloo development`` in ``<Eclipse Projects>`` > ``<User>`` tree
 
@@ -69,16 +65,28 @@ This documentation is known to work with Eclipse 4.7 release.
 * tomcat85 may be listed, with basic-application-webapp module, and is ready to be run
 
 
-Maven
------
+Intellij
+--------
 
-If you do not use Eclipse, you may use the tools provided by your IDE for Maven's integration.
+Maven build process is compatible with Intellij maven integration.
+
+Keep attention to switch indentation configuration to tabs for `.java` and `.xml` files. Deactivate automatic import reorganization.
+
+When using a launcher setup to start `main` application, include provided/runtime dependencies in classpath.
+
+
+Other IDE
+---------
+
+You may use the tools provided by your IDE for Maven's integration.
 
 Igloo relies on the following requirements :
 
-* **maven-processor-plugin**: code generation with java builtin annotation processing. It implies a custom generate-resources task, and added source folders for generated files.
+* **maven-processor-plugin**: code generation with java builtin annotation processing. It implies a custom generate-resources task, and added source folders for generated files
 
-* **maven-surefire-plugin**: unit tests, managed by junit. Tests may also be run by junit IDE integration (known to work with Eclipse).
+* **maven-surefire-plugin**: unit tests, managed by junit. Tests may also be run by junit IDE integration (known to work with Eclipse)
+
+* **com.github.eirslett/frontend-maven-plugin**: npm build for javascript/css resources
 
 * (optional) **maven-enforcer-plugin**: various check about dependencies
 

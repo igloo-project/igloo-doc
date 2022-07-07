@@ -1,5 +1,5 @@
-Automatize data upgrades with Flyway
-====================================
+Flyway model update
+===================
 
 .. contents:: :local:
 

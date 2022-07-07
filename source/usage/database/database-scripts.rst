@@ -1,5 +1,5 @@
-Database Scripts (from 0.14)
-============================
+SQL script generation
+=====================
 
 .. _sql-update-script:
 

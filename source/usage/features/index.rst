@@ -1,12 +1,5 @@
-Building
---------
-
-.. toctree::
-   :maxdepth: 1
-
-   processor
-   dependencies
-   releasing
+Features
+########
 
 Backend
 -------

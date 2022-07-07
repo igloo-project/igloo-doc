@@ -1,4 +1,4 @@
-# Releases
+# Releases 4.x
 
 (v4.2.0)=
 
@@ -183,9 +183,3 @@ The above instructions may be sufficient to migrate a project. If you encounter 
 * *igloo-component-commons* is removed and split to igloo-batch-api, igloo-bean-api, igloo-collections, igloo-context, igloo-lang, igloo-security-api and igloo-validator (igloo-commons repository).
 
 * Dependencies' versions for `hibernate-validator`, `aspectj` and `byte-buddy` are removed as we do not use it directly and there is no transitive dependency conflicts for this dependencies. If this dependencies are listed in you project, you can remove them; they are either useless or already added by transitivity.
-
-# Older releases
-
-```{toctree}
-releases
-```

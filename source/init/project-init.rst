@@ -1,7 +1,7 @@
 .. _quick-initialization:
 
-Quickly create, initialize and launch a project
-===============================================
+Init project
+============
 
 In this page, we will follow the complete workflow to properly create a project, starting from nothing
 to finally be able to run the project on a server.
@@ -73,8 +73,6 @@ We will make a new clone of the project using Oomph in the next step.
 
 Create a fresh clone and a properly configured workspace with Oomph
 -------------------------------------------------------------------
-
-.. _Oomph page: install-oomph.html
 
 Open an Eclipse (> 4.7 Oxygen, last release preferred) and select a new and clean workspace.
 

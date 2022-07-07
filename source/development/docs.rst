@@ -1,5 +1,5 @@
-Documentation
-=============
+Documentation modification
+==========================
 
 Miscelleaneous
 --------------
@@ -13,49 +13,30 @@ Contributing to the doc
 Install the documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To install the documentation on your computer, follow these steps :
-
-First clone the git repository igloo-doc
+To edit and update documentation;
 
 .. code-block:: bash
 
-  git@github.com:igloo-project/igloo-doc.git
-
-When the clone is over, execute the installation script :
-
-.. code-block:: bash
-
-  cd ~/git/igloo-doc
+  git clone git@github.com:igloo-project/igloo-doc.git
+  cd igloo-doc
   rm -rf .tools
   pipenv install
   pipenv shell
-
-When the script ends, the documentation installation is finished.
 
 
 Build the documentation locally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A few commands to interact with the documentation locally :
+A few commands to interact with the documentation locally:
 
 .. code-block:: bash
 
+  # build documentation
   clickable sphinx build html
-
-This command builds the documentation and generates the html files.
-
-.. code-block:: bash
-
+  # start a local server and preview documentation in browser (http://localhost:8000)
   clickable sphinx live
-
-This command builds the documentation and opens it in a new tab of your browser,
-allowing you to see your modifications as soon as you save them.
-
-.. code-block:: bash
-
+  # clean
   clickable sphinx clean
-
-This command cleans all the build directory and files.
 
 Build the documentation on ReadTheDocs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

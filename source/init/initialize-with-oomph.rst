@@ -1,7 +1,7 @@
 .. _oomph-project-init:
 
-Initialize Eclipse workspace with Ooomph
-========================================
+Eclipse Oomph
+=============
 
 Clone the igloo-oomph-project repository that provides the Oomph setup file.
 
