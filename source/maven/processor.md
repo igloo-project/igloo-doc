@@ -1,4 +1,4 @@
-# Processor - maven-processor-plugin
+# Processor
 
 ## Purpose
 

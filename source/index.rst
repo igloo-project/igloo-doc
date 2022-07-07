@@ -22,7 +22,15 @@ Igloo-project Documentation
    usage/best-practices/Predicate.md
    usage/best-practices/Renderer.md
    usage/howtos/index
-   usage/maven/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Maven and build
+
+   maven/processor
+   maven/dependencies
+   maven/releasing
+   maven/use-maven-archetype
 
 .. toctree::
    :maxdepth: 1

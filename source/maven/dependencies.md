@@ -1,4 +1,4 @@
-# Dependencies patterns
+# Dependencies management
 
 (igloo4-dependencies-migration-guide)=
 
