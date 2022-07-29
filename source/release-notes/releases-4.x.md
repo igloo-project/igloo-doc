@@ -1,5 +1,14 @@
 # Releases 4.x
 
+(v4.3.0)=
+
+# 4.3.0 (YYYY-MM-DD)
+
+## Dependencies
+
+* Font Awesome 6.0.0 - 6.1.2
+* Update Select2 Bootstrap 4 theme
+
 (v4.2.0)=
 
 # 4.2.0 (2022-06-27)
