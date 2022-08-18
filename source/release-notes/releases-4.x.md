@@ -9,6 +9,10 @@
 * Font Awesome 6.0.0 - 6.1.2
 * Update Select2 Bootstrap 4 theme
 
+## Enhancements
+
+* Import data: both default xlsx files optional.
+
 (v4.2.0)=
 
 # 4.2.0 (2022-06-27)
