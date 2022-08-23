@@ -47,6 +47,15 @@ Once `igloo-commons` is released, dependants projects must be updated:
 
   * update `igloo/igloo-parents/igloo-parent-maven-configuration-core/pom.xml`: `igloo-commons.version` property
 
+## Releasing org.iglooproject.webjars:boostrap4
+
+https://github.com/igloo-project/bootstrap4 is a lightweight wrapper to repackage `org.webjars.npm:bootstrap`
+under a specific groupId/artifactId. This is needed to allow embedding of different bootstrap version in the
+same igloo project (needed if console is bootstrap 5 and application is still bootstrap 4).
+
+If a new bootstrap version is needed, change project version and push modification on main branch. main branch
+is automatically published.
+
 ## Updating an igloo-based project
 
 Once `igloo-parent` is released:
