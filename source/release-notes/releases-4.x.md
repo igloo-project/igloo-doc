@@ -1,17 +1,66 @@
 # Releases 4.x
 
+(v4.4.0)=
+
+# 4.4.0 (YYYY-MM-DD)
+
 (v4.3.0)=
 
-# 4.3.0 (YYYY-MM-DD)
+# 4.3.0 (2022-08-26)
 
 ## Dependencies
 
 * Font Awesome 6.0.0 - 6.1.2
 * Update Select2 Bootstrap 4 theme
 
+* reload4j 1.2.20 -> 1.2.22
+* jackson 2.13.2 -> 2.13.3
+* h2 2.1.212 -> 2.1.214
+* wicket-webjars -> 3.0.6
+* assertj-core 3.22.0 -> 3.23.1
+* assertj-guava 3.4.0 -> 3.5.0
+* flyway-core 8.5.10 -> 9.0.4
+* jersey 2.35 -> 2.36
+* jboss-logging-annotations 2.2.0.Final -> 2.2.1.Final
+* mockito 4.5.1 -> 4.6.1
+* postgresql 42.3.5 -> 42.4.0
+* spring 5.3.20	-> 5.3.21
+* spring-security 5.6.2 -> 5.7.2
+* webjars-locator-core 0.50 -> 0.52
+* popperjs 2.10.2	-> 2.11.5
+* micrometer 1.9.0 -> 1.9.2
+* spring-boot 2.6.7 -> 2.7.2
+* junit-jupiter-api 5.8.2 -> 5.9.0
+* log4j 2.17.2 -> 2.18.0
+* wicket 9.10.0 -> 9.11.0
+* hibernate 5.6.9.Final	-> 5.6.10.Final
+* jsoup 1.15.1 -> 1.15.2
+* wicketstuff-select2 9.10.0 -> 9.11.0
+* select2-bootstrap-5-theme 1.2.0 -> 1.3.0
+* byte-buddy 1.12.10 -> 1.12.12
+
+Maven plugins:
+
+* maven-failsafe-plugin 3.0.0-M6 -> 3.0.0-M7
+* maven-surefire-plugin 3.0.0-M6 -> 3.0.0-M7
+* maven-javadoc-plugin 3.3.2 -> 3.4.0
+* maven-site-plugin 3.10.0 -> 3.12.0
+* maven-toolchains-plugin 3.0.0	-> 3.1.0
+* dependency-check-maven 7.1.0 -> 7.1.1
+* maven-enforcer-plugin 3.0.0	-> 3.1.0
+* maven-project-info-reports-plugin 3.3.0	-> 3.4.0
+* maven-deploy-plugin 3.0.0-M2 -> 3.0.0
+* maven-install-plugin 3.0.0-M1 -> 3.0.1
+* maven-resources-plugin 3.2.0 -> 3.3.0
+* maven-assembly-plugin 3.3.0 -> 3.4.2
+* exec-maven-plugin 3.0.0 -> 3.1.0
+
 ## Enhancements
 
 * Import data: both default xlsx files optional.
+* Utility allowing to transform an email list into a list of notification recipients
+* Utility to retrieve media type from a workbook
+* JPA test case : refactor reference data cleaning
 
 (v4.2.0)=
 
