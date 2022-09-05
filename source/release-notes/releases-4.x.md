@@ -4,6 +4,10 @@
 
 # 4.4.0 (YYYY-MM-DD)
 
+## Bugfixes
+
+* BasicApp: `UserGroup` popup - fix label padding.
+
 (v4.3.0)=
 
 # 4.3.0 (2022-08-26)
