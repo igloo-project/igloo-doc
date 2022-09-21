@@ -7,6 +7,7 @@
 ## Bugfixes
 
 * BasicApp: `UserGroup` popup - fix label padding.
+* Fix form invalid decorator for non ajax forms.
 
 (v4.3.0)=
 
