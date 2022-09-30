@@ -9,6 +9,10 @@
 * BasicApp: `UserGroup` popup - fix label padding.
 * Fix form invalid decorator for non ajax forms.
 
+## Enhancements
+
+* BasicApp: remove old sheet in `reference_data.xlsx`.
+
 (v4.3.0)=
 
 # 4.3.0 (2022-08-26)
