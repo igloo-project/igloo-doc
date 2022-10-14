@@ -29,6 +29,8 @@ Igloo-project Documentation
 
    maven/processor
    maven/dependencies
+   maven/javascript
+   maven/npm
    maven/releasing
    maven/use-maven-archetype
 

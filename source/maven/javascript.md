@@ -1,4 +1,6 @@
-# Javascript
+(javascript)=
+
+# Javascript & NPM
 
 ## Purpose
 
@@ -31,40 +33,51 @@ we can override published resources to a model where we have to override bootstr
 It allows us to prepare our customization base on es2015+ sources, so we can write simpler
 source code (module import, native class inheritance instead of prototype customization, ...)
 
-## Build process
-
 ## How to update Javascript resources in development environment
 
-### Project structure
+Eclipse :
 
-Writing JS that is not necessarily usable with the browser. So we use `npm` to avoid this problem.
-We will have a concrete example to test and we will be able to do unit tests.
+* change source in `src/main/js`
+* trigger a clean on your module
+* resource(s) in `src/main/generated-js` must be updated, and dependants projects must
+  reflect the change. Running tomcat must refresh the resource after a page reload
+
+## Project structure
+
+Main purpose of this setup is to process javascript sources to distribution-ready assets :
 
 - `src/main/js/*.js` : development files
 - `src/main/generated-js/js` : files generated from the development files
 
-#### rollup.config :
- - **input** : input development file
- - **output** :
-   - file: processed output file
-   - format :
-     - `UMD` (Universal Module Definition) : format managed on the browser side
-     - `ESM` (ES Modules) : managed in node
-   - generatedCode : standard to use -> how I should transform the JS
-   - globals : specification of import aliases
- - **external** : external library available, avoid importing everything
- - **plugins** : the plugins to use
-   - `babel` : allows to transpile code
-      -> transform code from one language to another, in our case, only JS but in different versions
-   - `resolve` : allows to find missing dependencies
+This setup also allows to bind other npm tools such as live server for demonstration or
+unit tests.
 
+This setup is based on a NPM + rollup build workflow.
 
-#### package.json :
- - **scripts** : alias allowing to execute several commands or other aliases at once
+### package.json
 
-### Usage
+- **scripts** : alias allowing to execute several commands or other aliases at once
+
+### rollup.config
+
+- **input** : input development file
+- **output** :
+  - file: processed output file
+  - format :
+    - `UMD` (Universal Module Definition) : format managed on the browser side
+    - `ESM` (ES Modules) : managed in node
+  - generatedCode : standard to use -> how I should transform the JS
+  - globals : specification of import aliases
+- **external** : external library available, avoid importing everything
+- **plugins** : the plugins to use
+  - `babel` : allows to transpile code
+    -> transform code from one language to another, in our case, only JS but in different versions
+  - `resolve` : allows to find missing dependencies
+
+## Usage
 
 Example of use in igloo with `bootstrap5-override`.
+
 To use the commands, go to `igloo-parent/igloo/igloo-webjars/bootstrap5-override/`.
 It becomes possible to use the commands seen in the `package.json` file.  
 To see the list of available commands, just run: `npm run-script`.
@@ -72,4 +85,8 @@ We note that these are aliases that allow to call several commands or other alia
 - `npm run-script js` : generates files from development files -> transpiling, management of missing modules and code restructuring
 - `npm run-script start` : starts the hugo server
 
-TODO : talk about the maven package that processes files during the clean project
+`igloojs` also includes unit testing configuration.
+
+## Maven integration
+
+See {ref}`maven-npm`.
