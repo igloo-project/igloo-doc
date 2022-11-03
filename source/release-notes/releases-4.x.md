@@ -13,9 +13,59 @@
 
 * BasicApp: remove old sheet in `reference_data.xlsx`.
 
+## Dependencies
+
+* jackson 2.13.3 -> 2.13.4
+* log4j 1.8.2 -> 1.9.0
+* flyway 9.0.4 -> 9.7.0
+* hibernate 5.6.10.Final -> 5.6.12.Final
+* hibernate-search-orm 5.11.10.Final -> 5.11.11.Final
+* jsoup 1.15.2 -> 1.15.3
+* mockito 4.6.1 -> 4.8.1
+* passay 1.6.1 -> 1.6.2
+* postgresql 42.4.0 -> 42.5.0
+* spring 5.3.21 ->  5.3.23
+* spring-security 5.7.2 -> 5.7.3
+* immutables value 2.9.0 -> 2.9.2
+* popperjs 2.11.5 -> 2.11.6
+* micrometer 1.9.2 -> 1.9.5
+* ehcache 3.10.0 -> 3.10.2
+* error-prone-annotations 2.14.0 -> 2.16
+* spring-boot 2.7.2 -> 2.7.5
+* byte-buddy 1.12.12 -> 1.12.18
+* jsass 5.10.4 -> 5.10.5
+* junit-jupiter 5.9.0 -> 5.9.1
+* junit-platform 1.9.0 -> 1.9.1
+* poi 5.2.2 -> 5.2.3
+* wicket 9.11.0 -> 5.2.3
+* wicketstuff-select2 9.11.0 -> 5.2.3
+* jersey 2.36 -> 2.37
+* slf4j 1.7.36 -> 2.0.3
+* picocli 4.6.3 -> 4.7.0
+* commons-compress 1.22 -> 1.22
+* commons-text 1.9 -> 1.10.0
+
+Maven plugins:
+
+* maven-javadoc-plugin 3.4.0 -> 3.4.1
+* maven-project-info-reports-plugin 3.4.0 -> 3.4.1
+* maven-site-plugin 3.12.0 -> 4.0.0-M3
+* dependency-check-maven 7.1.1 -> 7.3.0
+* flatten-maven-plugin 1.2.7 -> 1.3.0
+* maven-jar-plugin 3.2.2 -> 3.3.0
+* versions-maven-plugin 2.11.0 -> 2.13.0
+* exec-maven-plugin 2.11.0 -> 3.1.0
+
 (v4.3.0)=
 
 # 4.3.0 (2022-08-26)
+
+## Enhancements
+
+* Import data: both default xlsx files optional.
+* Utility allowing to transform an email list into a list of notification recipients
+* Utility to retrieve media type from a workbook
+* JPA test case : refactor reference data cleaning
 
 ## Dependencies
 
@@ -63,13 +113,6 @@ Maven plugins:
 * maven-resources-plugin 3.2.0 -> 3.3.0
 * maven-assembly-plugin 3.3.0 -> 3.4.2
 * exec-maven-plugin 3.0.0 -> 3.1.0
-
-## Enhancements
-
-* Import data: both default xlsx files optional.
-* Utility allowing to transform an email list into a list of notification recipients
-* Utility to retrieve media type from a workbook
-* JPA test case : refactor reference data cleaning
 
 (v4.2.0)=
 
