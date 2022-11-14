@@ -1,13 +1,21 @@
 # Releases 4.x
 
-(v4.4.0)=
 
-# 4.4.0 (YYYY-MM-DD)
+(v4.5.0)=
+
+# 4.5.0 (YYYY-MM-DD)
+
+In progress
+
+(v4.4.1)=
+
+# 4.4.1 (2022-11-14)
 
 ## Bugfixes
 
 * BasicApp: `UserGroup` popup - fix label padding.
 * Fix form invalid decorator for non ajax forms.
+* Update of `slf4j-impl` to `slf4j2-impl` following the `slf4j` upgrade (> 2.x.x needs this)
 
 ## Enhancements
 
@@ -55,6 +63,10 @@ Maven plugins:
 * maven-jar-plugin 3.2.2 -> 3.3.0
 * versions-maven-plugin 2.11.0 -> 2.13.0
 * exec-maven-plugin 2.11.0 -> 3.1.0
+
+(v4.4.0)=
+
+# 4.4.0 (DO NOT USE THIS VERSION)
 
 (v4.3.0)=
 
