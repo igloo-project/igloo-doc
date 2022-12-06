@@ -15,7 +15,7 @@ In progress
 
 * BasicApp: `UserGroup` popup - fix label padding.
 * Fix form invalid decorator for non ajax forms.
-* Update of `slf4j-impl` to `slf4j2-impl` following the `slf4j` upgrade (> 2.x.x needs this)
+* Update of `log4j-slf4j-impl` to `log4j-slf4j2-impl` following the `slf4j` upgrade (> 2.x.x needs this)
 
 ## Enhancements
 
@@ -45,12 +45,12 @@ In progress
 * junit-jupiter 5.9.0 -> 5.9.1
 * junit-platform 1.9.0 -> 1.9.1
 * poi 5.2.2 -> 5.2.3
-* wicket 9.11.0 -> 5.2.3
-* wicketstuff-select2 9.11.0 -> 5.2.3
+* wicket 9.11.0 -> 9.12.0
+* wicketstuff-select2 9.11.0 -> 9.12.0
 * jersey 2.36 -> 2.37
 * slf4j 1.7.36 -> 2.0.3
 * picocli 4.6.3 -> 4.7.0
-* commons-compress 1.22 -> 1.22
+* commons-compress 1.21 -> 1.22
 * commons-text 1.9 -> 1.10.0
 
 Maven plugins:
