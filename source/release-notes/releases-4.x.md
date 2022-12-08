@@ -7,6 +7,10 @@
 
 In progress
 
+## Enhancements
+
+* Joiners: add slash with space before and after
+
 (v4.4.1)=
 
 # 4.4.1 (2022-11-14)
