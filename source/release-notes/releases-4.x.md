@@ -1,29 +1,19 @@
 # Releases 4.x
 
-
-(v4.5.0)=
-
-# 4.5.0 (YYYY-MM-DD)
-
-In progress
-
-## Enhancements
-
-* Joiners: add slash with space before and after
-
 (v4.4.1)=
 
 # 4.4.1 (2022-11-14)
 
 ## Bugfixes
 
-* BasicApp: `UserGroup` popup - fix label padding.
+* BasicApp: style improvements https://github.com/igloo-project/igloo-parent/commit/2dada38310da2f15371cd3055b5bf4a582de9be9
+* BasicApp: `UserGroup` popup - fix label padding https://github.com/igloo-project/igloo-parent/commit/c3d4dc26cf707b9f21888e45951472b35d41e04c
 * Fix form invalid decorator for non ajax forms.
 * Update of `log4j-slf4j-impl` to `log4j-slf4j2-impl` following the `slf4j` upgrade (> 2.x.x needs this)
 
 ## Enhancements
 
-* BasicApp: remove old sheet in `reference_data.xlsx`.
+* BasicApp: remove old sheet in `reference_data.xlsx` https://github.com/igloo-project/igloo-parent/commit/b5a94338fae024f383c97fb59cd4bcf39c2a6ca9
 
 ## Dependencies
 
