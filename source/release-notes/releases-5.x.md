@@ -162,9 +162,5 @@ These instructions may help to migrate a bootstrap 4 project easily. These instr
 ### jimportdiff
 
 ```
-# This command generate a migration file based on Igloo sources
-pipenv run ./jimportdiff generate --refresh --package-mapping org.iglooproject.wicket.more.markup.html.template.js.bootstrap:igloo.bootstrap4 ../igloo-parent ../igloo-bootstrap5/
-
-# Reuse generated file to apply package rewrites and display some advice
-pipenv run ./jimportdiff rewrite --migration igloo5 output.json ../target-project
+pipenv run ./jimportdiff rewrite --migration igloo5 igloo-4.4.1-5.0.0.json ../target-project
 ```
