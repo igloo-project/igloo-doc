@@ -125,10 +125,12 @@
 All boostrap 5 resources are packed inside a bundle. There is no separated resources
 for each component. Only Igloo custom components are delivered separatly.
 
-### Migration guide
+## Migration guide
 
 These instructions may help to migrate a bootstrap 4 project easily. These instructions
 **do not migrate from bootstrap 4 to bootstrap 5**. Migrated project stay with bootstrap 4.
+
+### General procedure
 
 * As usual: switch igloo-maven, igloo-commons and igloo dependencies and parent pom
   version
@@ -145,17 +147,17 @@ These instructions may help to migrate a bootstrap 4 project easily. These instr
   inheritance tree)
 * manual fix of tooltip behavior
 * manual fix of popopver behavior
-* manuel fix of `IBootstrapRenderer`: replace `BootstrapRenderer` by
+* manual fix of `IBootstrapRenderer`: replace `BootstrapRenderer` by
   `IBootstrapRenderer` so that interface is correctly implemented
 * add table-cell-widths in `_bootstrap-variables.scss`
 * update console css:
   * `rm -rf <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/common/template/resources/styles/console/*`
-  * `cp -ar ~/git/igloo-storage/basic-application/basic-application-webapp/src/main/java/org/iglooproject/basicapp/web/application/common/template/resources/styles/application/console/* <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/common/template/resources/styles/console/` : 13 modified files
+  * `cp -ar ~/git/igloo-parent/basic-application/basic-application-webapp/src/main/java/org/iglooproject/basicapp/web/application/common/template/resources/styles/application/console/* <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/common/template/resources/styles/console/` : 13 modified files
   * `git checkout HEAD $( find <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/common/template/resources/styles/console/ -name 'Console*ResourceReference.java' )` : rollback java file modifications, 2 modified files
 * update feedback panel:
-    * `cp ~/git/igloo-storage/basic-application/basic-application-webapp/src/main/java/org/iglooproject/basicapp/web/application/console/common/component/ConsoleAccessEnvironmentPanel.java <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/console/common/component/ConsoleAccessEnvironmentPanel.java`
-    * `cp ~/git/igloo-storage/basic-application/basic-application-webapp/src/main/java/org/iglooproject/basicapp/web/application/console/common/component/ConsoleEnvironmentPanel.java <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/console/common/component/ConsoleEnvironmentPanel.java`
-    * `cp ~/git/igloo-storage/basic-application/basic-application-webapp/src/main/java/org/iglooproject/basicapp/web/application/console/common/component/ConsoleEnvironmentPanel.html <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/console/common/component/ConsoleEnvironmentPanel.html`
+    * `cp ~/git/igloo-parent/basic-application/basic-application-webapp/src/main/java/org/iglooproject/basicapp/web/application/console/common/component/ConsoleAccessEnvironmentPanel.java <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/console/common/component/ConsoleAccessEnvironmentPanel.java`
+    * `cp ~/git/igloo-parent/basic-application/basic-application-webapp/src/main/java/org/iglooproject/basicapp/web/application/console/common/component/ConsoleEnvironmentPanel.java <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/console/common/component/ConsoleEnvironmentPanel.java`
+    * `cp ~/git/igloo-parent/basic-application/basic-application-webapp/src/main/java/org/iglooproject/basicapp/web/application/console/common/component/ConsoleEnvironmentPanel.html <PROJECT_WEBAPP>/src/main/java/<BASE_PACKAGE>/web/application/console/common/component/ConsoleEnvironmentPanel.html`
     * fix package declaration / package imports / *APPLICATION*Session call
 * adapt custom console pages
 
