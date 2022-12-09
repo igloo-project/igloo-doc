@@ -19,4 +19,5 @@ Release notes provide further information when `jimportdiff` is appropriate.
 ## Generate a release report
 
 ```
+pipenv run ./jimportdiff rewrite --migration igloo5 igloo-4.4.1-5.0.0.json ../target-project
 ```

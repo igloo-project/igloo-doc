@@ -33,6 +33,7 @@ Igloo-project Documentation
    maven/npm
    maven/releasing
    maven/use-maven-archetype
+   maven/jimportdiff
 
 .. toctree::
    :maxdepth: 1

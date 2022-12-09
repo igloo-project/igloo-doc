@@ -163,6 +163,8 @@ These instructions may help to migrate a bootstrap 4 project easily. These instr
 
 ### jimportdiff
 
+cf {ref}`jimportdiff`
+
 ```
 pipenv run ./jimportdiff rewrite --migration igloo5 igloo-4.4.1-5.0.0.json ../target-project
 ```
