@@ -134,6 +134,8 @@ These instructions may help to migrate a bootstrap 4 project easily. These instr
 
 * As usual: switch igloo-maven, igloo-commons and igloo dependencies and parent pom
   version
+* find and update resources extending `Webjars*ResourceReference` and remove `webjars/`
+  prefix in resource reference's name
 * Use jimportdiff rewrite (see below):
   * rewrite classes (boostrap 4 priority allowed)
   * scss: rename `webjars://bootstrap-override:` -> `webjars://bootstrap4-override:`
