@@ -18,6 +18,8 @@ Release notes provide further information when `jimportdiff` is appropriate.
 
 ## Generate a release report
 
+cf https://igloo-doc.readthedocs.io/en/latest/maven/jimportdiff.html
+
 ```
 pipenv run ./jimportdiff rewrite --migration igloo5 igloo-4.4.1-5.0.0.json ../target-project
 ```

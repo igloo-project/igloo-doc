@@ -146,7 +146,7 @@ These instructions may help to migrate a bootstrap 4 project easily. These instr
 * find and update base Template to implement `IBootstrap4Page` (check your page
   inheritance tree)
 * manual fix of tooltip behavior
-* manual fix of popopver behavior
+* manual fix of popover behavior
 * manual fix of `IBootstrapRenderer`: replace `BootstrapRenderer` by
   `IBootstrapRenderer` so that interface is correctly implemented
 * add table-cell-widths in `_bootstrap-variables.scss`
