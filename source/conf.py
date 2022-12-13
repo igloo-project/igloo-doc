@@ -32,6 +32,19 @@ extensions = [
     'sphinx.ext.extlinks',
     'myst_parser'
 ]
+myst_enable_extensions = [
+    'amsmath',
+    'colon_fence',
+    'deflist',
+    'dollarmath',
+    'html_admonition',
+    'html_image',
+    'linkify',
+    'replacements',
+    'smartquotes',
+    'substitution',
+    'tasklist'
+]
 extlinks = {
     'issue': ('https://github.com/igloo-project/igloo-parent/issues/%s', 'issue '),
     'igloo-commons': ('https://github.com/igloo-project/igloo-commons/tree/dev/%s', 'igloo-commons '),
