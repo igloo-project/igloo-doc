@@ -1,5 +1,14 @@
 # Releases 5.x
 
+(v5.0.1)=
+
+# 5.0.1 (2022-12-16)
+
+## Bugfix
+
+* {issue}`73`: Fix default Tooltip configuration
+
+
 (v5.0.0)=
 
 # 5.0.0 (2022-12-08)
