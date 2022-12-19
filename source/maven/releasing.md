@@ -62,3 +62,28 @@ Once `igloo-parent` is released:
 
 * `pom.xml`: parent version (igloo-parent-core-project)
 * `pom.xml`: `igloo.version` property
+
+## Release a backport
+
+If you need to release a hotfix on a previously released version (adapt version numbers):
+
+```bash
+# Create a branch from the desired root version
+git checkout -b ft-4.4-deploy v4.4.0
+# Apply a new SNAPSHOT version
+mvn versions:set versions:commit -DnewVersion=4.4.2-SNAPSHOT -DprocessAllModules=true
+git commit -a -m "Prepare 4.4.2 backport release"
+# Backport and commit your fixes (manually, cherry-pick, ...)
+# you can publish this version if needed by pushing your branch to CI
+[...]
+
+# When your branch is OK, update your version
+mvn versions:set versions:commit -DnewVersion=4.4.2 -DprocessAllModules=true
+git commit -a -m "Release 4.4.2 backport"
+git tag v4.4.2
+git push origin ft-4.4-deploy
+git push refs/tags/v4.4.2
+
+# CI build for ft-4.4-deploy will publish your new release
+# Branch ft-4.4-deploy can be removed once published (we only keep tag).
+```
