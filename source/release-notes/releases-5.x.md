@@ -1,5 +1,14 @@
 # Releases 5.x
 
+(v5.0.2)=
+
+# 5.0.2 (2022-12-19)
+
+## Bugfix
+
+* {issue}`72`: Fix ignored log4j2 configuration override
+
+
 (v5.0.1)=
 
 # 5.0.1 (2022-12-16)

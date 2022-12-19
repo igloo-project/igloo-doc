@@ -1,5 +1,23 @@
 # Releases 4.x
 
+(v4.4.2)=
+
+# 4.4.2 (2022-12-19)
+
+## Bugfix
+
+* {issue}`72`: Fix ignored log4j2 configuration override
+
+
+(v4.3.1)=
+
+# 4.3.1 (2022-12-19)
+
+## Bugfix
+
+* {issue}`72`: Fix ignored log4j2 configuration override
+
+
 (v4.4.1)=
 
 # 4.4.1 (2022-11-14)
