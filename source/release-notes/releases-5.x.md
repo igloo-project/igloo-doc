@@ -1,6 +1,25 @@
 # Releases 5.x
 
+(v5.0.3)=
+
+# 5.0.3 (2023-01 - TODO)
+
 (v5.0.2)=
+
+## Bugfix
+
+* {issue}`74`: AbstractOfflinePanelRendererServiceImpl is broken with bootstrap component
+
+## API Changes
+
+* `AbstractSimpleWicketNotificationDescriptor`: a `getComponentClass()` is needed to provide
+  return type information of `getComponent()` method.
+* `AbstractOfflinePanelRendererServiceImpl` `renderComponent` and `renderPage` methods are
+  modified to use `IOfflineComponentProvider` in place of `SerializableSupplier2<Component>`:
+  a helper method `IOfflineComponentProvider.fromSupplier(...)` can be used to easily rewrite
+  your method calls.
+* `IBootstrap4Component` and `IBootstrap5Component` are added to mark root component used
+  in notification emails (so that subcomponent can determine bootstrap version).
 
 # 5.0.2 (2022-12-19)
 
