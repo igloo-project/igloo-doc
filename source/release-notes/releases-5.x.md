@@ -2,9 +2,7 @@
 
 (v5.0.3)=
 
-# 5.0.3 (2023-01 - TODO)
-
-(v5.0.2)=
+# 5.0.3 (2023-01-03)
 
 ## Bugfix
 
@@ -20,6 +18,25 @@
   your method calls.
 * `IBootstrap4Component` and `IBootstrap5Component` are added to mark root component used
   in notification emails (so that subcomponent can determine bootstrap version).
+
+## Dependencies
+
+* jackson 2.13.4 -> 2.14.1
+* byte-buddy 1.12.18 -> 1.12.19
+* flywaydb 9.7.0 -> 9.8.3
+* postgresql 42.5.0 -> 42.5.1
+* spring 5.3.23 -> 5.3.24
+* spring-boot 2.7.5 -> 2.7.6
+* spring-security 5.7.3 -> 5.8.0
+* micrometer 1.9.5 -> 1.10.2
+
+Other dependencies
+
+* mockito 4.8.1 -> 4.9.0
+* maven-dependency-plugin 3.3.0 -> 3.4.0
+* owasp-maven-plugin 7.3.0 -> 7.4.1
+
+(v5.0.2)=
 
 # 5.0.2 (2022-12-19)
 

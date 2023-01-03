@@ -26,6 +26,25 @@ git push --tags
 
 ## Releasing igloo-maven
 
+```bash
+IGLOO_MAVEN_VERSION=xxx
+IGLOO_COMMONS_VERSION=xxx
+# igloo-maven: just release
+
+# igloo-commons
+# update parent
+mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
+# update igloo.igloo-maven.version property
+mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+
+# igloo-parent
+# update parents
+mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
+# update igloo-maven.version, igloo-commons.version
+mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+```
+
 Once `igloo-maven` is released, dependants projects must be updated:
 
 * `igloo-commons`
