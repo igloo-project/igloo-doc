@@ -36,6 +36,8 @@ IGLOO_COMMONS_VERSION=xxx
 mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
 # update igloo.igloo-maven.version property
 mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+# check changes with git diff
+# perform jgitflow release
 
 # igloo-parent
 # update parents
@@ -43,6 +45,8 @@ mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -Dpare
 # update igloo-maven.version, igloo-commons.version
 mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
 mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+# check changes with git diff
+# perform jgitflow release
 ```
 
 Once `igloo-maven` is released, dependants projects must be updated:
