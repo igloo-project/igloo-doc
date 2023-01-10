@@ -1,5 +1,13 @@
 # Releases 5.x
 
+(v5.0.4)=
+
+# 5.0.4 (2023-01-10)
+
+## Bugfix
+
+* Popover: hide the whole popover panel if the content component is not visibile.
+
 (v5.0.3)=
 
 # 5.0.3 (2023-01-03)
@@ -92,7 +100,7 @@ Other dependencies
 
 ## Behavior changes
 
-* ActionRenderers (from basic-application ): replace all BootstrapRenderer by 
+* ActionRenderers (from basic-application ): replace all BootstrapRenderer by
   IBootstrapRenderer (except BootstrapRenderer.constant).
 
 * Popover :
