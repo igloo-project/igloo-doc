@@ -9,3 +9,4 @@ sphinx:
       - sphinx-autobuild == 0.7.1
       - sphinx_book_theme
       - myst-parser
+      - linkify-it-py
