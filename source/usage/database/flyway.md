@@ -15,25 +15,6 @@
 
 Igloo and the basic application are using Flyway for handling your data upgrades.
 
-## Activate Flyway's Spring profile
-
-By default, Flyway's Spring profile is activated with this line in the file `configuration-bootstrap.properties` :
-
-```bash
-igloo.default.spring.profiles.active=flyway
-```
-
-With this simple configuration, the creation of the Flyway bean is enabled in the application and you can now start to use it.
-
-```{note}
-Flyway spring profile is enabled in basic-application generated from Igloo version 0.14 and above.
-```
-
-```{note}
-If you want to disable flyway from your application, just remove `flyway` from the
-configuration variable `igloo.default.spring.profiles.active` in file `configuration-bootstrap.properties`.
-```
-
 ## Properties configuration
 
 ### Basic properties
@@ -49,69 +30,87 @@ spring.flyway.table=flyway_schema_version
 ```
 
 ### Migration properties
- 
-It is possible to exclude some scripts during initialization. By default we have two paths :
-- `db/migration/common/*` : contains all the scripts that will be included when the application is started
-- `db/migration/init/*` : contains the scripts that we want to include according to the environment (generally, these scripts contain data to import)
 
-If you want to include the `init/` scripts, this property must be modified :
+Database model migration can be used to perform :
+
+* schema initialization only
+* schema initialization and data import
+
+First use-case is used for integration tests, as data are generally bootstraped by tests.
+
+Second use-case is used for application bootstrap in early realease stages.
+
+Default configurations provided by Igloo use the following paths:
+
+- `db/migration/common/*` : contains schema initialization scripts
+- `db/migration/init/*` : contains data initialization scripts
+
+If you want to include both `common/` and `init/` scripts, this property must be modified :
+
 ```bash
 # `true`  : import files from `common/` and `init/`
-# `false` : only import files from `common/` (default if `null`)
+# `false` : only import files from `common/` (default behavior)
 migration.init.enabled=true
 ```
 
-```{note}
-Its default values are in Igloo :
-- `spring.flyway.locations.withInit=db/migration/common/**/*.sql,db/migration/init/**/*.sql`
-- `spring.flyway.locations.withoutInit=db/migration/common/**/*.sql`
-It is possible to overwrite them if needed
-```
+
+### Advanced usage: Spring boot configuration
+
+Spring-boot flyway configuration properties are available here: https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties.data-migration
+
+*common/init* behavior is controlled by an Igloo configuration that switch
+`flyway.spring.locations` based on `migration.init.enabled` value. If you want to use this
+mechanism, you must not redefine `flyway.spring.locations`.
+
+If you want to customize `flyway.spring.locations`, it is advised to not use
+`db.migration` locations (keep this classpath empty).
+
+If you want to customize `flyway.spring.locations` and use both SQL and Java migrations,
+keep in mind that Java migrations you want to be Spring-injection-enabled must not be
+discovered by the provided `flyway.spring.locations`; Spring-injection-enabled migrations
+must be Spring managed beans. You may restrict file discovery to sql files by using
+a pattern in your configuration: `path/**/*.sql`.
+
 
 ## Create a Flyway data upgrade
 
 You can write your data upgrades either in SQL or Java.
 Here we have chosen to :
 
-  * put our upgrades .sql in the folder `src/main/resources/db/migration/common/` or `src/main/resources/db/migration/init/`
-  * put our upgrades .java in the package `db.migration.common` or `db.migration.init`
+  * put your upgrades .sql in the folder `src/main/resources/db/migration/common/` or `src/main/resources/db/migration/init/`
+  * put your upgrades .java in the package `db.migration.common` or `db.migration.init`
+  * follow Flyway naming convention: `V<major>_<minor>__<name>.sql/java`. Follow your project's
+    convention to choose major/minor version (it may not match application version).
 
 If you want to specify multiple locations, you have to separate them with commas.
 
-Now you can create the data upgrades which will be applied by Flyway.
-If you want to be able to relaunch manually the upgrade in case it fails, you have to use the Java formatted upgrades.
+Use SQL scripts to perform schema and data migration that can be performed reliably with
+SQL scripts.
 
-
-```{note}
-In Igloo version 0.14 and above, hibernate `hdm2ddl` is disabled by default
-  and database model is created with the `V1_1__CreateSchema.sql` SQL script during
-  the first startup.
-```
-
-```{note}
-Flyway works with a database versioning system. Versions are based on the names of the data upgrades so be careful how you name them.
-The name must respect the pattern `V<major>_<minor>__<name>`.
-For instance `V1_1__CreateSchema.sql` is a valid name. SQL and Java upgrades follow the same naming pattern.
-```
+If you need to use Hibernate API to perform data migrations, you need to create a
+DataUpgradeRecord entry so that it can be launched once flyway migration and hibernate
+startup are performed.
 
 
 ## Create a SQL formatted data upgrade
 
-If you want to write a SQL data upgrade, just write your SQL script with the wright naming pattern and place it in the folder or package you specified earlier.  
-The script will be executed next time you launch your application.
+Just write your SQL script and place it in the configured migration locations. You can
+use basic templating with values defined in configuration properties by using Flyway
+placeholders mechanism.
 
 
 ## Create a Java formatted data upgrade
 
-If you want to write a data upgrade in Java, you have to follow a particular workflow.
-In this case, Flyway script is only feeding the `DataUpgradeRecord` table in the
-database. This table is looked up at startup to execute data upgrade in a Java
-context.
+When Flyway migration are applied, Hibernate is not started. You can use Java code that
+do not use Hibernate API to access data (plain JDBC, JdbcTemplate, ...).
 
-Your Flyway script will only declare that the data upgrade exists and that the
-application needs to launch it. To do so, copy the existing Flyway data upgrade
-`V1_2__InitDataFromExcel`, change the version and the name or the script. Then
-target the Igloo data upgrade you want to see executed.
+If you want to use Hibernate or other components initialized after flyway,
+you have to create a `DataUpgradeRecord` row in database. This table is looked up once
+the Spring context is fully initialized to trigger a DataUpgrade. This DataUpgrade
+can use Hibernate APIs.
+
+You can use `V1_2__InitDataFromExcel` as an example, and customize the targetted
+DataUpgrade:
 
 ```java
 @Override
@@ -122,13 +121,11 @@ protected Class<? extends IDataUpgrade> getDataUpgradeClass() {
 
 ## Create an Igloo data upgrade
 
-If you have wrote Java formatted data upgrades, you need to create an Igloo
-data upgrade for each one of these.
+An Igloo data upgrade is a java class which implements `IDataUpgrade`.
 
-An Igloo data upgrade is a java class which implements `IDataUpgrade` and override its methods.
-Write all your operations in the function `perform()`.
+Migration operations are performed by the `perform()` function.
 
-Each Igloo data upgrade need to be registered in  `DataUpgradeManagerImpl` :
+Each Igloo data upgrade need to be registered in  `DataUpgradeManagerImpl` bean:
 
 ```java
 @Override
@@ -141,11 +138,21 @@ public List<IDataUpgrade> listDataUpgrades() {
 
 ## Migration
 
-Since Igloo 5.X.X (TODO) (with Flyway `>9.9.0` version)
+From Igloo 5.X.X (TODO) (with Flyway `>9.9.0` version), Igloo custom flyway integration is
+replaced by spring-boot implementation. It allows to use the `spring.flyway.*` properties
+to control Flyway behavior.
+
+The migration steps are needed to adapt an existing application so that:
+
+* SQL migration are present in the expected locations
+* Java migration are now Spring registered bean
+* Properties are renamed to the spring-boot equivalents
 
 ### Property files
 
-1. In the file `configuration-env-default.properties`, you must delete these lines :
+1. In `configuration-env-default.properties`, delete `environment.flyway.locations.*`
+   properties:
+
 ```bash
 # DELETE
 environment.flyway.locations.withInit=org/iglooproject/basicapp/core/config/migration/common,org/iglooproject/basicapp/core/config/migration/init,db/migration/common/
@@ -153,7 +160,8 @@ environment.flyway.locations.withoutInit=org/iglooproject/basicapp/core/config/m
 environment.flyway.locations=
 ```
 
-2. In the file `configuration.properties`, you must make the following changes :
+2. In `configuration.properties`, you must make the following changes :
+
 ```bash
 # DELETE
 flyway.locations=${environment.flyway.locations}
