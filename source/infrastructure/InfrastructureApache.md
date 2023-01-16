@@ -32,8 +32,9 @@
 
         SSLEngine on
 
-        SSLProtocol all -SSLv2 -SSLv3
-        SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM:+LOW
+        SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
+        SSLCipherSuite SSLCipherSuite ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
+        SSLHonorCipherOrder on
 
         SSLCertificateFile /etc/httpd/ssl/<sitename>.crt
         SSLCertificateKeyFile /etc/httpd/ssl/<sitename>.key.unsecure
