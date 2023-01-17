@@ -1,5 +1,14 @@
 # Releases 5.x
 
+(v5.0.5)=
+
+# 5.0.5 (YYYY-MM-DD)
+
+## Enhancements
+
+* BasicApp: BasicApp: use `div` tag with only `.form-text`. Possible use of the
+`<span>` tag for inline display.
+
 (v5.0.4)=
 
 # 5.0.4 (2023-01-10)
