@@ -4,6 +4,10 @@
 
 # 5.0.5 (YYYY-MM-DD)
 
+## Bugfix
+
+* Remove overflow hidden on table cells.
+
 ## Enhancements
 
 * BasicApp: BasicApp: use `div` tag with only `.form-text`. Possible use of the
