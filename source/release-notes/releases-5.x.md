@@ -2,16 +2,16 @@
 
 (v5.0.5)=
 
-# 5.0.5 (YYYY-MM-DD)
+# 5.0.5 (2023-02-06)
 
 ## Bugfix
 
 * Remove overflow hidden on table cells.
+* BasicApp: multiple BS5 fixes.
 
 ## Enhancements
 
-* BasicApp: BasicApp: use `div` tag with only `.form-text`. Possible use of the
-`<span>` tag for inline display.
+* BasicApp: minor code consistency.
 
 (v5.0.4)=
 
