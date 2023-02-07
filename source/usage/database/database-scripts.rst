@@ -12,11 +12,11 @@ The class ``<Project>SqlUpdateScriptMain.java`` generates the differences betwee
 your java model and your database model to write the result as an update sql script.
 It can also generate an sql script for the creation of your whole database.
 
-To launch this script, make sure you are in the ``basic-application/basic-application-init directory``, then execute
+To launch this script, make sure you are in the ``basic-application/basic-application-core`` directory, then execute
 
 .. code-block:: bash
 
-  mvn exec:java -Dexec.mainClass="org.iglooproject.basicapp.init.<Project>ApplicationSqlUpdateScriptMain" -Dexec.args="update stdout"
+  mvn exec:java -Dexec.mainClass="org.iglooproject.basicapp.core.cli.<Project>ApplicationSqlUpdateScriptMain" -Dexec.args="update stdout"
 
 Available args are:
 
