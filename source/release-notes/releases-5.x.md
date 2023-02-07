@@ -1,5 +1,18 @@
 # Releases 5.x
 
+(v5.1.0)=
+
+# 5.1.0 (2023-02-07)
+
+## Enhancements
+
+* Replace igloo custom flyway integration with spring-boot flyway integration.
+
+## Breaking changes
+
+* Spring-boot Flyway integration needs some configuration and code migration on your projects.
+  Please use {ref}`flyway-migration` to update your project.
+
 (v5.0.5)=
 
 # 5.0.5 (2023-02-06)

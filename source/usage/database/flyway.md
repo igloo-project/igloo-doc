@@ -1,19 +1,8 @@
+(flyway)=
+
 # Flyway model update
 
-- [Flyway model update](#flyway-model-update)
-  - [Activate Flyway's Spring profile](#activate-flyways-spring-profile)
-  - [Properties configuration](#properties-configuration)
-    - [Basic properties](#basic-properties)
-    - [Migration properties](#migration-properties)
-  - [Create a Flyway data upgrade](#create-a-flyway-data-upgrade)
-  - [Create a SQL formatted data upgrade](#create-a-sql-formatted-data-upgrade)
-  - [Create a Java formatted data upgrade](#create-a-java-formatted-data-upgrade)
-  - [Create an Igloo data upgrade](#create-an-igloo-data-upgrade)
-  - [Migration](#migration)
-    - [Property files](#property-files)
-    - [Script file](#script-file)
-
-Igloo and the basic application are using Flyway for handling your data upgrades.
+Igloo reuses Spring-boot Flyway integration to manage database migrations.
 
 ## Properties configuration
 
@@ -36,7 +25,7 @@ Database model migration can be used to perform :
 * schema initialization only
 * schema initialization and data import
 
-First use-case is used for integration tests, as data are generally bootstraped by tests.
+First use-case is used for integration tests, as data are generally bootstraped by test code (and not by migration scripts).
 
 Second use-case is used for application bootstrap in early realease stages.
 
@@ -45,7 +34,7 @@ Default configurations provided by Igloo use the following paths:
 - `db/migration/common/*` : contains schema initialization scripts
 - `db/migration/init/*` : contains data initialization scripts
 
-If you want to include both `common/` and `init/` scripts, this property must be modified :
+When you want to include both `common/` and `init/` scripts, this property must be modified :
 
 ```bash
 # `true`  : import files from `common/` and `init/`
@@ -58,18 +47,19 @@ migration.init.enabled=true
 
 Spring-boot flyway configuration properties are available here: https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties.data-migration
 
-*common/init* behavior is controlled by an Igloo configuration that switch
+*common/init* behavior is controlled by an Igloo configuration that manages
 `flyway.spring.locations` based on `migration.init.enabled` value. If you want to use this
 mechanism, you must not redefine `flyway.spring.locations`.
 
 If you want to customize `flyway.spring.locations`, it is advised to not use
-`db.migration` locations (keep this classpath empty).
+`db.migration` package (keep this classpath empty).
 
 If you want to customize `flyway.spring.locations` and use both SQL and Java migrations,
 keep in mind that Java migrations you want to be Spring-injection-enabled must not be
-discovered by the provided `flyway.spring.locations`; Spring-injection-enabled migrations
-must be Spring managed beans. You may restrict file discovery to sql files by using
-a pattern in your configuration: `path/**/*.sql`.
+located in `flyway.spring.locations`; Spring-injection-enabled migrations
+must be Spring managed beans (declared with `@Bean` or `@Component` annotation).
+
+You may restrict file discovery to sql files by using a pattern in your configuration: `path/**/*.sql`.
 
 
 ## Create a Flyway data upgrade
@@ -78,7 +68,7 @@ You can write your data upgrades either in SQL or Java.
 Here we have chosen to :
 
   * put your upgrades .sql in the folder `src/main/resources/db/migration/common/` or `src/main/resources/db/migration/init/`
-  * put your upgrades .java in the package `db.migration.common` or `db.migration.init`
+  * put your upgrades .java in the package `db.migration.common` or `db.migration.init` and annotate it with `@Component`
   * follow Flyway naming convention: `V<major>_<minor>__<name>.sql/java`. Follow your project's
     convention to choose major/minor version (it may not match application version).
 
@@ -136,9 +126,11 @@ public List<IDataUpgrade> listDataUpgrades() {
 }
 ```
 
-## Migration
+(flyway-migration)=
 
-From Igloo 5.X.X (TODO) (with Flyway `>9.9.0` version), Igloo custom flyway integration is
+## Igloo 5.1.x Flyway migration
+
+From Igloo 5.1.X (with Flyway `>9.9.0` version), Igloo custom flyway integration is
 replaced by spring-boot implementation. It allows to use the `spring.flyway.*` properties
 to control Flyway behavior.
 
@@ -150,8 +142,7 @@ The migration steps are needed to adapt an existing application so that:
 
 ### Property files
 
-1. In `configuration-env-default.properties`, delete `environment.flyway.locations.*`
-   properties:
+1. In `configuration-env-*.properties`, delete `environment.flyway.locations.*` properties:
 
 ```bash
 # DELETE
@@ -162,44 +153,35 @@ environment.flyway.locations=
 
 2. In `configuration.properties`, you must make the following changes :
 
-```bash
-# DELETE
-flyway.locations=${environment.flyway.locations}
-# ---
+```diff
+-flyway.locations=${environment.flyway.locations}
 
-# REPLACE
-flyway.schemas=${db.user}
-flyway.table=flyway_schema_version
-# BY
-spring.flyway.schemas=${db.user}
-spring.flyway.table=flyway_schema_version
-# ---
+-flyway.schemas=${db.user}
+-flyway.table=flyway_schema_version
++spring.flyway.schemas=${db.user}
++spring.flyway.table=flyway_schema_version
 
-# ADD
-spring.flyway.default-schema=${db.user}
++spring.flyway.default-schema=${db.user}
 ```
 
-3. Check and modify in **all** `.properties` files :
-```bash
-# REPLACE
-environment.flyway.locations=${environment.flyway.locations.withInit}
-# BY
-migration.init.enabled=true
-# ---
+3. Check and modify in **all** `.properties` files (choose appropriate case):
 
-# REPLACE
-environment.flyway.locations=${environment.flyway.locations.withoutInit}
-# BY
-migration.init.enabled=false
-# ---
+```diff
+-environment.flyway.locations=${environment.flyway.locations.withInit}
++migration.init.enabled=true
 ```
 
-### Script file
+```diff
+-environment.flyway.locations=${environment.flyway.locations.withoutInit}
++migration.init.enabled=false
+```
 
-1. Modify `AbstractDataUpgradeMigration` class according to this [commit](https://github.com/igloo-project/igloo-parent/commit/1f87e628f98c57c296661f7fc9b3fdbb0c64a782#diff-bd35549851f4e20174bec607c189418397635f2c46777f1f59732cb8630225d9). 
+### Migration files
+
+1. Modify `AbstractDataUpgradeMigration` class according to this [commit](https://github.com/igloo-project/igloo-parent/commit/5607c980bc27ea16151a42bbe088760c13e5817e#diff-bd35549851f4e20174bec607c189418397635f2c46777f1f59732cb8630225d9). 
 
 2. Modify your `JAVA` script classes by adding the `@Component` annotation (otherwise they will not be applied).   
-An example [here](https://github.com/igloo-project/igloo-parent/commit/1f87e628f98c57c296661f7fc9b3fdbb0c64a782#diff-2fc5796213ed4ca640455757c8e0ac259a009fcebac78b3386dc3e4532453ee8).
+An example [here](https://github.com/igloo-project/igloo-parent/commit/5607c980bc27ea16151a42bbe088760c13e5817e#diff-2fc5796213ed4ca640455757c8e0ac259a009fcebac78b3386dc3e4532453ee8).
 
 3. Move files :
    - From `<project>.core.config.migration.init` to `db.migration.init`
