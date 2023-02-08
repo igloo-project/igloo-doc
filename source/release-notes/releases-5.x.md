@@ -1,5 +1,14 @@
 # Releases 5.x
 
+(v5.2.0)=
+
+# 5.2.0 (YYYY-MM-DD)
+
+## Enhancements
+
+* BasicApp: use postgresql instead of h2 for unit tests.
+* BasicApp: clean db port in properties files.
+
 (v5.1.0)=
 
 # 5.1.0 (2023-02-07)
