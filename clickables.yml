@@ -5,7 +5,7 @@ sphinx:
     python: /usr/bin/python3
     path: .tools/sphinx
     requirements:
-      - Sphinx == 4.3.0
+      - Sphinx == 5.3.0
       - sphinx-autobuild == 0.7.1
       - sphinx_book_theme
       - myst-parser

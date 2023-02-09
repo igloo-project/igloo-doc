@@ -46,10 +46,10 @@ myst_enable_extensions = [
     'tasklist'
 ]
 extlinks = {
-    'issue': ('https://github.com/igloo-project/igloo-parent/issues/%s', 'issue '),
-    'igloo-commons': ('https://github.com/igloo-project/igloo-commons/tree/dev/%s', 'igloo-commons '),
-    'igloo-maven': ('https://github.com/igloo-project/igloo-maven/tree/dev/%s', 'igloo-maven '),
-    'igloo-parent': ('https://github.com/igloo-project/igloo-parent/tree/dev/%s', 'igloo-parent ')
+    'issue': ('https://github.com/igloo-project/igloo-parent/issues/%s', 'issue %s'),
+    'igloo-commons': ('https://github.com/igloo-project/igloo-commons/tree/dev/%s', 'igloo-commons %s'),
+    'igloo-maven': ('https://github.com/igloo-project/igloo-maven/tree/dev/%s', 'igloo-maven %s'),
+    'igloo-parent': ('https://github.com/igloo-project/igloo-parent/tree/dev/%s', 'igloo-parent %s')
 }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -85,7 +85,7 @@ release = u'1.0'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = "en"
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
