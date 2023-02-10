@@ -35,12 +35,12 @@ sl4j to JUL binding.
 		<dependency>
 			<groupId>org.iglooproject.components</groupId>
 			<artifactId>jul-helper</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.iglooproject.components</groupId>
 			<artifactId>log4j2-jmx-helper</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 		</dependency>
 ```
 
@@ -119,4 +119,15 @@ com.google.common
 ## Project release
 
 Use jgitflow procedure.
+
+## Changelog
+
+### 1.0.1 (10.02.2023)
+
+* Fix a deployment issue
+
+### 1.0.0 (10.02.2023)
+
+* Initial release
+* Use 1.0.1 that fixes a deployment issue
 
