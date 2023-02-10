@@ -1,3 +1,5 @@
+(igloo-logging)=
+
 # Igloo logging (log4j2 JMX configuration)
 
 `org.iglooproject.components:log4j2-jmx-helper` and `org.iglooproject.components:jul-helper` allow
@@ -8,12 +10,26 @@ Source code is hosted at https://github.com/igloo-project/igloo-logging/.
 
 This modules do not rely on igloo framework and can be used independently of igloo.
 
+## Prerequisites
+
+Your projet must manage/include the following dependencies:
+
+* `javax.servlet:javax.servlet-api`: javax package, only servlet listener API is used
+* `org.slf4j:jul-to-slf4j`: 1.7.x or 2.0.x
+* `org.slf4j:slf4j-api`: 1.7.x or 2.0.x
+* `org.apache.logging.log4j:log4j-core`: 2.17+ version
+
+Project uses only mainline API from these dependencies and may adapt to any recent version.
+
 ## Installation
 
 Ensure you use Igloo maven repository: https://nexus.tools.kobalt.fr/repository/igloo-releases/.
 
 Add `org.iglooproject.components:log4j2-jmx-helper` and `org.iglooproject.components:jul-helper`
-to your project's deoendencies.
+to your project's dependencies.
+
+Remove `org.iglooproject.components:igloo-component-jul-to-slf4j` as `jul-helper` handles
+sl4j to JUL binding.
 
 ```xml
 		<dependency>
@@ -32,7 +48,7 @@ For a war project, use `web.xml` listeners to trigger JMX helper loading (you mu
 `org.iglooproject.slf4j.jul.bridge.SLF4JLoggingListener` if present):
 
 ```
-    <listener>
+	<listener>
 		<listener-class>igloo.julhelper.servlet.JulLoggingListener</listener-class>
 	</listener>
  	<listener>

@@ -8,6 +8,7 @@
 
 * BasicApp: use postgresql instead of h2 for unit tests.
 * BasicApp: clean db port in properties files.
+* BasicApp: webapp now use {ref}`igloo-logging` JMX helpers
 
 (v5.1.1)=
 
