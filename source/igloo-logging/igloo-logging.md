@@ -36,11 +36,23 @@ sl4j to JUL binding.
 			<groupId>org.iglooproject.components</groupId>
 			<artifactId>jul-helper</artifactId>
 			<version>1.0.1</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.iglooproject.components</groupId>
 			<artifactId>log4j2-jmx-helper</artifactId>
 			<version>1.0.1</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- check dependency tree for the following dependencies -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jul-to-slf4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
 		</dependency>
 ```
 
