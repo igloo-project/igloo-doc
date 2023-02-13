@@ -10,6 +10,14 @@
 * BasicApp: clean db port in properties files.
 * BasicApp: webapp now use {ref}`igloo-logging` JMX helpers
 
+(v5.1.2)=
+
+# 5.1.2 (2023-02-13)
+
+## Bugfix
+
+* BS5: fix datepicker `z-index` on inputs with errors.
+
 (v5.1.1)=
 
 # 5.1.1 (2023-02-09)
