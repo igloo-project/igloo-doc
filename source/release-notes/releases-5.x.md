@@ -1,14 +1,53 @@
 # Releases 5.x
 
+(v5.3.0)=
+
+# 5.3.0 (YYYY-MM-DD)
+
 (v5.2.0)=
 
-# 5.2.0 (YYYY-MM-DD)
+# 5.2.0 (2023-02-15)
 
 ## Enhancements
 
 * BasicApp: use postgresql instead of h2 for unit tests.
 * BasicApp: clean db port in properties files.
 * BasicApp: webapp now use {ref}`igloo-logging` JMX helpers
+* Add igloo-logging JMX helper
+* Remove flyway custom implementation
+* jsass/libsass replaced by dart-sass
+  
+## Dependencies
+
+* jackson 2.14.1 -> 2.14.2
+* ph-css 6.5.0 -> 7.0.0
+* junit-jupiter-api 5.9.1 -> 5.9.2
+* assertj 3.5.0 -> 3.24.2
+* flyway 9.11.0 -> 9.14.1
+* freemarker 2.3.31 -> 2.3.32
+* jersey 2.37 -> 2.38
+* mockito 4.9.0 -> 5.1.1
+* postgresql 42.5.1 -> 42.5.3
+* jul-to-slf4j / slf4j-api 2.0.5 -> 2.0.6
+* spring 5.3.24 -> 5.3.25
+* spring-security 5.8.0 -> 5.8.1
+* immutables value 2.9.2 -> 2.9.3
+* micrometer-core 1.10.2 -> 1.10.3
+* error_prone_annotations 2.16 -> 2.18.0
+* spring-boot 2.7.6 -> 2.7.8
+* byte-buddy 1.12.19 -> 1.12.23
+* picocli 4.7.0 -> 4.7.1
+  
+Maven plugins:
+
+* maven-failsafe-plugin 3.0.0-M7 -> 3.0.0-M8
+* maven-surefire-plugin 3.0.0-M7 -> 3.0.0-M8
+* maven-dependency-plugin 3.4.0 -> 3.5.0
+* maven-project-info-reports-plugin	3.4.1 -> 3.4.2
+* maven-install-plugin 3.0.1 -> 3.1.0
+* dependency-check-maven 7.4.1 -> 8.0.2
+* maven-enforcer-plugin 3.1.0 -> 3.2.1
+* versions-maven-plugin 2.13.0 -> 2.14.2
 
 (v5.1.2)=
 
