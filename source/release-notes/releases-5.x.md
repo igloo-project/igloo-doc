@@ -8,6 +8,10 @@
 
 * BS5: fix feedback dismiss padding.
 
+## Enhancements
+
+* Add WIP modal for indexation process. 
+
 (v5.2.0)=
 
 # 5.2.0 (2023-02-15)
