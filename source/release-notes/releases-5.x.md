@@ -4,6 +4,10 @@
 
 # 5.3.0 (YYYY-MM-DD)
 
+## Bugfix
+
+* BS5: fix feedback dismiss padding.
+
 (v5.2.0)=
 
 # 5.2.0 (2023-02-15)
