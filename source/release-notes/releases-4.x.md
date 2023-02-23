@@ -93,7 +93,7 @@ Maven plugins:
 
 ## Dependencies
 
-* Font Awesome 6.0.0 - 6.1.2
+* Font Awesome 6.0.0 -> 6.1.2
 * Update Select2 Bootstrap 4 theme
 
 * reload4j 1.2.20 -> 1.2.22

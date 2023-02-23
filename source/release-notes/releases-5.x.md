@@ -12,6 +12,12 @@
 
 * Add WIP modal for indexation process. 
 
+## Dependencies
+
+* Bootstrap 5 5.1.3 -> 5.2.3
+* Font Awesome 6.1.2 -> 6.3.0
+* junit5-suite 1.9.1 -> 1.9.2
+
 (v5.2.0)=
 
 # 5.2.0 (2023-02-15)
