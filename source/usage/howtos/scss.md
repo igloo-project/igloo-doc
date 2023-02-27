@@ -83,5 +83,10 @@ Here is an example. You need to customize scopes and target Scss files.
 
 JSass to dart-sass implies some scss changes:
 
-* `webjars:/` urls need to be rewritten
-* TODO WIP
+* `webjars://` urls need to be rewritten: `webjars://bootstrap:current/` -> `META-INF/resources/webjars/bootstrap/`
+* `$(scope-NAME)` must be followed by a `/`: `$(scope-core-fa)scss/core` -> `$(scope-core-fa)/scss/core` (previously, it was optional)
+* `@import`-ed files must be `.scss` files
+  * check that you have no `.css` file in project-webapp directory (except files in `errors/` folder)
+  * if you have some `.css` files, check if you want to be included by scss processing (then proceed to rename) or if they are included / managed by browser (then `.css` extension can be kept)
+
+**TODO: jimportdiff**
