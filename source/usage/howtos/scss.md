@@ -1,3 +1,5 @@
+(scss)=
+
 # Scss/Sass processing
 
 ```{warning}
@@ -78,6 +80,8 @@ Here is an example. You need to customize scopes and target Scss files.
     </executions>
 </plugin>
 ```
+
+(scss-migration)=
 
 ## JSass / Dart-sass migration
 

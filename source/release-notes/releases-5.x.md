@@ -1,5 +1,18 @@
 # Releases 5.x
 
+# 5.4.0 (TBD)
+
+## Enhancement
+
+* {ref}`scss`
+  * jsass/libsass replaced by dart-sass
+  * scss generated at build-time (optional)
+
+## Breaking changes
+
+* scss must be adapted for dart-sass processing (mandatory). See {ref}`scss-migration`.
+
+
 (v5.3.0)=
 
 # 5.3.0 (2023-02-24)
@@ -18,6 +31,7 @@
 * Font Awesome 6.1.2 -> 6.3.0
 * junit5-suite 1.9.1 -> 1.9.2
 
+
 (v5.2.0)=
 
 # 5.2.0 (2023-02-15)
@@ -26,10 +40,7 @@
 
 * BasicApp: use postgresql instead of h2 for unit tests.
 * BasicApp: clean db port in properties files.
-* BasicApp: webapp now use {ref}`igloo-logging` JMX helpers
-* Add igloo-logging JMX helper
-* Remove flyway custom implementation
-* jsass/libsass replaced by dart-sass
+* BasicApp: webapp now uses {ref}`igloo-logging` JMX helpers
   
 ## Dependencies
 
