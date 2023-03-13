@@ -13,6 +13,15 @@
 * scss must be adapted for dart-sass processing (mandatory). See {ref}`scss-migration`.
 
 
+(v5.3.1)=
+
+# 5.3.1 (2023-03-13)
+
+## Bugfix
+
+* BS5 - Tab : fix selector tabRenderHead.
+
+
 (v5.3.0)=
 
 # 5.3.0 (2023-02-24)
@@ -23,7 +32,7 @@
 
 ## Enhancements
 
-* Add WIP modal for indexation process. 
+* Add WIP modal for indexation process.
 
 ## Dependencies
 
@@ -41,7 +50,7 @@
 * BasicApp: use postgresql instead of h2 for unit tests.
 * BasicApp: clean db port in properties files.
 * BasicApp: webapp now uses {ref}`igloo-logging` JMX helpers
-  
+
 ## Dependencies
 
 * jackson 2.14.1 -> 2.14.2
@@ -62,7 +71,7 @@
 * spring-boot 2.7.6 -> 2.7.8
 * byte-buddy 1.12.19 -> 1.12.23
 * picocli 4.7.0 -> 4.7.1
-  
+
 Maven plugins:
 
 * maven-failsafe-plugin 3.0.0-M7 -> 3.0.0-M8
