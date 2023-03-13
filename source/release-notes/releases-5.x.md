@@ -1,6 +1,8 @@
 # Releases 5.x
 
-# 5.4.0 (TBD)
+(v5.4.0)=
+
+# 5.4.0 (2023-03-13)
 
 ## Enhancement
 
@@ -11,6 +13,8 @@
 ## Breaking changes
 
 * scss must be adapted for dart-sass processing (mandatory). See {ref}`scss-migration`.
+* webapp `pom.xml` must be adapted for build-time generation (optional). See
+{ref}`scss-build-time-generation`.
 
 
 (v5.3.1)=
