@@ -134,6 +134,11 @@ Use jgitflow procedure.
 
 ## Changelog
 
+### 1.0.2 (13.02.2023)
+
+* Fix error messages when servlet is stopped due to servlet listener not registering
+  installed mbeanObjectName at startup
+
 ### 1.0.1 (10.02.2023)
 
 * Fix a deployment issue
