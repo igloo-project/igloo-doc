@@ -4,9 +4,18 @@
 
 # 5.5.0 (TBD)
 
+## Enhancement
+
+* {ref}`cache` : new reference implementation for caching is caffeine
+
 ## Bugfix
 
 * BS5: rollback HTML emails to BS4.
+
+## Breaking changes
+
+* Spring cache must switch to caffeine (mandatory), Hibernate cache can switch
+  to Caffeine (recommended). See {ref}`caffeine-migration`.
 
 (v5.4.0)=
 
