@@ -11,6 +11,7 @@
 ## Bugfix
 
 * BS5: rollback HTML emails to BS4.
+* BS5: remove BS4 webjar dependency from `wicket-bootstrap5`.
 
 ## Breaking changes
 
@@ -41,7 +42,6 @@
 ## Bugfix
 
 * BS5 - Tab : fix selector tabRenderHead.
-
 
 (v5.3.0)=
 
