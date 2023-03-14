@@ -1,5 +1,13 @@
 # Releases 5.x
 
+(v5.5.0)=
+
+# 5.5.0 (TBD)
+
+## Bugfix
+
+* BS5: rollback HTML emails to BS4.
+
 (v5.4.0)=
 
 # 5.4.0 (2023-03-13)
