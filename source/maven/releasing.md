@@ -17,11 +17,10 @@ mvn -DskipTests -DnoDeploy jgitflow:hotfix-finish
 
 # For both cases
 # Check pushed items (master, dev, tag); fix if needed
-git push --all -n
-git push --tags -n
+# Replace master/main by release branche name, replace vVERSION by new tag name
+git push -n origin master/main dev vVERSION
 # If OK, perform pushes
-git push --all
-git push --tags
+git push origin master/main dev vVERSION
 ```
 
 ## Releasing igloo-maven
