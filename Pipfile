@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-clickable = "==v1.6"
+clickable = "==1.7"
 
 [scripts]
 infrastructure-doc = "clickable"
