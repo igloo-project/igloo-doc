@@ -135,5 +135,10 @@ Use jimportdiff dart-scss :
 
 
 ```bash
-pipenv run ./jimportdiff dart-sass
+cd jimportdiff
+pipenv --rm
+pipenv install
+pipenv shell
+cd ../PROJECT
+../jimport/jimportdiff dart-scss
 ```
