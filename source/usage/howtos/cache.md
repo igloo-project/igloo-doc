@@ -80,6 +80,7 @@ General instructions for migration :
       <artifactId>hibernate-jcache</artifactId>
     </dependency>
     ```
+  * Remove `net.sf.ehcache:ehcache` and `org.hibernate:ehcache`
 
 ### Spring
 
