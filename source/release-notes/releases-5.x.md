@@ -1,5 +1,12 @@
 # Releases 5.x
 
+(v5.6.0)=
+
+# 5.6.0 (TBD)
+
+## Enhancement
+
+* BS5 : rename `.heading-section-white` to `.heading-section-light` for consistency.
 
 (v5.5.1)=
 
@@ -9,7 +16,6 @@
 
 * Fix dart-css `@import` triggered by bootstrap 4 basic-application (*has no known prefix* error).
 
-
 (v5.4.1)=
 
 # 5.4.1 (2023-03-21)
@@ -17,7 +23,6 @@
 ## Bugfix
 
 * Fix dart-css `@import` triggered by bootstrap 4 basic-application (*has no known prefix* error).
-
 
 (v5.5.0)=
 
