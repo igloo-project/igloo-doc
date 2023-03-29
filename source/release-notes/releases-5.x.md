@@ -7,6 +7,7 @@
 ## Enhancement
 
 * BS5 : rename `.heading-section-white` to `.heading-section-light` for consistency.
+* Storage : add new utilitary to check creator of file
 
 (v5.5.1)=
 
