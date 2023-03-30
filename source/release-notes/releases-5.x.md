@@ -9,6 +9,14 @@
 * BS5 : rename `.heading-section-white` to `.heading-section-light` for consistency.
 * Storage : add new utilitary to check creator of file
 
+(v5.5.2)=
+
+# 5.5.2 (2023-03-30)
+
+## Bugfix
+
+* Fix console configuration for custom configuration.
+
 (v5.5.1)=
 
 # 5.5.1 (2023-03-21)
