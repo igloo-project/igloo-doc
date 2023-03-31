@@ -16,6 +16,7 @@
 ## Bugfix
 
 * Fix console configuration for custom configuration.
+* Fix BS5 popover and tooltip html content visibility.
 
 (v5.5.1)=
 
