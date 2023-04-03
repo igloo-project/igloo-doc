@@ -176,6 +176,12 @@ environment.flyway.locations=
 +migration.init.enabled=false
 ```
 
+4. Disable flyway migration when using `hibernate.hbm2ddl.auto=create|update` in `configuration*.properties`:
+
+```bash
+spring.flyway.enabled=false
+```
+
 ### Migration files
 
 1. Modify `AbstractDataUpgradeMigration` class according to this [commit](https://github.com/igloo-project/igloo-parent/commit/5607c980bc27ea16151a42bbe088760c13e5817e#diff-bd35549851f4e20174bec607c189418397635f2c46777f1f59732cb8630225d9). 
