@@ -1,13 +1,70 @@
 # Releases 5.x
 
+(v5.7.0)=
+
+# 5.7.0 (TBD)
+
+## Breaking change
+
+* dropped TrueVFS support (TODO)
+
+
 (v5.6.0)=
 
 # 5.6.0 (TBD)
 
+## Bugfix
+
+* {issue}`79`: Storage: split on StorageUnit size is broken
+
 ## Enhancement
 
-* BS5 : rename `.heading-section-white` to `.heading-section-light` for consistency.
-* Storage : add new utilitary to check creator of file
+* Bootstrap 5: rename `.heading-section-white` to `.heading-section-light` for consistency.
+* Storage: added `StorageService#isCreatedBy`
+* maven-site-plugin: added XML format for dependencies reports
+
+## Breaking change
+
+* JUnit4 : dropped support ; `AbstractJunit4TestCase` is removed
+
+## Dependencies
+
+* hibernate: 5.6.14 -> 5.6.15
+* hibernate-search: 5.11.11 -> 5.11.12
+* spring: 5.2.25 -> 5.2.26
+* spring-security: 5.8.1 -> 5.8.2
+* flywaydb: 9.14.1 -> 9.16.1
+* spring-boot: 2.7.8 -> 2.7.10
+* jersey2: 2.38 -> 2.39.1
+* slf4j: 2.0.6 -> 2.0.7
+* log4j2: 2.19.0 -> 2.20.0
+* commons-fileupload: 1.4 -> 1.5
+* postgresql: 45.2.3 -> 42.6.0
+* commons-compress: 1.22 -> 1.23.0
+* byte-buddy: 1.12.23 -> 1.24.3
+* popper2: 2.11.6 -> 2.11.7
+* reload4j: 1.2.24 -> 1.2.25
+* passay: 1.6.2 -> 1.6.3
+* micrometer: 1.10.3 -> 1.10.5
+* mockito: 5.1.1 -> 5.2.0
+* jsoup: 1.15.3 -> 1.15.4
+
+Maven plugins:
+
+* owasp-maven-plugin: 8.0.2 -> 8.1.2
+* versions-maven-plugin: 2.14.2 -> 2.15.0
+* maven-resources-plugin: 3.3.0 -> 3.3.1
+* jacoco-maven-plugin: 0.8.8 -> 0.8.9
+* maven-compiler-plugin: 3.10.1 -> 3.11.0
+* maven-surefire-plugin: 3.0.0-M8 -> 3.0.0
+* maven-assembly-plugin: 3.4.2 -> 3.5.0
+* maven-javadoc-plugin: 3.4.1 -> 3.5.0
+* maven-failsafe-plugin: 3.0.0-M8 -> 3.0.0
+* maven-deploy-plugin: 3.0.0 -> 3.1.1
+* maven-site-plugin: 4.0.0-M4 -> 4.0.0-M6
+* maven-install-plugin: 3.1.0 -> 3.1.1
+* flatten-maven-plugin: 1.3.0 -> 1.4.1
+
 
 (v5.5.2)=
 
