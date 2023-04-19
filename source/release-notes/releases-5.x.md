@@ -16,6 +16,7 @@
 ## Bugfix
 
 * {issue}`79`: Storage: split on StorageUnit size is broken
+* Lookup BS4/BS5: fix web socket broadcast case.
 
 ## Enhancement
 
