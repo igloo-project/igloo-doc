@@ -8,6 +8,13 @@
 
 * dropped TrueVFS support (TODO)
 
+## Bugfix
+
+* Remove target behavior on unbind in collapse behavior.
+
+## Enhancement
+
+* BS5: add collapse toggle css visibility utilities.
 
 (v5.6.0)=
 
@@ -65,7 +72,6 @@ Maven plugins:
 * maven-site-plugin: 4.0.0-M4 -> 4.0.0-M6
 * maven-install-plugin: 3.1.0 -> 3.1.1
 * flatten-maven-plugin: 1.3.0 -> 1.4.1
-
 
 (v5.5.2)=
 
