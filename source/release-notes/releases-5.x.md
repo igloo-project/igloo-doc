@@ -11,6 +11,7 @@
 ## Bugfix
 
 * Remove target behavior on unbind in collapse behavior.
+* BS5: fix scss `.btn-form-control-check`.
 
 ## Enhancement
 
