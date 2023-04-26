@@ -15,6 +15,7 @@
 
 ## Enhancement
 
+* BS5: fix sass slash div depercated.
 * BS5: add collapse toggle css visibility utilities.
 
 (v5.6.0)=
