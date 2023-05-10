@@ -1,12 +1,16 @@
 # Releases 5.x
 
-(v5.7.0)=
+(vX.Y.Z)
 
-# 5.7.0 (2023-05-10)
+# X.Y.Z (TBD)
 
 ## Breaking change
 
 * dropped TrueVFS support (TODO)
+
+(v5.7.0)=
+
+# 5.7.0 (2023-05-10)
 
 ## Bugfix
 
