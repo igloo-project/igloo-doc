@@ -7,6 +7,37 @@
 ## Breaking change
 
 * dropped TrueVFS support (TODO)
+  
+## Dependencies
+
+* jackson: 2.14.2 -> 2.15.0
+* wicket-webjars: 3.0.6 -> 3.0.7
+* junit-jupiter-api: 5.9.2 -> 5.9.3
+* junit-platform-suite-engine: 1.9.2 -> 1.9.3
+* wicket: 9.12.0 -> 9.13.0
+* wicketstuff-select2: 9.12.0 -> 9.13.0
+* flyway-core: 9.16.1 -> 9.17.0
+* jsoup: 1.15.4 -> 1.16.1
+* mockito: 5.2.0 -> 5.3.1
+* spring: 5.3.26 -> 5.3.27
+* spring-security: 5.8.2 -> 5.8.3
+* micrometer-core: 1.10.5 -> 1.11.0
+* error_prone_annotations: 2.18.0 -> 2.19.1
+* spring-boot: 2.7.10 -> 2.7.11
+* byte-buddy: 1.14.3 -> 1.14.4
+* picocli: 4.7.1 -> 4.7.3
+* caffeine: 3.1.5 -> 3.1.6
+
+Maven plugins:
+
+* maven-failsafe-plugin: 3.0.0 -> 3.1.0
+* maven-surefire-plugin: 3.0.0 -> 3.1.0
+* maven-project-info-reports-plugin: 3.4.2 -> 3.4.3
+* maven-site-plugin: 4.0.0-M6 -> 4.0.0-M8
+* jacoco-maven-plugin: 0.8.9 -> 0.8.10
+* maven-enforcer-plugin: 3.2.1 -> 3.3.0
+* flatten-maven-plugin: 1.4.1 -> 1.5.0
+* buildnumber-maven-plugin: 3.0.0 -> 3.1.0
 
 (v5.7.0)=
 
