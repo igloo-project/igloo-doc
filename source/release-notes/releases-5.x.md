@@ -7,7 +7,7 @@
 ## Breaking change
 
 * dropped TrueVFS support (TODO)
-  
+
 ## Dependencies
 
 * jackson: 2.14.2 -> 2.15.0
@@ -38,6 +38,15 @@ Maven plugins:
 * maven-enforcer-plugin: 3.2.1 -> 3.3.0
 * flatten-maven-plugin: 1.4.1 -> 1.5.0
 * buildnumber-maven-plugin: 3.0.0 -> 3.1.0
+
+(v5.7.1)=
+
+# 5.7.1 (2023-05-25)
+
+## Bugfix
+
+* AbstractExcelTableExport : fix addTextCell method. Check length of text, if
+  text length is greater than maxTextLength then text is susbtring.
 
 (v5.7.0)=
 
