@@ -39,6 +39,14 @@ Maven plugins:
 * flatten-maven-plugin: 1.4.1 -> 1.5.0
 * buildnumber-maven-plugin: 3.0.0 -> 3.1.0
 
+(v5.8.0)=
+
+# 5.8.0 (TBD)
+
+## Bugfix
+
+* BS5: fix modal sizing override.
+
 (v5.7.1)=
 
 # 5.7.1 (2023-05-25)
