@@ -23,12 +23,12 @@ git push -n origin master/main dev vVERSION
 git push origin master/main dev vVERSION
 ```
 
-## Releasing igloo-maven
+## Releasing igloo
 
 ```bash
 IGLOO_MAVEN_VERSION=xxx
 IGLOO_COMMONS_VERSION=xxx
-# igloo-maven: just release
+# igloo-maven: just release (jgitflow)
 
 # igloo-commons
 # update parent
@@ -36,7 +36,12 @@ mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION -DskipReso
 # update igloo.igloo-maven.version property
 mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
 # check changes with git diff
+git add -A
+git commit
 # perform jgitflow release
+mvn jgitflow:release-start
+mvn -DskipTests -DnoDeploy jgitflow:release-finish
+git push origin main dev vX.X.X
 
 # igloo-parent
 # update parents
@@ -45,29 +50,16 @@ mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -Dpare
 mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
 mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
 # check changes with git diff
+git add -A
+git commit
 # perform jgitflow release
+mvn jgitflow:release-start
+mvn -DskipTests -DnoDeploy jgitflow:release-finish
+git push origin main dev vX.X.X
 ```
 
-Once `igloo-maven` is released, dependants projects must be updated:
-
-* `igloo-commons`
-
-  * update `pom.xml`: parent version (plugins-all)
-  * update `pom.xml`: `igloo.igloo-maven.version` property
-
-* `igloo-parent`
-
-  * update `pom.xml`: parent version (plugins-all)
-  * update `igloo/igloo-parents/igloo-parent-maven-configuration-common/pom.xml`: parent version (plugins-all)
-  * update `igloo/igloo-parents/igloo-parent-maven-configuration-core/pom.xml`: `igloo-maven.version` property
-
-## Releasing igloo-commons
-
-Once `igloo-commons` is released, dependants projects must be updated:
-
-* `igloo-parent`
-
-  * update `igloo/igloo-parents/igloo-parent-maven-configuration-core/pom.xml`: `igloo-commons.version` property
+Commands listed above allow for each Igloo sub-project to update igloo dependencies version, perform commit,
+and push to repository. Release is performed by CI/CD.
 
 ## Releasing org.iglooproject.webjars:boostrap4
 
