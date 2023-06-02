@@ -1,12 +1,24 @@
 # Releases 5.x
 
-(vX.Y.Z)
+(v5.10.0)=
 
-# To be released
+# 5.10.0 (2023-06-02)
 
 ## Breaking change
 
-* dropped TrueVFS support (TODO)
+* dropped TrueVFS support: historically used by Igloo
+  * **needed change**: you need to remove `openTFileRegistryFilter`
+    `filter` and `filter-mapping` from your servlet container configuration
+    (`web.xml` or java configuration).
+  * to read excel files in `AbstractImportDataServiceImpl`; these feature now
+    uses resource loading mechanisms, and TrueVFS removal has no effect.
+  * to unwrap file from archives in `SimpleFileStoreImpl`; if you do not rely
+    on implicit archive-related behavior and FileStore, TrueVFS removal has
+    no effect.
+  * if you rely on TrueVFS for custom usage, you may:
+    * replace TrueVFS with classic file APIs
+    * keep your TrueVFS code, and perform the needed modification related to
+      the `openTFileRegistryFilter` servlet filter removal.
 
 (v5.9.0)=
 
