@@ -1,5 +1,13 @@
 # Releases 5.x
 
+(v5.10.1)=
+
+# 5.10.1 (2023-06-05)
+
+## Bugfix
+
+* {issue}`81`: Loading SCSS from jar file triggers NPE
+
 (v5.10.0)=
 
 # 5.10.0 (2023-06-02)
