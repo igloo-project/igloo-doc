@@ -1,5 +1,13 @@
 # Releases 5.x
 
+(v5.11.0)=
+
+# 5.11.0 (TBD)
+
+## Bugfix
+
+* BS5: fix datepicker z-index.
+
 (v5.10.1)=
 
 # 5.10.1 (2023-06-05)
