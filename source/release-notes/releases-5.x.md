@@ -8,6 +8,11 @@
 
 * BS5: fix datepicker z-index.
 
+## Enhancement
+
+* Storage: add update filename service method
+* Storage: disable Fichier caching
+
 (v5.10.1)=
 
 # 5.10.1 (2023-06-05)
