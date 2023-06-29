@@ -28,7 +28,10 @@ git push origin master/main dev vVERSION
 ```bash
 IGLOO_MAVEN_VERSION=xxx
 IGLOO_COMMONS_VERSION=xxx
-# igloo-maven: just release (jgitflow)
+# igloo-maven
+mvn jgitflow:release-start
+mvn -DskipTests -DnoDeploy jgitflow:release-finish
+git push origin main dev v$IGLOO_MAVEN_VERSION
 
 # igloo-commons
 # update parent
@@ -41,7 +44,7 @@ git commit
 # perform jgitflow release
 mvn jgitflow:release-start
 mvn -DskipTests -DnoDeploy jgitflow:release-finish
-git push origin main dev vX.X.X
+git push origin main dev v$IGLOO_COMMONS_VERSION
 
 # igloo-parent
 # update parents
