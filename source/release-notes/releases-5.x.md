@@ -13,6 +13,7 @@
 
 * Storage: add update filename service method
 * Storage: disable Fichier caching
+* Consistency on `IConverter` ressource keys error.
 
 (v5.10.1)=
 
