@@ -6,7 +6,7 @@
 
 ## Bugfix
 
-* BS5: fix datepicker z-index.
+* BS4 / BS5: fix datepicker z-index.
 * Task: fix markup detail page.
 
 ## Enhancement
