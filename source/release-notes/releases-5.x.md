@@ -15,6 +15,7 @@
 * Storage: add update filename service method
 * Storage: disable Fichier caching
 * Consistency on `IConverter` ressource keys error.
+* `GenericEntity`: rename Hibernate Search field `ID_SORT` to `ID`.
 
 (v5.10.1)=
 
