@@ -4,6 +4,10 @@
 
 # 5.12.0 (TBD)
 
+## Enhancement
+
+* `JpaSearchQuery`: add `innerJoin` for `EntityPath`.
+
 (v5.11.0)=
 
 # 5.11.0 (2023-08-08)
