@@ -7,6 +7,8 @@
 ## Enhancement
 
 * `JpaSearchQuery`: add `innerJoin` for `EntityPath`.
+* Backport 6.x: allow AbstractNotificationContentDescriptorFactory to override
+  wicket application context (see {ref}`email`)
 
 (v5.11.0)=
 

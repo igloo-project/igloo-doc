@@ -1,3 +1,5 @@
+(email)=
+
 # E-mail notifications
 
 ```{contents}
