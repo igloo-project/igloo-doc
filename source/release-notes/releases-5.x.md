@@ -29,24 +29,6 @@
 * logunit: 1.1.3 -> 2.0.0
 * errorprone: 2.19.1 -> 2.20.0
 
-
-* jackson: 2.14.2 -> 2.15.2
-* wicket-webjars: 3.0.6 -> 3.0.7
-* junit-jupiter-api: 5.9.2 -> 5.9.3
-* junit-platform-suite-engine: 1.9.2 -> 1.9.3
-* wicket: 9.12.0 -> 9.13.0
-* wicketstuff-select2: 9.12.0 -> 9.13.0
-* flyway-core: 9.16.1 -> 9.19.1
-* jsoup: 1.15.4 -> 1.16.1
-* mockito: 5.2.0 -> 5.3.1
-* spring-security: 5.8.2 -> 5.8.3
-* micrometer-core: 1.10.5 -> 1.11.0
-* error_prone_annotations: 2.18.0 -> 2.19.1
-* spring-boot: 2.7.10 -> 2.7.12
-* byte-buddy: 1.14.3 -> 1.14.5
-* picocli: 4.7.1 -> 4.7.3
-* caffeine: 3.1.5 -> 3.1.6
-
 Maven plugins:
 
 * maven-surefire-plugin: 3.1.0 -> 3.1.2
