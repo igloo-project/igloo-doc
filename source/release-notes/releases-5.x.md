@@ -10,6 +10,56 @@
 * Backport 6.x: allow AbstractNotificationContentDescriptorFactory to override
   wicket application context (see {ref}`email`)
 
+## Dependencies
+
+* spring: 5.3.27 -> 5.3.28
+* spring-boot: 2.7.12 -> 2.7.13
+* spring-security: 5.8.2 -> 5.8.3
+* jersey2: 2.39.1 -> 2.40
+* guava: 32.0.0-jre -> 32.1.1-jre
+* commons-codec: 1.15 -> 1.16.0
+* micrometer: 1.11.0 -> 1.11.2
+* picocli: 4.7.3 -> 4.7.4
+* jboss-logging-annotations: 3.5.0.Final -> 3.5.3.Final
+* flyway-core: 9.19.1 -> 9.20.1
+* h2: 2.1.214 -> 2.2.220
+* webjars-locator-core: 0.52 -> 0.53
+* popper2: 2.11.7 -> 2.11.8
+* mockito: 4.3.1 -> 5.4.0
+* logunit: 1.1.3 -> 2.0.0
+* errorprone: 2.19.1 -> 2.20.0
+
+
+* jackson: 2.14.2 -> 2.15.2
+* wicket-webjars: 3.0.6 -> 3.0.7
+* junit-jupiter-api: 5.9.2 -> 5.9.3
+* junit-platform-suite-engine: 1.9.2 -> 1.9.3
+* wicket: 9.12.0 -> 9.13.0
+* wicketstuff-select2: 9.12.0 -> 9.13.0
+* flyway-core: 9.16.1 -> 9.19.1
+* jsoup: 1.15.4 -> 1.16.1
+* mockito: 5.2.0 -> 5.3.1
+* spring-security: 5.8.2 -> 5.8.3
+* micrometer-core: 1.10.5 -> 1.11.0
+* error_prone_annotations: 2.18.0 -> 2.19.1
+* spring-boot: 2.7.10 -> 2.7.12
+* byte-buddy: 1.14.3 -> 1.14.5
+* picocli: 4.7.1 -> 4.7.3
+* caffeine: 3.1.5 -> 3.1.6
+
+Maven plugins:
+
+* maven-surefire-plugin: 3.1.0 -> 3.1.2
+* maven-failsafe-plugin: 3.1.0 -> 3.1.2
+* maven-war-plugin: 3.3.2 -> 3.4.0
+* buildnumber-maven-plugin: 3.1.0 -> 3.2.0
+* frontend-maven-plugin: 1.12.1 -> 1.13.4
+* maven-clean-plugin: 3.2.0 -> 3.3.1
+* maven-site-plugin: 4.0.0-M8 -> 4.0.0-M9
+* maven-project-info-reports-plugin: 3.4.4 -> 3.4.5
+* owasp-maven-plugin: 8.2.1 -> 8.3.1
+* versions-maven-plugin: 2.15.0 -> 2.16.0
+
 (v5.11.0)=
 
 # 5.11.0 (2023-08-08)
@@ -19,6 +69,7 @@
 * BS4 / BS5: fix datepicker z-index.
 * Task: fix markup detail page.
 * DataTableBuilder: fix action btn placeholder.
+* {issue}`82`: @ManifestPropertySource on @Configuration inner class fails
 
 ## Enhancement
 
