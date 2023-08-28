@@ -2,7 +2,7 @@
 
 (v5.12.0)=
 
-# 5.12.0 (TBD)
+# 5.12.0 (2023-08-28)
 
 ## Enhancement
 
@@ -18,6 +18,7 @@
 * jersey2: 2.39.1 -> 2.40
 * guava: 32.0.0-jre -> 32.1.1-jre
 * commons-codec: 1.15 -> 1.16.0
+* commons-io: 2.11.0 -> 2.13.0
 * micrometer: 1.11.0 -> 1.11.2
 * picocli: 4.7.3 -> 4.7.4
 * jboss-logging-annotations: 3.5.0.Final -> 3.5.3.Final

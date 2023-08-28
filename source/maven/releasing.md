@@ -1,39 +1,29 @@
 
 # Releasing
 
-## Common operations
-
-To perform a repository release, we use jgitflow tooling. Commands for are the following:
-
-```
-# Release
-# Release branch creation (rl-...); Replace next development (-SNAPSHOT) proposition
-mvn jgitflow:release-start
-mvn -DskipTests -DnoDeploy jgitflow:release-finish
-
-# Hotfix (from master)
-mvn jgitflow:hotfix-start
-mvn -DskipTests -DnoDeploy jgitflow:hotfix-finish
-
-# For both cases
-# Check pushed items (master, dev, tag); fix if needed
-# Replace master/main by release branche name, replace vVERSION by new tag name
-git push -n origin master/main dev vVERSION
-# If OK, perform pushes
-git push origin master/main dev vVERSION
-```
-
 ## Releasing igloo
+
+```{note}
+Releasing can be performed only for `igloo-parent` if `igloo-maven` / `igloo-commons` are untouched.
+Just set IGLOO_XXX_VERSION accordingly and start procedure at `igloo-parent` step.
+```
 
 ```bash
 IGLOO_MAVEN_VERSION=xxx
 IGLOO_COMMONS_VERSION=xxx
-# igloo-maven
+
+###############
+# igloo-maven #
+###############
+
 mvn jgitflow:release-start
 mvn -DskipTests -DnoDeploy jgitflow:release-finish
 git push origin main dev v$IGLOO_MAVEN_VERSION
 
-# igloo-commons
+#################
+# igloo-commons #
+#################
+
 # update parent
 mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
 # update igloo.igloo-maven.version property
@@ -46,7 +36,10 @@ mvn jgitflow:release-start
 mvn -DskipTests -DnoDeploy jgitflow:release-finish
 git push origin main dev v$IGLOO_COMMONS_VERSION
 
-# igloo-parent
+################
+# igloo-parent #
+################
+
 # update parents
 mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
 # update igloo-maven.version, igloo-commons.version
@@ -58,7 +51,7 @@ git commit
 # perform jgitflow release
 mvn jgitflow:release-start
 mvn -DskipTests -DnoDeploy jgitflow:release-finish
-git push origin main dev vX.X.X
+git push origin master dev vX.X.X
 ```
 
 Commands listed above allow for each Igloo sub-project to update igloo dependencies version, perform commit,
