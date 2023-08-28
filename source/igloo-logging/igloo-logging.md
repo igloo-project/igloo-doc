@@ -15,11 +15,14 @@ This modules do not rely on igloo framework and can be used independently of igl
 Your projet must manage/include the following dependencies:
 
 * `javax.servlet:javax.servlet-api`: javax package, only servlet listener API is used
+* `jakarta.servlet:jakarta.servlet-api`: jakarta package, only servlet listener API is used
 * `org.slf4j:jul-to-slf4j`: 1.7.x or 2.0.x
 * `org.slf4j:slf4j-api`: 1.7.x or 2.0.x
 * `org.apache.logging.log4j:log4j-core`: 2.17+ version
 
 Project uses only mainline API from these dependencies and may adapt to any recent version.
+
+Jakarta or Javax servlet API is used based on the listener classes you use.
 
 ## Installation
 
@@ -60,12 +63,39 @@ For a war project, use `web.xml` listeners to trigger JMX helper loading (you mu
 `org.iglooproject.slf4j.jul.bridge.SLF4JLoggingListener` if present):
 
 ```
+	<!-- javax API (Tomcat < 10) -->
 	<listener>
 		<listener-class>igloo.julhelper.servlet.JulLoggingListener</listener-class>
 	</listener>
  	<listener>
 		<listener-class>igloo.log4j2jmx.servlet.Log4j2LoggingManagerListener</listener-class>
 	</listener>
+
+	<!-- jakarta API (Tomcat >= 10) -->
+	<listener>
+		<listener-class>igloo.julhelper.servlet.JakartaJulLoggingListener</listener-class>
+	</listener>
+ 	<listener>
+		<listener-class>igloo.log4j2jmx.servlet.JakartaLog4j2LoggingManagerListener</listener-class>
+	</listener>
+```
+
+```
+	// java API
+	@Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		// ...
+		servletContext.addListener(JulLoggingListener.class);
+		servletContext.addListener(Log4j2LoggingManagerListener.class);
+	}
+
+	// jakarta API
+	@Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		// ...
+		servletContext.addListener(JakartaJulLoggingListener.class);
+		servletContext.addListener(JakartaLog4j2LoggingManagerListener.class);
+	}
 ```
 
 Else you need to invoke `JulLoggingManagerMBean.registerMBean()` and
@@ -133,6 +163,14 @@ com.google.common
 Use jgitflow procedure.
 
 ## Changelog
+
+### 1.1.0 (28.08.2023)
+
+Support both `javax.servlet` and `jakarta.servlet` API. You must use appropriate listener
+variant for you application:
+
+* unchanged for javax: `JulLoggingListener` and `Log4j2LoggingManagerListener`
+* jakarta: `JakartaJulLoggingListener` and `JakartaLog4j2LoggingManagerListener`
 
 ### 1.0.2 (13.02.2023)
 
