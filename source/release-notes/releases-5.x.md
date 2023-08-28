@@ -1,8 +1,12 @@
 # Releases 5.x
 
-(v5.12.0)=
+(v5.12.1)=
 
-# 5.12.0 (2023-08-28)
+# 5.12.1 (2023-08-28)
+
+```{warning}
+5.12.0: flyway + spring-boot is broken, version is not released ; use 5.12.1 instead.
+```
 
 ## Enhancement
 
@@ -13,7 +17,7 @@
 ## Dependencies
 
 * spring: 5.3.27 -> 5.3.28
-* spring-boot: 2.7.12 -> 2.7.13
+* spring-boot: 2.7.12 -> 2.7.14
 * spring-security: 5.8.2 -> 5.8.3
 * jersey2: 2.39.1 -> 2.40
 * guava: 32.0.0-jre -> 32.1.1-jre
