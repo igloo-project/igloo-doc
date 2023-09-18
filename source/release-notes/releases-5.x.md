@@ -1,5 +1,13 @@
 # Releases 5.x
 
+(v5.13.0)=
+
+# 5.13.0 (TBD)
+
+## Bugfix
+
+* `DataTableBuilder`: fix side link icon position.
+
 (v5.12.1)=
 
 # 5.12.1 (2023-08-28)
