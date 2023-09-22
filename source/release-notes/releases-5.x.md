@@ -7,6 +7,7 @@
 ## Bugfix
 
 * `DataTableBuilder`: fix side link icon position.
+* Update `BootstrapColor` values (add `dark` and `light` - remove `todo`)
 
 (v5.12.1)=
 
