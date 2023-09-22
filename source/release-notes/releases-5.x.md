@@ -2,12 +2,46 @@
 
 (v5.13.0)=
 
-# 5.13.0 (TBD)
+# 5.13.0 (2023-09-22)
 
 ## Bugfix
 
 * `DataTableBuilder`: fix side link icon position.
 * Update `BootstrapColor` values (add `dark` and `light` - remove `todo`)
+
+If you encounter `package com.google.errorprone.annotations does not exist` at compilation time, it's related
+to code generation change from immutables library. Add `com.google.errorprone:error_prone_annotations` to your project's
+dependencies.
+
+## Dependencies
+
+* spring: 5.3.28 -> 5.3.30
+* spring-boot: 2.7.14 -> 2.7.16
+* spring-security: 5.8.3 -> 5.8.7
+* guava: 32.1.1-jre -> 32.1.2-jre
+* caffeine: 3.1.6 -> 3.1.8
+* ph-css: 7.0.0 -> 7.0.1
+* byte-buddy: 1.14.5 -> 1.14.8
+* commons-compress: 1.23.0 -> 1.24.0
+* commons-lang3: 3.12.0 -> 3.13.0
+* micrometer: 1.11.2 -> 1.11.4
+* picocli: 4.7.4 -> 4.7.5
+* flyway-core: 9.20.1 -> 9.22.2
+* h2: 2.2.220 -> 2.2.224
+* slf4j: 2.0.7 -> 2.0.9
+* junit: 5.9.3 -> 5.10.0
+* mockito: 5.4.0 -> 5.5.0
+* errorprone: 2.20.0 -> 2.22.0
+
+Maven plugins:
+
+* frontend-maven-plugin: 1.13.4 -> 1.14.0
+* maven-antrun-plugin: 3.1.0
+* maven-javadoc-plugin: 3.5.0 -> 3.6.0
+* maven-enforcer-plugin: 3.3.0 -> 3.4.1
+* owasp-maven-plugin: 8.3.1 -> 8.4.0
+* versions-maven-plugin: 2.16.0 -> 2.16.1
+* maven-processor-plugin: 5.0-rc3 -> 5.0-jdk8
 
 (v5.12.1)=
 
