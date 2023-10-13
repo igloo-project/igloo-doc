@@ -1,5 +1,13 @@
 # Releases 5.x
 
+(v5.14.0)=
+
+# 5.14.0 (TBD)
+
+## Enhancement
+
+* `DataTableBuilder`: update side link icon.
+
 (v5.13.0)=
 
 # 5.13.0 (2023-09-22)
