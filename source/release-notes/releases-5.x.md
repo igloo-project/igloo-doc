@@ -7,6 +7,7 @@
 ## Bugfix
 
 * `DataTableBuilder`: fix actions column html tags.
+* Disable focus trap on modal and offcanvas (temp workaround).
 
 ## Enhancement
 
