@@ -4,6 +4,10 @@
 
 # 5.14.0 (TBD)
 
+## Bugfix
+
+* `DataTableBuilder`: fix actions column html tags.
+
 ## Enhancement
 
 * `DataTableBuilder`: update side link icon.
