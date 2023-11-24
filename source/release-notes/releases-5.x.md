@@ -2,12 +2,31 @@
 
 (v5.14.0)=
 
-# 5.14.0 (TBD)
+# 5.14.0 (2023-11-24)
 
 ## Bugfix
 
-* `DataTableBuilder`: fix actions column html tags.
-* Disable focus trap on modal and offcanvas (temp workaround).
+* Important fix - {issue}`84`: Broken browser cache support for scss. Since version 5.10.0,
+  timestamp information included in scss filename is broken. Timestamp is constant, so it
+  defeats cache refresh mechanism. Issue only appears if build-time scss is used. This release
+  fixes this problem.
+
+  If you use any of the workarounds given on issue, you should remove it.
+
+* ClipboardBehavior fix: text configuration is correctly set
+
+* `GenericEntity.*COLLATOR`: fix foreign language collator configuration
+
+* Workaround focustrap for bootstrap Modal: we disable focustrap that is buggy when select2 or
+  complex javascript widget are used inside modal. No action is needed for this fix.
+
+  Issue still exists for offcanvas.
+  
+  Further work is to be done to enable both focustrap and complex javascript components on
+  both modal and offcanvas components.
+
+* DataTableBuilder: use `button` markup for action instead of `a`. It allows not to focus
+  empty anchor (top of the page) when clicked.
 
 ## Enhancement
 
