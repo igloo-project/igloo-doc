@@ -1,5 +1,13 @@
 # Releases 5.x
 
+(v5.15.0)=
+
+# 5.15.0 (TBD)
+
+## Bugfix
+
+* Storage: add missing transactionnal read only on `getFichierById(Long)`.
+
 (v5.14.0)=
 
 # 5.14.0 (2023-11-24)
