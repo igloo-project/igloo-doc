@@ -7,6 +7,7 @@
 ## Bugfix
 
 * Storage: add missing transactionnal read only on `getFichierById(Long)`.
+* Fix `BootstrapBadge` markup html comments.
 
 (v5.14.0)=
 
