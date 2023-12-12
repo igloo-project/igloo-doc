@@ -4,6 +4,16 @@
 
 # 5.15.0 (TBD)
 
+## Breaking changes
+
+* Remove Log4j 1.x / Reload4j support
+* Remove ehcache2 support
+
+## Enhancement
+
+* Add `properties.hidden` configuration to hide confidential values in Properties page
+  in admin console.
+
 ## Bugfix
 
 * Storage: add missing transactionnal read only on `getFichierById(Long)`.
