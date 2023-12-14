@@ -19,6 +19,11 @@
 * Storage: add missing transactionnal read only on `getFichierById(Long)`.
 * Fix `BootstrapBadge` markup html comments.
 
+## Dependencies
+
+* jquery-ui: 1.12.1 -> 1.13.2
+* select2: 4.0.10 -> 4.0.13
+
 (v5.14.0)=
 
 # 5.14.0 (2023-11-24)
