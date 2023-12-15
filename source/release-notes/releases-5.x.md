@@ -13,6 +13,7 @@
 
 * Add `properties.hidden` configuration to hide confidential values in Properties page
   in admin console.
+* Add Wicket listener form clear input.
 
 ## Bugfix
 
