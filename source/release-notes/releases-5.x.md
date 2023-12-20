@@ -19,6 +19,7 @@
 
 * Storage: add missing transactionnal read only on `getFichierById(Long)`.
 * Fix `BootstrapBadge` markup html comments.
+* Select2 : fix allowClear setting if not required
 
 ## Dependencies
 
