@@ -25,6 +25,48 @@
 
 * jquery-ui: 1.12.1 -> 1.13.2
 * select2: 4.0.10 -> 4.0.13
+* jackson: 2.15.2 -> 2.16.0
+* guava: 32.1.2jre -> 32.1.3jre
+* h2: 2.2.220 -> 2.2.224
+* HikariCP: 5.0.1 -> 5.1.0
+* commons-io: 2.13.0 -> 2.15.1
+* junit-jupiter-api: 5.10.0 -> 5.10.1
+* junit-platform-suite-engine: 1.10.0 -> 1.10.1
+* log4j-core: 2.20.0 -> 2.22.0
+* poi: 5.2.3 -> 5.2.5
+* wicketstuff-select2: 9.13.0 -> 9.16.0
+* flyway-core: 9.22.2 -> 9.22.3
+* jsoup: 1.16.1 -> 1.17.1
+* mockito: 5.5.0 -> 5.8.0
+* passay: 1.6.3 -> 1.6.4
+* postgresql: 42.6.0 -> 42.7.1
+* slf4j-api: 2.20.0 -> 2.22.0
+* spring: 5.3.30 -> 5.3.31
+* spring-security: 5.8.7 -> 5.8.8
+* webjars-locator-core: 0.53 -> 0.55
+* value: 2.9.3 -> 2.10.0
+* micrometer-core: 1.11.4 -> 1.12.0
+* error_prone_annotations: 2.22.0 -> 2.23.0
+* spring-boot: 2.7.16 -> 2.7.18
+* byte-buddy: 1.14.8 -> 1.14.10
+* commons-compress: 1.24.0 -> 1.25.0
+* commons-text: 1.10.0 -> 1.11.0
+* commons-lang3: 3.13.0 -> 3.14.0
+* commons-validator: 1.7 -> 1.8.0
+* openpdf: 1.3.30 -> 1.3.34
+* maven-clean-plugin: 3.3.1 -> 3.3.2
+* maven-failsafe-plugin: 3.1.2 -> 3.2.2
+* maven-surefire-plugin: 3.1.2 -> 3.2.2
+* maven-dependency-plugin: 3.6.0 -> 3.6.1
+* maven-javadoc-plugin: 3.6.0 -> 3.6.3
+* maven-project-info-reports-plugin: 3.4.5 -> 3.5.0
+* maven-site-plugin: 4.0.0-M9 -> 4.0.0-M12
+* maven-processor-plugin: 5.0jdk8 -> 5.0
+* jacoco-maven-plugin: 0.8.10 -> 0.8.11
+* dependency-check-maven: 8.4.0 -> 9.0.4
+* versions-maven-plugin: 2.16.1 -> 2.16.2
+* exec-maven-plugin: 3.1.0 -> 3.1.1
+* frontend-maven-plugin: 1.14.0 -> 1.15.0
 
 (v5.14.0)=
 
