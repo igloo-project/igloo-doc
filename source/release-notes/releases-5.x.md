@@ -24,6 +24,7 @@
 
 ## Dependencies
 
+* **Font Awesome 6.3.0 -> 6.5.1**
 * jquery-ui: 1.12.1 -> 1.13.2
 * select2: 4.0.10 -> 4.0.13
 * jackson: 2.15.2 -> 2.16.0
