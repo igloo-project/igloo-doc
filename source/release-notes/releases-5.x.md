@@ -21,6 +21,7 @@
 * Fix `BootstrapBadge` markup html comments.
 * Select2 : fix `allowClear` setting if not required.
 * BasicApp: fix `ReferenceData` drop down search bean interface.
+* Fix Wicket converter locator for enums anonymous class.
 
 ## Dependencies
 
