@@ -1,12 +1,20 @@
 # Releases 5.x
 
+(v5.16.0)=
+
+# 5.16.0 (TBD)
+
+## Bugfix
+
+* Fix scss environment section.
+
 (v5.15.1)=
 
 # 5.15.1 (2024-02-20)
 
 ## Bugfix
 
-BS5: fix body bg color.
+* BS5: fix body bg color.
 
 (v5.15.0)=
 
