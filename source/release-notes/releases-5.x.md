@@ -8,6 +8,48 @@
 
 * Fix scss environment section.
 
+## Dependencies
+
+* jackson/-annotations/-core/-databind: 2.16.0 -> 2.16.2
+* jackson-dataformat-xml: 2.16.0 -> 2.16.2
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.16.0 -> 2.16.2
+* jackson-module-jaxb-annotations: 2.16.0 -> 2.16.2
+* guava: 32.1.3jre -> 33.0.0jre
+* querydsl-jpa / querydsl-apt / querydsl-core: 5.0.0 -> 5.1.0
+* jsass: 5.10.5 -> 5.11.0
+* junit-jupiter-api: 5.10.1 -> 5.10.2
+* junit-platform-suite-engine: 1.10.1 -> 1.10.2
+* log4j-core / log4j-slf4j-impl / log4j-api: 2.22.0 -> 2.23.1
+* assertj-core / assertj-guava: 3.24.2 -> 3.25.3
+* jersey-container-grizzly2-servlet: 2.40 -> 2.41
+* jersey-client / jersey-server: 2.40 -> 2.41
+* jersey-spring5: 2.40 -> 2.41
+* jersey-media-multipart: 2.40 -> 2.41
+* jersey-test-framework-provider-grizzly2: 2.40 -> 2.41
+* jsoup: 1.17.1 -> 1.17.2
+* mockito/-core/-junit-jupiter: 5.8.0 -> 5.11.0
+* postgresql: 42.7.1 -> 42.7.2
+* jcl-over-slf4j / jul-to-slf4j / slf4j-api: 2.0.9 -> 2.0.12
+* spring-\*: 5.3.31 -> 5.3.32
+* spring-security-\*: 5.8.8 -> 5.8.10
+* webjars-locator-core: 0.55 -> 0.58
+* value: 2.10.0 -> 2.10.1
+* micrometer-core: 1.12.0 -> 1.12.4
+* error_prone_annotations: 2.23.0 -> 2.26.0
+* byte-buddy: 1.14.10 -> 1.14.12
+* commons-compress: 1.25.0 -> 1.26.1
+* commons-codec: 1.16.0 -> 1.16.1
+* openpdf/openpdf-fonts-extra/pdf-swing/pdf-toolbox: 1.3.34 -> 1.4.1
+* maven-compiler-plugin: 3.11.0 -> 3.12.1
+* maven-failsafe-plugin: 3.2.2 -> 3.2.5
+* maven-surefire-plugin: 3.2.2 -> 3.2.5
+* maven-site-plugin: 4.0.0-M12 -> 4.0.0-M13
+* maven-assembly-plugin: 3.6.0 -> 3.7.0
+* spotless-maven-plugin: 2.41.1 -> 2.43.0
+* dependency-check-maven: 9.0.4 -> 9.0.9
+* exec-maven-plugin: 3.1.1 -> 3.2.0
+* flatten-maven-plugin: 1.5.0 -> 1.6.0
+
 (v5.15.1)=
 
 # 5.15.1 (2024-02-20)
