@@ -7,6 +7,7 @@
 ## Bugfix
 
 * Fix scss environment section.
+* BS5: fix table row disabled.
 
 ## Dependencies
 
