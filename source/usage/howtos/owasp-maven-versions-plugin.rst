@@ -24,7 +24,7 @@ After running your command, you can read the report in *project-name/target/site
 The dependency check may sometimes identify irrelevants vulnerabilities. To suppress them,
 copy the xml generated in the report, and add it in both files owasp-suppressions.xml.
 
-**If targetted project pom does not inherit igloo-maven**, like spring-boot-starter modules, you can invoke 
+**If targetted project pom does not inherit igloo-maven**, like spring-boot-starter modules, you can invoke
 dependency checker with the alternate command:
 
 .. code-block:: bash
