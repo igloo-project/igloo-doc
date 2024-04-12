@@ -15,12 +15,23 @@ To run the dependency-check, use the option ``owasp.enabled``. For example you c
 
 .. code-block:: bash
 
-  mvn -Dowasp.enabled=true -U -DskipTests clean install site:site
+  mvn -Dowasp.enabled=true -U -DskipTests clean install site:site -DnvdApiKey=XXXXXXXXX
+
+NVD API Key can be created on https://nvd.nist.gov/developers/request-an-api-key.
 
 After running your command, you can read the report in *project-name/target/site/dependency-check-report.html*.
 
 The dependency check may sometimes identify irrelevants vulnerabilities. To suppress them,
 copy the xml generated in the report, and add it in both files owasp-suppressions.xml.
+
+**If targetted project pom does not inherit igloo-maven**, like spring-boot-starter modules, you can invoke 
+dependency checker with the alternate command:
+
+.. code-block:: bash
+  mvn clean install -U -DskipTests
+  mvn -DnodeAnalyzerEnabled=false -DyarnAuditAnalyzerEnabled=false -DassemblyAnalyzerEnabled=false -U \
+    -pl :basic-application-app org.owasp:dependency-check-maven:check \
+    -DsuppressionFile=owasp-suppressions.xml -DnvdApiKey=XXXXXX
 
 Versions maven plugin
 ---------------------
