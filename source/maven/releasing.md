@@ -52,6 +52,39 @@ git commit
 mvn jgitflow:release-start
 mvn -DskipTests -DnoDeploy jgitflow:release-finish
 git push origin master dev vX.X.X
+
+########################################
+# Switch back to snapshot dependencies #
+########################################
+
+IGLOO_MAVEN_VERSION=xxx-SNAPSHOT
+IGLOO_COMMONS_VERSION=xxx-SNAPSHOT
+
+#################
+# igloo-commons #
+#################
+
+git checkout dev
+# update parent
+mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
+# update igloo.igloo-maven.version property
+mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+git commit -a -m "switch back to SNAPSHOT"
+git push
+
+################
+# igloo-parent #
+################
+
+git checkout dev
+# update parents
+mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
+# update igloo-maven.version, igloo-commons.version
+mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+git commit -a -m "switch back to SNAPSHOT"
+git push
+
 ```
 
 Commands listed above allow for each Igloo sub-project to update igloo dependencies version, perform commit,
