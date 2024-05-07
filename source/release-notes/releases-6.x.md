@@ -55,7 +55,9 @@
   index format is mandatory for a default deployment. Existing indexes
   must be deleted as they prevents application startup
 * fileupload artifact is renamed: commons-fileupload2-jakarta to commons-fileupload2-jakarta-servlet5
+* hibernate-search artifact is renamed: hibernate-search-v5migrationhelper-orm-orm6 to hibernate-search-v5migrationhelper-orm
 * maven-enforcer-plugin is now enabled with requireUpperBoundDeps
+
 
 ## Deleted code
 
