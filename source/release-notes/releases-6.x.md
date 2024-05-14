@@ -2,6 +2,10 @@
 
 # Igloo 6.0.0-Alpha12
 
+## Bugfix
+
+* task configuration : fix manager init to populate QueueIds
+
 ## Dependencies update
 
 * hibernate 6.2.9 -> 6.5.0
@@ -57,7 +61,7 @@
 * fileupload artifact is renamed: commons-fileupload2-jakarta to commons-fileupload2-jakarta-servlet5
 * hibernate-search artifact is renamed: hibernate-search-v5migrationhelper-orm-orm6 to hibernate-search-v5migrationhelper-orm
 * maven-enforcer-plugin is now enabled with requireUpperBoundDeps
-
+* storage : method getFichierById return null instead of an Exception if not Fichier is found
 
 ## Deleted code
 
