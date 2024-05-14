@@ -4,6 +4,14 @@
 
 # 5.18.0 (TBD)
 
+## Bugfix
+
+* task configuration : fix manager init to populate QueueIds
+
+## Changes
+
+* storage : method getFichierById return null instead of an Exception if not Fichier is found
+
 (v5.17.0)=
 
 # 5.17.0 (2024-04-15)
