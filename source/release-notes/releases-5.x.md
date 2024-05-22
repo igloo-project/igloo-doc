@@ -12,6 +12,14 @@
 
 * storage : method getFichierById return null instead of an Exception if not Fichier is found
 
+(v5.17.1)=
+
+# 5.17.1 (2024-05-22)
+
+## Dependencies
+
+* Bootstrap 4.6.1 -> 4.6.0
+
 (v5.17.0)=
 
 # 5.17.0 (2024-04-15)
