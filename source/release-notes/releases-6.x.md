@@ -49,6 +49,12 @@
 
 ## Changes
 
+* Explicit ordering for transactional proxies :
+  * Spring proxy is `LOWEST_PRECEDENCE - 1.000.000`
+  * Historical ITransactionalAspectAwareService is `LOWEST_PRECEDENCE - 1.000.000 + 1`
+  * This ordering allows to install proxies after transactional proxies
+  * This change has no impact if you don't configure proxies
+  * See `JpaAutoConfiguration.TRANSACTION_PROXY_ORDER`, `JpaAutoConfiguration`, `JpaAutoConfiguration.oldStyleTransactionAdvisor`
 * added org.iglooproject:spring-boot-starter-parent (to use in place of
   org.springframework.boot:spring-boot-starter-parent)
 * add in `project-app/pom.xml` a property definition for `start-class` to
