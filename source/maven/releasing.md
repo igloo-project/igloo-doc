@@ -1,16 +1,22 @@
 
 # Releasing
 
-## Releasing igloo
+## Igloo
 
 ```{note}
 Releasing can be performed only for `igloo-parent` if `igloo-maven` / `igloo-commons` are untouched.
 Just set IGLOO_XXX_VERSION accordingly and start procedure at `igloo-parent` step.
 ```
 
+Commands listed below allow for each Igloo sub-project to update igloo dependencies version, perform commit,
+and push to repository. Release is performed by CI/CD.
+
+### Release
+
 ```bash
 IGLOO_MAVEN_VERSION=xxx
 IGLOO_COMMONS_VERSION=xxx
+IGLOO_PARENT_VERSION=xxx
 
 ###############
 # igloo-maven #
@@ -29,8 +35,7 @@ mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION -DskipReso
 # update igloo.igloo-maven.version property
 mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
 # check changes with git diff
-git add -A
-git commit
+git commit -a -m "Update Igloo Maven dependency"
 # perform jgitflow release
 mvn jgitflow:release-start
 mvn -DskipTests -DnoDeploy jgitflow:release-finish
@@ -46,19 +51,18 @@ mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -Dpare
 mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
 mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
 # check changes with git diff
-git add -A
-git commit
+git commit -a -m "Update Igloo Maven and Commons dependencies"
 # perform jgitflow release
 mvn jgitflow:release-start
 mvn -DskipTests -DnoDeploy jgitflow:release-finish
-git push origin master dev vX.X.X
+git push origin master dev v$IGLOO_PARENT_VERSION
 
 ########################################
 # Switch back to snapshot dependencies #
 ########################################
 
-IGLOO_MAVEN_VERSION=xxx-SNAPSHOT
-IGLOO_COMMONS_VERSION=xxx-SNAPSHOT
+IGLOO_MAVEN_VERSION_SNAPSHOT=xxx-SNAPSHOT
+IGLOO_COMMONS_VERSION_SNAPSHOT=xxx-SNAPSHOT
 
 #################
 # igloo-commons #
@@ -66,10 +70,10 @@ IGLOO_COMMONS_VERSION=xxx-SNAPSHOT
 
 git checkout dev
 # update parent
-mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
+mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DskipResolution -DgenerateBackupPoms=false
 # update igloo.igloo-maven.version property
-mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
-git commit -a -m "switch back to SNAPSHOT"
+mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
+git commit -a -m "Switch back Igloo Maven to snapshot versions"
 git push
 
 ################
@@ -78,19 +82,102 @@ git push
 
 git checkout dev
 # update parents
+mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DskipResolution -DgenerateBackupPoms=false
+# update igloo-maven.version, igloo-commons.version
+mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
+mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION_SNAPSHOT -DprocessAllModules=true-DgenerateBackupPoms=false
+git commit -a -m "Switch back Igloo Maven and Commons to snapshot versions"
+git push
+```
+
+### Hotfix
+
+```bash
+IGLOO_MAVEN_VERSION=xxx
+IGLOO_COMMONS_VERSION=xxx
+IGLOO_PARENT_VERSION=xxx
+
+IGLOO_MAVEN_VERSION_SNAPSHOT=xxx-SNAPSHOT
+IGLOO_COMMONS_VERSION_SNAPSHOT=xxx-SNAPSHOT
+
+###############
+# igloo-maven #
+###############
+
+mvn jgitflow:hotfix-start
+# git push -u origin hf-$IGLOO_MAVEN_VERSION
+
+mvn -DskipTests -DnoDeploy jgitflow:hotfix-finish
+git push origin main dev v$IGLOO_MAVEN_VERSION
+
+#################
+# igloo-commons #
+#################
+
+mvn jgitflow:hotfix-start
+# git push -u origin hf-$IGLOO_COMMONS_VERSION
+
+# update parent
+mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
+# update igloo.igloo-maven.version property
+mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+# check changes with git diff
+git commit -a -m "Update Igloo Maven dependency"
+
+# update dev poms to hotfix version to avoid merge conflicts (Igloo sub-project)
+git checkout dev
+mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
+mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+git commit -a -m "Updating dev poms to hotfix version to avoid merge conflicts (Igloo sub-project)"
+
+mvn -DskipTests -DnoDeploy jgitflow:hotfix-finish
+
+# update develop poms back to pre merge state (Igloo sub-project)
+git checkout dev
+mvn versions:update-parent -pl . -DparentVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DskipResolution -DgenerateBackupPoms=false
+mvn versions:set-property -Dproperty=igloo.igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
+git commit -a -m "Updating develop poms back to pre merge state (Igloo sub-project)"
+
+git push origin main dev v$IGLOO_COMMONS_VERSION
+
+################
+# igloo-parent #
+################
+
+mvn jgitflow:hotfix-start
+# git push -u origin hf-$IGLOO_PARENT_VERSION
+
+# update parents
 mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
 # update igloo-maven.version, igloo-commons.version
 mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
 mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
-git commit -a -m "switch back to SNAPSHOT"
-git push
+git commit -a -m "Update Igloo Maven and Commons dependencies"
 
+# update dev poms to hotfix version to avoid merge conflicts (Igloo sub-project)
+git checkout dev
+# update parents
+mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION -DskipResolution -DgenerateBackupPoms=false
+# update igloo-maven.version, igloo-commons.version
+mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
+git commit -a -m "Updating dev poms to hotfix version to avoid merge conflicts (Igloo sub-project)"
+
+mvn -DskipTests -DnoDeploy jgitflow:hotfix-finish
+
+# update develop poms back to pre merge state (Igloo sub-project)
+git checkout dev
+# update parents
+mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DskipResolution -DgenerateBackupPoms=false
+# update igloo-maven.version, igloo-commons.version
+mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
+mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION_SNAPSHOT -DprocessAllModules=true-DgenerateBackupPoms=false
+git commit -a -m "Updating develop poms back to pre merge state (Igloo sub-project)"
+
+git push origin master dev v$IGLOO_PARENT_VERSION
 ```
 
-Commands listed above allow for each Igloo sub-project to update igloo dependencies version, perform commit,
-and push to repository. Release is performed by CI/CD.
-
-## Releasing org.iglooproject.webjars:boostrap4
+## org.iglooproject.webjars:boostrap4
 
 Repository https://github.com/igloo-project/bootstrap4 is a lightweight wrapper to
 repackage `org.webjars.npm:bootstrap` under a specific groupId/artifactId. This is
@@ -99,7 +186,7 @@ needed to allow embedding of different bootstrap version in the same igloo proje
 
 If a new bootstrap version is needed, change project version and push modification on main branch. main branch is automatically published.
 
-## Updating an igloo-based project
+## Updating an Igloo-based project
 
 Once `igloo-parent` is released:
 
