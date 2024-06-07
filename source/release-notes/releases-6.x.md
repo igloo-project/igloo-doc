@@ -1,6 +1,6 @@
 # Releases 6.x
 
-# Igloo 6.0.0-Alpha12
+# Igloo 6.0.0-Alpha12 (TBD)
 
 ## Bugfix
 
