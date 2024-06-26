@@ -12,6 +12,60 @@
 
 * storage : method getFichierById return null instead of an Exception if not Fichier is found
 
+## Dependencies
+
+* jackson/-annotations/-core/-databind: 2.16.2 -> 2.17.1
+* jackson-dataformat-xml: 2.16.2 -> 2.17.1
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.16.2 -> 2.17.1
+* jackson-module-jaxb-annotations: 2.16.2 -> 2.17.1
+* guava: 33.0.0jre -> 33.2.1jre
+* ph-css: 7.0.1 -> 7.0.2
+* commons-io: 2.15.1 -> 2.16.1
+* jsass: 5.11.0 -> 5.11.1
+* wicket / wicket/-auth-roles/-core/-devutils/-extensions/-ioc/-spring: 9.13.0 -> 9.18.0
+* wicketstuff-select2: 9.13.0 -> 9.18.0
+* freemarker: 2.3.32 -> 2.3.33
+* jersey-container-grizzly2-servlet: 2.41 -> 2.43
+* jersey-client / jersey-server: 2.41 -> 2.43
+* jersey-spring5: 2.41 -> 2.43
+* jersey-media-multipart: 2.41 -> 2.43
+* jersey-test-framework-provider-grizzly2: 2.41 -> 2.43
+* mockito/-core/-junit-jupiter: 5.11.0 -> 5.12.0
+* postgresql: 42.7.2 -> 42.7.3
+* jcl-over-slf4j / jul-to-slf4j / slf4j-api: 2.0.12 -> 2.0.13
+* spring-\*: 5.3.34 -> 5.3.37
+* spring-security-\*: 5.8.11 -> 5.8.13
+* webjars-locator-core: 0.58 -> 0.59
+* micrometer-core: 1.12.4 -> 1.13.1
+* error_prone_annotations: 2.26.0 -> 2.28.0
+* byte-buddy: 1.14.12 -> 1.14.17
+* picocli: 4.7.5 -> 4.7.6
+* commons-compress: 1.26.1 -> 1.26.2
+* commons-text: 1.11.0 -> 1.12.0
+* commons-validator: 1.8.0 -> 1.9.0
+* commons-codec: 1.16.1 -> 1.17.0
+* openpdf/openpdf-fonts-extra/pdf-swing/pdf-toolbox: 1.4.1 -> 1.4.2
+* rhino: 1.7.14 -> 1.7.15
+* maven-clean-plugin: 3.3.2 -> 3.4.0
+* maven-compiler-plugin: 3.12.1 -> 3.13.0
+* maven-failsafe-plugin: 3.2.5 -> 3.3.0
+* maven-surefire-plugin: 3.2.5 -> 3.3.0
+* maven-dependency-plugin: 3.6.1 -> 3.7.1
+* maven-javadoc-plugin: 3.6.3 -> 3.7.0
+* maven-project-info-reports-plugin: 3.5.0 -> 3.6.0
+* maven-site-plugin: 4.0.0-M13 -> 4.0.0-M15
+* maven-toolchains-plugin: 3.1.0 -> 3.2.0
+* maven-deploy-plugin: 3.1.1 -> 3.1.2
+* maven-assembly-plugin: 3.7.0 -> 3.7.1
+* maven-jar-plugin: 3.3.0 -> 3.4.2
+* maven-install-plugin: 3.1.1 -> 3.1.2
+* maven-processor-plugin: 5.0 -> 5.1
+* jacoco-maven-plugin: 0.8.11 -> 0.8.12
+* dependency-check-maven: 9.0.9 -> 9.2.0
+* maven-enforcer-plugin: 3.4.1 -> 3.5.0
+* exec-maven-plugin: 3.2.0 -> 3.3.0
+* maven-source-plugin: 3.3.0 -> 3.3.1
+
 (v5.17.1)=
 
 # 5.17.1 (2024-05-22)
