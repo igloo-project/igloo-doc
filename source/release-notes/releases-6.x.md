@@ -1,5 +1,50 @@
 # Releases 6.x
 
+# Igloo 6.0.0-Alpha13 (TBD)
+
+## Dependencies update
+* jackson/-annotations/-core/-databind: 2.17.0 -> 2.17.1
+* jackson-dataformat-xml: 2.17.0 -> 2.17.1
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.17.0 -> 2.17.1
+* jackson-module-jaxb-annotations: 2.17.0 -> 2.17.1
+* guava: 33.1.0jre -> 33.2.1jre
+* wicket / wicket/-auth-roles/-core/-devutils/-extensions/-ioc/-spring: 10.0.0 -> 10.1.0
+* wicketstuff-select2: 10.0.0 -> 10.1.0
+* flyway-core: 9.22.3 -> 10.15.0
+* freemarker: 2.3.32 -> 2.3.32
+* jersey-container-grizzly2-servlet: 3.1.6 -> 3.1.7
+* jersey-client / jersey-server: 3.1.6 -> 3.1.7
+* jersey-spring6: 3.1.6 -> 3.1.7
+* jersey-media-multipart: 3.1.6 -> 3.1.7
+* jersey-test-framework-provider-grizzly2: 3.1.6 -> 3.1.7
+* jboss-logging: 3.5.3.Final -> 3.6.0.Final
+* mockito/-core/-junit-jupiter: 5.11.0 -> 5.12.0
+* spring-\*: 6.1.6 -> 6.1.10
+* spring-security-\*: 6.2.4 -> 6.3.1
+* webjars-locator-core: 0.58 -> 0.59
+* micrometer-core: 1.12.5 -> 1.13.1
+* error_prone_annotations: 2.27.0 -> 2.28.0
+* byte-buddy: 1.14.14 -> 1.14.17
+* picocli: 4.7.5 -> 4.7.6
+* commons-compress: 1.26.1 -> 1.26.2
+* commons-validator: 1.8.0 -> 1.9.0
+* jjwt: 0.12.5 -> 0.12.6
+* checker-qual: 3.42.0 -> 3.44.0
+* rhino: 1.7.14 -> 1.7.15
+* logbook-core: 3.8.0 -> 3.9.0
+* maven-clean-plugin: 3.3.2 -> 3.4.0
+* maven-failsafe-plugin: 3.2.5 -> 3.3.0
+* maven-surefire-plugin: 3.2.5 -> 3.3.0
+* maven-dependency-plugin: 3.6.1 -> 3.7.1
+* maven-javadoc-plugin: 3.6.3 -> 3.7.0
+* maven-project-info-reports-plugin: 3.5.0 -> 3.6.1
+* maven-site-plugin: 4.0.0-M13 -> 4.0.0-M15
+* maven-jar-plugin: 3.4.1 -> 3.4.2
+* dependency-check-maven: 9.1.0 -> 9.2.0
+* maven-enforcer-plugin: 3.4.1 -> 3.5.0
+* exec-maven-plugin: 3.2.0 -> 3.3.0
+* spring-boot-maven-plugin: 3.2.5 -> 3.3.1
+
 # Igloo 6.0.0-Alpha12 (TBD)
 
 ## Bugfix
