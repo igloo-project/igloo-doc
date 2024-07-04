@@ -44,6 +44,15 @@
 * maven-enforcer-plugin: 3.4.1 -> 3.5.0
 * exec-maven-plugin: 3.2.0 -> 3.3.0
 * spring-boot-maven-plugin: 3.2.5 -> 3.3.1
+* opencsv: 4.3.2 -> 5.9
+
+## Changes
+* update flyway dependency to 10.15.0
+* add flyway-database-postgresql dependency
+* update opencsv to v5.9
+* remove wqplot
+* remove openpdf
+* remove h2 from igloo-maven (keep only in igloo-pranet - jpa tests)
 
 # Igloo 6.0.0-Alpha12 (TBD)
 
