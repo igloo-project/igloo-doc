@@ -2,15 +2,16 @@
 
 (v5.18.0)=
 
-# 5.18.0 (TBD)
+# 5.18.0 (2024-07-05)
 
 ## Bugfix
 
 * task configuration : fix manager init to populate QueueIds
 
-## Changes
+## Enhancement
 
 * storage : method getFichierById return null instead of an Exception if not Fichier is found
+* Add `.form-file-btn-xs` form file button size.
 
 ## Dependencies
 
