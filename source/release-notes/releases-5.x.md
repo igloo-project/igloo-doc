@@ -2,6 +2,14 @@
 
 (v5.18.0)=
 
+# 5.19.0 (TBD)
+
+## Enhancement
+
+* XSS: Add CSP default src none on Fichier Web Resource
+
+(v5.18.0)=
+
 # 5.18.0 (2024-07-05)
 
 ## Bugfix
