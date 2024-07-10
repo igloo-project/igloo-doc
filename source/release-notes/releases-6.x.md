@@ -50,9 +50,11 @@
 * update flyway dependency to 10.15.0
 * add flyway-database-postgresql dependency
 * update opencsv to v5.9
-* remove wqplot
-* remove openpdf
-* remove h2 from igloo-maven (keep only in igloo-pranet - jpa tests)
+* remove wqplot dependency declaration
+* remove openpdf dependency declaration
+* remove h2 from igloo-maven (keep only in igloo-parent - jpa tests)
+* `IHhibernateSearchDao / IHibernateSearchService - getAnalyzer(*)` are removed
+* `HibernateSearchLuceneQueryFactoryImpl` / `OldAbstractHibernateSearchSearchQuery` / `OldGenericReferenceDataSearchQueryImpl` moved to igloo-hibernate-search-v5migrationhelper
 
 # Igloo 6.0.0-Alpha12 (TBD)
 
