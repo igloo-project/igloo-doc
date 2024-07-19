@@ -32,7 +32,6 @@ Igloo-project Documentation
    maven/javascript
    maven/npm
    maven/releasing
-   maven/use-maven-archetype
    maven/jimportdiff
 
 .. toctree::
