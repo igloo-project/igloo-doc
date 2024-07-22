@@ -10,7 +10,7 @@ Igloo-project Documentation
    :caption: Project init
 
    init/project-init.rst
-   init/initialize-with-oomph.rst
+   init/initialize-with-oomph
 
 .. toctree::
    :maxdepth: 2
@@ -55,7 +55,7 @@ Igloo-project Documentation
    :maxdepth: 1
    :caption: Contribute to Igloo
 
-   development/installation.rst
+   development/installation
    development/docs.rst
    development/Contributing-to-upstream.md
 
