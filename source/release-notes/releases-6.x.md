@@ -1,6 +1,6 @@
 # Releases 6.x
 
-# Igloo 6.0.0-Alpha13 (TBD)
+# Igloo 6.0.0-Alpha13 (2024-07-24)
 
 ## Dependencies update
 * jackson/-annotations/-core/-databind: 2.17.0 -> 2.17.1
@@ -55,8 +55,9 @@
 * remove h2 from igloo-maven (keep only in igloo-parent - jpa tests)
 * `IHhibernateSearchDao / IHibernateSearchService - getAnalyzer(*)` are removed
 * `HibernateSearchLuceneQueryFactoryImpl` / `OldAbstractHibernateSearchSearchQuery` / `OldGenericReferenceDataSearchQueryImpl` moved to igloo-hibernate-search-v5migrationhelper
+* igloo project format changes
 
-# Igloo 6.0.0-Alpha12 (TBD)
+# Igloo 6.0.0-Alpha12 (2024-07-08)
 
 ## Bugfix
 
