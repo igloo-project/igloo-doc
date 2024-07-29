@@ -1,5 +1,13 @@
 # Releases 5.x
 
+(v5.20.0)=
+
+# 5.20.0 (TBD)
+
+## Enhancement
+
+* `MediaType`: Add some video mime types.
+
 (v5.19.0)=
 
 # 5.19.0 (2024-07-26)
