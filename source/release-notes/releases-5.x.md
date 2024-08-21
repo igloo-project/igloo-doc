@@ -7,6 +7,7 @@
 ## Enhancement
 
 * `MediaType`: Add some video mime types.
+* Confirm modal: fix close button icon.
 
 (v5.19.0)=
 
