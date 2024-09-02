@@ -1,5 +1,10 @@
 # Releases 6.x
 
+# Igloo 6.0.0-Alpha16 (TBD)
+
+## Changes
+* `HistoryLog`: JPA search query.
+
 # Igloo 6.0.0-Alpha13 (2024-07-24)
 
 ## Dependencies update
