@@ -82,6 +82,23 @@ The following dependencies can be removed to restrict actuator auto-configuratio
     is available and fails)
   * Enable JMX integration
 
+## Prometheus scrape configuration
+
+The following configuration can be used to scrape prometheus metrics :
+
+```yaml
+scrape_configs:
+- job_name: "igloo"
+  metrics_path: "/actuator/prometheus"
+  # Use https if needed
+  scheme: "http"
+  basic_auth:
+    username: "actuator"
+    password: "XXX"
+  static_configs:
+  - targets: ["localhost:8080"]
+```
+
 ## How to use
 
 Please refer to https://docs.spring.io/spring-boot/reference/actuator/endpoints.html for exhaustive
