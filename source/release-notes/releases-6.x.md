@@ -2,6 +2,10 @@
 
 # Igloo 6.0.0-Alpha16 (TBD)
 
+## Features
+
+* Added {ref}`spring-boot-actuator`
+
 ## Changes
 * `HistoryLog`: JPA search query.
 

@@ -7,6 +7,7 @@ Backend
 .. toctree::
    :maxdepth: 1
 
+   actuator.md
    configuration.rst
    logging.rst
    PropertyService.md
