@@ -4,6 +4,12 @@
 
 # 5.20.0 (TBD)
 
+## Changes
+
+* Locale, Timezone and Charset are checked and enforced during application startup.
+  (Set by default to fr_FR, Europe/Paris, UTF-8, can be configured with
+  `igloo.checks.locale`, `igloo.checks.timezone`, `igloo.checks.charset`).
+
 ## Enhancement
 
 * `MediaType`: Add some video mime types.

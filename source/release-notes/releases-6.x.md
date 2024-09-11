@@ -7,6 +7,10 @@
 * Added {ref}`spring-boot-actuator`
 
 ## Changes
+
+* Locale, Timezone and Charset are checked and enforced during application startup.
+  (Set by default to fr_FR, Europe/Paris, UTF-8, can be configured with
+  `igloo.checks.locale`, `igloo.checks.timezone`, `igloo.checks.charset`).
 * `HistoryLog`: JPA search query.
 
 # Igloo 6.0.0-Alpha13 (2024-07-24)
