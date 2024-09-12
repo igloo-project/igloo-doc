@@ -15,6 +15,7 @@
 * `MediaType`: Add some video mime types.
 * Confirm modal: fix close button icon.
 * Activate automatic deletion of temporary files
+* Console: add logger indexation start/done.
 
 (v5.19.0)=
 
