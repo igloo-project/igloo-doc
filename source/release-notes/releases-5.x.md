@@ -10,6 +10,10 @@
   (Set by default to fr_FR, Europe/Paris, UTF-8, can be configured with
   `igloo.checks.locale`, `igloo.checks.timezone`, `igloo.checks.charset`).
 
+## Bugfix
+
+* Fix beautiful scrollbar horizontal height.
+
 ## Enhancement
 
 * `MediaType`: Add some video mime types.
