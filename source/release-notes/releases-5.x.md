@@ -12,7 +12,7 @@
 
 ## Bugfix
 
-* Fix beautiful scrollbar horizontal height.
+* BS5: Fix beautiful scrollbar horizontal height.
 
 ## Enhancement
 
@@ -20,6 +20,7 @@
 * Confirm modal: fix close button icon.
 * Activate automatic deletion of temporary files
 * Console: add logger indexation start/done.
+* Check password expiration only if no original authentication (signInAs).
 
 (v5.19.0)=
 
