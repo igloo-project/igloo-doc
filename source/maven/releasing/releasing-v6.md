@@ -1,5 +1,7 @@
 # Releasing Igloo 6
 
+## Igloo
+
 ```{note}
 Releasing can be performed only for `igloo-parent` if `igloo-maven` / `igloo-commons` are untouched.
 Just set IGLOO_XXX_VERSION accordingly and start procedure at `igloo-parent` step.
@@ -8,7 +10,7 @@ Just set IGLOO_XXX_VERSION accordingly and start procedure at `igloo-parent` ste
 Commands listed below allow for each Igloo sub-project to update igloo dependencies version, perform commit,
 and push to repository. Release is performed by CI/CD.
 
-## Release
+### Release
 
 ```bash
 IGLOO_MAVEN_VERSION=6.0.0-AlphaX
@@ -114,25 +116,25 @@ git commit -a -m "Switch back Igloo Maven and Commons to snapshot versions"
 git push
 ```
 
-## Hotfix
+### Hotfix
 
 ```{note}
 TODO
 ```
 
-# org.iglooproject.webjars:boostrap4
+## org.iglooproject.webjars:boostrap4
 
 ```{note}
 TODO
 ```
 
-# Updating an Igloo-based project
+## Updating an Igloo-based project
 
 ```{note}
 TODO
 ```
 
-# Release a backport
+## Release a backport
 
 ```{note}
 TODO
