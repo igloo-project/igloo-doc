@@ -31,7 +31,7 @@ Igloo-project Documentation
    maven/dependencies
    maven/javascript
    maven/npm
-   maven/releasing
+   maven/releasing/index
    maven/jimportdiff
 
 .. toctree::
