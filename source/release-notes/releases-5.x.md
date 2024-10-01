@@ -9,6 +9,7 @@
 * Locale, Timezone and Charset are checked and enforced during application startup.
   (Set by default to fr_FR, Europe/Paris, UTF-8, can be configured with
   `igloo.checks.locale`, `igloo.checks.timezone`, `igloo.checks.charset`).
+* update opencsv dependency major version (4.3.2 -> 5.9)
 
 ## Bugfix
 
@@ -21,6 +22,52 @@
 * Activate automatic deletion of temporary files
 * Console: add logger indexation start/done.
 * Check password expiration only if no original authentication (signInAs).
+
+## Dependencies
+
+* jackson/-annotations/-core/-databind: 2.17.1 -> 2.18.0
+* jackson-dataformat-xml: 2.17.1 -> 2.18.0
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.17.1 -> 2.18.0
+* jackson-module-jaxb-annotations: 2.17.1 -> 2.18.0
+* guava: 33.2.1jre -> 33.3.1jre
+* h2: 2.2.224 -> 2.3.232
+* ph-css: 7.0.2 -> 7.0.3
+* opencsv: 4.3.2 -> 5.9
+* HikariCP: 5.1.0 -> 6.0.0
+* commons-io: 2.16.1 -> 2.17.0
+* junit-jupiter-api: 5.10.2 -> 5.11.1
+* log4j-core / log4j-slf4j-impl / log4j-api: 2.23.1 -> 2.24.0
+* poi / poi-ooxml: 5.2.5 -> 5.3.0
+* assertj-core / assertj-guava: 3.25.3 -> 3.26.3
+* jboss-logging: 3.6.0.Final -> 3.6.1.Final
+* jboss-logging-annotations: 2.2.1.Final -> 3.0.1.Final
+* jsoup: 1.17.2 -> 1.18.1
+* mockito/-core/-junit-jupiter: 5.12.0 -> 5.14.0
+* passay: 1.6.4 -> 1.6.5
+* postgresql: 42.7.3 -> 42.7.4
+* jcl-over-slf4j / jul-to-slf4j / slf4j-api: 2.0.13 -> 2.0.16
+* spring-\*: 5.3.37 -> 5.3.39
+* spring-security-\*: 5.8.13 -> 5.8.14
+* micrometer-core: 1.13.1 -> 1.13.4
+* error_prone_annotations: 2.28.0 -> 2.32.0
+* byte-buddy: 1.14.17 -> 1.15.3
+* commons-compress: 1.26.2 -> 1.27.1
+* commons-lang3: 3.14.0 -> 3.17.0
+* commons-codec: 1.17.0 -> 1.17.1
+* hamcrest: 2.2 -> 3.0
+* maven-failsafe-plugin: 3.3.0 -> 3.5.0
+* maven-surefire-plugin: 3.3.0 -> 3.5.0
+* maven-dependency-plugin: 3.7.1 -> 3.8.0
+* maven-javadoc-plugin: 3.7.0 -> 3.10.0
+* maven-project-info-reports-plugin: 3.6.0 -> 3.7.0
+* maven-site-plugin: 4.0.0-M15 -> 4.0.0-M16
+* maven-deploy-plugin: 3.1.2 -> 3.1.3
+* maven-install-plugin: 3.1.2 -> 3.1.3
+* dependency-check-maven: 9.2.0 -> 10.0.4
+* versions-maven-plugin: 2.16.2 -> 2.17.1
+* exec-maven-plugin: 3.3.0 -> 3.4.1
+* buildnumber-maven-plugin: 3.2.0 -> 3.2.1
+* frontend-maven-plugin: 1.15.0 -> 1.15.1
 
 (v5.19.0)=
 
