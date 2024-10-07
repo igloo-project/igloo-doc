@@ -14,6 +14,8 @@
   (Set by default to fr_FR, Europe/Paris, UTF-8, can be configured with
   `igloo.checks.locale`, `igloo.checks.timezone`, `igloo.checks.charset`).
 * update opencsv dependency major version (4.3.2 -> 5.9)
+* update opencsv dependency major version (4.3.2 -> 5.9)
+
 
 ## Bugfix
 
@@ -72,6 +74,9 @@
 * exec-maven-plugin: 3.3.0 -> 3.4.1
 * buildnumber-maven-plugin: 3.2.0 -> 3.2.1
 * frontend-maven-plugin: 1.15.0 -> 1.15.1
+* sass-embedded-host: 1.10.0 -> 3.7.1
+* protobuf-java: 3.21.11 -> 4.28.2
+
 
 (v5.19.0)=
 
