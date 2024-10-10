@@ -14,7 +14,7 @@
   (Set by default to fr_FR, Europe/Paris, UTF-8, can be configured with
   `igloo.checks.locale`, `igloo.checks.timezone`, `igloo.checks.charset`).
 * update opencsv dependency major version (4.3.2 -> 5.9)
-* update opencsv dependency major version (4.3.2 -> 5.9)
+* update sass-embedded-host dependency major version (1.10.0 -> 3.7.1)
 
 
 ## Bugfix
