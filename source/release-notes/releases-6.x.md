@@ -1,8 +1,15 @@
 # Releases 6.x
 
-# Igloo 6.0.0-Alpha17 (TBD)
+# Igloo 6.0.0-Alpha18 (TBD)
+
+## Bugfix
+
+* Fix Parameter stringValue length.
+
+# Igloo 6.0.0-Alpha17 (2024-10-07)
 
 ## Changes
+
 * New permission pattern with Role entity
 * Remove UserGroup and Authority entities
 * Remove BasicUser and TechnicalUser in BasicApp
