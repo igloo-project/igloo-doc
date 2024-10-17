@@ -28,6 +28,7 @@ copy the xml generated in the report, and add it in both files owasp-suppression
 dependency checker with the alternate command:
 
 .. code-block:: bash
+  
   mvn clean install -U -DskipTests
   mvn -DnodeAnalyzerEnabled=false -DyarnAuditAnalyzerEnabled=false -DassemblyAnalyzerEnabled=false -U \
     -pl :basic-application-app org.owasp:dependency-check-maven:check \
