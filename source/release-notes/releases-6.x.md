@@ -6,6 +6,10 @@
 
 * Fix Parameter stringValue length.
 
+## Enhancement
+
+* Storage: reload detached Fichier for validate and invalidate actions.
+
 # Igloo 6.0.0-Alpha17 (2024-10-07)
 
 ## Changes
@@ -104,6 +108,7 @@
 # Igloo 6.0.0-Alpha13 (2024-07-24)
 
 ## Dependencies update
+
 * jackson/-annotations/-core/-databind: 2.17.0 -> 2.17.1
 * jackson-dataformat-xml: 2.17.0 -> 2.17.1
 * jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.17.0 -> 2.17.1
@@ -148,6 +153,7 @@
 * opencsv: 4.3.2 -> 5.9
 
 ## Changes
+
 * update flyway dependency to 10.15.0
 * add flyway-database-postgresql dependency
 * update opencsv to v5.9

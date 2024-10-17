@@ -4,6 +4,10 @@
 
 # 5.21.0 (TBD)
 
+## Enhancement
+
+* Storage: reload detached Fichier for validate and invalidate actions.
+
 (v5.20.0)=
 
 # 5.20.0 (2024-10-07)
