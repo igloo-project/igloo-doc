@@ -5,6 +5,7 @@
 ## Bugfix
 
 * Fix Parameter stringValue length.
+* Fix AbstractTask - UnexpectedRollbackException : saving batch report if there is transaction end emits an exception
 
 ## Enhancement
 

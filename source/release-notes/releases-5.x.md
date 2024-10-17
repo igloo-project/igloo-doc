@@ -4,6 +4,10 @@
 
 # 5.21.0 (TBD)
 
+## Bugfix
+
+* Fix AbstractTask - UnexpectedRollbackException : saving batch report if there is transaction end emits an exception
+
 ## Enhancement
 
 * Storage: reload detached Fichier for validate and invalidate actions.
