@@ -6,6 +6,7 @@
 
 * Fix Parameter stringValue length.
 * Fix AbstractTask - UnexpectedRollbackException : saving batch report if there is transaction end emits an exception
+* User: fix detail pages mapper validation type + mapper utility user detail pages
 
 ## Enhancement
 
