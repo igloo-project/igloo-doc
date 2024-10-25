@@ -1,6 +1,6 @@
 # Releases 6.x
 
-# Igloo 6.0.0-Alpha18 (TBD)
+# Igloo 6.0.0-Alpha18 (2024-10-25)
 
 ## Bugfix
 
@@ -9,6 +9,7 @@
 
 ## Enhancement
 
+* {ref}`testcontainers` and {ref}`testcontainers-migration`
 * Storage: reload detached Fichier for validate and invalidate actions.
 
 # Igloo 6.0.0-Alpha17 (2024-10-07)

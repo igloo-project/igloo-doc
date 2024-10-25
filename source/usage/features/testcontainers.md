@@ -1,3 +1,6 @@
+
+(testcontainers)=
+
 # Testcontainers
 
 ## TLDR
@@ -88,9 +91,9 @@ following use-cases :
 If you use a custom `IglooExecutionTestExecutionListener`, it is up to you to register it (`@TestExecutionListeners`
 annotation or `META-INF/spring.factories`).
 
-(test-containers-migration)=
+(testcontainers-migration)=
 
-## Existing project migration
+## Testcontainers migration
 
 * (gitlab docker runner) CI/CD must enable docker:dind
 * Use `mergeMode = MergeMode.MERGE_WITH_DEFAULTS` on `@TestExecutionListeners`
