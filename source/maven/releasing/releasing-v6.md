@@ -27,10 +27,6 @@ git pull
 git checkout igloo-boot-dev
 git pull
 
-# update igloo-maven.version property
-java17 mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION -DprocessAllModules=true -DgenerateBackupPoms=false
-# check changes with git diff
-git commit -a -m "Update Igloo Maven dependency"
 # perform jgitflow release
 java17 mvn jgitflow:release-start
 java17 mvn -DskipTests -DnoDeploy jgitflow:release-finish
@@ -111,7 +107,7 @@ git checkout igloo-boot-dev
 java17 mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DskipResolution -DgenerateBackupPoms=false
 # update igloo-maven.version, igloo-commons.version
 java17 mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
-java17 mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION_SNAPSHOT -DprocessAllModules=true-DgenerateBackupPoms=false
+java17 mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
 git commit -a -m "Switch back Igloo Maven and Commons to snapshot versions"
 git push
 ```
