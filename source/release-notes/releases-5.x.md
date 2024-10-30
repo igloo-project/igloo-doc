@@ -1,15 +1,18 @@
 # Releases 5.x
 
+(v5.23.0)=
+
+# 5.23.0 (TBD)
+
 (v5.22.0)=
 
-# 5.22.0 (TBD)
+# 5.22.0 (2024-10-30)
 
-(v5.21.0)=
-
-# 5.21.0 (2024-10-11)
+5.21.0 is skipped.
 
 ## Bugfix
 
+* Fix useless dependency sass-embedded-bundled-ia32
 * Fix AbstractTask - UnexpectedRollbackException : saving batch report if there is transaction end emits an exception
 
 ## Enhancement
