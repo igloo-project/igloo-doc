@@ -84,7 +84,7 @@ git checkout dev
 mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DskipResolution -DgenerateBackupPoms=false
 # update igloo-maven.version, igloo-commons.version
 mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
-mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION_SNAPSHOT -DprocessAllModules=true-DgenerateBackupPoms=false
+mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
 git commit -a -m "Switch back Igloo Maven and Commons to snapshot versions"
 git push
 ```
@@ -170,7 +170,7 @@ git checkout dev
 mvn versions:update-parent -pl .,:igloo-parent-maven-configuration-common -DparentVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DskipResolution -DgenerateBackupPoms=false
 # update igloo-maven.version, igloo-commons.version
 mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAVEN_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
-mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION_SNAPSHOT -DprocessAllModules=true-DgenerateBackupPoms=false
+mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
 git commit -a -m "Updating develop poms back to pre merge state (Igloo sub-project)"
 
 git push origin master dev v$IGLOO_PARENT_VERSION
