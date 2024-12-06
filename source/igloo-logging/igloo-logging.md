@@ -160,7 +160,7 @@ com.google.common
 
 ## Project release
 
-Use jgitflow procedure.
+Use gitflow procedure.
 
 ## Changelog
 
