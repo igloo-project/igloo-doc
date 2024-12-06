@@ -1,16 +1,60 @@
-# Releasing Igloo 5
+# Releasing Igloo
 
 ## Igloo
-
-```{note}
-Releasing can be performed only for `igloo-parent` if `igloo-maven` / `igloo-commons` are untouched.
-Just set IGLOO_XXX_VERSION accordingly and start procedure at `igloo-parent` step.
-```
 
 Commands listed below allow for each Igloo sub-project to update igloo dependencies version, perform commit,
 and push to repository. Release is performed by CI/CD.
 
 ### Release
+
+A tool `igloo-release` is available in branch `igloo-boot-dev`, folder `igloo-tools/igloo-release`. It can
+be used for Igloo 5.x and Igloo 6.x releases.
+
+```
+# ensure JAVA_HOME is correctly set
+
+# Igloo 6 command
+# NEW_VERSION : 6.1.0
+# NEW_SNAPSHOT : 6.2.0-SNAPSHOT
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT
+
+# Igloo 5 command
+# NEW_VERSION : 5.1.0
+# NEW_SNAPSHOT : 5.2.0-SNAPSHOT
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo --igloo-5 NEW_VERSION NEW_SNAPSHOT --push
+
+# Script performs igloo-maven, igloo-commons and igloo-parent release
+# Script waits before each push that previous artifacts are published
+# If a command fails, script interrupts and print faulty command and all remaining commands
+```
+
+**Variants**
+
+```
+# Only display commands to run
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT --dry-run
+
+# Display command output interactively
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT --stdout
+
+# Customize a project folder (--igloo-maven-path, --igloo-commons-path, --igloo-parent-path)
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT --igloo-maven-path $HOME/git/igloo-maven
+
+# Customize the branch to release (beware that gitflow plugin must be configured accordingly)
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT --release-branch my-custom-branch
+
+# Disable push (all commands are performed, but no changes on repositories)
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT --no-push
+
+# Skip a project (--skip-igloo-maven, --skip-igloo-commons, --skip-igloo-parent)
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT --skip-igloo-maven
+
+# Skip switch back to snapshot version after release
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT --skip-snapshot
+```
+
+
+### Release (deprecated)
 
 ```bash
 IGLOO_MAVEN_VERSION=xxx
