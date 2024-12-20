@@ -1,4 +1,58 @@
 # Releases 6.x
+# Igloo 6.0.0-Alpha19 (TBD)
+
+## Changes
+* remove igloo-dependency-rules not used anymore
+* migration gitlab-ci to rules pattern
+
+## Dependencies update
+* jackson/-annotations/-core/-databind: 2.18.0 -> 2.18.2
+* jackson-dataformat-xml: 2.18.0 -> 2.18.2
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.18.0 -> 2.18.2
+* guava: 33.3.1jre -> 33.4.0jre
+* HikariCP: 6.0.0 -> 6.2.1
+* commons-io: 2.17.0 -> 2.18.0
+* junit-jupiter-api: 5.11.1 -> 5.11.4
+* junit-platform-suite-engine: 1.11.1 -> 1.11.4
+* log4j-core / log4j-slf4j-impl: 2.24.1 -> 2.24.3
+* wicket / wicket/-auth-roles/-core/-devutils/-extensions/-ioc/-spring: 10.2.0 -> 10.3.0
+* wicketstuff-select2: 10.2.0 -> 10.3.0
+* flyway-core: 10.18.2 -> 10.22.0
+* jersey-container-grizzly2-servlet: 3.1.8 -> 3.1.9
+* jersey-client / jersey-server: 3.1.8 -> 3.1.9
+* jersey-spring6: 3.1.8 -> 3.1.9
+* jersey-media-multipart: 3.1.8 -> 3.1.9
+* jersey-test-framework-provider-grizzly2: 3.1.8 -> 3.1.9
+* hibernate/-core/-ehcache/-validator: 6.6.1.Final -> 6.6.4.Final
+* hibernate-search-orm: 7.2.1.Final -> 7.2.2.Final
+* hibernate-commons-annotations: 7.0.1.Final -> 7.0.3.Final
+* jboss-logging-annotations: 3.0.1.Final -> 3.0.3.Final
+* jsoup: 1.18.1 -> 1.18.3
+* mockito/-core/-junit-jupiter: 5.14.1 -> 5.14.2
+* passay: 1.6.5 -> 1.6.6
+* spring-\*: 6.1.13 -> 6.2.1
+* spring-security-\*: 6.3.3 -> 6.4.2
+* micrometer-core: 1.13.4 -> 1.14.2
+* error_prone_annotations: 2.32.0 -> 2.36.0
+* spring-boot/spring-boot/-autoconfigure/-autoconfigure-processor: 3.3.4 -> 3.4.1
+* byte-buddy: 1.15.3 -> 1.15.11
+* commons-text: 1.12.0 -> 1.13.0
+* checker-qual: 3.47.0 -> 3.48.3
+* logbook-core: 3.9.0 -> 3.10.0
+* httpclient5: 5.4.0 -> 5.4.1
+* springdoc-openapi-starter-webmvc-ui: 2.6.0 -> 2.7.0
+* sass-embedded-host: 3.7.1 -> 3.7.3
+* testcontainers: 1.20.2 -> 1.20.4
+* maven-failsafe-plugin: 3.5.0 -> 3.5.2
+* maven-surefire-plugin: 3.5.0 -> 3.5.2
+* maven-dependency-plugin: 3.8.0 -> 3.8.1
+* maven-javadoc-plugin: 3.10.0 -> 3.11.2
+* maven-project-info-reports-plugin: 3.7.0 -> 3.8.0
+* maven-toolchains-plugin: 3.2.0 -> 3.2.1
+* dependency-check-maven: 10.0.4 -> 11.1.1
+* versions-maven-plugin: 2.17.1 -> 2.18.0
+* exec-maven-plugin: 3.4.1 -> 3.5.0
+* spring-boot-maven-plugin: 3.3.4 -> 3.4.0
 
 # Igloo 6.0.0-Alpha18 (2024-10-25)
 
