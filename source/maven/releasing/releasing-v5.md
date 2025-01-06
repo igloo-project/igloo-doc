@@ -16,12 +16,12 @@ be used for Igloo 5.x and Igloo 6.x releases.
 # Igloo 6 command
 # NEW_VERSION : 6.1.0
 # NEW_SNAPSHOT : 6.2.0-SNAPSHOT
-PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT --push
 
 # Igloo 5 command
 # NEW_VERSION : 5.1.0
 # NEW_SNAPSHOT : 5.2.0-SNAPSHOT
-PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo --igloo-5 NEW_VERSION NEW_SNAPSHOT --push
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo --igloo-5 NEW_VERSION NEW_SNAPSHOT --release-branch dev --push
 
 # Script performs igloo-maven, igloo-commons and igloo-parent release
 # Script waits before each push that previous artifacts are published
