@@ -1,5 +1,8 @@
 # Releases 6.x
-# Igloo 6.0.0-Alpha19 (TBD)
+
+# Igloo 6.1.0 (TBD)
+
+# Igloo 6.0.0 (2025-01-06)
 
 ## Changes
 * remove igloo-dependency-rules not used anymore
