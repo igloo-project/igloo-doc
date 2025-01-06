@@ -1,8 +1,12 @@
 # Releases 5.x
 
+(v5.24.0)=
+
+# 5.24.0 (TBD)
+
 (v5.23.0)=
 
-# 5.23.0 (TBD)
+# 5.23.0 (2025-01-06)
 
 ## Changes
 * remove igloo-dependency-rules not used anymore
