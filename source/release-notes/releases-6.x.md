@@ -2,11 +2,19 @@
 
 # Igloo 6.1.0 (TBD)
 
+# Igloo 6.0.1 (2025-01-08)
+
+## Bugfix
+* fix Hibernate search sort with AbstractHibernateSearchSearchQuery
+* fix script release igloo
+
 # Igloo 6.0.0 (2025-01-06)
 
 ## Changes
 * remove igloo-dependency-rules not used anymore
 * migration gitlab-ci to rules pattern
+* migration to com.amashchenko.maven.plugin gitflow
+* add new script release igloo
 
 ## Dependencies update
 * jackson/-annotations/-core/-databind: 2.18.0 -> 2.18.2
