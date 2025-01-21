@@ -1,6 +1,15 @@
 # Releases 6.x
 
-# Igloo 6.1.0 (TBD)
+# Igloo 6.2.0 (TBD)
+
+# Igloo 6.1.0 (2025-01-21)
+
+## Changes
+* add setter of jpaQuery to AbstractJpaSearchQuery
+* make init jpaQuery AbstractJpaSearchQuery protected
+
+## Bugfix
+* fix cast of int to call Hibernate search fetchHits methode
 
 # Igloo 6.0.1 (2025-01-08)
 
