@@ -1,6 +1,11 @@
 # Releases 6.x
 
-# Igloo 6.2.0 (TBD)
+# Igloo 6.3.0 (TBD)
+
+# Igloo 6.2.0 (2025-01-22)
+
+## Bugfix
+* Rollback wicket version 10.3.0 to 10.2.0 -> wicket 10.3.0 with commit b3a7d62 break igloo forms with bindableModel + BindableModelForm and inner  ModelValidationForm
 
 # Igloo 6.1.0 (2025-01-21)
 
