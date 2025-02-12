@@ -2,6 +2,11 @@
 
 # Igloo 6.3.0 (TBD)
 
+## Changes
+
+* `ICollectionModel` / `CollectionCopyModel` : add update method for underlying collection with update models.
+* History log : clean `IDifferenceService#getMinimalDifferenceGenerator` not used in new `AbstractConfiguredDifferenceServiceImpl` pattern.
+
 # Igloo 6.2.0 (2025-01-22)
 
 ## Bugfix
@@ -29,6 +34,7 @@
 * migration gitlab-ci to rules pattern
 * migration to com.amashchenko.maven.plugin gitflow
 * add new script release igloo
+* User security: super user check only for role system.
 
 ## Dependencies update
 * jackson/-annotations/-core/-databind: 2.18.0 -> 2.18.2
