@@ -1,35 +1,46 @@
 # Releases 6.x
 
-# Igloo 6.3.0 (TBD)
+# 6.4.0 (TBD)
+
+## Bugfix
+
+* BasicApp: fix console data upgrades table.
+
+# 6.3.0 (2025-02-13)
 
 ## Changes
 
 * `ICollectionModel` / `CollectionCopyModel` : add update method for underlying collection with update models.
 * History log : clean `IDifferenceService#getMinimalDifferenceGenerator` not used in new `AbstractConfiguredDifferenceServiceImpl` pattern.
 
-# Igloo 6.2.0 (2025-01-22)
+# 6.2.0 (2025-01-22)
 
 ## Bugfix
+
 * Rollback wicket version 10.3.0 to 10.2.0 -> wicket 10.3.0 with commit b3a7d62 break igloo forms with bindableModel + BindableModelForm and inner  ModelValidationForm
 
-# Igloo 6.1.0 (2025-01-21)
+# 6.1.0 (2025-01-21)
 
 ## Changes
+
 * add setter of jpaQuery to AbstractJpaSearchQuery
 * make init jpaQuery AbstractJpaSearchQuery protected
 
 ## Bugfix
+
 * fix cast of int to call Hibernate search fetchHits methode
 
-# Igloo 6.0.1 (2025-01-08)
+# 6.0.1 (2025-01-08)
 
 ## Bugfix
+
 * fix Hibernate search sort with AbstractHibernateSearchSearchQuery
 * fix script release igloo
 
-# Igloo 6.0.0 (2025-01-06)
+# 6.0.0 (2025-01-06)
 
 ## Changes
+
 * remove igloo-dependency-rules not used anymore
 * migration gitlab-ci to rules pattern
 * migration to com.amashchenko.maven.plugin gitflow
@@ -37,6 +48,7 @@
 * User security: super user check only for role system.
 
 ## Dependencies update
+
 * jackson/-annotations/-core/-databind: 2.18.0 -> 2.18.2
 * jackson-dataformat-xml: 2.18.0 -> 2.18.2
 * jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.18.0 -> 2.18.2
@@ -85,7 +97,7 @@
 * exec-maven-plugin: 3.4.1 -> 3.5.0
 * spring-boot-maven-plugin: 3.3.4 -> 3.4.0
 
-# Igloo 6.0.0-Alpha18 (2024-10-25)
+# 6.0.0-Alpha18 (2024-10-25)
 
 ## Bugfix
 
@@ -98,7 +110,7 @@
 * {ref}`testcontainers` and {ref}`testcontainers-migration`
 * Storage: reload detached Fichier for validate and invalidate actions.
 
-# Igloo 6.0.0-Alpha17 (2024-10-07)
+# 6.0.0-Alpha17 (2024-10-07)
 
 ## Changes
 
@@ -180,7 +192,7 @@
 * sass-embedded-host: 1.10.0 -> 3.7.1
 * protobuf-java: 3.21.11 -> 4.28.2
 
-# Igloo 6.0.0-Alpha16 (2024-09-27)
+# 6.0.0-Alpha16 (2024-09-27)
 
 ## Features
 
@@ -193,7 +205,7 @@
   `igloo.checks.locale`, `igloo.checks.timezone`, `igloo.checks.charset`).
 * `HistoryLog`: JPA search query.
 
-# Igloo 6.0.0-Alpha13 (2024-07-24)
+# 6.0.0-Alpha13 (2024-07-24)
 
 ## Dependencies update
 
@@ -252,7 +264,7 @@
 * `HibernateSearchLuceneQueryFactoryImpl` / `OldAbstractHibernateSearchSearchQuery` / `OldGenericReferenceDataSearchQueryImpl` moved to igloo-hibernate-search-v5migrationhelper
 * igloo project format changes
 
-# Igloo 6.0.0-Alpha12 (2024-07-08)
+# 6.0.0-Alpha12 (2024-07-08)
 
 ## Bugfix
 

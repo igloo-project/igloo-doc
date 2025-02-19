@@ -1,18 +1,32 @@
 # Releases 5.x
 
+(v5.25.0)=
+
+# 5.25.0 (TBD)
+
+## Bugfix
+
+* BasicApp: fix console data upgrades table.
+
 (v5.24.0)=
 
-# 5.24.0 (TBD)
+# 5.24.0 (2025-02-19)
+
+## Enhancement
+
+* Add Outlook msg in `MediaType`.
 
 (v5.23.0)=
 
 # 5.23.0 (2025-01-06)
 
 ## Changes
+
 * remove igloo-dependency-rules not used anymore
 * migration gitlab-ci to rules pattern
 
 ## Dependencies
+
 * jackson/-annotations/-core/-databind: 2.18.0 -> 2.18.2
 * jackson-dataformat-xml: 2.18.0 -> 2.18.2
 * jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.18.0 -> 2.18.2
