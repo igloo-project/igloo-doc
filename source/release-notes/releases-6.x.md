@@ -5,6 +5,11 @@
 ## Bugfix
 
 * BasicApp: fix console data upgrades table.
+* BasicApp: `Announcement` - multiple small fixes.
+
+## Enhancement
+
+* BasicApp: html markup consistency.
 
 # 6.3.0 (2025-02-13)
 
