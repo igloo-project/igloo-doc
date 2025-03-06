@@ -6,6 +6,7 @@
 
 * BasicApp: fix console data upgrades table.
 * BasicApp: `Announcement` - multiple small fixes.
+* Console - SignIn As: fix permission role admin.
 
 ## Enhancement
 
