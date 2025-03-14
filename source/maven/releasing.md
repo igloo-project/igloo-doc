@@ -9,7 +9,7 @@ and push to repository. Release is performed by CI/CD.
 
 ### Release
 
-A tool `igloo-release` is available in branch `igloo-boot-dev`, folder `igloo-tools/igloo-release`. It can
+A tool `igloo-release` is available in branch `igloo-boot-dev`, folder `tools/igloo-release`. It can
 be used for Igloo 5.x and Igloo 6.x releases.
 
 ```
