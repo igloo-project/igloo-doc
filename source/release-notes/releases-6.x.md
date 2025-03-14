@@ -1,6 +1,12 @@
 # Releases 6.x
 
-# 6.4.0 (TBD)
+# 6.5.0 (TBD)
+
+# 6.4.0 (2025-03-14)
+
+## Breaking change
+
+* `User`: refactor + remove generic user entity + update email type.
 
 ## Bugfix
 
@@ -11,6 +17,8 @@
 ## Enhancement
 
 * BasicApp: html markup consistency.
+* `HibernateUtils#unwrap` use native `Hibernate#unproxy` util method.
+* `HibernateUtils#cast` use Java `Optional` instead of Guava.
 
 # 6.3.0 (2025-02-13)
 

@@ -297,7 +297,7 @@
 
 # 5.15.0 (2024-02-05)
 
-## Breaking changes
+## Breaking change
 
 * Remove Log4j 1.x / Reload4j support
 * Remove ehcache2 support
@@ -697,7 +697,7 @@ Maven plugins:
 * BS5: rollback HTML emails to BS4.
 * BS5: remove BS4 webjar dependency from `wicket-bootstrap5`.
 
-## Breaking changes
+## Breaking change
 
 * Spring cache must switch to caffeine (mandatory), Hibernate cache can switch
   to Caffeine (recommended). See {ref}`caffeine-migration`.
@@ -713,7 +713,7 @@ Maven plugins:
   * jsass/libsass replaced by dart-sass
   * scss generated at build-time (optional)
 
-## Breaking changes
+## Breaking change
 
 * scss must be adapted for dart-sass processing (mandatory). See {ref}`scss-migration`.
 * webapp `pom.xml` must be adapted for build-time generation (optional). See
@@ -813,7 +813,7 @@ Maven plugins:
 
 * Replace igloo custom flyway integration with spring-boot flyway integration.
 
-## Breaking changes
+## Breaking change
 
 * Spring-boot Flyway integration needs some configuration and code migration on your projects.
   Please use {ref}`flyway-migration` to update your project.
