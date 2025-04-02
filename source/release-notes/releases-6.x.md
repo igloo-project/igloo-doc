@@ -2,6 +2,11 @@
 
 # 6.5.0 (TBD)
 
+## Breaking change
+
+* replace RandomStringUtils.randomAlphanumeric() deprecated
+* BCrype : Password must be smaller than 72 bytes (see CVE-2025-22228)
+
 # 6.4.0 (2025-03-14)
 
 ## Breaking change
