@@ -1,12 +1,76 @@
 # Releases 5.x
 
+(v5.26.0)=
+
+# 5.26.0 (TBD)
+
+
 (v5.25.0)=
 
-# 5.25.0 (TBD)
+# 5.25.0 (2025-04-02)
 
 ## Bugfix
 
 * BasicApp: fix console data upgrades table.
+
+## Change
+
+* fix CVE-2025-22228 spring security -> password size must be smaller than 72 bytes
+* migration igloo 6 - add new jpa search pattern with DTO
+* migration igloo 6 - javaTime 
+* remove old Abstract AbstractTaskManagementConfig, use IglooTaskManagementAutoConfiguration instead
+* HibernateUtils#unwrap use native Hibernate#unproxy function with cast
+* Switch HibernateUtils import com.google.common.base.Optional to java.util.Optional
+
+## Dependencies
+
+* jackson/-annotations/-core/-databind: 2.18.2 -> 2.18.3
+* jackson-dataformat-xml: 2.18.2 -> 2.18.3
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.18.2 -> 2.18.3
+* jackson-module-jaxb-annotations: 2.18.2 -> 2.18.3
+* guava: 33.4.0jre -> 33.4.6jre
+* ph-css: 7.0.3 -> 7.0.4
+* opencsv: 5.9 -> 5.10
+* HikariCP: 6.2.1 -> 6.3.0
+* junit-jupiter-api: 5.11.4 -> 5.12.1
+* junit-platform-suite-engine: 1.11.4 -> 1.12.1
+* poi / poi-ooxml: 5.3.0 -> 5.4.0
+* wicket / wicket/-auth-roles/-core/-devutils/-extensions/-ioc/-spring: 9.18.0 -> 9.20.0
+* wicketstuff-select2: 9.18.0 -> 9.20.0
+* assertj-core / assertj-guava: 3.26.3 -> 3.27.3
+* elasticsearch-cluster-runner: 5.6.16.0 -> 5.6.16.1
+* freemarker: 2.3.33 -> 2.3.34
+* jersey-container-grizzly2-servlet: 2.45 -> 2.46
+* jersey-client / jersey-server: 2.45 -> 2.46
+* jersey-spring5: 2.45 -> 2.46
+* jersey-media-multipart: 2.45 -> 2.46
+* jersey-test-framework-prov0der-grizzly2: 2.45 -> 2.46
+* jboss-logging-annotations: 3.0.3.Final -> 3.0.4.Final
+* jsoup: 1.18.3 -> 1.19.1
+* mockito/-core/-junit-jupiter: 5.14.2 -> 5.16.1
+* postgresql: 42.7.4 -> 42.7.5
+* jcl-over-slf4j / jul-to-slf4j / slf4j-api: 2.0.16 -> 2.0.17
+* micrometer-core: 1.14.2 -> 1.14.5
+* error_prone_annotations: 2.36.0 -> 2.37.0
+* byte-buddy: 1.15.11 -> 1.17.5
+* caffeine / jcache: 3.1.8 -> 3.2.0
+* commons-codec: 1.17.1 -> 1.18.0
+* rhino: 1.7.15 -> 1.8.0
+* sass-embedded-host: 3.7.3 -> 4.1.0
+* commons-beanutils: 1.9.4 -> 1.10.1
+* awaitility: 4.2.2 -> 4.3.0
+* maven-clean-plugin: 3.4.0 -> 3.4.1
+* maven-compiler-plugin: 3.13.0 -> 3.14.0
+* maven-failsafe-plugin: 3.5.2 -> 3.5.3
+* maven-surefire-plugin: 3.5.2 -> 3.5.3
+* maven-project-info-reports-plugin: 3.8.0 -> 3.9.0
+* maven-site-plugin: 4.0.0-M16 -> 3.21.0
+* maven-toolchains-plugin: 3.2.1 -> 3.2.0
+* maven-deploy-plugin: 3.1.3 -> 3.1.4
+* maven-install-plugin: 3.1.3 -> 3.1.4
+* spotless-maven-plugin: 2.43.1 -> 2.44.3
+* dependency-check-maven: 11.1.1 -> 12.1.0
+* flatten-maven-plugin: 1.6.0 -> 1.7.0
 
 (v5.24.0)=
 
