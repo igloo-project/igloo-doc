@@ -1,11 +1,73 @@
 # Releases 6.x
 
-# 6.5.0 (TBD)
+# 6.6.0 (TBD)
+
+# 6.5.0 (2025-04-10)
 
 ## Breaking change
 
 * replace RandomStringUtils.randomAlphanumeric() deprecated
 * BCrype : Password must be smaller than 72 bytes (see CVE-2025-22228)
+
+## Dependencies update
+
+* jackson/-annotations/-core/-databind: 2.18.2 -> 2.18.3
+* jackson-dataformat-xml: 2.18.2 -> 2.18.3
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.18.2 -> 2.18.3
+* guava: 33.4.0jre -> 33.4.6jre
+* ph-css: 7.0.3 -> 7.0.4
+* opencsv: 5.9 -> 5.10
+* HikariCP: 6.2.1 -> 6.3.0
+* junit-jupiter-api: 5.11.4 -> 5.12.1
+* junit-platform-suite-engine: 1.11.4 -> 1.12.1
+* poi / poi-ooxml: 5.3.0 -> 5.4.0
+* assertj-core / assertj-guava: 3.26.3 -> 3.27.3
+* freemarker: 2.3.33 -> 2.3.34
+* jersey-container-grizzly2-servlet: 3.1.9 -> 3.1.10
+* jersey-client / jersey-server: 3.1.9 -> 3.1.10
+* jersey-spring6: 3.1.9 -> 3.1.10
+* jersey-media-multipart: 3.1.9 -> 3.1.10
+* jersey-test-framework-provider-grizzly2: 3.1.9 -> 3.1.10
+* hibernate/-core/-ehcache/-validator: 6.6.4.Final -> 6.6.12.Final
+* hibernate-search-orm: 7.2.2.Final -> 7.2.3.Final
+* jboss-logging-annotations: 3.0.3.Final -> 3.0.4.Final
+* jsoup: 1.18.3 -> 1.19.1
+* mockito/-core/-junit-jupiter: 5.14.2 -> 5.16.1
+* passay: 1.6.5 -> 1.6.6
+* postgresql: 42.7.4 -> 42.7.5
+* jcl-over-slf4j / jul-to-slf4j / slf4j-api: 2.0.16 -> 2.0.17
+* spring-\*: 6.2.1 -> 6.2.5
+* spring-security-\*: 6.4.2 -> 6.4.4
+* jakarta.activation: 2.0.1 -> 2.1.3
+* micrometer-core: 1.14.2 -> 1.14.5
+* error_prone_annotations: 2.36.0 -> 2.37.0
+* spring-boot/spring-boot/-autoconfigure/-autoconfigure-processor: 3.4.1 -> 3.4.4
+* byte-buddy: 1.15.11 -> 1.17.5
+* commons-beanutils: 1.9.4 -> 1.10.1
+* caffeine / jcache: 3.1.8 -> 3.2.0
+* commons-codec: 1.17.1 -> 1.18.0
+* checker-qual: 3.48.3 -> 3.49.2
+* rhino: 1.7.15 -> 1.8.0
+* logbook-core: 3.10.0 -> 3.11.0
+* resilience4j-all: 2.2.0 -> 2.3.0
+* httpclient5: 5.4.1 -> 5.4.3
+* springdoc-openapi-starter-webmvc-ui: 2.7.0 -> 2.8.6
+* sass-embedded-host: 3.7.3 -> 4.1.0
+* testcontainers: 1.20.4 -> 1.20.6
+* aspectjweaver: 1.9.22.1 -> 1.9.23
+* awaitility: 4.2.2 -> 4.3.0
+* maven-clean-plugin: 3.4.0 -> 3.4.1
+* maven-compiler-plugin: 3.13.0 -> 3.14.0
+* maven-failsafe-plugin: 3.5.2 -> 3.5.3
+* maven-surefire-plugin: 3.5.2 -> 3.5.3
+* maven-project-info-reports-plugin: 3.8.0 -> 3.9.0
+* maven-deploy-plugin: 3.1.3 -> 3.1.4
+* maven-install-plugin: 3.1.3 -> 3.1.4
+* jacoco-maven-plugin: 0.8.12 -> 0.8.13
+* dependency-check-maven: 11.1.1 -> 12.1.0
+* flatten-maven-plugin: 1.6.0 -> 1.7.0
+* spotless-maven-plugin: 2.43.1 -> 2.44.3
+* spring-boot-maven-plugin: 3.4.1 -> 3.4.4
 
 # 6.4.0 (2025-03-14)
 
