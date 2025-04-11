@@ -1,6 +1,12 @@
 # Releases 6.x
 
-# 6.6.0 (TBD)
+# 6.7.0 (TBD)
+
+# 6.6.0 (2025-04-11)
+
+## Enhancement
+
+* Bootstrap Print
 
 # 6.5.0 (2025-04-10)
 
