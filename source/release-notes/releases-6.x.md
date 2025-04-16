@@ -2,6 +2,10 @@
 
 # 6.7.0 (TBD)
 
+## Bugfix
+
+* BasicApp: fix User lucene index field and search.
+
 # 6.6.0 (2025-04-11)
 
 ## Enhancement
