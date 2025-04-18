@@ -4,6 +4,9 @@
 
 # 5.26.0 (TBD)
 
+## Bugfix
+
+* BindableModel : initial value model can be nullable
 
 (v5.25.0)=
 

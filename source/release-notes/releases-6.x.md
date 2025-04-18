@@ -5,6 +5,7 @@
 ## Bugfix
 
 * BasicApp: fix User lucene index field and search.
+* BindableModel : initial value model can be nullable
 
 # 6.6.0 (2025-04-11)
 
