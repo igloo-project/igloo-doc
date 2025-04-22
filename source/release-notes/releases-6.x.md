@@ -2,6 +2,10 @@
 
 # 6.7.0 (TBD)
 
+## Enhancement
+
+* Add `dependencies-all` Maven module.
+
 ## Bugfix
 
 * BasicApp: fix User lucene index field and search.
