@@ -5,6 +5,9 @@
 ## Enhancement
 
 * Add `dependencies-all` Maven module.
+* Allow application to perform post-success wicket login validation (after
+  authentication is successful, before security context is set). See
+  `AbstractCoreSession#onSuccessfulAuthentication(...)`.
 
 ## Bugfix
 
