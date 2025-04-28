@@ -1,9 +1,11 @@
 # Releases 6.x
 
-# 6.7.0 (TBD)
+# 6.7.0 (2025-04-28)
 
 ## Enhancement
 
+* BasicApp: switch to `inputmode` email.
+* `DataTableBuilder`: add placeholder action.
 * Add `dependencies-all` Maven module.
 * Allow application to perform post-success wicket login validation (after
   authentication is successful, before security context is set). See
@@ -12,7 +14,7 @@
 ## Bugfix
 
 * BasicApp: fix User lucene index field and search.
-* BindableModel : initial value model can be nullable
+* `BindableModel`: initial value model can be nullable.
 
 # 6.6.0 (2025-04-11)
 
