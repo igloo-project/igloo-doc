@@ -1,5 +1,11 @@
 # Releases 6.x
 
+# 6.8.0 (TBD)
+
+## Bugfix
+
+* Fix buggy warning on `StorageService#(in)validateFichier` method
+
 # 6.7.0 (2025-04-28)
 
 ## Enhancement

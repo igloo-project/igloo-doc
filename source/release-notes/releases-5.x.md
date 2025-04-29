@@ -7,6 +7,7 @@
 ## Bugfix
 
 * BindableModel : initial value model can be nullable
+* Fix buggy warning on `StorageService#(in)validateFichier` method
 
 (v5.25.0)=
 
