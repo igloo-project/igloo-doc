@@ -2,6 +2,11 @@
 
 # 6.8.0 (TBD)
 
+## Dependencies update
+
+* Bootstrap: 5.3.2 -> 5.3.5
+* Font Awesome: 6.5.1 -> 6.7.2
+
 ## Bugfix
 
 * Fix buggy warning on `StorageService#(in)validateFichier` method
