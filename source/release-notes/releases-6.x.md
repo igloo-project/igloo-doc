@@ -2,6 +2,11 @@
 
 # 6.8.0 (TBD)
 
+## Enhancement
+
+* BasicApp: password reset page -> rollback on behavior that removed
+  token from URL
+
 ## Dependencies update
 
 * Bootstrap: 5.3.2 -> 5.3.5
