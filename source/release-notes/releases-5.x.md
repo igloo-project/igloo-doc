@@ -1,8 +1,17 @@
 # Releases 5.x
 
+(v5.27.0)=
+
+# 5.27.0 (TBD)
+
 (v5.26.0)=
 
-# 5.26.0 (TBD)
+# 5.26.0 (2025-05-13)
+
+## Change
+
+* HistoryLog migration to JPA search Query
+* DataTableBuilder : `addPlaceholder` added for actions items
 
 ## Bugfix
 
