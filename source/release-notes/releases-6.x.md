@@ -16,6 +16,10 @@
 
 * Fix buggy warning on `StorageService#(in)validateFichier` method
 
+## Enhancement
+
+* plugins-commons: spring-boot-maven-plugin added in dependencyManagement
+
 # 6.7.0 (2025-04-28)
 
 ## Enhancement
