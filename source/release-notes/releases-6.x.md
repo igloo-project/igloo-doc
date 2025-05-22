@@ -6,6 +6,7 @@
 
 * BasicApp: password reset page -> rollback on behavior that removed
   token from URL
+* BasicApp: use jakarta `InternetAddress` to validate email address
 
 ## Dependencies update
 
