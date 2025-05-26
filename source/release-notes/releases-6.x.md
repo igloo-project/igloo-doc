@@ -1,6 +1,6 @@
 # Releases 6.x
 
-# 6.8.0 (TBD)
+# 6.9.0 (TBD)
 
 ## Enhancement
 
@@ -20,6 +20,12 @@
 ## Enhancement
 
 * plugins-commons: spring-boot-maven-plugin added in dependencyManagement
+
+# 6.8.0 (2025-05-26)
+
+## Bugfix
+
+* igloo-difference : add hibernate proxy awareness behavior to fix difference detection
 
 # 6.7.0 (2025-04-28)
 
