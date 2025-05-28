@@ -17,6 +17,7 @@
 ## Bugfix
 
 * Fix buggy warning on `StorageService#(in)validateFichier` method
+* HibernateSearchUtils · Escape operator characters
 
 ## Enhancement
 
