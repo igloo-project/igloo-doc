@@ -1,6 +1,6 @@
 # Releases 6.x
 
-# 6.9.0 (TBD)
+# 6.10.0 (TBD)
 
 ## Enhancement
 
@@ -28,6 +28,8 @@
 ## Enhancement
 
 * plugins-commons: spring-boot-maven-plugin added in dependencyManagement
+
+# 6.9.0 (TBD)
 
 # 6.8.0 (2025-05-26)
 
