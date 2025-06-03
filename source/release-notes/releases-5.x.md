@@ -4,6 +4,12 @@
 
 # 5.27.0 (TBD)
 
+## Change
+
+* Change `EnumDropDownMultipleChoice` constructor visibility.
+* `IModel` of `Collection` instead of `List` for some dropdown parameters.
+* `LinkDescriptor`: add fifth and sixth parameters for mapper.
+
 (v5.26.0)=
 
 # 5.26.0 (2025-05-13)

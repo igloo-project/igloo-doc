@@ -4,10 +4,16 @@
 
 ## Enhancement
 
-* Add fifth and sixth parameters for link descriptor mapper.
+* `LinkDescriptor`: add fifth and sixth parameters for mapper.
 * BasicApp: password reset page -> rollback on behavior that removed
-  token from URL
-* BasicApp: use jakarta `InternetAddress` to validate email address
+  token from URL.
+* BasicApp: use jakarta `InternetAddress` to validate email address.
+* Use `java.util.List` instead of guava `ImmutableList`.
+* Change `EnumDropDownMultipleChoice` constructor visibility.
+* `IModel` of `Collection` instead of `List` for some dropdown parameters.
+* BasicApp: clean json properties on `User`.
+* BasicApp: use `HistoryEventSummary` for `User` creation and modification.
+* BasicApp: update environment name values.
 
 ## Dependencies update
 
