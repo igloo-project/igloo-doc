@@ -14,6 +14,7 @@
 * BasicApp: clean json properties on `User`.
 * BasicApp: use `HistoryEventSummary` for `User` creation and modification.
 * BasicApp: update environment name values.
+* BasicApp: `Announcement` publication start date sort desc.
 
 ## Dependencies update
 
