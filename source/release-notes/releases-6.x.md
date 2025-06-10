@@ -34,9 +34,22 @@
 
 # 6.8.0 (2025-05-26)
 
+## Breaking changes
+
+* Storage: new `FichierStatus.UNAVAILABLE` status:
+  * not triggered by igloo code; only used by storage-tools archiving process
+  * if you use a constrainted type for `Fichier.status` column, you need to
+    alter your enum or constraint setup to add `UNAVAILABLE` as an expected
+    value
+
 ## Bugfix
 
 * igloo-difference : add hibernate proxy awareness behavior to fix difference detection
+
+## Enhancement
+
+* storage-tools: command-line tool to generate a fake storage folder from
+  database or move (archive) `Fichier` to a separated `StorageUnit`
 
 # 6.7.0 (2025-04-28)
 
