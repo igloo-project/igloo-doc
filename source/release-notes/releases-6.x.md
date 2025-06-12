@@ -48,6 +48,13 @@
 
 ## Enhancement
 
+* if you use `AbstractFichierStoreWebResource` to handle `Fichier` downloads, you may
+  switch to `AbstractFichierFileStorageWebResource` parent class and replace
+  `getFileStoreResourceStream` method with an equivalent `getFichier` method
+  (https://github.com/igloo-project/igloo-parent/commit/954beb5fa713788bb36a4080ca9a68f069a0f9ad#diff-c486869ab009250216e44595fabc444ccb0f1e97b3f1eee4b9c803fabb9a6ce8)
+* Storage + wicket: download managed by `AbstractFichierFileStorageWebResource` or
+  `FichierFileStorageWebResource` does not longer log a stacktrace for file not
+  found or `Fichier` status issue. Only logs a message without stack
 * storage-tools: command-line tool to generate a fake storage folder from
   database or move (archive) `Fichier` to a separated `StorageUnit`
 
