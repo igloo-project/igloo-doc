@@ -32,6 +32,14 @@
 
 # 6.9.0 (2025-13-06)
 
+## Breaking changes
+
+* Storage: new `FichierStatus.UNAVAILABLE` status:
+  * not triggered by igloo code; only used by storage-tools archiving process
+  * if you use a constrainted type for `Fichier.status` column, you need to
+    alter your enum or constraint setup to add `UNAVAILABLE` as an expected
+    value
+
 ## Enhancement
 
 * add Storage-tools for archiving
