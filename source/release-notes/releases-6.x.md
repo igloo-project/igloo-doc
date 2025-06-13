@@ -30,7 +30,17 @@
 
 * plugins-commons: spring-boot-maven-plugin added in dependencyManagement
 
-# 6.9.0 (TBD)
+# 6.9.0 (2025-13-06)
+
+## Enhancement
+
+* add Storage-tools for archiving
+
+## Bugfix
+
+* fix createAuthenticationFromUser
+* searchQueryService : fix addFilterBeforeCreateQuery trigger before build predicates
+* fix getPermission for an other user than context authentification
 
 # 6.8.0 (2025-05-26)
 
