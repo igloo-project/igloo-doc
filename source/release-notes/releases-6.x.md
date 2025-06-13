@@ -40,18 +40,6 @@
     alter your enum or constraint setup to add `UNAVAILABLE` as an expected
     value
 
-## Enhancement
-
-* add Storage-tools for archiving
-
-## Bugfix
-
-* fix createAuthenticationFromUser
-* searchQueryService : fix addFilterBeforeCreateQuery trigger before build predicates
-* fix getPermission for an other user than context authentification
-
-# 6.8.0 (2025-05-26)
-
 ## Breaking changes
 
 * Storage: new `FichierStatus.UNAVAILABLE` status:
@@ -60,12 +48,9 @@
     alter your enum or constraint setup to add `UNAVAILABLE` as an expected
     value
 
-## Bugfix
-
-* igloo-difference : add hibernate proxy awareness behavior to fix difference detection
-
 ## Enhancement
 
+* add Storage-tools for archiving
 * if you use `AbstractFichierStoreWebResource` to handle `Fichier` downloads, you may
   switch to `AbstractFichierFileStorageWebResource` parent class and replace
   `getFileStoreResourceStream` method with an equivalent `getFichier` method
@@ -75,6 +60,18 @@
   found or `Fichier` status issue. Only logs a message without stack
 * storage-tools: command-line tool to generate a fake storage folder from
   database or move (archive) `Fichier` to a separated `StorageUnit`
+
+## Bugfix
+
+* fix createAuthenticationFromUser
+* searchQueryService : fix addFilterBeforeCreateQuery trigger before build predicates
+* fix getPermission for an other user than context authentification
+
+# 6.8.0 (2025-05-26)
+
+## Bugfix
+
+* igloo-difference : add hibernate proxy awareness behavior to fix difference detection
 
 # 6.7.0 (2025-04-28)
 
