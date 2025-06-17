@@ -1,6 +1,8 @@
 # Releases 6.x
 
-# 6.10.0 (TBD)
+# 6.11.0 (TBD)
+
+# 6.10.0 (2025-06-17)
 
 ## Enhancement
 
