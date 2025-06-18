@@ -2,6 +2,17 @@
 
 # 6.11.0 (TBD)
 
+# 6.10.1 (2025-06-18)
+
+## Enhancement
+
+* BasicApp: `UserExcelTableExport` also export time when possible
+
+## Bugfix
+
+* Fix getPermissions too restrictive : Use of `UserDetails` instead of `CoreUserDetails`
+* BasicApp: rollback removal of @JsonIgnore on `User` for attribute passwordHash
+
 # 6.10.0 (2025-06-17)
 
 ## Enhancement
