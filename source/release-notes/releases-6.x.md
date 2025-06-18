@@ -2,6 +2,14 @@
 
 # 6.11.0 (TBD)
 
+## Enhancement
+
+* `Igloo6MigrationInstantTimestampCommand` base command added to write Igloo 6
+  (Hibernate 6) SQL migration for `Instant` field. They must be migrated from
+  timestamp without timezone, expressed in local time zone, to timestamp with
+  timezone. This command must be inherited in project just like
+  `BaseSqlExporterCommand`.
+
 # 6.10.1 (2025-06-18)
 
 ## Enhancement
