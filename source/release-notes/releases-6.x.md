@@ -10,6 +10,11 @@
   timezone. This command must be inherited in project just like
   `BaseSqlExporterCommand`.
 
+## Updates
+
+* commons-beanutils: 1.10.1 -> 1.11.0
+* postgresql: 42.7.5 -> 42.7.7
+
 # 6.10.1 (2025-06-18)
 
 ## Enhancement
