@@ -1,8 +1,12 @@
 # Releases 5.x
 
+(v5.28.0)=
+
+# 5.28.0 (TBD)
+
 (v5.27.0)=
 
-# 5.27.0 (TBD)
+# 5.27.0 (2025-06-27)
 
 ## Change
 
@@ -31,6 +35,48 @@
 ## Bugfix
 
 * BasicApp: fix console data upgrades table.
+
+## Dependencies
+
+* jackson/-annotations/-core/-databind: 2.18.3 -> 2.19.1
+* jackson-dataformat-xml: 2.18.3 -> 2.19.1
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.18.3 -> 2.19.1
+* jackson-module-jaxb-annotations: 2.18.3 -> 2.19.1
+* guava: 33.4.6jre -> 33.4.8jre
+* opencsv: 5.10 -> 5.11.2
+* commons-io: 2.18.0 -> 2.19.0
+* wicket-webjars: 3.0.7 -> 3.0.8
+* junit-jupiter-api: 5.12.1 -> 5.13.2
+* junit-platform-suite-engine: 1.11.4 -> 1.13.2
+* log4j-core / log4j-slf4j-impl / log4j-api: 2.24.3 -> 2.25.0
+* poi / poi-ooxml: 5.4.0 -> 5.4.1
+* wicket / wicket/-auth-roles/-core/-devutils/-extensions/-ioc/-spring: 9.20.0 -> 9.21.0
+* wicketstuff-select2: 9.20.0 -> 9.21.0
+* jersey-container-grizzly2-servlet: 2.46 -> 2.47
+* jersey-client / jersey-server: 2.46 -> 2.47
+* jersey-spring5: 2.46 -> 2.47
+* jersey-media-multipart: 2.46 -> 2.47
+* jersey-test-framework-prov0der-grizzly2: 2.46 -> 2.47
+* jsoup: 1.19.1 -> 1.21.1
+* mockito/-core/-junit-jupiter: 5.16.1 -> 5.18.0
+* postgresql: 42.7.5 -> 42.7.7
+* micrometer-core: 1.14.5 -> 1.15.1
+* error_prone_annotations: 2.37.0 -> 2.39.0
+* byte-buddy: 1.17.5 -> 1.17.6
+* picocli: 4.7.6 -> 4.7.7
+* commons-collections4: 4.4 -> 4.5.0
+* commons-text: 1.13.0 -> 1.13.1
+* commons-exec: 1.4.0 -> 1.5.0
+* commons-fileupload: 1.5 -> 1.6.0
+* sass-embedded-host: 4.1.0 -> 4.2.0
+* commons-beanutils: 1.10.1 -> 1.11.0
+* maven-clean-plugin: 3.4.1 -> 3.5.0
+* spotless-maven-plugin: 2.44.3 -> 2.44.5
+* jacoco-maven-plugin: 0.8.12 -> 0.8.13
+* dependency-check-maven: 12.1.0 -> 12.1.3
+* exec-maven-plugin: 3.5.0 -> 3.5.1
+* flatten-maven-plugin: 1.7.0 -> 1.7.1
+* buildnumber-maven-plugin: 3.2.0 -> 3.2.1
 
 ## Change
 
