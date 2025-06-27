@@ -14,28 +14,6 @@
 * `IModel` of `Collection` instead of `List` for some dropdown parameters.
 * `LinkDescriptor`: add fifth and sixth parameters for mapper.
 
-(v5.26.0)=
-
-# 5.26.0 (2025-05-13)
-
-## Change
-
-* HistoryLog migration to JPA search Query
-* DataTableBuilder : `addPlaceholder` added for actions items
-
-## Bugfix
-
-* BindableModel : initial value model can be nullable
-* Fix buggy warning on `StorageService#(in)validateFichier` method
-
-(v5.25.0)=
-
-# 5.25.0 (2025-04-02)
-
-## Bugfix
-
-* BasicApp: fix console data upgrades table.
-
 ## Dependencies
 
 * jackson/-annotations/-core/-databind: 2.18.3 -> 2.19.1
@@ -78,6 +56,27 @@
 * flatten-maven-plugin: 1.7.0 -> 1.7.1
 * buildnumber-maven-plugin: 3.2.0 -> 3.2.1
 
+(v5.26.0)=
+
+# 5.26.0 (2025-05-13)
+
+## Change
+
+* HistoryLog migration to JPA search Query
+* DataTableBuilder : `addPlaceholder` added for actions items
+
+## Bugfix
+
+* BindableModel : initial value model can be nullable
+* Fix buggy warning on `StorageService#(in)validateFichier` method
+
+(v5.25.0)=
+
+# 5.25.0 (2025-04-02)
+
+## Bugfix
+
+* BasicApp: fix console data upgrades table.
 ## Change
 
 * fix CVE-2025-22228 spring security -> password size must be smaller than 72 bytes
