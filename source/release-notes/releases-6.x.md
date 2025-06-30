@@ -10,10 +10,50 @@
   timezone. This command must be inherited in project just like
   `BaseSqlExporterCommand`.
 
-## Updates
-
-* commons-beanutils: 1.10.1 -> 1.11.0
+## Dependencies update
+* jackson/-annotations/-core/-databind: 2.18.3 -> 2.19.1
+* jackson-dataformat-xml: 2.18.3 -> 2.19.1
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.18.3 -> 2.19.1
+* guava: 33.4.6jre -> 33.4.8jre
+* opencsv: 5.10 -> 5.11.2
+* commons-io: 2.18.0 -> 2.19.0
+* wicket-webjars: 4.0.0 -> 4.0.8
+* log4j-core / log4j-slf4j-impl: 2.24.3 -> 2.25.0
+* poi / poi-ooxml: 5.4.0 -> 5.4.1
+* hibernate/-core/-ehcache/-validator: 6.6.12.Final -> 6.6.18.Final
+* hibernate-search-orm: 7.2.3.Final -> 7.2.4.Final
+* jsoup: 1.19.1 -> 1.21.1
+* mockito/-core/-junit-jupiter: 5.16.1 -> 5.18.0
 * postgresql: 42.7.5 -> 42.7.7
+* spring-\*: 6.2.5 -> 6.2.8
+* spring-security-\*: 6.4.4 -> 6.5.1
+* bootstrap: 5.3.5 -> 5.3.7
+* micrometer-core: 1.14.5 -> 1.15.1
+* error_prone_annotations: 2.37.0 -> 2.39.0
+* spring-boot/spring-boot/-autoconfigure/-autoconfigure-processor: 3.4.4 -> 3.5.3
+* byte-buddy: 1.17.5 -> 1.17.6
+* picocli: 4.7.6 -> 4.7.7
+* commons-collections4: 4.4 -> 4.5.0
+* commons-text: 1.13.0 -> 1.13.1
+* commons-exec: 1.4.0 -> 1.5.0
+* commons-fileupload: 2.0.0-M2 -> 2.0.0-M4
+* commons-fileupload2-jakarta-servlet5: 2.0.0-M2 -> 2.0.0-M4
+* commons-beanutils: 1.10.1 -> 1.11.0
+* caffeine / jcache: 3.2.0 -> 3.2.1
+* logbook-core: 3.11.0 -> 3.12.2
+* httpclient5: 5.4.3 -> 5.5
+* springdoc-openapi-starter-webmvc-ui: 2.8.6 -> 2.8.9
+* sass-embedded-host: 4.1.0 -> 4.2.0
+* testcontainers: 1.20.6 -> 1.21.2
+* aspectjweaver: 1.9.23 -> 1.9.24
+* nimbus-jose-jwt: 10.1 -> 10.3
+* maven-clean-plugin: 3.4.1 -> 3.5.0
+* dependency-check-maven: 12.1.1 -> 12.1.3
+* exec-maven-plugin: 3.5.0 -> 3.5.1
+* flatten-maven-plugin: 1.7.0 -> 1.7.1
+* spotless-maven-plugin: 2.44.3 -> 2.44.5
+* spring-boot-maven-plugin: 3.4.4 -> 3.5.3
+* spring-boot-maven-plugin: 3.4.4 -> 3.5.3
 
 # 6.10.1 (2025-06-18)
 
