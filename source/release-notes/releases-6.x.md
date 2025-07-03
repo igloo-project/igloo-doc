@@ -11,6 +11,9 @@
   timestamp without timezone, expressed in local time zone, to timestamp with
   timezone. This command must be inherited in project just like
   `BaseSqlExporterCommand`.
+* QueryDsl OpenFeign fork migration
+* Add custom IglooMetricsAspectsAutoConfiguration for MeterTag management
+
 
 ## Dependencies update
 * jackson/-annotations/-core/-databind: 2.18.3 -> 2.19.1
