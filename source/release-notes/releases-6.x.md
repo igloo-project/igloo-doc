@@ -1,8 +1,14 @@
 # Releases 6.x
 
-# 6.12.0 (TBD)
+# 6.13.0 (TBD)
 
-# 6.11.0 (01/07/2025)
+# 6.12.1 (2025-07-11)
+
+## Enhancement
+
+* Bootstrap JS override: replace vanilla components + include popper.js
+
+# 6.11.0 (2025-07-01)
 
 ## Enhancement
 
@@ -13,7 +19,6 @@
   `BaseSqlExporterCommand`.
 * QueryDsl OpenFeign fork migration
 * Add custom IglooMetricsAspectsAutoConfiguration for MeterTag management
-
 
 ## Dependencies update
 * jackson/-annotations/-core/-databind: 2.18.3 -> 2.19.1
