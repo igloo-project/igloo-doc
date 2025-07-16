@@ -2,6 +2,13 @@
 
 # 6.13.0 (TBD)
 
+# 6.12.2 (2025-07-16)
+
+## Enhancement
+
+* Bootstrap JS override: replace vanilla components + include popper.js.\
+  Override data.js to allow multiple js components on a single element.
+
 # 6.12.1 (2025-07-11)
 
 ## Enhancement
