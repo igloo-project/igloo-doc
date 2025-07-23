@@ -2,14 +2,14 @@
 
 # 6.14.0 (TBD)
 
+# 6.13.0 (2025-07-23)
+
 ## Enhancement
 
 * Remove antMatcher deprecated
 * JpaRepository compatibility -> SequenceView - sequenceProvider.iterator use the limit (itemPerPage) and not the size of the currente page
 * JpaRopository compatibility  -> for more abstraction, use the ICoreUserSecurityService interface instead of ICoreUserService
 * JpaRopository compatibility -> make HistoryLog serivices more abstract, without adhesion with the ORM API used
-
-# 6.13.0 (2025-07-23)
 
 # 6.12.2 (2025-07-16)
 
