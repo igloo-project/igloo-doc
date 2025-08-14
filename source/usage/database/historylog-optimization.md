@@ -75,6 +75,17 @@ Run your project's SQL update generation script. The first part of the migration
 be the enum creation code, populated with the expected entity types (and the automatic cast
 rule creation). This code is the first part of your database migration.
 
+Here is an example of the provided script:
+
+```sql
+CREATE TYPE historylog_reference_type AS ENUM (
+	'Entity1',
+  'Entity2',
+);
+create cast (pg_catalog.varchar as historylog_reference_type) with inout as implicit;
+create cast (historylog_reference_type as pg_catalog.varchar) with inout as implicit;
+```
+
 The second part of your migration is the appropriate HistoryLog and HistoryDifference
 ALTER statements. They need to split fully-qualified entity name to keep only the simple name.
 
