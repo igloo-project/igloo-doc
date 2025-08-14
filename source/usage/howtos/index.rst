@@ -29,6 +29,7 @@ Backend
   HibernateInterceptors.md
   Hibernate-Search-&-Lucene.md
   Cronjobs.md
+  cache
 
 UI
 --
