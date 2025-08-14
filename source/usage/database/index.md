@@ -6,4 +6,5 @@
 flyway
 database-scripts
 jndi
+historylog-optimization
 ```

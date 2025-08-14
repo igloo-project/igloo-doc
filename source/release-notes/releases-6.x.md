@@ -2,6 +2,13 @@
 
 # 6.14.0 (TBD)
 
+## Enhancement
+
+* Replace `response.render(JavaScriptHeaderItem.forReference(Bootstrap5OverrideJavaScriptResourceReference.get()));`
+  or `response.render(JavaScriptHeaderItem.forReference(Bootstrap5JavaScriptResourceReference.get()));` by
+  `BootstrapRequestCycle.getSettings().renderHead(getPage(), response);`
+* HistoryLog / HistoryDifference storage optimization. Check this {ref}`guide <historylog-optimization-migration>`.
+
 # 6.13.0 (2025-07-23)
 
 ## Enhancement
