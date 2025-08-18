@@ -2,6 +2,10 @@
 
 # 6.14.0 (TBD)
 
+## Bugfix
+
+* SCSS utilities: fix text break mixin / flex text break.
+
 ## Enhancement
 
 * Replace `response.render(JavaScriptHeaderItem.forReference(Bootstrap5OverrideJavaScriptResourceReference.get()));`
