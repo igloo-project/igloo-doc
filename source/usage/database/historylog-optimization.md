@@ -61,10 +61,13 @@ and an interface is added to allow code factorization.
   `IHistoryEntityReference`)
 
 In you project, you must:
-* Replace `valueService.create(...` by `valueService.createHistoryValue(...`
-  or `valueService.createHistoryEventValue(...`
+* Replace `valueService.create(...)` by `valueService.createHistoryValue(...)`
+  or `valueService.createHistoryEventValue(...)`
 * Replace `HistoryValue` by `IHistoryValue`
 * Rename `HistoryValueRenderer` to `IHistoryValueRenderer` (as it can render both types)
+* Check that `HistoryValue` is strictly used on `HistoryLog` / `HistoryDifference`
+  (search `historyvalue` in `**/model/**/*.java`). It's normal if you have no reference
+  (on nominal case, type is declared only in Igloo).
 
 ### Option 1: switch to enum type
 
@@ -94,7 +97,20 @@ ALTER statements. They need to split fully-qualified entity name to keep only th
 * Add your own field to the following update script:
 
 ```sql
--- Work in progress...
+alter table historylog
+	alter column mainobject_reference_type type historylog_reference_type using substring(mainobject_reference_type from '[^.]+$')::historylog_reference_type,
+	alter column subject_reference_type type historylog_reference_type using substring(subject_reference_type from '[^.]+$')::historylog_reference_type,
+	alter column object1_reference_type type historylog_reference_type using substring(object1_reference_type from '[^.]+$')::historylog_reference_type,
+	alter column object2_reference_type type historylog_reference_type using substring(object2_reference_type from '[^.]+$')::historylog_reference_type,
+	alter column object3_reference_type type historylog_reference_type using substring(object3_reference_type from '[^.]+$')::historylog_reference_type,
+	alter column object4_reference_type type historylog_reference_type using substring(object4_reference_type from '[^.]+$')::historylog_reference_type
+;
+
+alter table historydifference
+	alter column before_reference_type type historylog_reference_type using substring(before_reference_type from '[^.]+$')::historylog_reference_type,
+	alter column after_reference_type type historylog_reference_type using substring(after_reference_type from '[^.]+$')::historylog_reference_type,
+	alter column path_key_reference_type type historylog_reference_type using substring(path_key_reference_type from '[^.]+$')::historylog_reference_type
+;
 ```
 
 
