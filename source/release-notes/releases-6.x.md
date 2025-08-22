@@ -14,6 +14,13 @@
   `BootstrapRequestCycle.getSettings().renderHead(getPage(), response);`.
 * HistoryLog / HistoryDifference storage optimization. Check this {ref}`guide <historylog-optimization-migration>`.
 
+## Breaking changes
+
+* igloo-component-web-test removed
+* igloo-component-web-jpa-test removed
+
+Sources are available in git history. `@SpringBootTest` is a better alternative to setup a server for tests.
+
 # 6.13.0 (2025-07-23)
 
 ## Enhancement
