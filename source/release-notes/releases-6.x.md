@@ -8,9 +8,10 @@
 
 ## Enhancement
 
+* Juice inliner client forces HTTP/1.1 to prevent issue when HTTP/2 is silently dropped by server.
 * Replace `response.render(JavaScriptHeaderItem.forReference(Bootstrap5OverrideJavaScriptResourceReference.get()));`
   or `response.render(JavaScriptHeaderItem.forReference(Bootstrap5JavaScriptResourceReference.get()));` by
-  `BootstrapRequestCycle.getSettings().renderHead(getPage(), response);`
+  `BootstrapRequestCycle.getSettings().renderHead(getPage(), response);`.
 * HistoryLog / HistoryDifference storage optimization. Check this {ref}`guide <historylog-optimization-migration>`.
 
 # 6.13.0 (2025-07-23)
