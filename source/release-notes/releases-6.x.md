@@ -1,10 +1,13 @@
 # Releases 6.x
 
-# 6.14.0 (TBD)
+# 6.15.0 (TBD)
+
+# 6.14.0 (2025-09-04)
 
 ## Bugfix
 
 * SCSS utilities: fix text break mixin / flex text break.
+* fix missing queryDsl classifier jakarta
 
 ## Enhancement
 
@@ -13,11 +16,15 @@
   or `response.render(JavaScriptHeaderItem.forReference(Bootstrap5JavaScriptResourceReference.get()));` by
   `BootstrapRequestCycle.getSettings().renderHead(getPage(), response);`.
 * HistoryLog / HistoryDifference storage optimization. Check this {ref}`guide <historylog-optimization-migration>`.
+* add owasp dependency check ci job
+* init vue.js component compatibility
+* add jparepository utilities
 
 ## Breaking changes
 
 * igloo-component-web-test removed
 * igloo-component-web-jpa-test removed
+* remove ServiceException / SecurityException not used on HistoryEventSerices
 
 Sources are available in git history. `@SpringBootTest` is a better alternative to setup a server for tests.
 
