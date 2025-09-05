@@ -2,6 +2,13 @@
 
 # 6.15.0 (TBD)
 
+# 6.14.1 (2025-09-05)
+
+## Bugfix
+
+* rollback update dependencies with vulnerabilities -> make upperbound on projects
+
+
 # 6.14.0 (2025-09-04)
 
 ## Bugfix
@@ -19,6 +26,7 @@
 * add owasp dependency check ci job
 * init vue.js component compatibility
 * add jparepository utilities
+* update dependencies with vulnerabilities
 
 ## Breaking changes
 
