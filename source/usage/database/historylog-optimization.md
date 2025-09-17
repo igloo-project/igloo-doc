@@ -64,6 +64,15 @@ In you project, you must:
 * Replace `valueService.create(...)` by `valueService.createHistoryValue(...)`
   or `valueService.createHistoryEventValue(...)`
 * Replace `HistoryValue` by `IHistoryValue`
+* Register **two** converters for IHistoryValue subclasses:
+  ```java
+  // before
+  converterLocator.set(HistoryValue.class, HistoryValueRenderer.get());
+
+  // after
+  converterLocator.set(HistoryValue.class, IHistoryValueRenderer.get());
+  converterLocator.set(HistoryEventValue.class, IHistoryValueRenderer.get());
+  ```
 * Rename `HistoryValueRenderer` to `IHistoryValueRenderer` (as it can render both types)
 * Check that `HistoryValue` is strictly used on `HistoryLog` / `HistoryDifference`
   (search `historyvalue` in `**/model/**/*.java`). It's normal if you have no reference
