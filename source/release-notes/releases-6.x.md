@@ -2,6 +2,10 @@
 
 # 6.15.0 (TBD)
 
+## Bugfix
+
+* Console Task: fix reload method (after commit interceptor).
+
 # 6.14.1 (2025-09-05)
 
 ## Bugfix
