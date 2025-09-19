@@ -6,6 +6,10 @@
 
 * Console Task: fix reload method (after commit interceptor).
 
+## Enhancement
+
+* Add Wicket `ConversionError` message key.
+
 # 6.14.1 (2025-09-05)
 
 ## Bugfix
