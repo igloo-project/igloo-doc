@@ -1,14 +1,24 @@
 # Releases 6.x
 
-# 6.15.0 (TBD)
+# 6.16.0 (TBD)
+
+# 6.15.0 (2025-09-22)
 
 ## Bugfix
 
 * Console Task: fix reload method (after commit interceptor).
+* CI : hatch workaround
 
 ## Enhancement
 
 * Add Wicket `ConversionError` message key.
+* CI - Bas image with hatch
+* Log4J : add vhost and userID logs
+* JpaRepository Sorts Utils
+
+## Breaking changes
+
+* remove `ICoreUserService` - make userService more abstract
 
 # 6.14.1 (2025-09-05)
 
