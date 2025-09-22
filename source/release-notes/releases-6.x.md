@@ -2,6 +2,10 @@
 
 # 6.16.0 (TBD)
 
+## Dependencies update
+
+* Bootstrap: 5.3.7 -> 5.3.8
+
 # 6.15.0 (2025-09-22)
 
 ## Bugfix
