@@ -6,6 +6,20 @@
 
 * Bootstrap: 5.3.7 -> 5.3.8
 
+## Enhancement
+
+* `mockserver-*` counterparts of `mockserver-*-no-dependencies` are added in
+  igloo-maven `dependencies-testing` dependencies' management. These dependencies
+  allow to get rid of slf4j multiple bindings issue and to honor your intended
+  logging setup.
+
+### mockserver-*-no-dependencies
+
+If you use `mockserver-*-no-dependencies`, you may remove `-no-dependencies`
+suffixes in your `pom.xml` files. If you encounter UpperBound enforcer error at
+build-time, you may replace all your `dependencies-*` in `<dependencyManagement>`
+with `dependencies-all` (scope=import and type=pom)
+
 # 6.15.0 (2025-09-22)
 
 ## Bugfix
