@@ -1,8 +1,60 @@
 # Releases 5.x
 
+(v5.29.0)=
+
+# 5.29.0 (TBD)
+
 (v5.28.0)=
 
-# 5.28.0 (TBD)
+# 5.28.0 (2025-09-30)
+
+## Change
+
+* Log4J : add vhost and userID logs
+
+## Dependencies
+
+* jackson/-annotations/-core/-databind: 2.19.1 -> 2.20.0
+* jackson-dataformat-xml: 2.19.1 -> 2.20.0
+* jackson-jaxrs-json-provider / jackson-jaxrs-xml-provider: 2.19.1 -> 2.20.0
+* jackson-module-jaxb-annotations: 2.19.1 -> 2.20.0
+* guava: 33.4.8jre -> 33.5.0jre
+* h2: 2.3.232 -> 2.4.240
+* ph-css: 7.0.4 -> 7.1.0
+* opencsv: 5.11.2 -> 5.12.0
+* HikariCP: 6.3.0 -> 7.0.2
+* commons-io: 2.19.0 -> 2.20.0
+* junit-jupiter-api: 5.13.2 -> 5.13.4
+* junit-platform-suite-engine: 1.13.2 -> 1.13.4
+* log4j-core / log4j-slf4j-impl / log4j-api: 2.25.0 -> 2.25.2
+* assertj-core / assertj-guava: 3.27.3 -> 3.27.6
+* jsoup: 1.21.1 -> 1.21.2
+* mockito/-core/-junit-jupiter: 5.18.0 -> 5.20.0
+* postgresql: 42.7.7 -> 42.7.8
+* value: 2.10.1 -> 2.11.4
+* micrometer-core: 1.15.1 -> 1.15.4
+* error_prone_annotations: 2.39.0 -> 2.42.0
+* byte-buddy: 1.17.6 -> 1.17.7
+* commons-compress: 1.27.1 -> 1.28.0
+* commons-text: 1.13.1 -> 1.14.0
+* commons-lang3: 3.17.0 -> 3.19.0
+* commons-validator: 1.9.0 -> 1.10.0
+* caffeine / jcache: 3.2.1 -> 3.2.2
+* commons-codec: 1.18.0 -> 1.19.0
+* sass-embedded-host: 4.2.0 -> 4.3.1
+* nimbus-jose-jwt: 10.3 -> 10.5
+* jjwt: 0.12.6 -> 0.13.0
+* checker-qual: 3.49.5 -> 3.51.0
+* maven-compiler-plugin: 3.14.0 -> 3.14.1
+* maven-failsafe-plugin: 3.5.3 -> 3.5.4
+* maven-surefire-plugin: 3.5.3 -> 3.5.4
+* maven-javadoc-plugin: 3.11.2 -> 3.12.0
+* spotless-maven-plugin: 2.44.5 -> 2.46.1
+* dependency-check-maven: 12.1.3 -> 12.1.6
+* maven-enforcer-plugin: 3.5.0 -> 3.6.1
+* versions-maven-plugin: 2.18.0 -> 2.19.1
+* flatten-maven-plugin: 1.7.1 -> 1.7.3
+* frontend-maven-plugin: 1.15.1 -> 1.15.4
 
 (v5.27.0)=
 
