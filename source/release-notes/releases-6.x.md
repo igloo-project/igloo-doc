@@ -1,10 +1,18 @@
 # Releases 6.x
 
-# 6.16.0 (TBD)
+# 6.17.0 (TBD)
 
-## Dependencies update
+# 6.16.1 (07/10/2025)
 
-* Bootstrap: 5.3.7 -> 5.3.8
+## Bugfix / Breaking-change
+
+* remove hibernate-test dependency to fix igloo-listener-test (junit version conflict)
+
+# 6.16.0 (07/10/2025)
+
+## Bugfix
+
+* Wicket Form post order: fix writeAll after FormComponent models update
 
 ## Bugfix
 
@@ -16,6 +24,8 @@
   igloo-maven `dependencies-testing` dependencies' management. These dependencies
   allow to get rid of slf4j multiple bindings issue and to honor your intended
   logging setup.
+* Upgrade to Hibernate 7 + Hubernate Search 8 + lucene 9.12
+* igloo-jwt module
 
 ### mockserver-*-no-dependencies
 
@@ -23,6 +33,72 @@ If you use `mockserver-*-no-dependencies`, you may remove `-no-dependencies`
 suffixes in your `pom.xml` files. If you encounter UpperBound enforcer error at
 build-time, you may replace all your `dependencies-*` in `<dependencyManagement>`
 with `dependencies-all` (scope=import and type=pom)
+
+## Dependencies update
+
+* jackson/-core/-databind / ...: 2.19.1 -> 2.20.0
+* jackson-annotations: 2.19.1 -> 2.20
+* guava: 33.4.8jre -> 33.5.0jre
+* **ph-css: 7.0.4 -> 8.0.0**
+* opencsv: 5.11.2 -> 5.12.0
+* HikariCP: 6.3.0 -> 7.0.2
+* commons-io: 2.19.0 -> 2.20.0
+* wicket-webjars: 4.0.8 -> 4.0.13
+* junit-jupiter-api: 5.11.4 -> 5.14.0
+* junit-platform-suite-engine: 1.11.4 -> 1.14.0
+* log4j-core / log4j-slf4j-impl: 2.25.0 -> 2.25.2
+* **lucene/-analyzers-common/-core/-queries/-queryparser: 9.11.1 -> 9.12**
+* **wicket / wicket/-auth-roles/-core/-devutils/-extensions/-ioc/-spring: 10.2.0 -> 10.7.0**
+* wicketstuff-select2: 10.2.0 -> 10.7.0
+* assertj-core / assertj-guava: 3.27.3 -> 3.27.6
+* flyway-core: 11.7.2 -> 11.13.2
+* jersey-container-grizzly2-servlet: 3.1.10 -> 3.1.11
+* jersey-client / jersey-server: 3.1.10 -> 3.1.11
+* jersey-spring6: 3.1.10 -> 3.1.11
+* jersey-media-multipart: 3.1.10 -> 3.1.11
+* jersey-test-framework-provider-grizzly2: 3.1.10 -> 3.1.11
+* **hibernate/-core/-ehcache/-validator: 6.6.18.Final -> 7.1.3.Final**
+* **hibernate-search-orm: 7.2.4.Final -> 8.1.2.Final**
+* jsoup: 1.21.1 -> 1.21.2
+* mockito/-core/-junit-jupiter: 5.18.0 -> 5.20.0
+* postgresql: 42.7.7 -> 42.7.8
+* spring-\*: 6.2.8 -> 6.2.11
+* spring-security-\*: 6.5.1 -> 6.5.5
+* **bootstrap: 5.3.7 -> 5.3.8**
+* value: 2.10.1 -> 2.11.4
+* micrometer-core: 1.15.1 -> 1.15.4
+* jakarta.persistence-api: 3.1.0 -> 3.2.0
+* error_prone_annotations: 2.39.0 -> 2.42.0
+* spring-boot/spring-boot/-autoconfigure/-autoconfigure-processor: 3.5.3 -> 3.5.6
+* byte-buddy: 1.17.6 -> 1.17.7
+* commons-compress: 1.27.1 -> 1.28.0
+* commons-text: 1.13.1 -> 1.14.0
+* commons-validator: 1.9.0 -> 1.10.0
+* caffeine / jcache: 3.2.1 -> 3.2.2
+* commons-codec: 1.18.0 -> 1.19.0
+* commons-lang3: 3.17.0 -> 3.19.0
+* angus-mail: 2.0.3 -> 2.0.5
+* jjwt: 0.12.6 -> 0.13.0
+* checker-qual: 3.49.4 -> 3.51.1
+* logbook-core: 3.12.2 -> 3.12.3
+* httpclient5: 5.5 -> 5.5.1
+* springdoc-openapi-starter-webmvc-ui: 2.8.9 -> 2.8.13
+* sass-embedded-host: 4.2.0 -> 4.3.1
+* nimbus-jose-jwt: 10.3 -> 10.5
+* classgraph: 4.8.180 -> 4.8.181
+* jakarta.xml.bind-api: 4.0.2 -> 4.0.4
+* maven-compiler-plugin: 3.14.0 -> 3.14.1
+* maven-failsafe-plugin: 3.5.3 -> 3.5.4
+* maven-surefire-plugin: 3.5.3 -> 3.5.4
+* maven-dependency-plugin: 3.8.1 -> 3.9.0
+* maven-javadoc-plugin: 3.11.2 -> 3.12.0
+* maven-enforcer-plugin: 3.5.0 -> 3.6.2
+* versions-maven-plugin: 2.18.0 -> 2.19.1
+* exec-maven-plugin: 3.5.1 -> 3.6.1
+* flatten-maven-plugin: 1.7.1 -> 1.7.3
+* frontend-maven-plugin: 1.15.1 -> 1.15.4
+* spotless-maven-plugin: 2.44.5 -> 3.0.0
+* spring-boot-maven-plugin: 3.5.3 -> 3.5.6
 
 # 6.15.0 (2025-09-22)
 
