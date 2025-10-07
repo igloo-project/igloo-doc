@@ -2,6 +2,10 @@
 
 # 6.17.0 (TBD)
 
+## Enhancement
+
+* Bootstrap 5 override: add `.card-bg` and `.card-bg-(top|bottom)` utilities.
+
 # 6.16.1 (07/10/2025)
 
 ## Bugfix / Breaking-change
