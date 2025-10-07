@@ -6,6 +6,10 @@
 
 * Bootstrap: 5.3.7 -> 5.3.8
 
+## Bugfix
+
+* Wicket `Form` post order: fix `writeAll` after `FormComponent` models update.
+
 ## Enhancement
 
 * `mockserver-*` counterparts of `mockserver-*-no-dependencies` are added in
