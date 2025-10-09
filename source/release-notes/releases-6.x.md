@@ -6,6 +6,12 @@
 
 * Bootstrap 5 override: add `.card-bg` and `.card-bg-(top|bottom)` utilities.
 
+# 6.16.2 (09/10/2025)
+
+## Bugfix / Breaking-change
+
+* rollback hibernate 7 upgrade -> incompatible with spring-data-jpa. Waiting Spring 7 release to migrate
+
 # 6.16.1 (07/10/2025)
 
 ## Bugfix / Breaking-change
