@@ -6,6 +6,12 @@
 
 * Bootstrap 5 override: add `.card-bg` and `.card-bg-(top|bottom)` utilities.
 
+# 6.16.3 (22/10/2025)
+
+## Bugfix / Breaking-change
+
+* rollback wicket 10.7.0 upgrade -> issue WICKET-7167 (issue validation form cascade process)
+
 # 6.16.2 (09/10/2025)
 
 ## Bugfix / Breaking-change
