@@ -6,6 +6,12 @@
 
 * Bootstrap 5 override: add `.card-bg` and `.card-bg-(top|bottom)` utilities.
 
+# 6.16.4 (03/11/2025)
+
+## Bugfix
+
+* Fix `CacheWritingForm` update models for Wicket rollback.
+
 # 6.16.3 (22/10/2025)
 
 ## Bugfix / Breaking-change
