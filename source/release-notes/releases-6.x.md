@@ -6,31 +6,31 @@
 
 * Bootstrap 5 override: add `.card-bg` and `.card-bg-(top|bottom)` utilities.
 
-# 6.16.4 (03/11/2025)
+# 6.16.4 (2025-11-03)
 
 ## Bugfix
 
 * Fix `CacheWritingForm` update models for Wicket rollback.
 
-# 6.16.3 (22/10/2025)
+# 6.16.3 (2025-10-22)
 
-## Bugfix / Breaking-change
+## Bugfix
 
 * rollback wicket 10.7.0 upgrade -> issue WICKET-7167 (issue validation form cascade process)
 
-# 6.16.2 (09/10/2025)
+# 6.16.2 (2025-10-09)
 
-## Bugfix / Breaking-change
+## Bugfix
 
 * rollback hibernate 7 upgrade -> incompatible with spring-data-jpa. Waiting Spring 7 release to migrate
 
-# 6.16.1 (07/10/2025)
+# 6.16.1 (2025-10-07)
 
-## Bugfix / Breaking-change
+## Bugfix
 
 * remove hibernate-test dependency to fix igloo-listener-test (junit version conflict)
 
-# 6.16.0 (07/10/2025)
+# 6.16.0 (2025-10-07)
 
 ## Bugfix
 
