@@ -6,6 +6,13 @@
 
 * Bootstrap 5 override: add `.card-bg` and `.card-bg-(top|bottom)` utilities.
 
+## Bugfix
+
+* Hibernate cache: fix hibernate cache lookup with spring launcher. This fixes
+  the following issues :
+  * `CacheManager for classpath://hibernate/hibernate-jcache-caffeine.conf is unexpectedly empty` log
+  * empty jpaCacheManager section in `/console/maintenance/caches/`
+
 # 6.16.4 (2025-11-03)
 
 ## Bugfix
