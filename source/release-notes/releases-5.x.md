@@ -1,8 +1,51 @@
 # Releases 5.x
 
+(v5.30.0)=
+
+# 5.30.0 (TBD)
+
 (v5.29.0)=
 
 # 5.29.0 (TBD)
+
+## dependencies
+
+* jackson/-core/-databind / -dataformat-xml / -jackson-jaxrs /jackson-module-jaxb: 2.20.0 -> 2.20.1
+* commons-io: 2.20.0 -> 2.21.0
+* junit-jupiter-api: 5.13.4 -> 5.14.1
+* junit-platform-suite-engine: 1.13.4 -> 1.14.1
+* log4j-core / log4j-slf4j-impl / log4j-api: 2.25.2 -> 2.25.3
+* poi / poi-ooxml: 5.4.1 -> 5.5.1
+* wicket / wicket/-auth-roles/-core/-devutils/-extensions/-ioc/-spring: 9.21.0 -> 9.22.0
+* wicketstuff-select2: 9.21.0 -> 9.22.0
+* mockito/-core/-junit-jupiter: 5.20.0 -> 5.21.0
+* jakarta.mail: 1.6.7 -> 1.6.8
+* value: 2.11.4 -> 2.12.0
+* micrometer-core: 1.15.4 -> 1.16.1
+* error_prone_annotations: 2.42.0 -> 2.45.0
+* byte-buddy: 1.17.7 -> 1.18.3
+* commons-text: 1.14.0 -> 1.15.0
+* commons-lang3: 3.19.0 -> 3.20.0
+* commons-exec: 1.5.0 -> 1.6.0
+* commons-validator: 1.10.0 -> 1.10.1
+* caffeine / jcache: 3.2.2 -> 3.2.3
+* commons-codec: 1.19.0 -> 1.20.0
+* rhino: 1.8.0 -> 1.9.0
+* sass-embedded-host: 4.3.1 -> 4.4.0
+* nimbus-jose-jwt: 10.5 -> 10.6
+* checker-qual: 3.51.0 -> 3.52.1
+* maven-antrun-plugin: 3.1.0 -> 3.2.0
+* maven-dependency-plugin: 3.8.1 -> 3.9.0
+* maven-war-plugin: 3.4.0 -> 3.5.1
+* maven-resources-plugin: 3.3.1 -> 3.4.0
+* maven-assembly-plugin: 3.7.1 -> 3.8.0
+* maven-jar-plugin: 3.4.2 -> 3.5.0
+* jacoco-maven-plugin: 0.8.13 -> 0.8.14
+* dependency-check-maven: 12.1.6 -> 12.1.9
+* maven-enforcer-plugin: 3.6.1 -> 3.6.2
+* versions-maven-plugin: 2.19.1 -> 2.20.1
+* exec-maven-plugin: 3.5.1 -> 3.6.3
+* maven-source-plugin: 3.3.1 -> 3.4.0
 
 (v5.28.0)=
 
