@@ -1,10 +1,13 @@
 # Releases 6.x
 
-# 6.17.0 (TBD)
+# 6.18.0 (TBD)
+
+# 6.17.0 (2026-01-02)
 
 ## Enhancement
 
 * Bootstrap 5 override: add `.card-bg` and `.card-bg-(top|bottom)` utilities.
+* Add module Vue DatePicker
 
 ## Bugfix
 
