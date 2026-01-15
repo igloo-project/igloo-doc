@@ -1,6 +1,69 @@
 # Releases 6.x
 
-# 6.18.0 (TBD)
+# 6.19.0 (TDB)
+
+# 6.18.0 (2026-01-15)
+
+## Bugfix
+BasicApp: fix console properties page + add missing hidden properties
+
+## Dependencies update
+
+### npm
+* vue3 datepicker 11.0.3 -> 12.1.0
+
+### maven
+* jackson/-core/-databind / ...: 2.20.0 -> 2.20.1
+* ph-css: 8.0.0 -> 8.1.1
+* querydsl-jpa: 7.0 -> 7.1
+* commons-io: 2.20.0 -> 2.21.0
+* wicket-webjars: 4.0.13 -> 4.0.14
+* junit-jupiter-api: 5.14.0 -> 5.14.1
+* junit-platform-suite-engine: 1.14.0 -> 1.14.1
+* log4j-core / log4j-slf4j-impl: 2.25.2 -> 2.25.3
+* poi / poi-ooxml: 5.4.1 -> 5.5.1
+* wicket / wicket/-auth-roles/-core/-devutils/-extensions/-ioc/-spring: 10.7.0 -> 10.8.0
+* flyway-core: 11.13.2 -> 11.20.0
+* hibernate/-core/-ehcache/-validator: 6.6.31.Final -> 6.6.40.Final
+* hibernate-search-orm: 7.2.4.Final -> 7.2.5.Final
+* mockito/-core/-junit-jupiter: 5.20.0 -> 5.21.0
+* spring-\*: 6.2.11 -> 6.2.15
+* spring-security-\*: 6.5.5 -> 6.5.7
+* value: 2.11.4 -> 2.12.0
+* micrometer-core: 1.15.4 -> 1.16.1
+* error_prone_annotations: 2.42.0 -> 2.45.0
+* spring-boot/spring-boot/-autoconfigure/-autoconfigure-processor: 3.5.6 -> 3.5.9
+* byte-buddy: 1.17.7 -> 1.18.3
+* commons-exec: 1.5.0 -> 1.6.0
+* commons-validator: 1.10.0 -> 1.10.1
+* caffeine / jcache: 3.2.2 -> 3.2.3
+* commons-codec: 1.19.0 -> 1.20.0
+* commons-lang3: 3.19.0 -> 3.20.0
+* checker-qual: 3.51.1 -> 3.52.1
+* rhino: 1.8.0 -> 1.9.0
+* httpclient5: 5.5.1 -> 5.6
+* springdoc-openapi-starter-webmvc-ui: 2.8.13 -> 2.8.15
+* sass-embedded-host: 4.3.1 -> 4.4.0
+* testcontainers: 1.21.3 -> 1.21.4
+* asm: 9.8 -> 9.9.1
+* aspectjweaver: 1.9.24 -> 1.9.25
+* nimbus-jose-jwt: 10.5 -> 10.6
+* classgraph: 4.8.181 -> 4.8.184
+* maven-antrun-plugin: 3.1.0 -> 3.2.0
+* maven-war-plugin: 3.4.0 -> 3.5.1
+* maven-resources-plugin: 3.3.1 -> 3.4.0
+* maven-assembly-plugin: 3.7.1 -> 3.8.0
+* maven-jar-plugin: 3.4.2 -> 3.5.0
+* maven-source-plugin: 3.3.1 -> 3.4.0
+* jacoco-maven-plugin: 0.8.13 -> 0.8.14
+* dependency-check-maven: 12.1.6 -> 12.1.9
+* versions-maven-plugin: 2.19.1 -> 2.20.1
+* exec-maven-plugin: 3.6.1 -> 3.6.3
+* frontend-maven-plugin: 1.15.4 -> 2.0.0
+* spotless-maven-plugin: 3.0.0 -> 3.1.0
+* google-java-format: 1.23.0 -> 1.33.0
+* spring-boot-maven-plugin: 3.5.6 -> 3.5.9
+* jaxb2-maven-plugin: 3.3.0 -> 4.0.0
 
 # 6.17.0 (2026-01-02)
 
