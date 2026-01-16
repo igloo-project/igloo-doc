@@ -2,10 +2,15 @@
 
 # 6.19.0 (TDB)
 
+## Enhancement
+
+* BS5: badge link
+
 # 6.18.0 (2026-01-15)
 
 ## Bugfix
-BasicApp: fix console properties page + add missing hidden properties
+
+* BasicApp: fix console properties page + add missing hidden properties
 
 ## Dependencies update
 
