@@ -6,7 +6,16 @@
 
 * BS5: badge link
 
+## Bugfix
+
+* Broken console page for Hibernate Level 2 cache when deployed in tomcat
+  (without spring-boot launcher).
+
 # 6.18.0 (2026-01-15)
+
+```{warning}
+Console page for cache management is broken. See 6.17.0 for workaround. See 6.19.0 for fix.
+```
 
 ## Bugfix
 
@@ -71,6 +80,14 @@
 * jaxb2-maven-plugin: 3.3.0 -> 4.0.0
 
 # 6.17.0 (2026-01-02)
+
+```{warning}
+Console page for cache management is broken. See 6.19.0 for fix.
+
+Workaround: only when application is deployed in tomcat, override
+`spring.jpa.properties.hibernate.javax.cache.uri` with a `classpath:/` url instead of `classpath://`.
+May be done in `/etc/APPLICATION/configuration.properties`.
+```
 
 ## Enhancement
 
