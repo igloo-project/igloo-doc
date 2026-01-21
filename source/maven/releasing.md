@@ -9,7 +9,7 @@ and push to repository. Release is performed by CI/CD.
 
 ### Release
 
-A tool `igloo-release` is available in branch `igloo-boot-dev`, folder `tools/igloo-release`. It can
+A tool `igloo-release` is available in branch `dev`, folder `tools/igloo-release`. It can
 be used for Igloo 5.x and Igloo 6.x releases.
 
 ```
@@ -23,7 +23,7 @@ PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT
 # Igloo 5 command
 # NEW_VERSION : 5.1.0
 # NEW_SNAPSHOT : 5.2.0-SNAPSHOT
-PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo --igloo-5 NEW_VERSION NEW_SNAPSHOT --release-branch dev --push
+PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo --igloo-5 NEW_VERSION NEW_SNAPSHOT --push
 
 # Script performs igloo-maven, igloo-commons and igloo-parent release
 # Script waits before each push that previous artifacts are published
@@ -100,7 +100,7 @@ git commit -a -m "Update Igloo Maven and Commons dependencies"
 # perform jgitflow release
 mvn jgitflow:release-start
 mvn -DskipTests -DnoDeploy jgitflow:release-finish
-git push origin master dev v$IGLOO_PARENT_VERSION
+git push origin main dev v$IGLOO_PARENT_VERSION
 
 ########################################
 # Switch back to snapshot dependencies #
@@ -219,7 +219,7 @@ mvn versions:set-property -Dproperty=igloo-maven.version -DnewVersion=$IGLOO_MAV
 mvn versions:set-property -Dproperty=igloo-commons.version -DnewVersion=$IGLOO_COMMONS_VERSION_SNAPSHOT -DprocessAllModules=true -DgenerateBackupPoms=false
 git commit -a -m "Updating develop poms back to pre merge state (Igloo sub-project)"
 
-git push origin master dev v$IGLOO_PARENT_VERSION
+git push origin main dev v$IGLOO_PARENT_VERSION
 ```
 
 ## org.iglooproject.webjars:boostrap4

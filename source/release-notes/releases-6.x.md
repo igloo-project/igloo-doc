@@ -2,6 +2,10 @@
 
 # 6.19.0 (TDB)
 
+## Breaking changes
+
+* Rename pom.xml property `masterBranchName` to `productionBranchName`
+
 ## Enhancement
 
 * BS5: badge link
@@ -10,6 +14,8 @@
 
 * Broken console page for Hibernate Level 2 cache when deployed in tomcat
   (without spring-boot launcher).
+* Setup `versionsMavenPluginVersion` pom property so that we get rid of
+  versions-maven-plugin old bugs when we use gitflow-maven-plugin
 
 # 6.18.0 (2026-01-15)
 

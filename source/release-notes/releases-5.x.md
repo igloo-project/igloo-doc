@@ -4,6 +4,15 @@
 
 # 5.30.0 (TBD)
 
+## Breaking changes
+
+* Rename pom.xml property `masterBranchName` to `productionBranchName`
+
+## Bugfix
+
+* Setup `versionsMavenPluginVersion` pom property so that we get rid of
+  versions-maven-plugin old bugs when we use gitflow-maven-plugin
+
 (v5.29.0)=
 
 # 5.29.0 (2026-01-02)

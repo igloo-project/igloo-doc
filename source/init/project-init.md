@@ -11,9 +11,10 @@ project. Some workaround / fixes are needed.
 ```bash
 # ensure mvn, git and xmllint commands are installed
 git clone git@github.com:igloo-project/igloo-parent.git
-git checkout igloo-boot-dev
+cd igloo-parent
+git checkout dev
 cd tools/igloo-project-init
-hatch run igloo-project-init --check-build --igloo-branch igloo-boot-dev \
+hatch run igloo-project-init --check-build --igloo-branch dev \
   --target-url https://HOST/group/project --target-branch main \
   hello-world com.mygroup 1.0-SNAPSHOT helloworld \
   HelloWorld helloWorld "Hello World" hello_world
