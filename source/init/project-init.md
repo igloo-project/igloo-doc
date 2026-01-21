@@ -36,38 +36,40 @@ If errors are raised, use `-v --debug`.
 
 See `--help` details.
 
-## Create and initialize the database
+## Database
 
-In this part, we will create the database with the proper user and schema, and we will fill it with a script.
-Before performing the following commands, make sure you have PostgreSQL installed.
+Use a Docker Compose file with correct db port (`<XX>32`):
 
-To create the database, we execute some commands directly in a terminal:
+```yml
+name: hello-world
 
-```bash
-createuser -U postgres -P hello_world
-createdb -U postgres -O hello_world hello_world
-psql -U postgres hello_world
-#Here you are connected to the database as the user postgres
-DROP SCHEMA public;
-\q
-psql -U hello_world hello_world
-#Here you are connected to the database as the user hello_world
-CREATE SCHEMA hello_world;
+services:
+  bdd:
+    image: "igloo-containers.tools.kobalt.fr/containers/postgres-igloo:15"
+    ports:
+      - "127.0.0.1:<XX>32:5432"
+    volumes:
+      - hello-world-bdd:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=hello_world
+      - POSTGRES_USER=hello_world
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - TZ=Europe/Paris
+      - PGTZ=Europe/Paris
+
+volumes:
+  hello-world-bdd:
 ```
 
-:::{note}
-Use the name of the project for the password (here: hello_world)
-:::
+Update db port for property `spring.datasource.url` in `configuration.properties` file.
 
-After that we have to enable an option which will allow the project to create new entities in the database.
-
-## Create and initialize filesystem
+## Filesystem
 
 ```bash
 sudo mkdir /data/services/hello-world
 sudo chown "${USER}." /data/services/hello-world
 ```
 
-## Launch the webapp
+## Launch
 
 Launch application with de launcher from `app` module (cf `start-class` in pom.xml, e.g. `basicapp.app.SpringBootMain`).
