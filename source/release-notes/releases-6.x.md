@@ -1,6 +1,6 @@
 # Releases 6.x
 
-# 6.19.0 (TDB)
+# 6.19.0 (2026-01-22)
 
 ## Breaking changes
 
