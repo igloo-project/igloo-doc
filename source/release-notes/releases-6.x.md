@@ -1,5 +1,12 @@
 # Releases 6.x
 
+# 6.20.0 (TBD)
+
+## Enhancement
+
+* Add Docker Compose setup
+* Clean useless db environment properties
+
 # 6.19.0 (2026-01-22)
 
 ## Breaking changes
