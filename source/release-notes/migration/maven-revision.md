@@ -56,7 +56,8 @@ The following changes bring enhancements:
     <version>${revision}</version>
   </parent>
   ```
-* For each listed file: remove `<version>1.0-SNASPHOT</version>` declaration (project -> version)
+* For each listed file: remove `<version>1.0-SNASPHOT</version>` declaration (project -> version) (can be inherited from parent)
+* For each listed file: remove `<groupId>...</groupId>` declaration (project -> groupId) (can be inherited from parent)
 * For each listed file: remove `<java.version>...</java.version>` property declaration if present
 * For each listed file: remove property declaration *already defined in root pom* `<properties>...</properties>`
   (keep start-class, remove igloo-maven.version)
