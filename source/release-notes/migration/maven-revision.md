@@ -14,7 +14,7 @@ The following changes bring enhancements:
 
 ## Switch project to ${revision}
 
-* Replace `1.0-SNASPHOT` in following blocks with you project version
+* Adapt `1.0-SNASPHOT` with your own project version
 * Find all version occurrences
   
   ```shell
