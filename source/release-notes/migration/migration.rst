@@ -5,6 +5,7 @@ Migration guides
 .. toctree::
    :maxdepth: 1
 
+   maven-revision.md
    migrating-to-java11.rst
    Migrating-to-1.1.0.rst
    Migrating-to-0.14.md

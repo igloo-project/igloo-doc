@@ -41,7 +41,7 @@ See `--help` details.
 
 Use a Docker Compose file with correct db port (`<XX>32`):
 
-```yml
+```yaml
 name: hello-world
 
 services:

@@ -2,6 +2,17 @@
 
 # 6.20.0 (TBD)
 
+## Breaking changes
+
+* `spring-boot-starter-parent` module is removed
+* Igloo and projects switched to CI-friendly `${revision}` versioning.
+  `gitflow-maven-plugin` configuration is updated to handle this versioning
+  scheme.
+* `jgitflow-maven-plugin` default configuration is removed. Project must move
+  to `gitflow-maven-plugin`.
+
+See {ref}`Migration guide <maven-revision>`.
+
 ## Enhancement
 
 * Add Docker Compose setup
