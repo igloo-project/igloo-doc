@@ -47,7 +47,7 @@ git clone git@github.com:igloo-project/igloo-oomph-project.git
 - Select **File > Import > Oomph > Projects into workspace**.
 - Click on the `+` (green icon, top-right) button :
 - Choose the catalog Eclipse Projects
-- Browse file : choose the file `git/igloo-oomph-project/org.iglooproject.eclipse.project.setup`
+- Browse file : choose the file `git/igloo-oomph-project/org.iglooproject.eclipse.project5.setup`
 - Check the box **igloo simple project (Igloo 5.x)**
 
 Check and complete the window with required variables:
