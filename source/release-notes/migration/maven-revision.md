@@ -65,6 +65,12 @@ The following changes bring enhancements:
 * For each listed file: remove `<distributionManagement>...</distributionManagement>`
 * For each listed file: remove any item that can be inherited from root pom
 
+For each `-app` module affected: create a root file `spring-app.profile` with following content:
+
+```text
+This file triggers spring-app profile from plugins-spring (see pom parents)
+```
+
 ## Validation
 
 Perform a project build and check that application can be started.
