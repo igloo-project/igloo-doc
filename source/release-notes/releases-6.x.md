@@ -17,6 +17,8 @@ See {ref}`Migration guide <maven-revision>`.
 
 * Add Docker Compose setup
 * Clean useless db environment properties
+* Remove some unwanted synchronized keyword
+* Storage: Fichier createBy getter null safe
 
 # 6.19.0 (2026-01-22)
 
