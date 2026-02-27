@@ -1,6 +1,6 @@
 # Releases 6.x
 
-# 6.20.0 (TBD)
+# 6.20.0 (2026-02-27)
 
 ## Breaking changes
 
@@ -10,6 +10,7 @@
   scheme.
 * `jgitflow-maven-plugin` default configuration is removed. Project must move
   to `gitflow-maven-plugin`.
+* spotless configuration now reformat pom.xml files (goals spotless:check spotless:apply)
 
 See {ref}`Migration guide <maven-revision>`.
 
