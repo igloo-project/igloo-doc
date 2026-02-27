@@ -18,7 +18,7 @@ See {ref}`Migration guide <maven-revision>`.
 * Add Docker Compose setup
 * Clean useless db environment properties
 * Remove some unwanted synchronized keyword
-* Storage: Fichier createBy getter null safe
+* Storage: Fichier createdBy getter null safe
 * Console - Task: fix serialized task card bg color
 
 # 6.19.0 (2026-01-22)
