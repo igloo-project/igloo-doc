@@ -1,5 +1,16 @@
 # Releases 7.x
 
+# 7.1.0 (TBD)
+
+## Enhancement
+
+* BasicApp: refactor Spring configuration
+* HistoryLog: add event type merge group
+
+## Bugfix
+
+* BasicApp / Spring Boot: add missing spring boot webmvc dependency
+
 # 7.0.0 (2026-03-09)
 
 ## Breaking changes
@@ -8,7 +19,7 @@
 * Use spring env in properties files
 * TestContainer & Docker : Update postgres 15 / 17 -> 18
 
-# New with Igloo 7.x
+## New with Igloo 7.x
 
 * Spring boot 4.x
 * Spring 7.x
