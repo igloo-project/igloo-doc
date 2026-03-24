@@ -5,6 +5,7 @@
 ## Enhancement
 
 * BasicApp: refactor Spring configuration
+* BasicApp: add full history diff on User
 * HistoryLog: add event type merge group
 
 ## Bugfix
