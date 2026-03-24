@@ -5,6 +5,7 @@
 ## Enhancement
 
 * BasicApp: refactor Spring configuration
+* BasicApp: flyway modes
 * BasicApp: add full history diff on User
 * HistoryLog: add event type merge group
 
