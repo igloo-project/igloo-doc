@@ -8,6 +8,7 @@
 * BasicApp: flyway modes
 * BasicApp: add full history diff on User
 * BasicApp: user has password service method
+* BasicApp: Export Excel - update workbook style
 * HistoryLog: add event type merge group
 
 ## Bugfix
