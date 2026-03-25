@@ -9,6 +9,7 @@
 * BasicApp: add full history diff on User
 * BasicApp: user has password service method
 * BasicApp: Export Excel - update workbook style
+* BasicApp: announcement markdown
 * HistoryLog: add event type merge group
 
 ## Bugfix
