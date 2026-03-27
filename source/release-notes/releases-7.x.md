@@ -10,6 +10,7 @@
 * BasicApp: user has password service method
 * BasicApp: Export Excel - update workbook style
 * BasicApp: announcement markdown
+* BasicApp: remove wicket tester unit tests
 * HistoryLog: add event type merge group
 
 ## Bugfix
