@@ -11,6 +11,7 @@
 * BasicApp: Export Excel - update workbook style
 * BasicApp: announcement markdown
 * BasicApp: remove wicket tester unit tests
+* Console: revamp HS indexing page
 * HistoryLog: add event type merge group
 
 ## Bugfix
