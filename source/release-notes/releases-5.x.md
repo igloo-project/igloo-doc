@@ -1,5 +1,41 @@
 # Releases 5.x
 
+(v5.32.0)=
+
+# 5.32.0 (TDB)
+
+(v5.31.0)=
+
+# 5.31.0 (2026-04-13)
+
+## Dependencies
+* jackson-annotations: 2.20 -> 2.21
+* jackson/-core/-databind / -dataformat-xml / -jackson-jaxrs /jackson-module-jaxb: 2.20.1 -> 2.21.2
+* junit-jupiter-api: 5.14.1 -> 5.14.3
+* junit-platform-suite-engine: 1.14.1 -> 1.14.3
+* log4j-core / log4j-slf4j-impl / log4j-api: 2.25.3 -> 2.25.4
+* wicketstuff-select2: 9.21.0 -> 9.22.0
+* assertj-core / assertj-guava: 3.27.6 -> 3.27.7
+* jboss-logging: 3.6.1.Final -> 3.6.3.Final
+* jsoup: 1.21.2 -> 1.22.1
+* mockito/-core/-junit-jupiter: 5.21.0 -> 5.23.0
+* postgresql: 42.7.8 -> 42.7.10
+* value: 2.12.0 -> 2.12.1
+* micrometer-core: 1.16.1 -> 1.16.4
+* error_prone_annotations: 2.45.0 -> 2.48.0
+* byte-buddy: 1.18.3 -> 1.18.7
+* commons-codec: 1.20.0 -> 1.21.0
+* rhino: 1.9.0 -> 1.9.1
+* nimbus-jose-jwt: 10.6 -> 10.8
+* checker-qual: 3.52.1 -> 3.54.0
+* maven-compiler-plugin: 3.14.1 -> 3.15.0
+* maven-failsafe-plugin: 3.5.4 -> 3.5.5
+* maven-surefire-plugin: 3.5.4 -> 3.5.5
+* maven-dependency-plugin: 3.9.0 -> 3.10.0
+* maven-resources-plugin: 3.4.0 -> 3.5.0
+* versions-maven-plugin: 2.20.1 -> 2.21.0
+* buildnumber-maven-plugin: 3.2.0 -> 3.3.0
+
 (v5.30.0)=
 
 # 5.30.0 (2026-01-22)
