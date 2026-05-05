@@ -2,6 +2,10 @@
 
 # 7.2.0 (TDB)
 
+## Enhancement
+
+* BasicApp: fix navbar responsive width on layout advanced
+
 # 7.1.0 (2026-04-23)
 
 ## Enhancement
