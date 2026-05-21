@@ -1,6 +1,27 @@
 # Releases 7.x
 
-# 7.2.0 (TDB)
+# 7.3.0 (TBD)
+
+# 7.2.1 (2026-05-21)
+
+## Dependencies
+
+* Hibernate 7.3.5.Final (fix multiple bugs like https://hibernate.atlassian.net/browse/HHH-20265)
+* Hibernate search 8.3.1.Final
+
+# 7.2.0 (2026-05-21)
+
+## Enhancement
+
+* BasicApp : Layout advanced - ajustement navbar container width
+
+## Dependencies
+
+* fix logbook version
+* wicket 10.9.1 (fix multiples cve)
+* spring boot 4.0.6 (fix multiples cve)
+* postgresql 42.7.11 (fix multiples cve)
+* httpclient5 5.6.1 (fix multiples cve)
 
 ## Enhancement
 
