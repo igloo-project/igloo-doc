@@ -1,8 +1,14 @@
 # Releases 5.x
 
+(v5.33.0)=
+
+# 5.33.0 (TDB)
+
+## Dependencies
+
 (v5.32.0)=
 
-# 5.32.0 (TDB)
+# 5.32.0 (2026-06-11)
 
 ## Dependencies
 
