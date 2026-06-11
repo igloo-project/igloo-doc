@@ -4,11 +4,16 @@
 
 # 5.32.0 (TDB)
 
+## Dependencies
+
+* Font Awesome: 6.5.1 -> 6.5.2
+
 (v5.31.0)=
 
 # 5.31.0 (2026-04-13)
 
 ## Dependencies
+
 * jackson-annotations: 2.20 -> 2.21
 * jackson/-core/-databind / -dataformat-xml / -jackson-jaxrs /jackson-module-jaxb: 2.20.1 -> 2.21.2
 * junit-jupiter-api: 5.14.1 -> 5.14.3
