@@ -1,10 +1,57 @@
 # Releases 5.x
 
+(v5.34.0)=
+
+# 5.34.0 (TDB)
+
 (v5.33.0)=
 
-# 5.33.0 (TDB)
+# 5.33.0 (2026-07-10)
+
+## Breaking changes
+
+* java 17 migration
 
 ## Dependencies
+
+* jackson-annotations: 2.21 -> 2.22
+* jackson/-core/-databind / -dataformat-xml / -jackson-jaxrs /jackson-module-jaxb: 2.21.2 -> 2.22.1
+* guava: 33.5.0jre -> 33.6.0jre
+* HikariCP: 7.0.2 -> 7.1.0
+* commons-io: 2.21.0 -> 2.22.0
+* junit-jupiter-api: 5.14.3 -> 5.14.4
+* junit-platform-suite-engine: 1.14.3 -> 1.14.4
+* log4j-core / log4j-slf4j-impl / log4j-api: 2.25.4 -> 2.26.1
+* wicketstuff-select2: 9.22.0 -> 9.23.1
+* bindgen: 5.0.0 -> 5.1.0
+* jersey-container-grizzly2-servlet: 2.47 -> 2.48
+* jersey-client / jersey-server: 2.47 -> 2.48
+* jersey-spring5: 2.47 -> 2.48
+* jersey-media-multipart: 2.47 -> 2.48
+* jersey-test-framework-prov0der-grizzly2: 2.47 -> 2.48
+* jsoup: 1.22.1 -> 1.22.2
+* postgresql: 42.7.10 -> 42.7.13
+* jcl-over-slf4j / jul-to-slf4j / slf4j-api: 2.0.17 -> 2.0.18
+* wiquery-core: 9.0.0 -> 9.1.0
+* value: 2.12.1 -> 2.12.2
+* micrometer-core: 1.16.4 -> 1.17.0
+* error_prone_annotations: 2.48.0 -> 2.50.0
+* byte-buddy: 1.18.7 -> 1.18.11
+* caffeine / jcache: 3.2.3 -> 3.2.4
+* commons-codec: 1.21.0 -> 1.22.0
+* nimbus-jose-jwt: 10.8 -> 10.9.1
+* checker-qual: 3.54.0 -> 4.2.1
+* maven-failsafe-plugin: 3.5.5 -> 3.5.6
+* maven-surefire-plugin: 3.5.5 -> 3.5.6
+* maven-dependency-plugin: 3.10.0 -> 3.11.0
+* maven-site-plugin: 3.21.0 -> 3.22.0
+* spotless-maven-plugin: 2.46.1 -> 3.8.0
+* google-java-format: 1.23.0 -> 1.28.0
+* maven-processor-plugin: 5.1 -> 5.2
+* jacoco-maven-plugin: 0.8.14 -> 0.8.15
+* dependency-check-maven: 12.1.9 -> 12.2.2
+* maven-enforcer-plugin: 3.6.2 -> 3.6.3
+* frontend-maven-plugin: 1.15.4 -> 2.0.1
 
 (v5.32.0)=
 
