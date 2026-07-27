@@ -1,6 +1,17 @@
 # Releases 7.x
 
-# 7.3.0 (TBD)
+# 7.4.0 (TDB)
+
+# 7.3.0 (2026-07-27)
+
+## Bugfix
+
+* fix typescript version + update rollup + clean ts-config vue-datapicker
+* AbstractCoreSession#refreshAuthentication must be FactorGrantedAuthority-aware
+
+## Dependencies
+
+* update wicket 10.10.0 to fix WICKET-7186
 
 # 7.2.1 (2026-05-21)
 
