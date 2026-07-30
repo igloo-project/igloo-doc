@@ -1,6 +1,55 @@
 # Releases 7.x
 
-# 7.4.0 (TDB)
+# 7.5.0 (TDB)
+
+# 7.4.0 (2026-07-30)
+
+## Dependencies
+
+* jackson/-core/-databind / ...: 2.21.2 -> 2.22.1
+* jackson-annotations: 2.21 -> 2.22
+* guava: 33.5.0jre -> 33.6.0jre
+* ph-css: 8.1.1 -> 8.2.1
+* querydsl-jpa: 7.1 -> 7.5
+* HikariCP: 7.0.2 -> 7.1.0
+* commons-io: 2.21.0 -> 2.22.0
+* junit-jupiter-api: 6.0.3 -> 6.1.1
+* junit-platform-suite-engine: 6.0.3 -> 6.1.1
+* log4j-core / log4j-slf4j-impl: 2.15.4 -> 2.26.1
+* hibernate/-core/-ehcache/-validator: 7.3.0.Final -> 7.4.5.Final
+* hibernate-search-orm: 8.3.0.Final -> 8.4.0.Final
+* jsoup: 1.22.1 -> 1.23.1
+* postgresql: 42.7.10 -> 42.7.13
+* jcl-over-slf4j / jul-to-slf4j / slf4j-api: 2.0.17 -> 2.0.18
+* spring-\*: 6.2.15 -> 7.0.8
+* spring-security-\*: 7.0.4 -> 7.1.0
+* value: 2.12.1 -> 2.12.2
+* micrometer-core: 1.16.4 -> 1.17.0
+* error_prone_annotations: 2.49.0 -> 2.50.0
+* spring-boot/spring-boot/-autoconfigure/-autoconfigure-processor: 4.0.5 -> 4.1.0
+* byte-buddy: 1.18.8 -> 1.18.11
+* caffeine / jcache: 3.2.3 -> 3.2.4
+* commons-codec: 1.21.0 -> 1.22.0
+* logbook-core: 4.0.4 -> 4.1.0
+* httpclient5: 5.6 -> 5.6.2
+* nimbus-jose-jwt: 10.9 -> 10.9.1
+* classgraph: 4.8.184 -> 4.8.186
+* mockserver-netty: 5.15.0 -> 7.5.0
+* pdfcompare: 1.2.8 -> 1.2.9
+* vue: 3.5.32 -> 3.5.40
+* hibernate-validator: 9.1.2.Final -> 9.1.3.Final
+* maven-failsafe-plugin: 3.5.5 -> 3.5.6
+* maven-surefire-plugin: 3.5.5 -> 3.5.6
+* maven-dependency-plugin: 3.10.0 -> 3.11.0
+* maven-toolchains-plugin: 3.2.0 -> 3.3.0
+* maven-jar-plugin: 3.5.0 -> 3.5.1
+* jacoco-maven-plugin: 0.8.14 -> 0.8.15
+* dependency-check-maven: 12.2.0 -> 12.2.2
+* maven-enforcer-plugin: 3.6.2 -> 3.6.3
+* flatten-maven-plugin: 1.7.3 -> 1.8.0
+* frontend-maven-plugin: 2.0.0 -> 2.0.2
+* spotless-maven-plugin: 3.4.0 -> 3.9.0
+* spring-boot-maven-plugin: 4.0.5 -> 4.1.0
 
 # 7.3.0 (2026-07-27)
 
