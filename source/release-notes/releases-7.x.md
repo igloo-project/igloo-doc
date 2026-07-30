@@ -50,6 +50,7 @@
 * frontend-maven-plugin: 2.0.0 -> 2.0.2
 * spotless-maven-plugin: 3.4.0 -> 3.9.0
 * spring-boot-maven-plugin: 4.0.5 -> 4.1.0
+* vue-datepicker: 12.1.0 -> 14.0.0
 
 # 7.3.0 (2026-07-27)
 
