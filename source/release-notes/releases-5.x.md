@@ -1,8 +1,16 @@
 # Releases 5.x
 
+(v5.35.0)=
+
+# 5.35.0 (TDB)
+
 (v5.34.0)=
 
-# 5.34.0 (TDB)
+# 5.34.0 (2026-09-01)
+
+## Dependencies
+* Wicket: 9.23.0 -> 9.24.0 (fix mulitples CVE)
+* wicketstuff-select2: 9.23.1 -> 9.22.0 - Rollback, Select2 4.1.0  is currently incompatible  
 
 (v5.33.0)=
 
