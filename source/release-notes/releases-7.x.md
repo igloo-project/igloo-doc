@@ -1,6 +1,13 @@
 # Releases 7.x
 
-# 7.5.0 (TDB)
+# 7.6.0 (TDB)
+
+# 7.5.0 (2026-09-01)
+
+## Dependencies
+* Wicket: 10.10.0 -> 10.11.0 (fix mulitples CVE)
+* wicketstuff-select2: 10.8.0 -> 10.10.0
+* select2: 4.0.13 -> 4.1.0
 
 # 7.4.0 (2026-07-30)
 
