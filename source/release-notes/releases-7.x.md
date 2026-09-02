@@ -2,6 +2,10 @@
 
 # 7.6.0 (TDB)
 
+## Enhancement
+
+* Fix Sonar rule S2077 - reformat query sql dynamique
+
 # 7.5.0 (2026-09-01)
 
 ## Dependencies
