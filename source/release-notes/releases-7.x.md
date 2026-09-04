@@ -1,10 +1,13 @@
 # Releases 7.x
 
-# 7.6.0 (TDB)
+# 7.7.0 (TDB)
+
+# 7.6.0 (2026-09-04)
 
 ## Enhancement
 
 * Fix Sonar rule S2077 - reformat query sql dynamique
+* migration Jackson 3
 
 # 7.5.0 (2026-09-01)
 
