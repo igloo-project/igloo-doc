@@ -2,6 +2,11 @@
 
 # 7.7.0 (TDB)
 
+## Enhancement
+
+* Fix typo in i18n ressources.
+* Remove useless throws.
+
 # 7.6.0 (2026-09-04)
 
 ## Enhancement
