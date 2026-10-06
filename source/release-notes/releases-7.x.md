@@ -1,11 +1,27 @@
 # Releases 7.x
 
-# 7.7.0 (TDB)
+# 7.8.0 (TDB)
+
+# 7.7.0 (2026-10-06)
+
+## Breaking changes
+
+* jjwt removed in favor of jose jwt
+* java 25 migration
+* remove  dependancies `mockserver-junit-jupiter` and `mockserver-client-java-no-dependencies` (please use `mockserver-netty-no-dependencies` only)
 
 ## Enhancement
 
 * Fix typo in i18n ressources.
 * Remove useless throws.
+* Removal of @Autowired from constructors
+
+## Dependencies
+
+* spring-\*: 7.0.8 -> 7.0.9 (fix multiples CVE)
+* spring-security-\*: 7.1.0 -> 7.1.1 (fix multiples CVE)
+* spring-boot/spring-boot/-autoconfigure/-autoconfigure-processor: 4.1.0 -> 4.1.1 (fix multiples CVE)
+* guava: 33.6.0jre -> 33.7.1jre (fix upperbound)
 
 # 7.6.0 (2026-09-04)
 
