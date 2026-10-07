@@ -2,6 +2,10 @@
 
 # 7.8.0 (TDB)
 
+## Enhancement
+
+* BasicApp: force session invalidate (logout) on sign in page.
+
 # 7.7.0 (2026-10-06)
 
 ## Breaking changes
