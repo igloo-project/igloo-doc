@@ -5,6 +5,60 @@
 ## Enhancement
 
 * BasicApp: force session invalidate (logout) on sign in page.
+* Lucene 9 -> 10 migration: `hibernate-search-backend-lucene` is replaced by `hibernate-search-backend-lucene-next`.`hibernate-search-backend-lucene` is now banned by the enforcer: remove any direct declaration from project poms.
+  * A full reindex is required after deployment and **the Lucene index directory must be deleted before startup**
+  * `BooleanClause` is now a record: replace `getQuery()`/`getOccur()` with `query()`/`occur()`; same for
+    `TotalHits` (`value()`/`relation()` instead of fields).
+* caffeine 3.2.4 -> 3.3.0: 
+
+## Dependencies
+
+* lucene-\*: 9.12.3 -> 10.4.0 (via `hibernate-search-backend-lucene-next` 8.4.0.Final)
+
+* jackson/-core/-databind / ...: 3.2.0 -> 3.2.3
+* guava: 33.7.1jre -> 33.7.2jre
+* ph-css: 8.2.1 -> 8.2.2
+* querydsl-jpa: 7.5 -> 7.7
+* wicket-webjars: 4.0.14 -> 4.0.15
+* junit-jupiter-api: 6.1.2 -> 6.1.3
+* junit-platform-suite-engine: 6.1.2 -> 6.1.3
+* lucene/-analyzers-common/-core/-queries/-queryparser: 9.12.3 -> 10.4.0
+* wicketstuff-select2: 10.10.0 -> 10.11.0
+* flyway-core: 13.0.0 -> 13.10.0
+* freemarker: 2.3.34 -> 2.3.35
+* hibernate/-core/-ehcache/-validator: 7.4.5.Final -> 7.4.12.Final
+* jsoup: 1.23.1 -> 1.23.2
+* mockito/-core/-junit-jupiter: 5.23.0 -> 5.24.0
+* postgresql: 42.7.13 -> 42.7.14
+* jcl-over-slf4j / jul-to-slf4j / slf4j-api: 2.0.18 -> 2.0.20
+* byte-buddy: 1.18.11 -> 1.18.14
+* commons-collections4: 4.5.0 -> 4.6.0
+* commons-validator: 1.10.1 -> 1.11.0
+* caffeine / jcache: 3.2.4 -> 3.3.0
+* commons-codec: 1.22.0 -> 1.22.1
+* commons-lang3: 3.20.0 -> 3.21.0
+* logbook-core: 4.1.0 -> 4.2.0
+* httpclient5: 5.6.2 -> 5.6.4
+* springdoc-openapi-starter-webmvc-ui: 3.0.3 -> 3.1.1
+* sass-embedded-host: 4.4.0 -> 4.6.0
+* nimbus-jose-jwt: 10.9.1 -> 10.10
+* classgraph: 4.8.186 -> 4.8.197
+* mockserver-netty: 7.5.0 -> 8.0.0
+* pdfcompare: 1.2.9 -> 1.2.11
+* vue: 3.5.40 -> 3.5.43
+* hibernate-validator: 9.1.3.Final -> 9.1.4.Final
+* snakeyaml: 2.6 -> 2.7
+* maven-compiler-plugin: 3.15.0 -> 3.16.0
+* maven-failsafe-plugin: 3.5.6 -> 3.6.0
+* maven-surefire-plugin: 3.5.6 -> 3.6.0
+* maven-deploy-plugin: 3.1.4 -> 3.2.0
+* maven-install-plugin: 3.1.4 -> 3.2.0
+* dependency-check-maven: 12.2.2 -> 13.0.0
+* versions-maven-plugin: 2.21.0 -> 2.22.0
+* exec-maven-plugin: 3.6.3 -> 3.6.4
+* spotless-maven-plugin: 3.9.0 -> 3.10.4
+* google-java-format: 1.28.0 -> 1.37.0
+* jaxb2-maven-plugin: 4.1.0 -> 4.2.0
 
 # 7.7.0 (2026-10-06)
 
