@@ -4,6 +4,40 @@
 
 # 5.35.0 (TDB)
 
+## Dependencies
+
+* jackson/-core/-databind / -dataformat-xml / -jackson-jaxrs /jackson-module-jaxb: 2.22.1 -> 2.22.3
+* guava: 33.6.0jre -> 33.7.2jre
+* h2: 2.4.240 -> 2.5.252
+* ph-css: 8.2.1 -> 8.2.2
+* freemarker: 2.3.34 -> 2.3.35
+* jsoup: 1.22.2 -> 1.23.2
+* mockito/-core/-junit-jupiter: 5.23.0 -> 5.24.0
+* jcl-over-slf4j / jul-to-slf4j / slf4j-api: 2.0.18 -> 2.0.20
+* micrometer-core: 1.17.0 -> 1.17.1
+* byte-buddy: 1.18.11 -> 1.18.14
+* commons-collections4: 4.5.0 -> 4.6.0
+* commons-lang3: 3.20.0 -> 3.21.0
+* commons-validator: 1.10.1 -> 1.11.0
+* caffeine / jcache: 3.2.4 -> 3.3.0
+* commons-codec: 1.22.0 -> 1.22.1
+* sass-embedded-host: 4.4.0 -> 4.6.0
+* nimbus-jose-jwt: 10.9.1 -> 10.10
+* checker-qual: 4.2.1 -> 4.3.0
+* maven-compiler-plugin: 3.15.0 -> 3.16.0
+* maven-failsafe-plugin: 3.5.6 -> 3.6.0
+* maven-surefire-plugin: 3.5.6 -> 3.6.0
+* maven-deploy-plugin: 3.1.4 -> 3.2.0
+* maven-jar-plugin: 3.5.0 -> 3.5.1
+* maven-install-plugin: 3.1.4 -> 3.2.0
+* spotless-maven-plugin: 3.8.0 -> 3.10.3
+* dependency-check-maven: 12.2.2 -> 13.0.0
+* versions-maven-plugin: 2.21.0 -> 2.22.0
+* exec-maven-plugin: 3.6.3 -> 3.6.4
+* flatten-maven-plugin: 1.7.3 -> 1.8.0
+* buildnumber-maven-plugin: 3.3.0 -> 3.3.1
+* frontend-maven-plugin: 2.0.1 -> 2.0.2
+
 (v5.34.0)=
 
 # 5.34.0 (2026-09-01)
