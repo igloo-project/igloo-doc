@@ -2,6 +2,14 @@
 
 # 7.9.0 (TDB)
 
+## Enhancement
+
+* Refactor `MediaType`
+
+## Bugfix
+
+* Console - Task: fix default sort.
+
 # 7.8.0 (2026-10-12)
 
 ## Enhancement
