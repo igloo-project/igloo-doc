@@ -4,7 +4,8 @@
 
 ## Enhancement
 
-* Refactor `MediaType`
+* Refactor `MediaType`.
+* Manage `commonmark` version in `dependencies-html`.
 
 ## Bugfix
 
