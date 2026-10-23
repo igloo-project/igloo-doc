@@ -11,6 +11,13 @@
 
 * Console - Task: fix default sort.
 
+# 7.8.1 (2026-10-23)
+
+## Bugfix
+
+* classgraph 4.8.197 -> 4.8.199 : fix classpath detection on Tomcat
+
+
 # 7.8.0 (2026-10-12)
 
 ## Enhancement
