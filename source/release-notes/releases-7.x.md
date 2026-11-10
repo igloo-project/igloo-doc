@@ -1,6 +1,8 @@
 # Releases 7.x
 
-# 7.9.0 (TDB)
+# 7.10.0 (TBD)
+
+# 7.9.0 (2026-11-10)
 
 ## Enhancement
 
