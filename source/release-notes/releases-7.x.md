@@ -2,11 +2,11 @@
 
 # 7.10.0 (TBD)
 
-# 7.9.0 (2026-11-10)
+# 7.9.1 (2026-11-12)
 
 ## Enhancement
 
-* Refactor `MediaType`.
+* Update `MediaType`.
 * Manage `commonmark` version in `dependencies-html`.
 
 ## Bugfix
