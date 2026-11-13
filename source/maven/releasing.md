@@ -55,6 +55,15 @@ PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT
 PYTHONUNBUFFERED=1 hatch env run -- igloo-release igloo NEW_VERSION NEW_SNAPSHOT --skip-snapshot
 ```
 
+### Nexus clean
+
+```bash
+cd ~/git/igloo-parent/tools
+# dry-run
+python3 nexus-igloo-clean.py 7.9.0
+# delete
+python3 nexus-igloo-clean.py 7.9.0 --delete
+```
 
 ### Release (deprecated)
 
