@@ -9,6 +9,8 @@
   java-agent (`prepare-agent`) is always passed to the test JVM. **Projects that override surefire `<argLine>` in plugin
   `<configuration>` (e.g. for `--add-opens`) must move this value to an `<argLine>` property instead**; otherwise the jacoco
   agent is dropped.
+* migration java.util.Optional in Renderer class
+* The igloo.<lib>.version properties are available to any child project
 
 ## Bugfix
 * Special characters are allowed again in properties files. Unicode characters are still decoded correctly, so nothing needs to be done.
