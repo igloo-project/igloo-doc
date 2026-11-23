@@ -2,6 +2,18 @@
 
 # 7.10.0 (TBD)
 
+## Enhancement
+
+* Add jacoco coverage for sonar and gitlab
+* Maven: surefire `argLine` is now configured as `@{argLine}` with an empty `argLine` property by default, so that the jacoco
+  java-agent (`prepare-agent`) is always passed to the test JVM. **Projects that override surefire `<argLine>` in plugin
+  `<configuration>` (e.g. for `--add-opens`) must move this value to an `<argLine>` property instead**; otherwise the jacoco
+  agent is dropped.
+
+## Bugfix
+* Special characters are allowed again in properties files. Unicode characters are still decoded correctly, so nothing needs to be done.
+
+
 # 7.9.1 (2026-11-12)
 
 ## Enhancement
